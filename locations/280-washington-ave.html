@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>280 Washington Ave - Off The Grid NYC</title>
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --secondary: #ecf0f1;
+            --accent: #e74c3c;
+            --text: #333;
+            --font: 'Helvetica Neue', Arial, sans-serif;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: var(--font);
+            color: var(--text);
+            background: var(--secondary);
+            line-height: 1.6;
+        }
+        header {
+            background: var(--primary);
+            color: #fff;
+            padding: 1.5rem 2rem;
+            text-align: center;
+        }
+        header h1 { font-size: 2rem; }
+        .back-link {
+            display: block;
+            text-align: center;
+            padding: 0.5rem;
+            background: var(--primary);
+            color: white;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+        .back-link:hover {
+            background: #34495e;
+        }
+        main {
+            max-width: 900px;
+            margin: 1rem auto;
+            padding: 1rem;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            border: 1px solid #ddd;
+        }
+        h2 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--primary);
+        }
+        .location-details p {
+            margin-bottom: 1rem;
+        }
+        .map-views {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+        .map-views img, #pano {
+            width: 100%;
+            height: 350px; /* Adjust height */
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+        #pano {
+             min-height: 350px; /* Ensure Street View takes space */
+        }
+        footer {
+            background: var(--primary);
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            font-size: 0.9rem;
+            margin-top: 1rem;
+        }
+        @media (max-width: 768px) {
+            .map-views {
+                grid-template-columns: 1fr; /* Stack maps on smaller screens */
+            }
+            .map-views img, #pano {
+                height: 300px;
+            }
+        }
+    </style>
+    <!-- IMPORTANT: Replace YOUR_API_KEY in the script URL -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBBksh0YwSl7gekcaTX-_xRcBE-Me125rc&callback=initPano"></script>
+    <script>
+        function initPano() {
+            const locationCoords = { lat: 40.6903082, lng: -73.9666332 };
+            const panorama = new google.maps.StreetViewPanorama(
+                document.getElementById('pano'), {
+                    position: locationCoords,
+                    pov: { heading: 34, pitch: 10 },
+                    zoom: 1
+                });
+        }
+        window.initPano = initPano;
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Off The Grid NYC</h1>
+    </header>
+    <a href="../index.html" class="back-link">← Back to Map</a>
+    <main>
+        <section class="location-details">
+            <h2>280 Washington Ave</h2>
+            <h3>Description</h3>
+            <p>No description available.</p>
+            <h3>History</h3>
+            <p>No history available.</p>
+            <a href="https://www.google.com/maps/dir/?api=1&destination=40.6903082,-73.9666332" target="_blank">Get Directions →</a>
+        </section>
+
+        <section class="map-views">
+            <div>
+                <h3>Satellite View</h3>
+                 <!-- IMPORTANT: Replace YOUR_API_KEY in the img src -->
+                <img src="https://maps.googleapis.com/maps/api/staticmap?center=40.6903082,-73.9666332&zoom=18&size=600x400&maptype=satellite&key=AIzaSyBBksh0YwSl7gekcaTX-_xRcBE-Me125rc" alt="Satellite view of 280 Washington Ave">
+            </div>
+            <div>
+                <h3>Street View</h3>
+                <div id="pano"></div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        2025 Off The Grid NYC. All rights reserved.
+    </footer>
+</body>
+</html>

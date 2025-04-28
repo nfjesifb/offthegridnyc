@@ -1,226 +1,240 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-X6R3FE60HB"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-    
-      gtag('config', 'G-X6R3FE60HB');
-    </script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Discover New York City's lost urbanism with Off The Grid NYC.">
-    <meta property="og:title" content="Off The Grid NYC">
-    <meta property="og:description" content="Explore the most beautiful and remnants of good urbanism in NYC.">
-    <meta property="og:image" content="path/to/image.jpg"> <!-- Update with actual image path -->
-    <title>Off The Grid NYC</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
-    <style>
-        /* Global Styles */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: 'Raleway', sans-serif;
-            color: #333;
-            line-height: 1.6;
-            background-color: #f8f8f8;
-            padding: 0;
-            margin: 0;
-        }
-        
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 2rem;
-        }
-        
-        /* Header Styles */
-        header {
-            text-align: center;
-            padding: 3rem 1rem 2rem;
-            background: linear-gradient(135deg, #0a253e 0%, #1d4e89 100%);
-            color: white;
-            border-bottom: 5px solid #e67e22;
-        }
-        
-        h1 {
-            font-family: 'Playfair Display', serif;
-            font-size: 3.5rem;
-            margin-bottom: 0.5rem;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            font-weight: 700;
-        }
-        
-        header h2 {
-            font-family: 'Raleway', sans-serif;
-            font-size: 1.5rem;
-            font-weight: 300;
-            margin-top: 0.5rem;
-            color: #f8f8f8;
-        }
-        
-        /* Description Section */
-        .description {
-            max-width: 800px;
-            margin: 2rem auto;
-            padding: 2rem;
-            text-align: center;
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-            line-height: 1.8;
-            font-size: 1.1rem;
-        }
-        
-        /* Map and Form Sections */
-        .map-container, .form-container {
-            margin: 1rem auto 3rem;
-            padding: 1rem;
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-            text-align: center;
-        }
-        
-        .map-wrapper, .form-wrapper {
-            position: relative;
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            overflow: hidden;
-            border-radius: 4px;
-            border: 1px solid #ddd;
-        }
-        
-        iframe {
-            width: 100%;
-            height: 600px;
-            border: none;
-        }
-
-        .form-wrapper iframe {
-            height: 700px;
-        }
-        
-        .section-title {
-            font-family: 'Playfair Display', serif;
-            margin-bottom: 1.5rem;
-            color: #0a253e;
-            font-size: 1.8rem;
-        }
-        
-        .map-instructions {
-            margin-bottom: 1rem;
-            font-size: 1rem;
-            color: #555;
-        }
-        
-        /* Footer */
-        footer {
-            text-align: center;
-            padding: 2rem;
-            background-color: #0a253e;
-            color: #f8f8f8;
-            font-size: 0.9rem;
-        }
-        
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 2.5rem;
-            }
-            
-            header h2 {
-                font-size: 1.2rem;
-            }
-            
-            .description {
-                padding: 1.5rem;
-                font-size: 1rem;
-            }
-            
-            .container {
-                padding: 1rem;
-            }
-            
-            .map-wrapper iframe {
-                height: 500px;
-            }
-            
-            .form-wrapper iframe {
-                height: 600px;
-            }
-            
-            .section-title {
-                font-size: 1.5rem;
-            }
-        }
-        
-        @media (max-width: 480px) {
-            h1 {
-                font-size: 2rem;
-            }
-            
-            header h2 {
-                font-size: 1rem;
-            }
-            
-            .description {
-                padding: 1rem;
-            }
-            
-            .map-wrapper iframe {
-                height: 400px;
-            }
-            
-            .form-wrapper iframe {
-                height: 500px;
-            }
-            
-            .section-title {
-                font-size: 1.3rem;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Off The Grid NYC</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #1a1a1a; /* Dark Charcoal */
+      --secondary: #f8f8f8; /* Off-white */
+      --accent: #1abc9c; /* Teal */
+      --text: #333;
+      --font: 'Poppins', sans-serif;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: var(--font);
+      color: var(--text);
+      background: var(--secondary);
+      line-height: 1.6;
+      font-weight: 300; /* Lighter default weight */
+    }
+    header {
+      background: var(--primary);
+      color: #fff;
+      padding: 1rem 2rem;
+      text-align: center;
+    }
+    header h1 { font-size: 2.2rem; font-weight: 600; }
+    main {
+      display: flex;
+      flex-direction: column;
+      padding: 1rem;
+    }
+    .map-container, .form-container {
+      background: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+      border: none; /* Removed border */
+      margin-bottom: 1.5rem; /* Increased spacing */
+      overflow: hidden; /* Re-add for consistency with border-radius */
+    }
+    .map-container { height: 65vh; /* Adjust % as needed */ }
+    #map { width: 100%; height: 100%; }
+    .map-container h2, .form-container h2 {
+      padding: 1rem 1.5rem;
+      font-size: 1.5rem;
+      color: #fff;
+      background-color: var(--primary);
+      border-bottom: none;
+      margin-bottom: 0;
+      font-weight: 400;
+    }
+    .form-container iframe {
+      border: none;
+      width: 100%;
+      height: 1200px; /* Adjust height based on your form length */
+    }
+    footer {
+      background: var(--primary);
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.85rem;
+      margin-top: 1.5rem;
+      opacity: 0.9;
+    }
+    /* Info Window Styling */
+    .popup-content {
+      max-width: 410px;
+      font-weight: 400; /* Slightly bolder for popup */
+    }
+    .popup-content h3 {
+      font-weight: 600;
+      color: var(--primary);
+      margin-bottom: 10px;
+    }
+    .popup-content img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 10px;
+      border-radius: 4px;
+    }
+    .popup-content p {
+      margin-bottom: 10px;
+    }
+    .popup-content a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    .popup-content a:hover {
+      text-decoration: underline;
+      color: #16a085; /* Darker teal on hover */
+    }
+  </style>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBBksh0YwSl7gekcaTX-_xRcBE-Me125rc&callback=initMap" async defer></script>
 </head>
 <body>
-    <header>
-        <h1>Off The Grid NYC</h1>
-        <p>
-            Off the Grid NYC is a project documenting the most beautiful, unique, and often hidden reminents of good urbanism that remain in New York City. Each of these places are interesting for different reasons some involved inovative solutions to communal space, noise polution, or safety. But every building, street, home, or community here has in common that they represent a small piece of the city that lives in its own world or era, "Off the Grid".
-        </p>
-    </header>
-    
-    <div class="container">
-        
-        <section class="map-container">
-            <h2 class="section-title">Explore Off The Grid Verified Places</h2>
-            <p class="map-instructions">Use the interactive map below to discover a very different NYC. Toggle the categories using the layer menu.</p>
-            <div class="map-wrapper">
-                <iframe src="amazing_map_with_groups.html" width="100%" height="600" frameborder="0"></iframe>
-            </div>
-        </section>
-        
-        <section class="form-container">
-            <h2 class="section-title">Know a place that belongs here and isn't? Please Share!</h2>
-            <div class="form-wrapper">
-                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf-3Fi0LTuKLsSUQvrr_uVkenJkpHBEO5bDQXM567_NW4U5Ag/viewform?embedded=true" width="640" height="474" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-            </div>
-        </section>
-    </div>
-    
-    <footer>
-        <p>© 2025 Off The Grid NYC. All rights reserved.</p>
-    </footer>
+  <header>
+    <h1>Off The Grid NYC</h1>
+  </header>
+  <main>
+    <section class="map-container">
+      <h2>Explore Verified Places</h2>
+      <div id="map"></div>
+    </section>
+    <section class="form-container">
+      <h2>Know a place that belongs here? Share!</h2>
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf-3Fi0LTuKLsSUQvrr_uVkenJkpHBEO5bDQXM567_NW4U5Ag/viewform?embedded=true"></iframe>
+    </section>
+  </main>
+  <footer>
+    &copy; 2025 Off The Grid NYC
+    <br>
+    <a href="https://www.google.com/maps/d/edit?mid=1gl24kbeTNZ13SmaCbMsam2CYe8Ury7M&usp=sharing" target="_blank" rel="noopener noreferrer">View Full Map on Google My Maps</a>
+  </footer>
+
+  <script>
+    async function initMap() {
+      const meta = await (await fetch('locations.json')).json();
+      const locMap = Object.fromEntries(meta.map(x => [x.name, x]));
+      const kmlText = await (await fetch('offthegridnyc.kml')).text();
+      const kmlDoc = new DOMParser().parseFromString(kmlText, 'application/xml');
+      const iconMap = {};
+      kmlDoc.querySelectorAll('StyleMap[id]').forEach(sm => {
+        const id = sm.getAttribute('id');
+        let url = '';
+        sm.querySelectorAll('Pair').forEach(pair => {
+          if (pair.querySelector('key')?.textContent === 'normal') {
+            const ref = pair.querySelector('styleUrl')?.textContent.slice(1);
+            const se = kmlDoc.querySelector(`Style[id="${ref}"]`);
+            const href = se?.querySelector('Icon > href')?.textContent;
+            if (href) url = href;
+          }
+        });
+        if (id && url) iconMap[id] = url;
+      });
+      // Custom Map Style (Silver Base)
+      const mapStyle = [
+        { elementType: "geometry", stylers: [{ color: "#f5f5f5" }] },
+        { elementType: "labels.icon", stylers: [{ visibility: "off" }] },
+        { elementType: "labels.text.fill", stylers: [{ color: "#616161" }] },
+        { elementType: "labels.text.stroke", stylers: [{ color: "#f5f5f5" }] },
+        {
+          featureType: "administrative.land_parcel",
+          elementType: "labels.text.fill",
+          stylers: [{ color: "#bdbdbd" }],
+        },
+        {
+          featureType: "poi",
+          elementType: "geometry",
+          stylers: [{ color: "#eeeeee" }],
+        },
+        {
+          featureType: "poi",
+          elementType: "labels.text.fill",
+          stylers: [{ color: "#757575" }],
+        },
+        { featureType: "poi.park", elementType: "geometry", stylers: [{ color: "#e5e5e5" }] },
+        {
+          featureType: "poi.park",
+          elementType: "labels.text.fill",
+          stylers: [{ color: "#9e9e9e" }],
+        },
+        { featureType: "road", elementType: "geometry", stylers: [{ color: "#ffffff" }] },
+        {
+          featureType: "road.arterial",
+          elementType: "labels.text.fill",
+          stylers: [{ color: "#757575" }],
+        },
+        { featureType: "road.highway", elementType: "geometry", stylers: [{ color: "#dadada" }] },
+        {
+          featureType: "road.highway",
+          elementType: "labels.text.fill",
+          stylers: [{ color: "#616161" }],
+        },
+        {
+          featureType: "road.local",
+          elementType: "labels.text.fill",
+          stylers: [{ color: "#9e9e9e" }],
+        },
+        { featureType: "transit.line", elementType: "geometry", stylers: [{ color: "#e5e5e5" }] },
+        {
+          featureType: "transit.station",
+          elementType: "geometry",
+          stylers: [{ color: "#eeeeee" }],
+        },
+        { featureType: "water", elementType: "geometry", stylers: [{ color: "#c9c9c9" }] },
+        {
+          featureType: "water",
+          elementType: "labels.text.fill",
+          stylers: [{ color: "#9e9e9e" }],
+        },
+      ];
+
+      const map = new google.maps.Map(document.getElementById('map'), {
+        center: { lat: 40.75, lng: -73.98 },
+        zoom: 12,
+        styles: mapStyle,
+        mapTypeControl: false, // Optional: Hide map type control
+        streetViewControl: false // Optional: Hide street view pegman
+      });
+
+      kmlDoc.querySelectorAll('Placemark').forEach(pm => {
+        const name = pm.querySelector('name')?.textContent;
+        const coords = pm.querySelector('Point > coordinates')?.textContent.trim().split(',');
+        if (!name || !coords) return;
+        const [lng, lat] = coords.map(Number);
+        const sid = pm.querySelector('styleUrl')?.textContent.slice(1);
+        const markerOpts = { position: { lat, lng }, map, title: name };
+        if (sid && iconMap[sid]) {
+          markerOpts.icon = { url: iconMap[sid], scaledSize: new google.maps.Size(30, 30), anchor: new google.maps.Point(15, 30) };
+        }
+        const marker = new google.maps.Marker(markerOpts);
+        const loc = locMap[name] || {};
+        const slug = name.toLowerCase().replace(/\W+/g, '-');
+        const apiKey = 'AIzaSyBBksh0YwSl7gekcaTX-_xRcBE-Me125rc'; // Use your API key here
+        const satelliteViewUrl = `https://maps.googleapis.com/maps/api/staticmap?center=${lat},${lng}&zoom=18&size=400x200&maptype=satellite&key=${apiKey}`;
+        const directionsUrl = `https://www.google.com/maps/dir/?api=1&destination=${lat},${lng}`;
+        const content = `
+          <div class="popup-content">
+            <h3>${name}</h3>
+            <img src="${satelliteViewUrl}" alt="Satellite view of ${name}">
+            ${loc.description ? `<p>${loc.description}</p>` : ''}
+            <p>
+              <a href="locations/${slug}/" target="_blank">See More →</a> |
+              <a href="${directionsUrl}" target="_blank">Get Directions →</a>
+            </p>
+          </div>`;
+        const infowindow = new google.maps.InfoWindow({ content });
+        marker.addListener('click', () => infowindow.open(map, marker));
+      });
+    }
+    window.initMap = initMap;
+  </script>
 </body>
 </html>

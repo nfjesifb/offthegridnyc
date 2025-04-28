@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cliff House (Pumpkin House) - Off The Grid NYC</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <style>
+    :root {
+      --primary: #1a1a1a; /* Dark Charcoal */
+      --secondary: #f8f8f8; /* Off-white */
+      --accent: #1abc9c; /* Teal */
+      --text: #333;
+      --font: 'Poppins', sans-serif;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: var(--font);
+      color: var(--text);
+      background: var(--secondary);
+      line-height: 1.6;
+      font-weight: 300;
+    }
+    header {
+      background: var(--primary);
+      color: #fff;
+      padding: 1rem 2rem;
+      padding-bottom: 0.5rem;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.2rem; font-weight: 600;
+      margin-bottom: 0.25rem;
+    }
+    .subtitle-section {
+      background: var(--primary);
+      color: rgba(255, 255, 255, 0.9);
+      padding: 0rem 2rem 1rem 2rem;
+      text-align: center;
+      margin-bottom: 1.5rem;
+      font-size: 1rem;
+      font-weight: 300;
+    }
+    .subtitle-section p {
+      margin-bottom: 0.5rem;
+    }
+    .subtitle-section strong {
+      font-weight: 400;
+      color: rgba(255, 255, 255, 1);
+      margin-right: 5px;
+    }
+    .container {
+      background: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+      border: none;
+      margin-bottom: 1.5rem;
+      overflow: hidden;
+    }
+    .container h2 {
+      padding: 1rem 1.5rem;
+      font-size: 1.5rem;
+      color: #fff;
+      background-color: var(--primary);
+      border-bottom: none;
+      margin-bottom: 0;
+      font-weight: 400;
+    }
+    .content-padding {
+      padding: 1.5rem;
+    }
+    /* Swiper Carousel Styles */
+    .swiper {
+      width: 100%;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+      height: 400px;
+      margin-bottom: 1.5rem;
+      border-radius: 8px;
+      overflow: hidden;
+      background: #eee;
+    }
+    .swiper-slide {
+      text-align: center;
+      background: #fff;
+      /* Center slide text vertically */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+    /* Style for the satellite image text overlay if needed */
+    .satellite-slide span {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      background-color: rgba(0,0,0,0.6);
+      color: white;
+      padding: 5px 10px;
+      border-radius: 3px;
+      font-size: 0.9rem;
+    }
+    /* Roadview Iframe */
+    .roadview-iframe {
+      width: 100%;
+      height: 450px; /* Adjust height as needed */
+      border-radius: 4px;
+      margin-bottom: 1.5rem;
+      border: none; /* Remove iframe default border */
+    }
+    /* Links */
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+      color: #16a085;
+    }
+    .action-links {
+      margin-top: 1rem;
+      font-weight: 400;
+    }
+    .action-links a {
+      margin-right: 15px;
+    }
+    /* Footer */
+    footer {
+      background: var(--primary);
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.85rem;
+      margin-top: 1.5rem;
+      opacity: 0.9;
+    }
+    /* Responsive adjustments */
+    @media (max-width: 960px) {
+      .swiper {
+        max-width: 95%;
+      }
+    }
+    @media (max-width: 768px) {
+      .swiper {
+        height: 300px;
+      }
+      .roadview-iframe {
+        height: 350px;
+      }
+      header h1 { font-size: 1.8rem; }
+      .container h2 { font-size: 1.3rem; }
+      #pano {
+        height: 350px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Cliff House (Pumpkin House)</h1>
+  </header>
+  <!-- Subtitle Area -->
+  <div class="subtitle-section">
+    <p><strong>Description:</strong> A unique residential building in Manhattan, known for its distinctive appearance and location on a cliff.</p>
+    <p><strong>History:</strong> The Cliff House, often referred to as the Pumpkin House due to its orange color, was built in the early 20th century. Its design takes advantage of the steep terrain, offering residents stunning views of the Hudson River. The building is a notable example of adaptive architecture in urban settings.</p>
+  </div>
+  <!-- Image Carousel -->
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <!-- Slides will be injected here by Python script -->
+        <div class="swiper-slide satellite-slide">    <img src="https://maps.googleapis.com/maps/api/staticmap?center=40.8549866,-73.9395154&zoom=18&size=600x400&maptype=satellite&key=AIzaSyBBksh0YwSl7gekcaTX-_xRcBE-Me125rc" alt="Satellite view of Cliff House (Pumpkin House)">    <span>Satellite View</span>  </div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+    <!-- Add Navigation -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+  <div class="container">
+    <h2>Street View & Directions</h2>
+    <div class="content-padding">
+      <iframe class="roadview-iframe"
+              src="https://roadview.planninglabs.nyc/view/-73.9395154/40.8549866"
+              allowfullscreen
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+      <div class="action-links">
+        <a href="https://www.google.com/maps/dir/?api=1&destination=40.8549866,-73.9395154" target="_blank">Get Directions &rarr;</a>
+        <a href="/index.html">Back to Main Map &larr;</a>
+      </div>
+    </div>
+  </div>
+  <!-- Share Info Section -->
+  <div class="container">
+    <h2>Share Your Photos & Info</h2>
+    <div class="content-padding">
+      <p>Do you have photos of this location or interesting information to share? 
+         <a href="https://forms.gle/4HR5RrvrfV2Nt2718" target="_blank" rel="noopener noreferrer">Submit them using this Google Form</a>.
+      </p>
+    </div>
+  </div>
+  <footer>
+    &copy; 2024 Off The Grid NYC
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    // Initialize Swiper
+    var swiper = new Swiper(".swiper", {
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+      },
+      keyboard: true,
+    });
+    window.swiper = swiper; // Optional: make swiper instance global if needed
+  </script>
+</body>
+</html>

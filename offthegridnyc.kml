@@ -1,0 +1,1222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>offthegridnyc</name>
+    <description/>
+    <Style id="icon-1502-0288D1-normal">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1502-0288D1-highlight">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1502-0288D1">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1502-0288D1-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1502-0288D1-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1552-0288D1-normal">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1552-0288D1-highlight">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1552-0288D1">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1552-0288D1-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1552-0288D1-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1552-0288D1-nodesc-normal">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1552-0288D1-nodesc-highlight">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1552-0288D1-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1552-0288D1-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1552-0288D1-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1582-0288D1-normal">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1582-0288D1-highlight">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1582-0288D1">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1582-0288D1-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1582-0288D1-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1582-0288D1-nodesc-normal">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1582-0288D1-nodesc-highlight">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1582-0288D1-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1582-0288D1-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1582-0288D1-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1603-0288D1-normal">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1603-0288D1-highlight">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1603-0288D1">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1603-0288D1-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1603-0288D1-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1604-0288D1-normal">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1604-0288D1-highlight">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1604-0288D1">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1604-0288D1-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1604-0288D1-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1604-0288D1-nodesc-normal">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1604-0288D1-nodesc-highlight">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1604-0288D1-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1604-0288D1-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1604-0288D1-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1720-0288D1-normal">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1720-0288D1-highlight">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1720-0288D1">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1720-0288D1-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1720-0288D1-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1731-0288D1-normal">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1731-0288D1-highlight">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1731-0288D1">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1731-0288D1-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1731-0288D1-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1731-0288D1-nodesc-normal">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1731-0288D1-nodesc-highlight">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1731-0288D1-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1731-0288D1-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1731-0288D1-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Folder>
+      <name>Public Private Integrations</name>
+      <Placemark>
+        <name>Elevated Acre</name>
+        <description>Amazing space. Spiritual precursor to highline.</description>
+        <styleUrl>#icon-1552-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            -74.0086169,40.7033047,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Wallabout Hasidic Compound</name>
+        <description>Rabsky Group, and the Hasidic power they yield turned this lot (zoned for industrial previously) which at one point was a factor or warehouse for Pfizer into around 1,000 housing units, with a bunch of retain and even closed pedestrian plaza streets. Its amazing what highly organized political will can do!</description>
+        <styleUrl>#icon-1552-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            -73.9495343,40.7012609,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Mott Haven Water Front</name>
+        <description>From nothing to pretty nice pretty fast</description>
+        <styleUrl>#icon-1552-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            -73.9311497,40.8074399,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Brooklyn Navy Yard</name>
+        <styleUrl>#icon-1552-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -73.9728531,40.6991147,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Brooklyn Bridge Parks</name>
+        <description>The only park you can live in. More of this please.</description>
+        <styleUrl>#icon-1552-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            -73.9961015,40.7018997,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Crazy that its Real Places</name>
+      <Placemark>
+        <name>Govoners Island</name>
+        <description>An amazing place and depressing proof of the cities failure to make housing. there is literally an empty town filled with army barracks on this island. they are unoccupied :(</description>
+        <styleUrl>#icon-1502-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            -74.0185413,40.6892172,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Track on the roof</name>
+        <description>There is a  running track on the roof of this building. Crazy!</description>
+        <styleUrl>#icon-1502-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            -73.9814742,40.7748443,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>SkyTrack</name>
+        <description>SkyTrack! The revolution in NYC urbanism that never was. Imagine if the SkyTrack network (TM) extended across blocks and brought the 3rd dimension to NYC pedestrians, cyclists, and mine car enthusiasts alike. Hot tube no longer around :( https://www.nytimes.com/1983/07/03/realestate/postings-a-jogging-track-with-hot-tub.html?smid=url-share</description>
+        <styleUrl>#icon-1502-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            -73.9918461,40.6879331,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Sky Port</name>
+        <description><![CDATA[The only airport in manhattan.<br><br>There used to be many. now only one. <br><br>Laguardia made it a priority ot build these. At one point you could commute by plane from Westchester to Manhattan those days are over now its just traffic.]]></description>
+        <styleUrl>#icon-1502-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            -73.9744233,40.7355885,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Commandants Mansion</name>
+        <description>Just the coolest house in NYC by far.</description>
+        <styleUrl>#icon-1502-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            -73.9803764,40.7023811,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Cliff House (Pumpkin House)</name>
+        <description><![CDATA[A house suspended in the air litterally hanging off a cliff. Interestingly it looks like there is another slightly larger lot defined next to it zoned for residential! Someone's got to do it but it wont be me I dont have ten year to kill getting approved by the DOB for another cliff house.]]></description>
+        <styleUrl>#icon-1502-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            -73.9395154,40.8549866,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Private Shared Space</name>
+      <Placemark>
+        <name>Sullivan Street</name>
+        <description>In the middle of this block there is a beautiful shared communal garden!</description>
+        <styleUrl>#icon-1582-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            -74.0012998,40.7284723,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>210 W 90th (Astor Court)</name>
+        <description>This is what you are supposed to do. Make a park in the middle of the building. Amazing!</description>
+        <styleUrl>#icon-1582-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            -73.9742209,40.7903112,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Ansonia Clock Factory</name>
+        <description>They put a park in their building. Dope.</description>
+        <styleUrl>#icon-1582-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            -73.9829468,40.6646062,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Stuy Town</name>
+        <description><![CDATA["The best idea private equity has ever had"]]></description>
+        <styleUrl>#icon-1582-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            -73.9778906,40.7318054,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Sutton Square</name>
+        <styleUrl>#icon-1582-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -73.9598883,40.7574713,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Strivers Row</name>
+        <description>Dishonorable mention. Sad that the little roads running through the block are for cars instead of being gardens for people like down at sullivan st.</description>
+        <styleUrl>#icon-1582-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            -73.9439576,40.8175433,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Waterside</name>
+        <description><![CDATA[The thing your supposed to do when you run out of land! Really human centric once your there but its sad that its next to the FDR.<br><br>Waterside Plaza, a residential complex in NYC’s Kips Bay along the East River, was envisioned in 1961 by developer Richard Ravitch to address housing shortages for UN staff. Built on a platform over the river—supported by 2,000 steel piles sunk 80 feet into the riverbed—it opened in 1973, with completion in 1974. Designed by Davis, Brody & Associates, it features four brown-brick towers (31 to 37 stories) and duplex townhouses around a two-acre plaza, originally part of the Mitchell-Lama affordable housing program. The site, east of the FDR Drive, used landfill from England and was isolated, accessible only by a pedestrian overpass at 25th Street. It won a Construction Achievement Award in 1974 from the American Society of Civil Engineers. Plans for further waterfront expansion in the 1980s were scrapped, and Stuyvesant Cove Park took its place. Once home to a diverse mix of income groups, it’s now a luxury rental community managed by Brookfield Properties, known for its river views and self-contained feel.]]></description>
+        <styleUrl>#icon-1582-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            -73.9732056,40.7374817,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Knickerbocker Village</name>
+        <description>They have a communal garden space in there!</description>
+        <styleUrl>#icon-1582-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            -73.9960392,40.7108205,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>116 Pinehurst</name>
+        <description>Complex from a fairy tale with communal garden and playground and a fun secret passage</description>
+        <styleUrl>#icon-1582-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            -73.9389458,40.8539663,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>South Bridge Towers</name>
+        <description>Great elevated playground in this complex</description>
+        <styleUrl>#icon-1582-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            -74.0042551,40.7094761,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Kips Bay Towers</name>
+        <description>3 acres of green courtyard?!?</description>
+        <styleUrl>#icon-1582-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            -73.9758258,40.7426759,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Off the Grid Communities</name>
+      <Placemark>
+        <name>Grove Court</name>
+        <description><![CDATA[The story of Grove Court begins in the mid-19th century. In 1848, Samuel Cocks, a grocer with a store at the corner of Grove and Bedford Streets, acquired the rear yards of properties along Grove Street from Samuel Stryker, who had been leasing the land from Trinity Church. Cocks saw an opportunity to create housing for working-class families, likely with the practical aim of securing a steady customer base for his grocery business. Construction of the six three-story Federal-style houses began shortly after and was completed in 1854. Initially, these homes were considered a single tax lot, addressed as 10½ Grove Street, and were modest in size—about 990 square feet each—compared to the larger townhouses typical of the era.<br><br>In its early days, Grove Court was far from the picturesque retreat it is today. Built for laborers and tradesmen, the enclave was a working-class community, and its secluded location behind the main street contributed to its reputation as a less desirable area. Historical accounts suggest it was once a rough spot, even earning the nickname "Mixed Ale Alley" due to the drinking habits of its residents. Photographs from the early 20th century, such as those by Jessie Tarbox Beals and Arthur D. Chapman, show laundry hanging in the courtyard, a testament to its utilitarian roots.]]></description>
+        <styleUrl>#icon-1604-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            -74.0058125,40.7320619,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Patchin Place</name>
+        <description>Patchin Place, a tiny gated cul-de-sac off West 10th Street in Greenwich Village, New York City, was developed in 1848–1849 by Aaron Patchin, a surveyor who built ten three-story brick row houses on land he acquired from his father-in-law, Samuel Milligan. Originally designed as modest housing—possibly for workers at the nearby Brevoort House hotel—the homes featured small dormer windows and shared a courtyard with a gas lamp, still lit today. Early residents were largely working-class, including Basque immigrants who ran boarding houses there in the late 19th century. By the early 20th century, Patchin Place transformed into a bohemian enclave, attracting literary and artistic figures like E.E. Cummings, who lived at No. 4 from 1923 until his death in 1962, and Djuna Barnes, a resident of No. 5 for over 40 years. Theodore Dreiser and John Reed also spent time there, cementing its reputation as a creative haven. Rumors persist that the houses were built with salvaged bricks from the 1832 demolition of Newgate Prison, though this lacks firm evidence. Part of the Greenwich Village Historic District since 1969, Patchin Place remains a quiet, historic retreat, its charm preserved amid the bustling city.</description>
+        <styleUrl>#icon-1604-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            -73.9993554,40.7351334,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Milligan Place</name>
+        <description><![CDATA[Milligan Place, a secluded triangular courtyard in Greenwich Village, New York City, was constructed in 1852 by Aaron Patchin, who named it after his father-in-law, Daniel Milligan. Originally built as boarding houses for waiters from the nearby Brevoort House hotel, the four three-story brick homes were modest and housed working-class residents. Located off Sixth Avenue between West 10th and 11th Streets, it was once a gritty, overlooked spot, dubbed a "hole in the wall" by a 1915 New York Times article. In the early 20th century, it gained cultural significance as home to notable figures like playwright Eugene O’Neill and Provincetown Players founders George Cram Cook and Susan Glaspell. Over time, the courtyard transformed from a rough enclave to a charming, gated retreat, reflecting Greenwich Village’s shift from working-class roots to artistic haven. Designated part of the Greenwich Village Historic District in 1969, Milligan Place now commands high rents and epitomizes the area’s historic allure.]]></description>
+        <styleUrl>#icon-1604-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            -73.9988065,40.7351299,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pomander Walk</name>
+        <description><![CDATA[Inspired by a 1910 romantic comedy play by Louis N. Parker called Pomander Walk—set in a fictional London lane—Healy intended it as a temporary project to generate income while he raised funds for a grand hotel. Designed by the New York architecture firm King and Campbell, the two- and three-story homes feature stucco, brick, and half-timber facades, evoking an English village. Healy’s death in 1927 halted his hotel plans, leaving Pomander Walk as a permanent fixture.<br><br>Originally an all-rental complex with about 61 units (each building typically had one apartment per floor), it housed theatrical folks like Rosalind Russell and Humphrey Bogart, drawn to its whimsy. By the 1970s, it had deteriorated and faced demolition, but residents fought back, securing its designation as a New York City Landmark and a spot on the National Register of Historic Places in 1982. A 2009 renovation restored its pastel charm—think green, blue, and red facades with flower boxes—earning it a preservation award.]]></description>
+        <styleUrl>#icon-1604-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            -73.9733071,40.7939961,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Washington Mews</name>
+        <description>NYU Staff Housing</description>
+        <styleUrl>#icon-1604-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            -73.9959466,40.7315753,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Sylvan Court</name>
+        <styleUrl>#icon-1604-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -73.9384614,40.801804,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Warren Place Mews</name>
+        <description>Warren Place Mews, a charming block of Gothic-style cottages in Cobble Hill, Brooklyn, was built as working-class housing in the late 1870s by philanthropist Alfred Tredway White. </description>
+        <styleUrl>#icon-1604-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            -73.9984916,40.6879287,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Sylvan Terrace</name>
+        <description>Sylvan Terrace, a charming cobblestone street in Upper Manhattan’s Washington Heights, was developed in 1882 by William Paulding Jr. as part of the Morris-Jumel estate, originally the site of James Jumel’s 1765 mansion. Designed by architect Gilbert Rantus Bishop, this single-block enclave between West 160th and 161st Streets features 20 identical two-story wooden row houses with brick foundations, built in a simplified Queen Anne style. Intended as affordable housing for working-class tenants like maids and coachmen, the homes replaced earlier farm structures after Paulding subdivided the land following Jumel’s death. The name “Sylvan” nods to the wooded, rural feel of the area at the time, though it’s now a rare surviving frame-house street in Manhattan. By the early 20th century, the terrace fell into disrepair, but its proximity to the Morris-Jumel Mansion—George Washington’s 1776 headquarters—helped it gain recognition. Designated a New York City Landmark in 1975 and part of the Jumel Terrace Historic District, it was restored in the late 1970s by the Landmarks Preservation Commission and local owners. Today, these gaslit homes, painted in pastel shades, are prized residential properties, with sales—like No. 14 in 2023 for $1.1 million—reflecting their historic allure and scarcity.</description>
+        <styleUrl>#icon-1604-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            -73.9393878,40.8347234,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Riverview Terrace</name>
+        <styleUrl>#icon-1604-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -73.9593522,40.7579249,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Greenwich Mews</name>
+        <styleUrl>#icon-1604-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -74.0071101,40.7333401,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Sniffen Court</name>
+        <styleUrl>#icon-1604-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -73.9780114,40.7470204,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Chester Court</name>
+        <styleUrl>#icon-1604-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -73.9613947,40.6583386,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Clinton Court</name>
+        <styleUrl>#icon-1604-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -73.9921142,40.76128,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Henderson Place</name>
+        <styleUrl>#icon-1604-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -73.9449743,40.7755536,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Ablemarle Terrace</name>
+        <styleUrl>#icon-1604-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -73.9592343,40.6486124,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Barwell Terrace</name>
+        <styleUrl>#icon-1604-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -74.0334827,40.6150808,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Madeline Court</name>
+        <styleUrl>#icon-1604-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -74.0275419,40.6368416,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Hamilton Walk</name>
+        <styleUrl>#icon-1604-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -74.0321126,40.617658,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Lafayette Walk</name>
+        <styleUrl>#icon-1604-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -74.0316834,40.6174686,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Colonial Gardens</name>
+        <styleUrl>#icon-1604-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -74.0395689,40.6225689,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Kenmore Terrace</name>
+        <styleUrl>#icon-1604-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -73.9593604,40.6492046,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Temple Court</name>
+        <styleUrl>#icon-1604-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -73.9745873,40.6557988,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Dennett Place</name>
+        <description>Sad its next to the tracks</description>
+        <styleUrl>#icon-1604-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            -73.9975594,40.6765077,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Good Streets</name>
+      <Placemark>
+        <name>Grace Court</name>
+        <description>Another dead end. If all you knew was Brooklyn Heights you might think these are an NYC staple!</description>
+        <styleUrl>#icon-1731-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            -73.9976479,40.6943062,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Indian Road</name>
+        <description>Only road in Manhattan :)</description>
+        <styleUrl>#icon-1731-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            -73.9196605,40.8721217,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Little/Evans Street</name>
+        <description>Cute small narrow out of the way street on Vinegar Hill</description>
+        <styleUrl>#icon-1731-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            -73.9803093,40.7030725,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Grace Court Alley</name>
+        <description>Brooklyn Heights carriage house dead end street.</description>
+        <styleUrl>#icon-1731-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            -73.9957757,40.6938832,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Hunts Lane</name>
+        <description>Brooklyn Heights carriage house dead end street.</description>
+        <styleUrl>#icon-1731-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            -73.9941074,40.6934724,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>College Place</name>
+        <description>Dead end off a side street in what is already one of the quietest neighborhoods, a really unique street structure.</description>
+        <styleUrl>#icon-1731-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            -73.9943281,40.6965814,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Hamilton Terrace</name>
+        <description>Nice little non standard structure here</description>
+        <styleUrl>#icon-1731-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            -73.9464374,40.8228782,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Verandah Place</name>
+        <description>One of the narrowest streets I know of. And right next to a part too!</description>
+        <styleUrl>#icon-1731-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            -73.9964295,40.6881867,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Chittenden Road</name>
+        <description>A really amazing view of the Hudson here looking right out off the cliff.</description>
+        <styleUrl>#icon-1731-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            -73.9390084,40.8554451,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Marble Hill</name>
+        <description>Manhattan or the bronx? Some nice nonstandard street structure atop marble hill with nice houses.</description>
+        <styleUrl>#icon-1731-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            -73.9115166,40.8757049,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Freeman Alley</name>
+        <styleUrl>#icon-1731-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -73.9925468,40.7218056,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Broadway Between 40th and 17th</name>
+        <description><![CDATA[janette sadik-khan's opus]]></description>
+        <styleUrl>#icon-1731-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            -73.987471,40.7525651,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Doyer Street</name>
+        <description>Very nicely pedestrianized.</description>
+        <styleUrl>#icon-1731-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            -73.9981452,40.7145149,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Off the Grid Houses</name>
+      <Placemark>
+        <name>46A Prospect Park Southwest</name>
+        <description>Another hidden in the block living situation. Right off the park and super close to green wood, If you like walking in green space this is the coolest house in NYC. No running in the cemetery!</description>
+        <styleUrl>#icon-1603-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            -73.9771148,40.6593121,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>301 Greene Ave</name>
+        <description>Really nice brick two story house in the middle of the block here. It is attached to the 301 Greene Ave townhouse which has funky property lines. Its great they made use of them for this noble purpose.</description>
+        <styleUrl>#icon-1603-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            -73.9593718,40.6878609,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>129 Degraw ABCD</name>
+        <description>A cool group of houses with a shared walkway that away from the street.</description>
+        <styleUrl>#icon-1603-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            -74.0018464,40.685794,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>117 Underhill Avenue</name>
+        <description><![CDATA[Really deep in the block! And off one of Janette Sadik-Khan's best creations at that (underhill ave has next generation street design)]]></description>
+        <styleUrl>#icon-1603-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            -73.9653462,40.6772844,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>48 Tiffany Place</name>
+        <description>A good example of off street living.</description>
+        <styleUrl>#icon-1603-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            -74.0015567,40.6860808,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>158 Prospect Place</name>
+        <description>This is a really amazing home. So conviently located with the park and trains near by, but must feel like the country side in there so far off the street!</description>
+        <styleUrl>#icon-1603-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            -73.9716971,40.6778346,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>5 Carmine St ABC</name>
+        <description>3 amazing little houses hidden in the middle of the block!</description>
+        <styleUrl>#icon-1603-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            -74.0021932,40.7308213,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>34 Strong Place</name>
+        <description>A prime example of a home in the middle of the block. Away from cars, noise, and other sad things.</description>
+        <styleUrl>#icon-1603-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            -73.9981886,40.6855823,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>46 7th Ave</name>
+        <description>The most beautiful carriage house in Manhattan. It has a really nice garden and brick path around it.</description>
+        <styleUrl>#icon-1603-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            -74.0043972,40.7313394,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>10 Bedford St</name>
+        <description>Sweet carriage house in the back</description>
+        <styleUrl>#icon-1603-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            -74.0031112,40.7291162,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Roof Top Cape Cod</name>
+        <description>This house gives new meaning to being off the grid.</description>
+        <styleUrl>#icon-1603-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            -73.9886127,40.7234933,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>1288 Prospect Place</name>
+        <description><![CDATA[In the block. I've never seen this one but I found it through my lot shape data scrapping. ]]></description>
+        <styleUrl>#icon-1603-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            -73.9344064,40.6730685,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Not City Amidst the City</name>
+      <Placemark>
+        <name>Maple Street</name>
+        <description>beautiful brick mansions</description>
+        <styleUrl>#icon-1720-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            -73.9587125,40.660357,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Ditmas Park</name>
+        <description><![CDATA[This kind of applied to the whole area south of here! But its absolutely beautiful and this street in particular is amazing because in the summer people have picnics on the green median and children learn to ride bikes in the street. Crazy that you can walk to blocks and be back in "normal" NYC low density looking stuff.<br><br>Fun fact if you look at the satellite view of the city you can clearly see the three sections of ditmas park where all of these nice houses and streets are because they are so green in comparison to the rest of the city. This is also true of riverdale in the bronx and forest hills in queens.]]></description>
+        <styleUrl>#icon-1720-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            -73.9667459,40.6465746,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Forest Hills</name>
+        <description>This barely counts as urbanism because its so far away but its an amazing train station, and the greenery is beautiful in the area, would be great to have streets this green in denser areas!</description>
+        <styleUrl>#icon-1720-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            -73.8449253,40.7195745,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Riverdale</name>
+        <description>Riverdale is super fancy but its sad that the trains are far. at this point its just suburbia lowkey, but technically its in the city and like Ditmas park and forest hills the greenery is so nice!</description>
+        <styleUrl>#icon-1720-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            -73.9068976,40.8935758,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Charlotte Gardens</name>
+        <description>Zoned differently from the rest of the area for interesting historical reasons</description>
+        <styleUrl>#icon-1720-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            -73.892205,40.8342736,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name><![CDATA[Brownstones with Deep lots (>170ft)]]></name>
+      <Placemark>
+        <name>30-36 Remsen</name>
+        <description>Deep lots in Brooklyn Heights (these people really should get there stuff together to write up an easement and make a dope garden.</description>
+        <styleUrl>#icon-1603-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            -73.9974074,40.6944148,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>46-58 Remsen</name>
+        <description>Deep lots in Brooklyn Heights (these people really should get there stuff together to write up an easement and make a dope garden.</description>
+        <styleUrl>#icon-1603-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            -73.9967287,40.6942521,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>245 Washington Ave</name>
+        <description>One of only three straight through the block 200ft deep single family residential lots. They are all in this neighborhood at least as far as my research has lead me to know. If your townhouse was sufficiently short or has a 1 lane wide hole in its behind you could reasonably fit a Olympic length pool!</description>
+        <styleUrl>#icon-1603-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            -73.966115,40.6914085,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>246 Washington Ave</name>
+        <description>One of only three straight through the block 200ft deep single family residential lots. They are all in this neighborhood at least as far as my research has lead me to know. If your townhouse was sufficiently short or has a 1 lane wide hole in its behind you could reasonably fit a Olympic length pool!</description>
+        <styleUrl>#icon-1603-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            -73.9668614,40.6911636,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>280 Washington Ave
+</name>
+        <description>One of only three straight through the block 200ft deep single family residential lots. They are all in this neighborhood at least as far as my research has lead me to know. If your townhouse was sufficiently short or has a 1 lane wide hole in its behind you could reasonably fit a Olympic length pool!</description>
+        <styleUrl>#icon-1603-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            -73.9666332,40.6903082,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>193 Prospect Place</name>
+        <description>Really long lot in prospect heights</description>
+        <styleUrl>#icon-1603-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            -73.9700769,40.6781787,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>

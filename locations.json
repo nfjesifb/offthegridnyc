@@ -1,0 +1,407 @@
+[
+  {
+    "name": "Elevated Acre",
+    "description": "A one-acre elevated public park located in Manhattan's Financial District, offering green space, seating, and views of the East River.",
+    "history": "The Elevated Acre was created in the 1970s as part of the development of 55 Water Street. It was designed to provide public open space in a densely built urban area. The park underwent renovations in the early 2000s, enhancing its landscaping and accessibility. It remains a unique example of urban green space in Lower Manhattan."
+  },
+  {
+    "name": "Wallabout Hasidic Compound",
+    "description": "A large housing development in the Wallabout neighborhood of Brooklyn, primarily serving the Hasidic community.",
+    "history": "Developed by the Rabsky Group, this compound transformed a former industrial site, previously used by Pfizer, into a residential complex with approximately 1,000 housing units. The project faced zoning challenges but was eventually approved, showcasing the influence of organized community efforts in urban development."
+  },
+  {
+    "name": "Mott Haven Water Front",
+    "description": "A revitalized waterfront area in the Mott Haven neighborhood of the Bronx, featuring parks and recreational spaces.",
+    "history": "The Mott Haven waterfront underwent significant redevelopment in the early 21st century, transforming from an industrial zone into a public space with parks, walkways, and access to the Harlem River. This project is part of broader efforts to improve public access to waterfronts across New York City."
+  },
+  {
+    "name": "Brooklyn Navy Yard",
+    "description": "A historic shipyard and industrial complex located in Brooklyn, now repurposed as a hub for manufacturing, technology, and creative industries.",
+    "history": "Established in 1801, the Brooklyn Navy Yard was a key naval shipbuilding facility for the U.S. Navy until its closure in 1966. It was later redeveloped into an industrial park, preserving its historic structures while fostering modern industries. Today, it is a model for adaptive reuse and urban regeneration."
+  },
+  {
+    "name": "Brooklyn Bridge Parks",
+    "description": "A series of parks and recreational areas along the Brooklyn waterfront, connected by the iconic Brooklyn Bridge.",
+    "history": "The development of Brooklyn Bridge Park began in the early 2000s, transforming former industrial piers into a vibrant public space. The park officially opened in 2010 and has since become a popular destination for both locals and tourists, offering green spaces, sports facilities, and cultural events."
+  },
+  {
+    "name": "Govoners Island",
+    "description": "A 172-acre island in New York Harbor, formerly a military base and now a public park and cultural venue.",
+    "history": "Governors Island has a rich history dating back to the colonial era. It served as a military outpost for both the British and American forces. In 2003, the island was transferred to the public and has since been developed into a recreational and cultural destination, featuring historic buildings, art installations, and open spaces."
+  },
+  {
+    "name": "Track on the roof",
+    "description": "",
+    "history": ""
+  },
+  {
+    "name": "SkyTrack",
+    "description": "A rooftop jogging track located on a building in Manhattan, offering a unique urban fitness experience.",
+    "history": "The SkyTrack was part of an innovative urban design concept in the 1980s, aiming to integrate fitness and recreation into the city's vertical landscape. Although the original vision for a network of rooftop tracks did not fully materialize, the existing track remains a testament to creative urban planning."
+  },
+  {
+    "name": "Sky Port",
+    "description": "A heliport located on the East River in Manhattan, providing helicopter services and scenic tours.",
+    "history": "The Sky Port, officially known as the East 34th Street Heliport, was established in the 1970s to serve as a transportation hub for helicopter commuters and tourists. It has since become a key facility for aerial tours of New York City and emergency services."
+  },
+  {
+    "name": "Commandants Mansion",
+    "description": "A historic residence located on Governors Island, once home to military commanders.",
+    "history": "The Commandant's Mansion, also known as the Admiral's House, was built in the early 19th century. It served as the residence for the commanding officers of the military installations on Governors Island. The building is a notable example of Federal-style architecture and is part of the island's historic district."
+  },
+  {
+    "name": "Cliff House (Pumpkin House)",
+    "description": "A unique residential building in Manhattan, known for its distinctive appearance and location on a cliff.",
+    "history": "The Cliff House, often referred to as the Pumpkin House due to its orange color, was built in the early 20th century. Its design takes advantage of the steep terrain, offering residents stunning views of the Hudson River. The building is a notable example of adaptive architecture in urban settings."
+  },
+  {
+    "name": "Sullivan Street",
+    "description": "A street in Manhattan's Greenwich Village, known for its historic buildings and communal garden.",
+    "history": "Sullivan Street has been a part of Greenwich Village since the early 19th century. The communal garden in the middle of the block was established in the 20th century, providing a shared green space for residents. The street is lined with well-preserved townhouses and is a testament to the neighborhood's historic charm."
+  },
+  {
+    "name": "210 W 90th (Astor Court)",
+    "description": "A residential building on the Upper West Side of Manhattan, featuring a central courtyard.",
+    "history": "Astor Court was built in the early 20th century as part of the Astor family's real estate developments. The building's design includes a large central courtyard, providing residents with a private outdoor space. It is a notable example of early 20th-century apartment architecture in New York City."
+  },
+  {
+    "name": "Ansonia Clock Factory",
+    "description": "A historic building in Brooklyn, originally a factory for the Ansonia Clock Company.",
+    "history": "The Ansonia Clock Factory was established in the late 19th century and became known for producing high-quality clocks. The factory building, with its distinctive architecture, has since been repurposed for residential and commercial use, preserving its industrial heritage."
+  },
+  {
+    "name": "Stuy Town",
+    "description": "A large residential complex in Manhattan, known for its extensive green spaces and community amenities.",
+    "history": "Stuyvesant Town, commonly known as Stuy Town, was developed in the 1940s as a post-war housing project. It was designed to provide affordable housing for veterans and their families. Over the years, it has evolved into a diverse community with a mix of rent-stabilized and market-rate apartments."
+  },
+  {
+    "name": "Sutton Square",
+    "description": "A private enclave of townhouses located in the Sutton Place neighborhood of Manhattan.",
+    "history": "Sutton Square was developed in the early 20th century as an exclusive residential area. The townhouses, with their elegant facades and private gardens, reflect the architectural style of the period. The square remains one of the most prestigious addresses in New York City."
+  },
+  {
+    "name": "Strivers Row",
+    "description": "A historic district in Harlem, known for its well-preserved row houses and cultural significance.",
+    "history": "Strivers Row, officially known as the St. Nicholas Historic District, was developed in the late 19th century. The row houses were originally built for affluent white residents but later became home to prominent African American professionals, earning the nickname 'Strivers Row.' The district is a symbol of Harlem's rich cultural heritage."
+  },
+  {
+    "name": "Waterside",
+    "description": "A residential complex located along the East River in Manhattan, offering waterfront living.",
+    "history": "Waterside Plaza was constructed in the 1970s on a platform over the East River. It was designed to address housing shortages and provide modern amenities. The complex includes residential towers, townhouses, and a plaza, making it a self-contained community."
+  },
+  {
+    "name": "Knickerbocker Village",
+    "description": "A historic housing complex in Manhattan's Lower East Side, known for its early adoption of modern housing concepts.",
+    "history": "Knickerbocker Village was built in the 1930s as one of the first federally funded housing projects in the United States. It was designed to provide affordable housing for middle-income families and features a distinctive architectural style with interior courtyards."
+  },
+  {
+    "name": "116 Pinehurst",
+    "description": "A residential building located in the Washington Heights neighborhood of Manhattan.",
+    "history": "116 Pinehurst Avenue is part of the Hudson View Gardens complex, developed in the 1920s. The building is known for its Tudor-style architecture and communal amenities, including gardens and playgrounds. It remains a desirable residence in Upper Manhattan."
+  },
+  {
+    "name": "South Bridge Towers",
+    "description": "A cooperative housing complex located near the South Street Seaport in Manhattan.",
+    "history": "South Bridge Towers was developed in the 1960s as part of urban renewal efforts in Lower Manhattan. The complex includes multiple high-rise buildings and offers residents access to communal facilities and proximity to the waterfront."
+  },
+  {
+    "name": "Kips Bay Towers",
+    "description": "A pair of residential towers located in the Kips Bay neighborhood of Manhattan, known for their modernist architecture.",
+    "history": "Designed by architect I.M. Pei, Kips Bay Towers were completed in the 1960s. The buildings are notable for their Brutalist design and the large private courtyard that provides green space for residents. They are a significant example of mid-20th-century urban housing."
+  },
+  {
+    "name": "Grove Court",
+    "description": "A hidden courtyard of six townhouses located in Greenwich Village, Manhattan.",
+    "history": "Grove Court was developed in the 1850s by Samuel Cocks, a local grocer, to provide housing for working-class families. The courtyard's secluded nature made it a quiet retreat within the bustling city. Over time, it has become a charming and sought-after residential enclave."
+  },
+  {
+    "name": "Patchin Place",
+    "description": "A small, gated alley in Greenwich Village, lined with historic townhouses.",
+    "history": "Patchin Place was developed in the 1840s and has been home to various artists and writers, including E.E. Cummings and Djuna Barnes. The alley's quaint atmosphere and historic architecture make it a unique part of the Village's cultural landscape."
+  },
+  {
+    "name": "Milligan Place",
+    "description": "A tiny, triangular courtyard in Greenwich Village, featuring four townhouses.",
+    "history": "Milligan Place was created in the 1850s and named after its developer, Samuel Milligan. Like Patchin Place, it has a rich history of housing artists and writers, contributing to the Village's reputation as a bohemian enclave."
+  },
+  {
+    "name": "Pomander Walk",
+    "description": "A Tudor-style residential complex located on the Upper West Side of Manhattan.",
+    "history": "Pomander Walk was built in the 1920s and designed to resemble a quaint English village. The complex includes 27 buildings with half-timbered facades and is a designated New York City landmark, celebrated for its distinctive architecture."
+  },
+  {
+    "name": "Washington Mews",
+    "description": "A private street in Greenwich Village, originally built as stables for nearby townhouses.",
+    "history": "Washington Mews was constructed in the 19th century and later converted into residences and artists' studios. It is now owned by New York University and serves as faculty housing and academic offices, preserving its historic character."
+  },
+  {
+    "name": "Sylvan Court",
+    "description": "",
+    "history": ""
+  },
+  {
+    "name": "Warren Place Mews",
+    "description": "A historic row of cottages in Cobble Hill, Brooklyn, designed for working-class families.",
+    "history": "Warren Place Mews was developed in the 1870s by Alfred Tredway White, a philanthropist who aimed to provide affordable, quality housing. The cottages are a rare example of 19th-century workers' housing and are now highly valued residences."
+  },
+  {
+    "name": "Sylvan Terrace",
+    "description": "A cobblestone street in Washington Heights, lined with wooden row houses.",
+    "history": "Sylvan Terrace was built in the 1880s as part of the Morris-Jumel Mansion estate. The houses were originally intended for working-class families but have since been restored and are now part of a historic district, reflecting the area's 19th-century charm."
+  },
+  {
+    "name": "Riverview Terrace",
+    "description": "",
+    "history": ""
+  },
+  {
+    "name": "Greenwich Mews",
+    "description": "",
+    "history": ""
+  },
+  {
+    "name": "Sniffen Court",
+    "description": "A small, private alley in Murray Hill, Manhattan, featuring Romanesque Revival-style carriage houses.",
+    "history": "Sniffen Court was built in the 1860s as stables for nearby residences. The carriage houses were later converted into homes and studios, and the court is now a designated historic district, known for its architectural significance."
+  },
+  {
+    "name": "Chester Court",
+    "description": "",
+    "history": ""
+  },
+  {
+    "name": "Clinton Court",
+    "description": "",
+    "history": ""
+  },
+  {
+    "name": "Henderson Place",
+    "description": "A historic district in the Upper East Side of Manhattan, featuring Queen Anne-style row houses.",
+    "history": "Henderson Place was developed in the 1880s by John C. Henderson, a fur importer, as housing for middle-class families. The row houses are known for their distinctive turrets and gables, and the area is a designated historic district."
+  },
+  {
+    "name": "Ablemarle Terrace",
+    "description": "",
+    "history": ""
+  },
+  {
+    "name": "Barwell Terrace",
+    "description": "",
+    "history": ""
+  },
+  {
+    "name": "Madeline Court",
+    "description": "",
+    "history": ""
+  },
+  {
+    "name": "Hamilton Walk",
+    "description": "",
+    "history": ""
+  },
+  {
+    "name": "Lafayette Walk",
+    "description": "",
+    "history": ""
+  },
+  {
+    "name": "Colonial Gardens",
+    "description": "",
+    "history": ""
+  },
+  {
+    "name": "Kenmore Terrace",
+    "description": "",
+    "history": ""
+  },
+  {
+    "name": "Temple Court",
+    "description": "",
+    "history": ""
+  },
+  {
+    "name": "Dennett Place",
+    "description": "A small, historic street in Carroll Gardens, Brooklyn, known for its charming row houses.",
+    "history": "Dennett Place was developed in the mid-19th century as part of the expansion of Carroll Gardens. The street is notable for its well-preserved Italianate and Greek Revival-style homes, reflecting the neighborhood's architectural heritage."
+  },
+  {
+    "name": "Grace Court",
+    "description": "A quiet, dead-end street in Brooklyn Heights, lined with historic townhouses.",
+    "history": "Grace Court is part of the Brooklyn Heights Historic District, developed in the 19th century. The street is named after Grace Church, a nearby landmark, and its homes are prized for their architectural detail and serene setting."
+  },
+  {
+    "name": "Indian Road",
+    "description": "A scenic road located in Inwood, Manhattan, offering views of the Hudson River.",
+    "history": "Indian Road runs along the edge of Inwood Hill Park, an area with a rich history dating back to Native American settlements. The road itself was developed in the early 20th century as part of the park's infrastructure."
+  },
+  {
+    "name": "Little/Evans Street",
+    "description": "A pair of narrow, historic streets in the Vinegar Hill neighborhood of Brooklyn.",
+    "history": "Little Street and Evans Street are remnants of the 19th-century development of Vinegar Hill, originally an industrial area. The streets are known for their cobblestone surfaces and preserved row houses, offering a glimpse into Brooklyn's past."
+  },
+  {
+    "name": "Grace Court Alley",
+    "description": "A hidden alley in Brooklyn Heights, featuring converted carriage houses.",
+    "history": "Grace Court Alley was originally used for stables and carriage houses serving the grand homes of Brooklyn Heights. In the 20th century, these structures were converted into residences, creating a unique and secluded living environment."
+  },
+  {
+    "name": "Hunts Lane",
+    "description": "A small, historic lane in Brooklyn Heights, known for its charming residences.",
+    "history": "Hunts Lane dates back to the 19th century and was originally a service alley for nearby townhouses. It has since been transformed into a residential street, with homes that reflect the neighborhood's historic character."
+  },
+  {
+    "name": "College Place",
+    "description": "A short, dead-end street in Brooklyn Heights, offering a peaceful retreat.",
+    "history": "College Place is part of the Brooklyn Heights Historic District and features homes from the 19th century. Its secluded nature and historic architecture make it a desirable location within the neighborhood."
+  },
+  {
+    "name": "Hamilton Terrace",
+    "description": "A residential street in Hamilton Heights, Manhattan, known for its elegant townhouses.",
+    "history": "Hamilton Terrace was developed in the late 19th century as part of the expansion of Hamilton Heights. The street is lined with well-preserved row houses, reflecting the architectural styles of the period."
+  },
+  {
+    "name": "Verandah Place",
+    "description": "A narrow, historic street in Cobble Hill, Brooklyn, featuring small row houses.",
+    "history": "Verandah Place was developed in the mid-19th century and is known for its quaint, cottage-like homes. The street's name likely refers to the verandas or porches that were once common on its houses."
+  },
+  {
+    "name": "Chittenden Road",
+    "description": "A street in Washington Heights, offering views of the Hudson River.",
+    "history": "Chittenden Road is part of the Fort Washington area, developed in the early 20th century. Its elevated position provides residents with scenic views, making it a unique location in Upper Manhattan."
+  },
+  {
+    "name": "Marble Hill",
+    "description": "A neighborhood in the northern part of Manhattan, known for its suburban feel.",
+    "history": "Marble Hill was originally part of Manhattan Island but was separated by the Harlem River Ship Canal in the 19th century. Despite being physically connected to the Bronx, it remains administratively part of Manhattan."
+  },
+  {
+    "name": "Freeman Alley",
+    "description": "A small, graffiti-covered alley in the Lower East Side of Manhattan.",
+    "history": "Freeman Alley has become a canvas for street artists and is home to a popular restaurant. Its history is tied to the artistic and cultural evolution of the Lower East Side, reflecting the neighborhood's vibrant street art scene."
+  },
+  {
+    "name": "Broadway Between 40th and 17th",
+    "description": "A section of Broadway in Manhattan, known for its pedestrian-friendly design and public spaces.",
+    "history": "This stretch of Broadway was reimagined in the early 21st century as part of New York City's efforts to create more pedestrian-friendly urban environments. The project, led by Janette Sadik-Khan, transformed parts of Broadway into public plazas, enhancing the street's role as a cultural and commercial hub."
+  },
+  {
+    "name": "Doyer Street",
+    "description": "A historic street in Chinatown, Manhattan, known for its sharp bend and cultural significance.",
+    "history": "Doyer Street, also known as the 'Bloody Angle,' has a storied past tied to the early Chinese immigrant community and gang activity in the late 19th and early 20th centuries. Today, it is a vibrant part of Chinatown, with restaurants and shops that reflect its cultural heritage."
+  },
+  {
+    "name": "46A Prospect Park Southwest",
+    "description": "",
+    "history": ""
+  },
+  {
+    "name": "301 Greene Ave",
+    "description": "",
+    "history": ""
+  },
+  {
+    "name": "129 Degraw ABCD",
+    "description": "",
+    "history": ""
+  },
+  {
+    "name": "117 Underhill Avenue",
+    "description": "",
+    "history": ""
+  },
+  {
+    "name": "48 Tiffany Place",
+    "description": "",
+    "history": ""
+  },
+  {
+    "name": "158 Prospect Place",
+    "description": "",
+    "history": ""
+  },
+  {
+    "name": "5 Carmine St ABC",
+    "description": "",
+    "history": ""
+  },
+  {
+    "name": "34 Strong Place",
+    "description": "",
+    "history": ""
+  },
+  {
+    "name": "46 7th Ave",
+    "description": "",
+    "history": ""
+  },
+  {
+    "name": "10 Bedford St",
+    "description": "",
+    "history": ""
+  },
+  {
+    "name": "Roof Top Cape Cod",
+    "description": "",
+    "history": ""
+  },
+  {
+    "name": "1288 Prospect Place",
+    "description": "",
+    "history": ""
+  },
+  {
+    "name": "Maple Street",
+    "description": "A street in the Prospect Lefferts Gardens neighborhood of Brooklyn, known for its historic homes.",
+    "history": "Maple Street is part of the Prospect Lefferts Gardens Historic District, developed in the early 20th century. The street features a variety of architectural styles, including Colonial Revival and Tudor Revival, reflecting the neighborhood's suburban character within the city."
+  },
+  {
+    "name": "Ditmas Park",
+    "description": "A neighborhood in Brooklyn known for its large, Victorian-style homes and tree-lined streets.",
+    "history": "Ditmas Park was developed in the early 20th century as a suburban enclave within Brooklyn. The neighborhood's homes, many of which are freestanding with front porches and gardens, were designed to attract middle-class families seeking a respite from urban density."
+  },
+  {
+    "name": "Forest Hills",
+    "description": "A neighborhood in Queens, known for its Tudor-style homes and the historic Forest Hills Gardens.",
+    "history": "Forest Hills was developed in the early 20th century by the Russell Sage Foundation as a model community. The neighborhood's design, inspired by the English Garden City movement, features winding streets, parks, and a mix of housing types, making it a unique example of planned suburban development."
+  },
+  {
+    "name": "Riverdale",
+    "description": "A residential neighborhood in the Bronx, known for its hilly terrain and upscale homes.",
+    "history": "Riverdale was originally a rural area with large estates and farms. In the late 19th and early 20th centuries, it was developed into a suburban community, attracting wealthy New Yorkers. Today, it is one of the most affluent neighborhoods in the Bronx, with a mix of historic mansions and modern residences."
+  },
+  {
+    "name": "Charlotte Gardens",
+    "description": "A housing development in the South Bronx, known for its suburban-style homes.",
+    "history": "Charlotte Gardens was developed in the 1980s as part of efforts to revitalize the South Bronx. The project involved building single-family homes on vacant lots, offering an alternative to the high-rise public housing typical of the area. It is a notable example of urban renewal through suburban-style development."
+  },
+  {
+    "name": "30-36 Remsen",
+    "description": "",
+    "history": ""
+  },
+  {
+    "name": "46-58 Remsen",
+    "description": "",
+    "history": ""
+  },
+  {
+    "name": "245 Washington Ave",
+    "description": "",
+    "history": ""
+  },
+  {
+    "name": "246 Washington Ave",
+    "description": "",
+    "history": ""
+  },
+  {
+    "name": "280 Washington Ave",
+    "description": "",
+    "history": ""
+  },
+  {
+    "name": "193 Prospect Place",
+    "description": "",
+    "history": ""
+  }
+]
