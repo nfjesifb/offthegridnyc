@@ -45,6 +45,19 @@
         margin-left: auto;
         margin-right: auto;
     }
+    header .google-map-link {
+        display: block; /* Ensures it's on its own line */
+        margin-top: 0.75rem;
+        font-size: 0.9rem;
+        color: rgba(255, 255, 255, 0.85);
+    }
+    header .google-map-link a {
+        color: inherit; /* Use the parent's color */
+        text-decoration: underline;
+    }
+    header .google-map-link a:hover {
+        color: rgba(255, 255, 255, 1);
+    }
     main {
       display: flex;
       flex-direction: column;
@@ -167,6 +180,7 @@
     <h1>Off The Grid NYC</h1>
     <p class="subtitle">proof nyc has depth of character</p>
     <p class="disclaimer">this entire site was vibe coded so double check the facts in the descriptions but the locations are real and curated by a human</p>
+    <p class="google-map-link">If you want to play around with this on google maps yourself do so <a href="https://www.google.com/maps/d/edit?mid=1gl24kbeTNZ13SmaCbMsam2CYe8Ury7M&usp=sharing" target="_blank" rel="noopener noreferrer">here</a>.</p>
   </header>
   <main>
     <section class="map-container">
@@ -181,8 +195,6 @@
   </main>
   <footer>
     &copy; 2025 Off The Grid NYC
-    <br>
-    Explore all locations visually on the <a href="https://www.google.com/maps/d/edit?mid=1gl24kbeTNZ13SmaCbMsam2CYe8Ury7M&usp=sharing" target="_blank" rel="noopener noreferrer">Off The Grid NYC Google My Map</a>.
   </footer>
 
   <script>
