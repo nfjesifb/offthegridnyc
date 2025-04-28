@@ -59,9 +59,17 @@
       width: 100%;
       height: 1200px; /* Adjust height based on your form length */
     }
+    #submit-section iframe {
+      width: 100%;
+      max-width: 800px; /* Optional: Limit width on large screens */
+      height: 750px; /* Adjust based on typical form length */
+      border: none;
+      display: block;
+      margin: 1rem auto 0 auto; /* Center the iframe */
+    }
     footer {
       background: var(--primary);
-      color: #fff;
+      color: rgba(255, 255, 255, 0.8);
       text-align: center;
       padding: 1rem;
       font-size: 0.85rem;
@@ -95,6 +103,49 @@
       text-decoration: underline;
       color: #16a085; /* Darker teal on hover */
     }
+    /* Info Window Customization */
+    .gm-style .gm-style-iw-c { /* Target the default white box */
+      padding: 0 !important; /* Remove default padding */
+      max-height: none !important; /* Allow our content div to control height */
+    }
+    .gm-style .gm-style-iw-d { /* Target the default content container */
+      overflow: hidden !important; /* Prevent double scrollbars */
+    }
+    .info-window-content {
+      padding: 12px 15px; /* Add our own padding */
+      max-height: 300px; /* Set max height for the content area */
+      overflow-y: auto; /* Enable vertical scroll IF content exceeds max-height */
+      font-size: 0.9rem;
+    }
+    .info-window-content h3 {
+      margin-top: 0;
+      margin-bottom: 0.5rem;
+      font-size: 1.1rem;
+      color: var(--accent);
+    }
+    .info-window-content img {
+      max-width: 100%;
+      height: auto;
+      max-height: 120px; /* Limit image height */
+      display: block;
+      margin: 0.5rem 0;
+      border-radius: 4px;
+    }
+    .info-window-content p {
+      margin-bottom: 0.5rem;
+      line-height: 1.4;
+    }
+    .info-window-content p:last-child {
+      margin-bottom: 0;
+    }
+    .info-window-content a {
+      color: var(--accent-dark);
+      text-decoration: none;
+      margin-right: 5px;
+    }
+    .info-window-content a:hover {
+      text-decoration: underline;
+    }
   </style>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBBksh0YwSl7gekcaTX-_xRcBE-Me125rc&callback=initMap" async defer></script>
 </head>
@@ -106,6 +157,7 @@
     <section class="map-container">
       <h2>Explore Verified Places</h2>
       <div id="map"></div>
+      <!-- Info window content is generated dynamically in JS -->
     </section>
     <section class="form-container">
       <h2>Know a place that belongs here? Share!</h2>
@@ -115,7 +167,7 @@
   <footer>
     &copy; 2025 Off The Grid NYC
     <br>
-    <a href="https://www.google.com/maps/d/edit?mid=1gl24kbeTNZ13SmaCbMsam2CYe8Ury7M&usp=sharing" target="_blank" rel="noopener noreferrer">View Full Map on Google My Maps</a>
+    Explore all locations visually on the <a href="https://www.google.com/maps/d/edit?mid=1gl24kbeTNZ13SmaCbMsam2CYe8Ury7M&usp=sharing" target="_blank" rel="noopener noreferrer">Off The Grid NYC Google My Map</a>.
   </footer>
 
   <script>
@@ -220,8 +272,8 @@
         const apiKey = 'AIzaSyBBksh0YwSl7gekcaTX-_xRcBE-Me125rc'; // Use your API key here
         const satelliteViewUrl = `https://maps.googleapis.com/maps/api/staticmap?center=${lat},${lng}&zoom=18&size=400x200&maptype=satellite&key=${apiKey}`;
         const directionsUrl = `https://www.google.com/maps/dir/?api=1&destination=${lat},${lng}`;
-        const content = `
-          <div class="popup-content">
+        const infoWindowContent = `
+          <div class="info-window-content">
             <h3>${name}</h3>
             <img src="${satelliteViewUrl}" alt="Satellite view of ${name}">
             ${loc.description ? `<p>${loc.description}</p>` : ''}
@@ -230,7 +282,7 @@
               <a href="${directionsUrl}" target="_blank">Get Directions →</a>
             </p>
           </div>`;
-        const infowindow = new google.maps.InfoWindow({ content });
+        const infowindow = new google.maps.InfoWindow({ content: infoWindowContent });
         marker.addListener('click', () => infowindow.open(map, marker));
       });
     }

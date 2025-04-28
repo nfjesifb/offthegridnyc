@@ -31,6 +31,17 @@
       padding-bottom: 0.5rem;
       text-align: center;
     }
+    header .back-link {
+      display: block;
+      font-size: 0.9rem;
+      margin-top: 0.3rem;
+      color: rgba(255, 255, 255, 0.8);
+      text-decoration: none;
+    }
+    header .back-link:hover {
+        color: rgba(255, 255, 255, 1);
+        text-decoration: underline;
+    }
     header h1 {
       font-size: 2.2rem; font-weight: 600;
       margin-bottom: 0.25rem;
@@ -167,6 +178,7 @@
 <body>
   <header>
     <h1>Ditmas Park</h1>
+    <a href="/index.html" class="back-link">&larr; Back to Main Map</a>
   </header>
   <!-- Subtitle Area -->
   <div class="subtitle-section">
@@ -196,7 +208,6 @@
       </iframe>
       <div class="action-links">
         <a href="https://www.google.com/maps/dir/?api=1&destination=40.6465746,-73.9667459" target="_blank">Get Directions &rarr;</a>
-        <a href="/index.html">Back to Main Map &larr;</a>
       </div>
     </div>
   </div>
