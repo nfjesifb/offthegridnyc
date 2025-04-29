@@ -334,13 +334,29 @@
             ? `<img src="${satelliteImagePath}" alt="Satellite view of ${name}" style="width:100%; max-width: 200px; height: auto; margin-top: 10px; border-radius: 4px;">`
             : ''; // Empty string if no path
 
+        let photoThumbnailHtml = '';
+        if (loc.hasPhotos && loc.slug) {
+            const thumbnailUrl = `/locations/${loc.slug}/images/photo_1.jpg`;
+            photoThumbnailHtml = `
+              <img src="${thumbnailUrl}" alt="Thumbnail for ${name}" style="width:100%; max-width: 200px; height: auto; margin-top: 10px; margin-bottom: 10px; border-radius: 4px;">
+            `;
+        }
+
+        const closeButtonHtml = `
+            <span onclick="infoWindow.close()" style="position: absolute; top: 5px; right: 10px; cursor: pointer; font-size: 1.2em; color: #666;" title="Close">
+                &times;
+            </span>
+        `;
+
         const infoWindowContent = `
-          <div class="info-window-content" style="max-width: 250px; font-family: sans-serif;">
+          <div class="info-window-content" style="max-width: 250px; font-family: sans-serif; position: relative;">
+            ${closeButtonHtml} 
             <h3>${name}</h3>
+            ${photoThumbnailHtml} 
             <p style="margin: 5px 0; font-size: 0.9em;">
               ${popupDescription}
             </p>
-            ${satelliteImageHtml} 
+            ${satelliteImageHtml}
             <div style="margin-top: 10px; font-size: 0.9em;">
               <a href="${locationUrl}" target="_blank" style="color: #4285F4; text-decoration: none; margin-right: 10px;">More Details →</a>
               <a href="https://www.google.com/maps/dir/?api=1&destination=${lat},${lng}" target="_blank" style="color: #4285F4; text-decoration: none;">Get Directions on Google Maps</a>

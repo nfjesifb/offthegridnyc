@@ -87,42 +87,118 @@ def parse_kml(kml_file):
         print(f"Error: KML file not found at {kml_file}")
     return data_map
 
-def get_place_photos(place_name, api_key):
-    """Uses Text Search (New) to find a place and returns photo resource names."""
+def get_place_photos(place_name, api_key, lat=None, lng=None):
+    """Uses Text Search (New) to find a place and returns its ID and photo resource names.
+    Includes optional location bias for better accuracy.
+    """ # Docstring updated
     search_query = f"{place_name} NYC"
     search_url = "https://places.googleapis.com/v1/places:searchText"
     headers = {
         'Content-Type': 'application/json',
         'X-Goog-Api-Key': api_key,
-        'X-Goog-FieldMask': 'places.id,places.photos' # Request only needed fields
+        'X-Goog-FieldMask': 'places.id,places.photos' # Ensure ID and photos are requested
     }
     data = {
         'textQuery': search_query
     }
 
-    photo_names = []
+    # Add location bias if coordinates are provided
+    if lat is not None and lng is not None:
+        data['locationBias'] = {
+            "circle": {
+                "center": {
+                    "latitude": lat,
+                    "longitude": lng
+                },
+                "radius": 1000.0 # Bias results within a 1km radius
+            }
+        }
+        print(f"  Using location bias: lat={lat}, lng={lng}")
+
     try:
-        response = requests.post(search_url, headers=headers, json=data, timeout=10)
+        response = requests.post(search_url, headers=headers, json=data, timeout=15) # Increased timeout slightly
         response.raise_for_status() # Raise an exception for bad status codes (4xx or 5xx)
         result = response.json()
 
         if 'places' in result and result['places']:
             place = result['places'][0] # Assume the first result is the most relevant
-            if 'photos' in place and place['photos']:
+            place_id = place.get('id')
+            photo_names = []
+            if place_id and 'photos' in place and place['photos']:
                 # Get up to 5 photo resource names
                 photo_names = [photo['name'] for photo in place['photos'][:5]]
-                print(f"  Found {len(photo_names)} photo(s) for '{place_name}' via Places API.")
+                print(f"  Found place ID '{place_id}' and {len(photo_names)} photo(s) for '{place_name}' via Places API.")
+                return {'place_id': place_id, 'photo_names': photo_names}
+            elif place_id:
+                 print(f"  Found place ID '{place_id}' but no photos for '{place_name}' via Places API.")
+                 return {'place_id': place_id, 'photo_names': []} # Return ID even if no photos
             else:
-                print(f"  No photos found for '{place_name}' via Places API.")
+                print(f"  Place found for '{place_name}' but missing ID.")
         else:
             print(f"  Place not found for '{place_name} NYC' via Places API.")
 
     except requests.exceptions.RequestException as e:
-        print(f"Error calling Places API for '{place_name}': {e}")
+        print(f"Error calling Places API search for '{place_name}': {e}")
     except Exception as e:
-        print(f"An unexpected error occurred processing Places API response for '{place_name}': {e}")
+        print(f"An unexpected error occurred processing Places API search response for '{place_name}': {e}")
 
-    return photo_names
+    return None # Return None if place/ID not found or error occurred
+
+def get_place_attributions(place_id, api_key):
+    """Fetches HTML attributions for a given place ID using the Places API (v1)."""
+    if not place_id:
+        return None
+
+    details_url = f"https://places.googleapis.com/v1/places/{place_id}"
+    headers = {
+        'Content-Type': 'application/json',
+        'X-Goog-Api-Key': api_key,
+        # Request photo author attributions specifically
+        'X-Goog-FieldMask': 'photos.authorAttributions'
+    }
+
+    try:
+        response = requests.get(details_url, headers=headers, timeout=10)
+        response.raise_for_status()
+        result = response.json()
+
+        html_attributions = []
+        # Check if 'photos' key exists and is a list
+        photos_data = result.get('photos', [])
+        if isinstance(photos_data, list):
+            for photo in photos_data:
+                # Check if 'authorAttributions' key exists and is a list
+                attributions = photo.get('authorAttributions', [])
+                if isinstance(attributions, list):
+                    for attr in attributions:
+                        display_name = attr.get('displayName', 'Unknown Contributor')
+                        uri = attr.get('uri')
+                        # Create an HTML link if URI is available
+                        if uri:
+                            # Ensure URI starts with https: (Google URIs often start with //)
+                            if uri.startswith('//'):
+                                uri = 'https:' + uri
+                            html_attributions.append(f'<a href="{uri}" target="_blank" rel="noopener noreferrer">{display_name}</a>')
+                        else:
+                            html_attributions.append(display_name)
+
+        if html_attributions:
+            # Join unique attributions with a separator (e.g., comma or period)
+            # Using set to remove duplicates, then join
+            unique_attributions = list(set(html_attributions))
+            combined_attributions = ", ".join(unique_attributions)
+            print(f"  Found attributions for place ID '{place_id}'.")
+            return combined_attributions
+        else:
+            print(f"  No attributions found for place ID '{place_id}'.")
+            return None
+
+    except requests.exceptions.RequestException as e:
+        print(f"Error calling Places API details for place ID '{place_id}': {e}")
+        return None
+    except Exception as e: # Catch unexpected errors
+        print(f"An unexpected error occurred processing Places API details response for '{place_id}': {e}")
+        return None
 
 def construct_photo_url(photo_name, api_key, max_width=1200):
     """Constructs the URL for the Place Photo (New) API media endpoint."""
@@ -199,13 +275,13 @@ if __name__ == "__main__":
 
     # --- Load Cache ---
     photo_cache = {}
-    if not args.force_refresh and os.path.exists(CACHE_FILE):
+    if os.path.exists(CACHE_FILE) and not args.force_refresh:
         try:
             with open(CACHE_FILE, 'r', encoding='utf-8') as f:
                 photo_cache = json.load(f)
             print(f"Loaded photo cache from {CACHE_FILE}")
-        except (json.JSONDecodeError, IOError) as e:
-            print(f"Warning: Could not load or parse cache file {CACHE_FILE}. Starting with empty cache. Error: {e}")
+        except (IOError, json.JSONDecodeError) as e:
+            print(f"Warning: Could not load or parse cache file {CACHE_FILE}: {e}. Proceeding without cache.")
             photo_cache = {}
     elif args.force_refresh:
         print("Cache refresh forced. API calls will be made.")
@@ -256,6 +332,8 @@ if __name__ == "__main__":
         print(f"Error loading template 'location-template.html': {e}")
         exit(1)
 
+    photo_status_map = {} # Dictionary to store photo download status and slug for each location
+
     for location in locations_data:
         name = location.get('name', 'Unknown Location')
         description = location.get('description', 'No description available.')
@@ -300,27 +378,63 @@ if __name__ == "__main__":
         images_dir = os.path.join(location_output_dir, 'images')
         os.makedirs(images_dir, exist_ok=True) # Create images subdir
 
-        # --- Fetch Google Places Photos (with Caching) ---
+        # --- Fetch Google Places Info (with Caching) ---
         print(f"Processing: {name}")
         google_photo_urls = []
         photo_resource_names = [] # Initialize
+        attributions = None # Initialize attributions
+        place_id = None # Initialize place_id
 
         # Check cache first unless force_refresh is set
-        if not args.force_refresh and name in photo_cache:
-            photo_resource_names = photo_cache[name]
-            print(f"  Cache hit for {name}. Found {len(photo_resource_names)} photo names.")
+        cached_data = photo_cache.get(name)
+
+        if not args.force_refresh and cached_data:
+            photo_resource_names = cached_data.get('photo_names', [])
+            attributions = cached_data.get('attributions') # Can be None if not previously fetched/found
+            place_id = cached_data.get('place_id') # Get cached place_id too
+            print(f"  Cache hit for {name}. Found {len(photo_resource_names)} photo names. Attributions cached: {'Yes' if attributions else 'No'}")
+
+            # If attributions weren't cached previously but we have a place_id, try fetching them now
+            if not attributions and place_id and API_KEY:
+                 print(f"  Cached data found, but attributions missing. Fetching attributions for {place_id}...")
+                 attributions = get_place_attributions(place_id, API_KEY)
+                 # Update cache entry immediately if attributions found
+                 if attributions:
+                     photo_cache[name]['attributions'] = attributions
+
         else:
-            if name not in photo_cache:
-                 print(f"  Cache miss for {name}. Calling Places API...")
-            else: # If force_refresh is true and name was in cache
-                 print(f"  Force refresh for {name}. Calling Places API...")
+            if args.force_refresh and name in photo_cache:
+                 print(f"  Force refresh for {name}. Clearing cached data and calling Places API...")
+            # --- Call APIs if cache miss or force_refresh ---
+            # Pass coordinates for location bias
+            photo_api_result = get_place_photos(name, API_KEY, lat=map_lat, lng=map_lng)
 
-            # Call API if cache miss or force_refresh
-            photo_resource_names = get_place_photos(name, API_KEY)
-            # Update cache
-            photo_cache[name] = photo_resource_names
+            if photo_api_result:
+                place_id = photo_api_result.get('place_id')
+                photo_resource_names = photo_api_result.get('photo_names', [])
 
-        # Construct URLs from resource names (whether cached or newly fetched)
+                if place_id:
+                    attributions = get_place_attributions(place_id, API_KEY)
+                else:
+                    print(f"  Warning: Could not get place_id for {name}, cannot fetch attributions.")
+
+                # Update cache with new data
+                photo_cache[name] = {
+                    'place_id': place_id,
+                    'photo_names': photo_resource_names,
+                    'attributions': attributions
+                }
+            else:
+                # Place not found or error occurred during photo search
+                # Ensure cache reflects this by storing empty data or removing the entry
+                photo_cache[name] = {
+                    'place_id': None,
+                    'photo_names': [],
+                    'attributions': None
+                }
+                print(f"  Places API search failed for {name}. No photos or attributions will be available.")
+
+        # --- Construct Photo URLs & Download ---
         if photo_resource_names:
             # print(f"DEBUG: Found {len(photo_resource_names)} photo names for {name}.") # Less verbose debug
             for photo_name in photo_resource_names:
@@ -372,9 +486,15 @@ if __name__ == "__main__":
             },
             'photos': local_photo_paths,
             'planning_labs_roadview_url': planning_labs_roadview_url,
-            'slug': location_slug
+            'slug': location_slug,
+            'attributions': attributions # Add attributions to context
             # Add any other variables needed by the template
         }
+
+        # Track if photos were successfully processed for this location
+        location_has_photos = bool(local_photo_paths)
+        # Store both status and slug
+        photo_status_map[name] = {'hasPhotos': location_has_photos, 'slug': location_slug}
 
         # Render the template with the context
         rendered_html = template.render(context)
@@ -394,6 +514,46 @@ if __name__ == "__main__":
     except IOError as e:
         print(f"Error saving photo cache to {CACHE_FILE}: {e}")
 
+    # --- Update original JSON with photo status and slug ---
+    print("\nUpdating offthegridnyc.json with photo status and slug...")
+    try:
+        # Re-read the original data structure to ensure we have the latest full list
+        with open(JSON_FILE, 'r', encoding='utf-8') as f:
+            # Load into a new variable to avoid modifying the one used in the loop if needed elsewhere
+            master_locations_data = json.load(f)
+
+        updated_count = 0
+        # Add the flag and slug to the master data structure
+        for location_dict in master_locations_data:
+            loc_name = location_dict.get('name')
+            if loc_name:
+                # Use the status and slug recorded during the run
+                status_info = photo_status_map.get(loc_name) # Get the dict we stored
+                if status_info:
+                    location_dict['hasPhotos'] = status_info.get('hasPhotos', False)
+                    location_dict['slug'] = status_info.get('slug')
+                else:
+                    # Location might have been skipped or name mismatch
+                    location_dict['hasPhotos'] = False
+                    # Generate slug as a fallback if needed, though ideally it matches
+                    location_dict['slug'] = slugify(loc_name) if loc_name else None
+
+                if loc_name in photo_status_map: # Count only if we actively processed it
+                    updated_count +=1
+            else:
+                # Handle entries potentially missing a name
+                location_dict['hasPhotos'] = False
+                location_dict['slug'] = None
+
+        # Write the updated data back to the JSON file
+        with open(JSON_FILE, 'w', encoding='utf-8') as f:
+            json.dump(master_locations_data, f, indent=2) # Use indent for readability
+        print(f"Successfully updated {updated_count} locations in {JSON_FILE} with 'hasPhotos' and 'slug' info.")
+
+    except Exception as e:
+        print(f"Error updating {JSON_FILE}: {e}")
+
     print(f"\nGeneration complete.")
-    print(f"  Pages generated: {generated_count}")
-    print(f"  Pages skipped (due to errors/missing coords if configured): {skipped_count}")
+    # Adjust counts as needed, these might be less relevant now
+    # print(f"  Pages generated: {generated_count}")
+    # print(f"  Pages skipped (due to errors/missing coords if configured): {skipped_count}")

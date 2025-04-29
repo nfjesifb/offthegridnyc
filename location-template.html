@@ -143,6 +143,11 @@
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
       </div>
+      {% if attributions %}
+      <div class="photo-attributions text-xs text-gray-500 mt-2 px-4 text-center">
+          Photos provided by Google users: {{ attributions|safe }}
+      </div>
+      {% endif %}
     </section>
 
     <!-- Street View Section -->
