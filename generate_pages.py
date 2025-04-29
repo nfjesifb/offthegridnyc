@@ -3,13 +3,25 @@ import xml.etree.ElementTree as ET
 import os
 import re
 import glob
+import requests
+import time
+import argparse
+from jinja2 import Environment, FileSystemLoader
 
 # --- Configuration ---
 JSON_FILE = 'locations.json'
 KML_FILE = 'offthegridnyc.kml'
+STREETVIEW_KML_FILE = 'offthegridnycstreetview.kml' # Added for specific street view coords
 TEMPLATE_FILE = 'location-template.html'
 OUTPUT_DIR = 'locations'
-API_KEY = 'AIzaSyBBksh0YwSl7gekcaTX-_xRcBE-Me125rc' # Your Google API Key
+API_KEY = 'AIzaSyAmyMcwz10htD0p0FLI3S4WgAAnnVQdf4I' # Your Google API Key (Updated)
+CACHE_FILE = 'photo_cache.json' # Added for caching photo results
+STATIC_MAP_CACHE = {} # Added for caching static map images
+
+# Default Street View Parameters (if not found in KML)
+DEFAULT_HEADING = 0
+DEFAULT_PITCH = 0
+DEFAULT_ZOOM = 1
 
 # --- Helper Functions ---
 def slugify(text):
@@ -22,8 +34,8 @@ def slugify(text):
     return text
 
 def parse_kml(kml_file):
-    """Parses the KML file to extract coordinates for each placemark name."""
-    coords_map = {}
+    """Parses the KML file to extract coordinates and LookAt params for each placemark name."""
+    data_map = {}
     try:
         # Register namespace to handle KML structure properly
         namespaces = {'kml': 'http://www.opengis.net/kml/2.2'}
@@ -33,23 +45,171 @@ def parse_kml(kml_file):
         for placemark in root.findall('.//kml:Placemark', namespaces):
             name_tag = placemark.find('kml:name', namespaces)
             point_tag = placemark.find('.//kml:Point/kml:coordinates', namespaces)
+            lookat_tag = placemark.find('.//kml:LookAt', namespaces) # Find LookAt tag
+
             if name_tag is not None and point_tag is not None and name_tag.text:
                 name = name_tag.text.strip()
                 coords_text = point_tag.text.strip()
+                location_data = {}
                 try:
                     # Coordinates are typically lon,lat,alt
                     lon, lat, *_ = map(float, coords_text.split(','))
-                    coords_map[name] = {'lat': lat, 'lng': lon}
+                    location_data['lat'] = lat
+                    location_data['lng'] = lon
                 except (ValueError, IndexError) as e:
                     print(f"Warning: Could not parse coordinates for '{name}': {coords_text} - Error: {e}")
+                    continue # Skip if coordinates are bad
+
+                # Extract LookAt parameters if available
+                if lookat_tag is not None:
+                    heading_tag = lookat_tag.find('kml:heading', namespaces)
+                    pitch_tag = lookat_tag.find('kml:tilt', namespaces) # KML uses 'tilt' for pitch
+                    range_tag = lookat_tag.find('kml:range', namespaces) # Range can approximate zoom
+
+                    location_data['heading'] = float(heading_tag.text) if heading_tag is not None and heading_tag.text else DEFAULT_HEADING
+                    location_data['pitch'] = float(pitch_tag.text) if pitch_tag is not None and pitch_tag.text else DEFAULT_PITCH
+                    # Simple range-to-zoom conversion (adjust as needed)
+                    if range_tag is not None and range_tag.text:
+                        range_val = float(range_tag.text)
+                        location_data['zoom'] = max(0, 20 - (range_val / 50)) # Heuristic conversion
+                    else:
+                        location_data['zoom'] = DEFAULT_ZOOM
+                else:
+                    location_data['heading'] = DEFAULT_HEADING
+                    location_data['pitch'] = DEFAULT_PITCH
+                    location_data['zoom'] = DEFAULT_ZOOM
+
+                data_map[name] = location_data
+
     except ET.ParseError as e:
         print(f"Error parsing KML file {kml_file}: {e}")
     except FileNotFoundError:
         print(f"Error: KML file not found at {kml_file}")
-    return coords_map
+    return data_map
+
+def get_place_photos(place_name, api_key):
+    """Uses Text Search (New) to find a place and returns photo resource names."""
+    search_query = f"{place_name} NYC"
+    search_url = "https://places.googleapis.com/v1/places:searchText"
+    headers = {
+        'Content-Type': 'application/json',
+        'X-Goog-Api-Key': api_key,
+        'X-Goog-FieldMask': 'places.id,places.photos' # Request only needed fields
+    }
+    data = {
+        'textQuery': search_query
+    }
+
+    photo_names = []
+    try:
+        response = requests.post(search_url, headers=headers, json=data, timeout=10)
+        response.raise_for_status() # Raise an exception for bad status codes (4xx or 5xx)
+        result = response.json()
+
+        if 'places' in result and result['places']:
+            place = result['places'][0] # Assume the first result is the most relevant
+            if 'photos' in place and place['photos']:
+                # Get up to 5 photo resource names
+                photo_names = [photo['name'] for photo in place['photos'][:5]]
+                print(f"  Found {len(photo_names)} photo(s) for '{place_name}' via Places API.")
+            else:
+                print(f"  No photos found for '{place_name}' via Places API.")
+        else:
+            print(f"  Place not found for '{place_name} NYC' via Places API.")
+
+    except requests.exceptions.RequestException as e:
+        print(f"Error calling Places API for '{place_name}': {e}")
+    except Exception as e:
+        print(f"An unexpected error occurred processing Places API response for '{place_name}': {e}")
+
+    return photo_names
+
+def construct_photo_url(photo_name, api_key, max_width=1200):
+    """Constructs the URL for the Place Photo (New) API media endpoint."""
+    # Correct format: https://places.googleapis.com/v1/{NAME}/media?key=YOUR_API_KEY&maxWidthPx=400
+    # NAME is the resource name from the Photos object, e.g. places/PLACE_ID/photos/PHOTO_RESOURCE
+    if not photo_name or not photo_name.startswith('places/'):
+        print(f"Warning: Invalid or missing photo resource name format: {photo_name}")
+        return None
+    base_url = "https://places.googleapis.com/v1"
+    # Ensure photo_name is used directly as it contains the full resource path
+    full_url = f"{base_url}/{photo_name}/media?key={api_key}&maxWidthPx={max_width}&skipHttpRedirect=true"
+    return full_url
+
+def download_image(url, save_path):
+    """Downloads an image from a URL and saves it to a specified path.
+    Handles the two-step process for the new Places Photo API (v1) which
+    returns a JSON with photoUri when skipHttpRedirect=true.
+    """
+    try:
+        # First request to get the JSON response with photoUri
+        print(f"  Fetching photo metadata from: {url[:100]}...") # Shorten URL for logging
+        meta_response = requests.get(url)
+        meta_response.raise_for_status()
+
+        try:
+            photo_data = meta_response.json()
+        except json.JSONDecodeError:
+            print(f"  Error: Response from {url[:100]}... was not valid JSON.")
+            # Attempt to download directly if it wasn't JSON (maybe old API link?)
+            print("  Attempting direct download...")
+            image_response = requests.get(url, stream=True)
+            image_response.raise_for_status()
+            image_content = image_response.content
+        else:
+            photo_uri = photo_data.get('photoUri')
+            if not photo_uri:
+                print(f"  Error: 'photoUri' not found in response from {url[:100]}...")
+                return False
+
+            print(f"  Fetching actual image from: {photo_uri[:100]}...")
+            # Second request to download the actual image
+            image_response = requests.get(photo_uri, stream=True)
+            image_response.raise_for_status()
+            image_content = image_response.content # Read content directly for saving
+
+        # Save the image content
+        os.makedirs(os.path.dirname(save_path), exist_ok=True)
+        with open(save_path, 'wb') as f:
+            f.write(image_content)
+        # Keep log message concise
+        print(f"  Successfully downloaded image to {os.path.basename(save_path)}")
+        return True
+
+    except requests.exceptions.RequestException as e:
+        # Log specific error if possible (e.g., status code)
+        err_msg = str(e)
+        if hasattr(e, 'response') and e.response is not None:
+            err_msg += f" (Status code: {e.response.status_code})"
+        print(f"  Error downloading image metadata/data related to {url[:100]}...: {err_msg}")
+    except IOError as e:
+        print(f"  Error saving image to {save_path}: {e}")
+    except Exception as e: # Catch unexpected errors
+        print(f"  An unexpected error occurred during image download: {e}")
+
+    return False
 
 # --- Main Script ---
 if __name__ == "__main__":
+    # --- Argument Parsing ---
+    parser = argparse.ArgumentParser(description='Generate location pages for Off The Grid NYC.')
+    parser.add_argument('--force-refresh', action='store_true',
+                        help='Force refresh of Google Places photo data, ignoring the cache.')
+    args = parser.parse_args()
+
+    # --- Load Cache ---
+    photo_cache = {}
+    if not args.force_refresh and os.path.exists(CACHE_FILE):
+        try:
+            with open(CACHE_FILE, 'r', encoding='utf-8') as f:
+                photo_cache = json.load(f)
+            print(f"Loaded photo cache from {CACHE_FILE}")
+        except (json.JSONDecodeError, IOError) as e:
+            print(f"Warning: Could not load or parse cache file {CACHE_FILE}. Starting with empty cache. Error: {e}")
+            photo_cache = {}
+    elif args.force_refresh:
+        print("Cache refresh forced. API calls will be made.")
+
     # 1. Read JSON data
     try:
         with open(JSON_FILE, 'r', encoding='utf-8') as f:
@@ -61,10 +221,15 @@ if __name__ == "__main__":
         print(f"Error decoding JSON file {JSON_FILE}: {e}")
         exit(1)
 
-    # 2. Parse KML coordinates
-    coordinates = parse_kml(KML_FILE)
-    if not coordinates:
-        print("Warning: No coordinates found or KML parsing failed. Location pages might lack map data.")
+    # 2. Parse KML files
+    print(f"Parsing KML file: {KML_FILE}")
+    map_coords = parse_kml(KML_FILE) # For main map marker
+    print(f"Parsing Street View KML file: {STREETVIEW_KML_FILE}")
+    streetview_data = parse_kml(STREETVIEW_KML_FILE) # For street view positioning and POV
+
+    if not map_coords:
+        print("Error: Could not parse map coordinates from KML. Exiting.")
+        exit(1)
 
     # 3. Read HTML template
     try:
@@ -81,25 +246,53 @@ if __name__ == "__main__":
     # 5. Generate pages and image directories
     generated_count = 0
     skipped_count = 0
+
+    # Setup Jinja2 environment ONCE before the loop
+    env = Environment(loader=FileSystemLoader('.'))
+    try:
+        # Load the template ONCE
+        template = env.get_template('location-template.html')
+    except Exception as e:
+        print(f"Error loading template 'location-template.html': {e}")
+        exit(1)
+
     for location in locations_data:
         name = location.get('name', 'Unknown Location')
         description = location.get('description', 'No description available.')
         history = location.get('history', 'No history available.')
+        borough = location.get('borough', 'N/A')
+        neighborhood = location.get('neighborhood', 'N/A')
+        cross_streets = location.get('cross_streets', 'N/A')
+        address = location.get('address', 'N/A')
 
         # Ensure empty strings if null/None
         description = description if description else 'No description available.'
         history = history if history else 'No history available.'
 
-        # Get coordinates from KML data
-        coords = coordinates.get(name)
-        if not coords:
-            print(f"Warning: Coordinates not found in KML for '{name}'. Skipping map features for this page.")
-            lat, lng = 0, 0 # Default coordinates if not found
-            # Decide if you want to skip page generation entirely if no coords
-            # skipped_count += 1
-            # continue
+        # Get coordinates from parsed KML data
+        if name not in map_coords:
+            print(f"Warning: Map coordinates not found in KML for '{name}'. Skipping this location.")
+            skipped_count += 1
+            continue # Skip this location if map coords missing
+
+        map_lat = map_coords[name]['lat']
+        map_lng = map_coords[name]['lng']
+
+        # Get specific Street View coordinates and POV from parsed street view KML data
+        if name in streetview_data:
+            sv_entry = streetview_data[name]
+            roadview_heading = sv_entry.get('heading', DEFAULT_HEADING)
+            roadview_pitch = sv_entry.get('pitch', DEFAULT_PITCH)
+            roadview_zoom = sv_entry.get('zoom', DEFAULT_ZOOM)
+            # Use street view coords for the actual panorama position
+            streetview_lat = sv_entry.get('lat', map_lat)
+            streetview_lng = sv_entry.get('lng', map_lng)
         else:
-            lat, lng = coords['lat'], coords['lng']
+            print(f"Warning: Street View data not found for '{name}'. Using defaults and map coordinates.")
+            roadview_heading = DEFAULT_HEADING
+            roadview_pitch = DEFAULT_PITCH
+            roadview_zoom = DEFAULT_ZOOM
+            streetview_lat, streetview_lng = map_lat, map_lng # Fallback
 
         # Create specific directory for this location's page and images
         location_slug = slugify(name)
@@ -107,67 +300,99 @@ if __name__ == "__main__":
         images_dir = os.path.join(location_output_dir, 'images')
         os.makedirs(images_dir, exist_ok=True) # Create images subdir
 
-        # Generate satellite image URL
-        satellite_image_url = f"https://maps.googleapis.com/maps/api/staticmap?center={lat},{lng}&zoom=18&size=600x400&maptype=satellite&key={API_KEY}"
+        # --- Fetch Google Places Photos (with Caching) ---
+        print(f"Processing: {name}")
+        google_photo_urls = []
+        photo_resource_names = [] # Initialize
 
-        # Find local images
-        image_files = []
-        for ext in ('*.jpg', '*.jpeg', '*.png', '*.gif', '*.webp'):
-            image_files.extend(glob.glob(os.path.join(images_dir, ext)))
+        # Check cache first unless force_refresh is set
+        if not args.force_refresh and name in photo_cache:
+            photo_resource_names = photo_cache[name]
+            print(f"  Cache hit for {name}. Found {len(photo_resource_names)} photo names.")
+        else:
+            if name not in photo_cache:
+                 print(f"  Cache miss for {name}. Calling Places API...")
+            else: # If force_refresh is true and name was in cache
+                 print(f"  Force refresh for {name}. Calling Places API...")
 
-        # Generate carousel slides HTML
-        carousel_slides_html = []
-        # -- Satellite Slide --
-        carousel_slides_html.append(
-            f'  <div class="swiper-slide satellite-slide">'
-            f'    <img src="{satellite_image_url}" alt="Satellite view of {name}">'
-            f'    <span>Satellite View</span>'
-            f'  </div>'
-        )
-        # -- Local Image Slides --
-        for img_path in image_files:
-            img_filename = os.path.basename(img_path)
-            # Relative path from the HTML file to the image inside its 'images' subdir
-            relative_img_src = os.path.join('images', img_filename).replace('\\', '/')
-            carousel_slides_html.append(
-                f'  <div class="swiper-slide">'
-                f'    <img src="{relative_img_src}" alt="{name}">'
-                f'  </div>'
-            )
+            # Call API if cache miss or force_refresh
+            photo_resource_names = get_place_photos(name, API_KEY)
+            # Update cache
+            photo_cache[name] = photo_resource_names
 
-        carousel_content = "\n".join(carousel_slides_html)
+        # Construct URLs from resource names (whether cached or newly fetched)
+        if photo_resource_names:
+            # print(f"DEBUG: Found {len(photo_resource_names)} photo names for {name}.") # Less verbose debug
+            for photo_name in photo_resource_names:
+                photo_url = construct_photo_url(photo_name, API_KEY)
+                if photo_url:
+                    # print(f"\nDEBUG: Test this Google Photo URL in your browser:\n{photo_url}\n") # Optional detailed debug
+                    google_photo_urls.append(photo_url)
+                else:
+                    print(f"  Warning: Could not construct URL for photo name {photo_name}")
+        else:
+             # Ensure this message shows even if API returned empty/error previously and was cached
+            if not args.force_refresh and name in photo_cache and not photo_cache[name]:
+                 pass # Already printed cache hit message, no need for 'No photos found' again unless it was a fresh API call
+            elif args.force_refresh or name not in photo_cache: # Only print if it was a fresh API call result
+                print(f"  No photos found for '{name}' via Places API.")
 
-        # Construct Roadview URL
-        roadview_url = f"https://roadview.planninglabs.nyc/view/{lng}/{lat}"
+        # Download Google Places Photos
+        local_photo_paths = []
+        for i, url in enumerate(google_photo_urls):
+            photo_filename = f"photo_{i+1}.jpg"
+            photo_save_path_abs = os.path.join(images_dir, photo_filename)
+            # Path root-absolute for template: '/locations/<slug>/images/photo_1.jpg'
+            path_for_template = '/' + os.path.join('locations', location_slug, 'images', photo_filename).replace('\\', '/')
+                        
+            # Download the image
+            if download_image(url, photo_save_path_abs):
+                local_photo_paths.append(path_for_template)
 
-        # Replace placeholders
-        page_content = template_content.replace('{{LOCATION_NAME}}', name)
-        page_content = page_content.replace('{{DESCRIPTION}}', description)
-        page_content = page_content.replace('{{HISTORY}}', history)
-        page_content = page_content.replace('{{LAT}}', str(lat))
-        page_content = page_content.replace('{{LNG}}', str(lng))
-        page_content = page_content.replace('{{CAROUSEL_SLIDES}}', carousel_content)
-        page_content = page_content.replace('{{ROADVIEW_URL}}', roadview_url)
-        # Ensure API key is replaced in both script URL and img src
-        # page_content = page_content.replace('AIzaSyBBksh0YwSl7gekcaTX-_xRcBE-Me125rc', API_KEY) # Replacing placeholder if it was missed
+        planning_labs_roadview_url = f"https://roadview.planninglabs.nyc/view/{streetview_lng}/{streetview_lat}"
 
-        # API key replacement in template JS/Image URLs (if hardcoded in template)
-        # It's better practice to ensure the template uses the API_KEY variable if needed,
-        # but this handles cases where it might be directly in the template.
-        # page_content = page_content.replace('YOUR_API_KEY_PLACEHOLDER', API_KEY)
+        # Prepare template context
+        context = {
+            'name': name,
+            'borough': borough,
+            'neighborhood': neighborhood,
+            'cross_streets': cross_streets,
+            'address': address,
+            'description': description,
+            'history': history,
+            'lat': streetview_lat, # Use coords consistent with Street View
+            'lng': streetview_lng,
+            'google_maps_api_key': API_KEY,
+            'street_view_data': {
+                'lat': streetview_lat,
+                'lng': streetview_lng,
+                'heading': roadview_heading,
+                'pitch': roadview_pitch,
+                'zoom': roadview_zoom
+            },
+            'photos': local_photo_paths,
+            'planning_labs_roadview_url': planning_labs_roadview_url,
+            'slug': location_slug
+            # Add any other variables needed by the template
+        }
 
-        # Generate filename
-        filename = 'index.html' # Output file will be index.html inside the location's folder
-        filepath = os.path.join(location_output_dir, filename)
+        # Render the template with the context
+        rendered_html = template.render(context)
 
-        # Write the generated page
-        try:
-            with open(filepath, 'w', encoding='utf-8') as f:
-                f.write(page_content)
-            generated_count += 1
-        except (IOError, OSError) as e: # Catch OSError for directory issues too
-            print(f"Error writing file or creating directory for {name} at {filepath}: {e}")
-            skipped_count += 1
+        # Write the rendered HTML to the output file
+        output_path = os.path.join(location_output_dir, 'index.html')
+        with open(output_path, 'w', encoding='utf-8') as f:
+            f.write(rendered_html)
+
+        print(f"Generated page for {location['name']} ({output_path})")
+
+    # --- Save Cache ---
+    try:
+        with open(CACHE_FILE, 'w', encoding='utf-8') as f:
+            json.dump(photo_cache, f, indent=2) # Use indent for readability
+        print(f"Saved photo cache to {CACHE_FILE}")
+    except IOError as e:
+        print(f"Error saving photo cache to {CACHE_FILE}: {e}")
 
     print(f"\nGeneration complete.")
     print(f"  Pages generated: {generated_count}")

@@ -2,319 +2,365 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Off The Grid NYC</title>
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    // Optional: Configure Tailwind CDN if needed (e.g., custom fonts)
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Poppins', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <!-- Keep existing Map Styling for InfoWindows etc. for now -->
+  <!-- We will replace this later or integrate with Tailwind -->
   <style>
-    :root {
-      --primary: #1a1a1a; /* Dark Charcoal */
-      --secondary: #f8f8f8; /* Off-white */
-      --accent: #1abc9c; /* Teal */
-      --text: #333;
-      --font: 'Poppins', sans-serif;
-    }
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: var(--font);
-      color: var(--text);
-      background: var(--secondary);
-      line-height: 1.6;
-      font-weight: 300; /* Lighter default weight */
-    }
-    header {
-      background: var(--primary);
-      color: #fff;
-      padding: 1rem 2rem;
-      text-align: center;
-    }
-    header h1 { font-size: 2.2rem; font-weight: 600; }
-    header p.subtitle {
-      font-size: 1.1rem;
-      font-weight: 300;
-      margin: 0.25rem 0 0.5rem 0;
-      color: rgba(255, 255, 255, 0.9);
-    }
-    header p.disclaimer {
-        font-size: 0.8rem;
-        font-weight: 300;
-        margin: 0;
-        color: rgba(255, 255, 255, 0.7);
-        max-width: 600px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    header .google-map-link {
-        display: block; /* Ensures it's on its own line */
-        margin-top: 0.75rem;
-        font-size: 0.9rem;
-        color: rgba(255, 255, 255, 0.85);
-    }
-    header .google-map-link a {
-        color: inherit; /* Use the parent's color */
-        text-decoration: underline;
-    }
-    header .google-map-link a:hover {
-        color: rgba(255, 255, 255, 1);
-    }
-    main {
-      display: flex;
-      flex-direction: column;
-      padding: 1rem;
-    }
-    .map-container, .form-container {
-      background: #ffffff;
-      border-radius: 8px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-      border: none; /* Removed border */
-      margin-bottom: 1.5rem; /* Increased spacing */
-      overflow: hidden; /* Re-add for consistency with border-radius */
-    }
-    .map-container { height: 65vh; /* Adjust % as needed */ }
-    #map { width: 100%; height: 100%; }
-    .map-container h2, .form-container h2 {
-      padding: 1rem 1.5rem;
-      font-size: 1.5rem;
-      color: #fff;
-      background-color: var(--primary);
-      border-bottom: none;
-      margin-bottom: 0;
-      font-weight: 400;
-    }
-    .form-container iframe {
-      border: none;
-      width: 100%;
-      height: 1200px; /* Adjust height based on your form length */
-    }
-    #submit-section iframe {
-      width: 100%;
-      max-width: 800px; /* Optional: Limit width on large screens */
-      height: 750px; /* Adjust based on typical form length */
-      border: none;
-      display: block;
-      margin: 1rem auto 0 auto; /* Center the iframe */
-    }
-    footer {
-      background: var(--primary);
-      color: rgba(255, 255, 255, 0.8);
-      text-align: center;
-      padding: 1rem;
-      font-size: 0.85rem;
-      margin-top: 1.5rem;
-      opacity: 0.9;
-    }
-    /* Info Window Styling */
-    .popup-content {
-      max-width: 410px;
-      font-weight: 400; /* Slightly bolder for popup */
-    }
-    .popup-content h3 {
-      font-weight: 600;
-      color: var(--primary);
-      margin-bottom: 10px;
-    }
-    .popup-content img {
-      width: 100%;
-      height: auto;
-      margin-bottom: 10px;
-      border-radius: 4px;
-    }
-    .popup-content p {
-      margin-bottom: 10px;
-    }
-    .popup-content a {
-      color: var(--accent);
-      text-decoration: none;
-    }
-    .popup-content a:hover {
-      text-decoration: underline;
-      color: #16a085; /* Darker teal on hover */
-    }
-    /* Info Window Customization */
+    /* Info Window Styling - Placeholder until replaced */
     .gm-style .gm-style-iw-c { /* Target the default white box */
       padding: 0 !important; /* Remove default padding */
       max-height: none !important; /* Allow our content div to control height */
+      border-radius: 8px !important; /* Add some rounding */
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1) !important;
     }
     .gm-style .gm-style-iw-d { /* Target the default content container */
-      overflow: hidden !important; /* Prevent double scrollbars */
+      overflow: auto !important; /* Use auto instead of hidden for potential scroll */
+    }
+    .gm-style .gm-style-iw-t::after { /* Customize the little triangle */
+      background: white !important;
     }
     .info-window-content {
-      padding: 12px 15px; /* Add our own padding */
-      font-size: 0.9rem;
+      padding: 1rem; /* Tailwind p-4 equivalent */
+      font-size: 0.875rem; /* Tailwind text-sm */
+      line-height: 1.4;
     }
     .info-window-content h3 {
       margin-top: 0;
-      margin-bottom: 0.5rem;
-      font-size: 1.1rem;
-      color: var(--accent);
+      margin-bottom: 0.5rem; /* Tailwind mb-2 */
+      font-size: 1.125rem; /* Tailwind text-lg */
+      font-weight: 600; /* Tailwind font-semibold */
+      color: #111827; /* Tailwind gray-900 */
     }
     .info-window-content img {
       max-width: 100%;
       height: auto;
-      max-height: 120px; /* Limit image height */
+      max-height: 150px; /* Limit image height */
       display: block;
-      margin: 0.5rem 0;
-      border-radius: 4px;
+      margin-top: 0.5rem; /* Tailwind mt-2 */
+      margin-bottom: 0.75rem; /* Tailwind mb-3 */
+      border-radius: 0.375rem; /* Tailwind rounded-md */
     }
     .info-window-content p {
-      margin-bottom: 0.5rem;
-      line-height: 1.4;
+      margin-bottom: 0.5rem; /* Tailwind mb-2 */
     }
     .info-window-content p:last-child {
       margin-bottom: 0;
     }
     .info-window-content a {
-      color: var(--accent-dark);
+      color: #1e40af; /* Tailwind blue-800 */
       text-decoration: none;
-      margin-right: 5px;
+      font-weight: 500; /* Tailwind font-medium */
     }
     .info-window-content a:hover {
       text-decoration: underline;
+      color: #1d4ed8; /* Tailwind blue-700 */
+    }
+    /* Hide the default close button */
+    .gm-style-iw button[aria-label="Close"] {
+        display: none !important;
+    }
+    #map {
+        height: 65vh; /* Maintain map height */
+        width: 100%;
+    }
+    .map-container h2 {
+        display: none; /* Hide the old h2 title */
     }
   </style>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBBksh0YwSl7gekcaTX-_xRcBE-Me125rc&callback=initMap" async defer></script>
+
 </head>
-<body>
-  <header>
-    <h1>Off The Grid NYC</h1>
-    <p class="subtitle">proof nyc has depth of character</p>
-    <p class="disclaimer">this entire site was vibe coded so double check the facts in the descriptions but the locations are real and curated by a human</p>
-    <p class="google-map-link">If you want to play around with this on google maps yourself do so <a href="https://www.google.com/maps/d/edit?mid=1gl24kbeTNZ13SmaCbMsam2CYe8Ury7M&usp=sharing" target="_blank" rel="noopener noreferrer">here</a>.</p>
+<body class="bg-gray-100 font-sans text-gray-800">
+  <!-- Header -->
+  <header class="bg-gray-900 text-white p-6 text-center shadow-md">
+    <h1 class="text-3xl md:text-4xl font-semibold">Off The Grid NYC</h1>
+    <p class="text-lg md:text-xl font-light mt-1 text-gray-300">proof nyc has depth of character</p>
+    <p class="text-xs font-light mt-2 text-gray-400 max-w-xl mx-auto">this entire site was vibe coded so double check the facts in the descriptions but the locations are real and curated by a human</p>
+    <p class="mt-3 text-sm text-gray-300">
+      Explore on Google Maps: 
+      <a href="https://www.google.com/maps/d/edit?mid=1gl24kbeTNZ13SmaCbMsam2CYe8Ury7M&usp=sharing" target="_blank" rel="noopener noreferrer" class="underline hover:text-white">here</a>.
+    </p>
   </header>
-  <main>
-    <section class="map-container">
-      <h2>Explore Verified Places</h2>
-      <div id="map"></div>
-      <!-- Info window content is generated dynamically in JS -->
+
+  <!-- Main Content -->
+  <main class="container mx-auto px-4 py-8 max-w-7xl">
+
+    <!-- Map Section -->
+    <section class="map-container bg-white rounded-lg shadow-lg overflow-hidden mb-8">
+      <!-- Removed h2 title as it was redundant/unnecessary -->
+      <div id="map" class="w-full"></div>
     </section>
-    <section class="form-container">
-      <h2>Know a place that belongs here? Share!</h2>
-      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf-3Fi0LTuKLsSUQvrr_uVkenJkpHBEO5bDQXM567_NW4U5Ag/viewform?embedded=true"></iframe>
+
+    <!-- Submission Form Section -->
+    <section id="submit-section" class="form-container bg-white rounded-lg shadow-lg overflow-hidden p-6 mb-8">
+      <h2 class="text-2xl font-semibold text-gray-800 mb-4 text-center">Submit a Location</h2>
+      <p class="text-center text-gray-600 mb-6">Know a spot that fits the vibe? Submit it using the form below.</p>
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf-3Fi0LTuKLsSUQvrr_uVkenJkpHBEO5bDQXM567_NW4U5Ag/viewform?embedded=true" class="w-full h-[750px] border-0 mx-auto block max-w-3xl">Loading...</iframe>
     </section>
+
   </main>
-  <footer>
-    &copy; 2025 Off The Grid NYC
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-gray-400 text-center py-4 mt-8 text-sm">
+    &copy; 2025 Off The Grid NYC - Curated vibes.
   </footer>
 
+  <!-- Google Maps JavaScript API -->
   <script>
-    async function initMap() {
-      const meta = await (await fetch('locations.json')).json();
-      const locMap = Object.fromEntries(meta.map(x => [x.name, x]));
-      const kmlText = await (await fetch('offthegridnyc.kml')).text();
-      const kmlDoc = new DOMParser().parseFromString(kmlText, 'application/xml');
-      const iconMap = {};
-      kmlDoc.querySelectorAll('StyleMap[id]').forEach(sm => {
-        const id = sm.getAttribute('id');
-        let url = '';
-        sm.querySelectorAll('Pair').forEach(pair => {
-          if (pair.querySelector('key')?.textContent === 'normal') {
-            const ref = pair.querySelector('styleUrl')?.textContent.slice(1);
-            const se = kmlDoc.querySelector(`Style[id="${ref}"]`);
-            const href = se?.querySelector('Icon > href')?.textContent;
-            if (href) url = href;
-          }
-        });
-        if (id && url) iconMap[id] = url;
-      });
-      // Custom Map Style (Silver Base)
-      const mapStyle = [
-        { elementType: "geometry", stylers: [{ color: "#f5f5f5" }] },
-        { elementType: "labels.icon", stylers: [{ visibility: "off" }] },
-        { elementType: "labels.text.fill", stylers: [{ color: "#616161" }] },
-        { elementType: "labels.text.stroke", stylers: [{ color: "#f5f5f5" }] },
-        {
-          featureType: "administrative.land_parcel",
-          elementType: "labels.text.fill",
-          stylers: [{ color: "#bdbdbd" }],
-        },
-        {
-          featureType: "poi",
-          elementType: "geometry",
-          stylers: [{ color: "#eeeeee" }],
-        },
-        {
-          featureType: "poi",
-          elementType: "labels.text.fill",
-          stylers: [{ color: "#757575" }],
-        },
-        { featureType: "poi.park", elementType: "geometry", stylers: [{ color: "#e5e5e5" }] },
-        {
-          featureType: "poi.park",
-          elementType: "labels.text.fill",
-          stylers: [{ color: "#9e9e9e" }],
-        },
-        { featureType: "road", elementType: "geometry", stylers: [{ color: "#ffffff" }] },
-        {
-          featureType: "road.arterial",
-          elementType: "labels.text.fill",
-          stylers: [{ color: "#757575" }],
-        },
-        { featureType: "road.highway", elementType: "geometry", stylers: [{ color: "#dadada" }] },
-        {
-          featureType: "road.highway",
-          elementType: "labels.text.fill",
-          stylers: [{ color: "#616161" }],
-        },
-        {
-          featureType: "road.local",
-          elementType: "labels.text.fill",
-          stylers: [{ color: "#9e9e9e" }],
-        },
-        { featureType: "transit.line", elementType: "geometry", stylers: [{ color: "#e5e5e5" }] },
-        {
-          featureType: "transit.station",
-          elementType: "geometry",
-          stylers: [{ color: "#eeeeee" }],
-        },
-        { featureType: "water", elementType: "geometry", stylers: [{ color: "#c9c9c9" }] },
-        {
-          featureType: "water",
-          elementType: "labels.text.fill",
-          stylers: [{ color: "#9e9e9e" }],
-        },
-      ];
+    let map; // Define map globally
+    let kmlDoc; // Define kmlDoc globally
+    let locMap = {}; // Define locMap globally
 
-      const map = new google.maps.Map(document.getElementById('map'), {
-        center: { lat: 40.75, lng: -73.98 },
+    // Map Style (Optional - Light Dream from Snazzy Maps)
+    const mapStyle = [
+        {elementType: 'geometry', stylers: [{color: '#f5f5f5'}]},
+        {elementType: 'labels.icon', stylers: [{visibility: 'off'}]},
+        {elementType: 'labels.text.fill', stylers: [{color: '#616161'}]},
+        {elementType: 'labels.text.stroke', stylers: [{color: '#f5f5f5'}]},
+        {
+          featureType: 'administrative.land_parcel',
+          elementType: 'labels.text.fill',
+          stylers: [{color: '#bdbdbd'}]
+        },
+        {
+          featureType: 'poi',
+          elementType: 'geometry',
+          stylers: [{color: '#eeeeee'}]
+        },
+        {
+          featureType: 'poi',
+          elementType: 'labels.text.fill',
+          stylers: [{color: '#757575'}]
+        },
+        {
+          featureType: 'poi.park',
+          elementType: 'geometry',
+          stylers: [{color: '#e5e5e5'}]
+        },
+        {
+          featureType: 'poi.park',
+          elementType: 'labels.text.fill',
+          stylers: [{color: '#9e9e9e'}]
+        },
+        {
+          featureType: 'road',
+          elementType: 'geometry',
+          stylers: [{color: '#ffffff'}]
+        },
+        {
+          featureType: 'road.arterial',
+          elementType: 'labels.text.fill',
+          stylers: [{color: '#757575'}]
+        },
+        {
+          featureType: 'road.highway',
+          elementType: 'geometry',
+          stylers: [{color: '#dadada'}]
+        },
+        {
+          featureType: 'road.highway',
+          elementType: 'labels.text.fill',
+          stylers: [{color: '#616161'}]
+        },
+        {
+          featureType: 'road.local',
+          elementType: 'labels.text.fill',
+          stylers: [{color: '#9e9e9e'}]
+        },
+        {
+          featureType: 'transit.line',
+          elementType: 'geometry',
+          stylers: [{color: '#e5e5e5'}]
+        },
+        {
+          featureType: 'transit.station',
+          elementType: 'geometry',
+          stylers: [{color: '#eeeeee'}]
+        },
+        {
+          featureType: 'water',
+          elementType: 'geometry',
+          stylers: [{color: '#c9c9c9'}]
+        },
+        {
+          featureType: 'water',
+          elementType: 'labels.text.fill',
+          stylers: [{color: '#9e9e9e'}]
+        }
+    ];
+
+    const iconMap = {
+      'icon-1899-0288D1': 'img/icons/blue-dot.png',
+      'icon-1899-E65100': 'img/icons/orange-dot.png',
+      'icon-1899-FAD165': 'img/icons/yellow-dot.png',
+      'icon-1899-558B2F': 'img/icons/green-dot.png',
+      'icon-1899-A52714': 'img/icons/brown-dot.png',
+      'icon-1899-616161': 'img/icons/grey-dot.png',
+      'icon-1899-FFEA00': 'img/icons/ltblue-dot.png',
+      // Add other style ID to icon URL mappings here
+    };
+
+    async function fetchKML() {
+      try {
+        const response = await fetch('offthegridnyc.kml');
+        const kmlText = await response.text();
+        const parser = new DOMParser();
+        kmlDoc = parser.parseFromString(kmlText, 'application/xml');
+        // Error Handling
+        const parseError = kmlDoc.querySelector('parsererror');
+        if (parseError) {
+          console.error('Error parsing KML:', parseError.textContent);
+          return; // Stop if KML is invalid
+        }
+      } catch (error) {
+        console.error('Error fetching or parsing KML:', error);
+      }
+    }
+
+    async function fetchLocations() {
+      try {
+        const response = await fetch('locations.json');
+        const locationsData = await response.json();
+        // Map location data by slug for accurate lookup
+        locMap = locationsData.reduce((map, loc) => {
+          const slugKey = loc.name.toLowerCase().replace(/\W+/g, '-');
+          map[slugKey] = loc;
+          return map;
+        }, {});
+      } catch (error) {
+        console.error('Error fetching locations.json:', error);
+      }
+    }
+
+    // Initialize Map Function
+    async function initMap() {
+      map = new google.maps.Map(document.getElementById('map'), {
+        center: { lat: 40.75, lng: -73.98 }, // Center on Midtown Manhattan
         zoom: 12,
+        mapId: 'b58947e633f1fb21', // Your Map ID
         styles: mapStyle,
         gestureHandling: 'greedy', // Enable one-finger pan & standard zoom
-        mapTypeControl: false, // Optional: Hide map type control
-        streetViewControl: false // Optional: Hide street view pegman
+        mapTypeControl: false,
+        fullscreenControl: false,
+        streetViewControl: false
       });
+
+      await Promise.all([fetchKML(), fetchLocations()]);
+
+      if (!kmlDoc) {
+        console.error('KML document not loaded, cannot create markers.');
+        return;
+      }
+
+      const markers = {};
+      const infoWindow = new google.maps.InfoWindow(); // Single InfoWindow
 
       kmlDoc.querySelectorAll('Placemark').forEach(pm => {
         const name = pm.querySelector('name')?.textContent;
-        const coords = pm.querySelector('Point > coordinates')?.textContent.trim().split(',');
-        if (!name || !coords) return;
+        const coordsNode = pm.querySelector('Point > coordinates');
+        if (!name || !coordsNode) return; // Skip if essential data missing
+
+        const coords = coordsNode.textContent.trim().split(',');
+        if (coords.length < 2) return; // Skip if coords are invalid
+
         const [lng, lat] = coords.map(Number);
         const sid = pm.querySelector('styleUrl')?.textContent.slice(1);
-        const markerOpts = { position: { lat, lng }, map, title: name };
+
+        const markerOpts = {
+          position: { lat, lng },
+          map,
+          title: name,
+          gmpClickable: true
+        };
+
+        // Custom icon logic (requires AdvancedMarkerElement content styling)
         if (sid && iconMap[sid]) {
-          markerOpts.icon = { url: iconMap[sid], scaledSize: new google.maps.Size(30, 30), anchor: new google.maps.Point(15, 30) };
+          const iconElement = document.createElement('img');
+          iconElement.src = iconMap[sid];
+          iconElement.style.width = '30px';
+          iconElement.style.height = 'auto'; // Maintain aspect ratio
+          // Simple offset - might need adjustment
+          // iconElement.style.transform = 'translate(-50%, -100%)';
+          markerOpts.content = iconElement;
         }
-        const marker = new google.maps.Marker(markerOpts);
-        const loc = locMap[name] || {};
+
+        const marker = new google.maps.marker.AdvancedMarkerElement(markerOpts);
+
+        // Style the default pin black if no custom icon was set
+        if (!markerOpts.content) {
+             // Simple black circle fallback
+             const simpleBlackPin = document.createElement('div');
+             simpleBlackPin.style.width = '12px'; // Smaller dot
+             simpleBlackPin.style.height = '12px';
+             simpleBlackPin.style.backgroundColor = '#111827'; // gray-900
+             simpleBlackPin.style.borderRadius = '50%';
+             simpleBlackPin.style.border = '2px solid white'; // White border for contrast
+             simpleBlackPin.style.boxShadow = '0 1px 3px rgba(0,0,0,0.3)';
+             marker.content = simpleBlackPin;
+        }
+
+        // Determine slug and lookup location data
         const slug = name.toLowerCase().replace(/\W+/g, '-');
-        const apiKey = 'AIzaSyBBksh0YwSl7gekcaTX-_xRcBE-Me125rc'; // Use your API key here
-        const satelliteViewUrl = `https://maps.googleapis.com/maps/api/staticmap?center=${lat},${lng}&zoom=18&size=400x200&maptype=satellite&key=${apiKey}`;
-        const directionsUrl = `https://www.google.com/maps/dir/?api=1&destination=${lat},${lng}`;
+        const loc = locMap[slug] || {}; // Get description and details
+        const locationUrl = `locations/${slug}/index.html`;
+        const satelliteImagePath = loc.satellite_image_local; // Get the local path
+
+        // Truncate description if it's too long
+        const maxLength = 100;
+        let popupDescription = loc.description || "No description available.";
+        if (popupDescription.length > maxLength) {
+          popupDescription = popupDescription.substring(0, maxLength) + "...";
+        }
+
+        // Ensure we have a valid path before adding the image
+        const satelliteImageHtml = satelliteImagePath
+            ? `<img src="${satelliteImagePath}" alt="Satellite view of ${name}" style="width:100%; max-width: 200px; height: auto; margin-top: 10px; border-radius: 4px;">`
+            : ''; // Empty string if no path
+
         const infoWindowContent = `
-          <div class="info-window-content">
+          <div class="info-window-content" style="max-width: 250px; font-family: sans-serif;">
             <h3>${name}</h3>
-            <img src="${satelliteViewUrl}" alt="Satellite view of ${name}">
-            ${loc.description ? `<p>${loc.description}</p>` : ''}
-            <p>
-              <a href="locations/${slug}/" target="_blank">See More →</a> |
-              <a href="${directionsUrl}" target="_blank">Get Directions →</a>
+            <p style="margin: 5px 0; font-size: 0.9em;">
+              ${popupDescription}
             </p>
+            ${satelliteImageHtml} 
+            <div style="margin-top: 10px; font-size: 0.9em;">
+              <a href="${locationUrl}" target="_blank" style="color: #4285F4; text-decoration: none; margin-right: 10px;">More Details →</a>
+              <a href="https://www.google.com/maps/dir/?api=1&destination=${lat},${lng}" target="_blank" style="color: #4285F4; text-decoration: none;">Get Directions on Google Maps</a>
+            </div>
           </div>`;
-        const infowindow = new google.maps.InfoWindow({ content: infoWindowContent });
-        marker.addListener('click', () => infowindow.open(map, marker));
+
+        marker.addListener('gmp-click', () => {
+          infoWindow.close();
+          infoWindow.setContent(infoWindowContent);
+          infoWindow.open(map, marker);
+        });
+
+        markers[name] = marker; // Store marker reference
       });
     }
+    // Assign initMap to the window object *before* the API script loads
     window.initMap = initMap;
   </script>
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAmyMcwz10htD0p0FLI3S4WgAAnnVQdf4I&callback=initMap&libraries=marker,places&v=beta">
+    </script>
 </body>
 </html>

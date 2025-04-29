@@ -8,221 +8,172 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    // Optional: Configure Tailwind CDN if needed
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Poppins', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <!-- Placeholder Map Styling -->
   <style>
-    :root {
-      --primary: #1a1a1a; /* Dark Charcoal */
-      --secondary: #f8f8f8; /* Off-white */
-      --accent: #1abc9c; /* Teal */
-      --text: #333;
-      --font: 'Poppins', sans-serif;
+    #map, #pano {
+      height: 450px; /* Default height */
+      width: 100%;
     }
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: var(--font);
-      color: var(--text);
-      background: var(--secondary);
-      line-height: 1.6;
-      font-weight: 300;
+    @media (max-width: 768px) {
+      #map, #pano {
+        height: 350px;
+      }
     }
-    header {
-      background: var(--primary);
-      color: #fff;
-      padding: 1rem 2rem;
-      padding-bottom: 0.5rem;
-      text-align: center;
-    }
-    header .back-link {
-      display: block;
-      font-size: 0.9rem;
-      margin-top: 0.3rem;
-      color: rgba(255, 255, 255, 0.8);
-      text-decoration: none;
-    }
-    header .back-link:hover {
-        color: rgba(255, 255, 255, 1);
-        text-decoration: underline;
-    }
-    header h1 {
-      font-size: 2.2rem; font-weight: 600;
-      margin-bottom: 0.25rem;
-    }
-    .subtitle-section {
-      background: var(--primary);
-      color: rgba(255, 255, 255, 0.9);
-      padding: 0rem 2rem 1rem 2rem;
-      text-align: center;
-      margin-bottom: 1.5rem;
-      font-size: 1rem;
-      font-weight: 300;
-    }
-    .subtitle-section p {
-      margin-bottom: 0.5rem;
-    }
-    .subtitle-section strong {
-      font-weight: 400;
-      color: rgba(255, 255, 255, 1);
-      margin-right: 5px;
-    }
-    .container {
-      background: #ffffff;
-      border-radius: 8px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-      border: none;
-      margin-bottom: 1.5rem;
-      overflow: hidden;
-    }
-    .container h2 {
-      padding: 1rem 1.5rem;
-      font-size: 1.5rem;
-      color: #fff;
-      background-color: var(--primary);
-      border-bottom: none;
-      margin-bottom: 0;
-      font-weight: 400;
-    }
-    .content-padding {
-      padding: 1.5rem;
-    }
-    /* Swiper Carousel Styles */
+    /* Swiper adjustments */
     .swiper {
       width: 100%;
-      max-width: 900px;
-      margin-left: auto;
-      margin-right: auto;
-      height: 400px;
-      margin-bottom: 1.5rem;
-      border-radius: 8px;
-      overflow: hidden;
-      background: #eee;
+      /* Reduce overall height */
+      height: 400px; /* Reduced from 450px */
+      /* Let's define a max-height for the container, images will fit within */
     }
     .swiper-slide {
+      /* Styles for standard slider */
       text-align: center;
-      background: #fff;
-      /* Center slide text vertically */
+      font-size: 18px;
+      /* Add a subtle background */
+      background: #f8f9fa; /* Light grey background */
+
+      /* Center slide content vertically */
       display: flex;
       justify-content: center;
       align-items: center;
+
+      /* Ensure slides adapt to content width but fit container */
+      width: auto; /* Important for slidesPerView: 'auto' */
+      /* Add some space between slides */
+      /* margin-right: 15px !important; */ /* handled by spaceBetween */
     }
+
     .swiper-slide img {
       display: block;
-      width: 100%;
-      height: 100%;
+      /* Set max dimensions */
+      max-width: 100%;
+      /* Reduce max image height */
+      max-height: 350px; /* Reduced from 400px */
+      /* Auto width/height to maintain aspect ratio */
+      width: auto;
+      height: auto;
       object-fit: contain;
     }
-    /* Style for the satellite image text overlay if needed */
-    .satellite-slide span {
-      position: absolute;
-      bottom: 10px;
-      left: 10px;
-      background-color: rgba(0,0,0,0.6);
-      color: white;
-      padding: 5px 10px;
-      border-radius: 3px;
-      font-size: 0.9rem;
+
+    /* Style Navigation Buttons */
+    .swiper-button-prev,
+    .swiper-button-next {
+      color: #333; /* Darker color for contrast on light bg */
+      background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white bg */
+      border-radius: 50%; /* Make them circular */
+      width: 44px; /* Explicit size */
+      height: 44px; /* Explicit size */
+      transition: background-color 0.3s ease;
     }
-    /* Roadview Iframe */
-    .roadview-iframe {
-      width: 100%;
-      height: 450px; /* Adjust height as needed */
-      border-radius: 4px;
-      margin-bottom: 1.5rem;
-      border: none; /* Remove iframe default border */
+    .swiper-button-prev:hover,
+    .swiper-button-next:hover {
+        background-color: rgba(255, 255, 255, 0.9); /* Less transparent on hover */
     }
-    /* Links */
-    a {
-      color: var(--accent);
-      text-decoration: none;
+
+    .swiper-button-prev::after, 
+    .swiper-button-next::after {
+        font-size: 1.5rem !important; /* Slightly smaller arrows for circular button */
     }
-    a:hover {
-      text-decoration: underline;
-      color: #16a085;
+
+    /* Style Pagination Bullets */
+    .swiper-pagination {
+        position: relative; /* Adjust positioning if needed */
+        bottom: 5px !important; /* Position closer to bottom */
     }
-    .action-links {
-      margin-top: 1rem;
-      font-weight: 400;
+    .swiper-pagination-bullet {
+      background: #6c757d; /* Grey bullets */
+      opacity: 0.6;
     }
-    .action-links a {
-      margin-right: 15px;
-    }
-    /* Footer */
-    footer {
-      background: var(--primary);
-      color: #fff;
-      text-align: center;
-      padding: 1rem;
-      font-size: 0.85rem;
-      margin-top: 1.5rem;
-      opacity: 0.9;
-    }
-    /* Responsive adjustments */
-    @media (max-width: 960px) {
-      .swiper {
-        max-width: 95%;
-      }
-    }
-    @media (max-width: 768px) {
-      .swiper {
-        height: 300px;
-      }
-      .roadview-iframe {
-        height: 350px;
-      }
-      header h1 { font-size: 1.8rem; }
-      .container h2 { font-size: 1.3rem; }
-      #pano {
-        height: 350px;
-      }
+    .swiper-pagination-bullet-active {
+      opacity: 1;
+      background: #007aff; /* Active bullet color */
     }
   </style>
 </head>
-<body>
-  <header>
-    <h1>10 Bedford St</h1>
-    <a href="/index.html" class="back-link">&larr; Back to Main Map</a>
+<body class="bg-gray-100 font-sans text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-gray-900 text-white p-6 text-center shadow-md">
+    <h1 class="text-3xl md:text-4xl font-semibold mb-1">10 Bedford St</h1>
+    <a href="/index.html" class="text-sm text-gray-300 hover:text-white hover:underline">← Back to Main Map</a>
   </header>
-  <!-- Subtitle Area -->
-  <div class="subtitle-section">
-    <p><strong>Description:</strong> No description available.</p>
-    <p><strong>History:</strong> No history available.</p>
-  </div>
-  <!-- Image Carousel -->
-  <div class="swiper">
-    <div class="swiper-wrapper">
-      <!-- Slides will be injected here by Python script -->
-        <div class="swiper-slide satellite-slide">    <img src="https://maps.googleapis.com/maps/api/staticmap?center=40.7291162,-74.0031112&zoom=18&size=600x400&maptype=satellite&key=AIzaSyBBksh0YwSl7gekcaTX-_xRcBE-Me125rc" alt="Satellite view of 10 Bedford St">    <span>Satellite View</span>  </div>
-    </div>
-    <!-- Add Pagination -->
-    <div class="swiper-pagination"></div>
-    <!-- Add Navigation -->
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
-  </div>
-  <div class="container">
-    <h2>Street View & Directions</h2>
-    <div class="content-padding">
-      <iframe class="roadview-iframe"
-              src="https://roadview.planninglabs.nyc/view/-74.0031112/40.7291162"
-              allowfullscreen
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade">
-      </iframe>
-      <div class="action-links">
-        <a href="https://www.google.com/maps/dir/?api=1&destination=40.7291162,-74.0031112" target="_blank">Get Directions &rarr;</a>
+
+  <!-- Subtitle / Meta Info -->
+  <section class="bg-gray-800 text-gray-300 p-4 text-center text-sm md:text-base font-light shadow-inner">
+    <p><strong class="font-medium text-white">Description:</strong> No description available.</p>
+    <p><strong class="font-medium text-white">History:</strong> No history available.</p>
+  </section>
+
+  <!-- Main Content -->
+  <main class="container mx-auto px-4 py-8 max-w-7xl">
+
+    <!-- Image Carousel Section -->
+    <section class="mb-8 bg-white rounded-lg shadow-lg overflow-hidden p-6">
+      <h2 class="text-2xl font-semibold text-gray-800 mb-4 text-center">Photos</h2>
+      <!-- Swiper -->
+      <div class="swiper mySwiper rounded-md relative group"> 
+        <div class="swiper-wrapper">
+          
+          <p>No photos available.</p>
+          
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Navigation -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
       </div>
-    </div>
-  </div>
-  <!-- Share Info Section -->
-  <div class="container">
-    <h2>Share Your Photos & Info</h2>
-    <div class="content-padding">
-      <p>Do you have photos of this location or interesting information to share? 
-         <a href="https://forms.gle/4HR5RrvrfV2Nt2718" target="_blank" rel="noopener noreferrer">Submit them using this Google Form</a>.
-      </p>
-    </div>
-  </div>
+    </section>
+
+    <!-- Street View Section -->
+    <section class="mb-8 bg-white rounded-lg shadow-lg overflow-hidden p-6">
+      <h2 class="text-2xl font-semibold text-gray-800 mb-4 text-center">Street View & Directions</h2>
+      <div class="content-padding text-center"> 
+        <!-- Replaced img with iframe for Planning Labs Roadview -->
+        <iframe src="https://roadview.planninglabs.nyc/view/-74.0031274/40.7291278"
+                width="100%"
+                height="450" 
+                style="border:0; max-width: 800px; margin-left: auto; margin-right: auto;" 
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                class="mb-4 rounded shadow"> 
+        </iframe>
+
+        <p><a href="https://www.google.com/maps/dir/?api=1&destination=40.7291278,-74.0031274" target="_blank" rel="noopener noreferrer"
+              class="inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition duration-300">Get Directions on Google Maps</a></p>
+      </div>
+    </section>
+
+    <!-- Share Info Section -->
+    <section class="mb-8 bg-white rounded-lg shadow-lg overflow-hidden p-6">
+      <h2 class="text-2xl font-semibold text-gray-800 mb-4 text-center">Share Your Photos & Info</h2>
+      <div class="content-padding">
+        <p>Do you have photos of this location or interesting information to share? 
+           <a href="https://forms.gle/4HR5RrvrfV2Nt2718" target="_blank" rel="noopener noreferrer" class="text-blue-600 underline hover:text-blue-800">Submit them using this Google Form</a>.
+        </p>
+      </div>
+    </section>
+
+  </main>
+
   <!-- Comments Section -->
-  <div class="container">
-    <h2>Comments & Discussion</h2>
+  <div class="container mx-auto px-4 py-8 max-w-7xl">
+    <h2 class="text-2xl font-semibold text-gray-800 mb-4 text-center">Comments & Discussion</h2>
     <div class="content-padding">
         <script src="https://giscus.app/client.js"
                 data-repo="nfjesifb/offthegridnyc"
@@ -241,29 +192,38 @@
         </script>
     </div>
   </div>
-  <footer>
-    &copy; 2024 Off The Grid NYC
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-gray-400 text-center py-4 mt-8 text-sm">
+    &copy; 2024 Off the Grid NYC - <a href="/index.html" class="hover:text-white hover:underline">Back to Main Map</a>
   </footer>
+
+  <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialization Script -->
   <script>
-    // Initialize Swiper
-    var swiper = new Swiper(".swiper", {
-      loop: true,
+    // --- Swiper Initialization ---
+    var swiper = new Swiper(".mySwiper", {
+      initialSlide: 0, // Start on the first slide
+      grabCursor: true,
+      centeredSlides: true, // Keep slides centered (after initial load)
+      slidesPerView: "auto", // Show partial next/prev slides
+      spaceBetween: 20, // Space between slides
+      // Add Pagination
       pagination: {
         el: ".swiper-pagination",
-        clickable: true,
+        clickable: true, // Allow clicking bullets
       },
+      // Add Navigation
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
       },
-      autoplay: {
-        delay: 5000,
-        disableOnInteraction: false,
-      },
-      keyboard: true,
+      // Optional: Add loop if desired
+      // loop: true,
     });
-    window.swiper = swiper; // Optional: make swiper instance global if needed
   </script>
+
 </body>
 </html>
