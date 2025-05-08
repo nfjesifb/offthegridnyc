@@ -377,6 +377,14 @@
           infoWindow.close();
           infoWindow.setContent(infoWindowContent);
           infoWindow.open(map, marker);
+
+          // Add event listener for the custom close button
+          const closeButton = document.querySelector('.info-window-content span[title="Close"]');
+          if (closeButton) {
+            closeButton.addEventListener('click', () => {
+              infoWindow.close();
+            });
+          }
         });
 
         markers[name] = marker; // Store marker reference
