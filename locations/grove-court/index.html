@@ -1,217 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-DS1YWJT1KC"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-DS1YWJT1KC');
-</script>
-
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DS1YWJT1KC"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-DS1YWJT1KC');
+  </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Grove Court - Off The Grid NYC</title>
-  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="../../favicon.ico" type="image/x-icon">
+
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap"
+    rel="stylesheet">
+
+  <!-- Swiper CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    // Optional: Configure Tailwind CDN if needed
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: {
-            sans: ['Poppins', 'sans-serif'],
-          }
-        }
-      }
-    }
-  </script>
-  <!-- Placeholder Map Styling -->
+
+  <!-- Custom CSS -->
+  <link href="../../assets/css/styles.css" rel="stylesheet">
+
   <style>
-    #map, #pano {
-      height: 450px; /* Default height */
-      width: 100%;
-    }
-    @media (max-width: 768px) {
-      #map, #pano {
-        height: 350px;
-      }
-    }
-    /* Swiper adjustments */
+    /* Swiper Customization */
     .swiper {
       width: 100%;
-      /* Reduce overall height */
-      height: 400px; /* Reduced from 450px */
-      /* Let's define a max-height for the container, images will fit within */
+      height: 500px;
     }
+
     .swiper-slide {
-      /* Styles for standard slider */
       text-align: center;
       font-size: 18px;
-      /* Add a subtle background */
-      background: #f8f9fa; /* Light grey background */
-
-      /* Center slide content vertically */
+      background: #111;
       display: flex;
       justify-content: center;
       align-items: center;
-
-      /* Ensure slides adapt to content width but fit container */
-      width: auto; /* Important for slidesPerView: 'auto' */
-      /* Add some space between slides */
-      /* margin-right: 15px !important; */ /* handled by spaceBetween */
     }
 
     .swiper-slide img {
       display: block;
-      /* Set max dimensions */
-      max-width: 100%;
-      /* Reduce max image height */
-      max-height: 350px; /* Reduced from 400px */
-      /* Auto width/height to maintain aspect ratio */
-      width: auto;
-      height: auto;
-      object-fit: contain;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
 
-    /* Style Navigation Buttons */
-    .swiper-button-prev,
-    .swiper-button-next {
-      color: #333; /* Darker color for contrast on light bg */
-      background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white bg */
-      border-radius: 50%; /* Make them circular */
-      width: 44px; /* Explicit size */
-      height: 44px; /* Explicit size */
-      transition: background-color 0.3s ease;
-    }
-    .swiper-button-prev:hover,
-    .swiper-button-next:hover {
-        background-color: rgba(255, 255, 255, 0.9); /* Less transparent on hover */
+    .swiper-button-next,
+    .swiper-button-prev {
+      color: white;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
     }
 
-    .swiper-button-prev::after, 
-    .swiper-button-next::after {
-        font-size: 1.5rem !important; /* Slightly smaller arrows for circular button */
-    }
-
-    /* Style Pagination Bullets */
-    .swiper-pagination {
-        position: relative; /* Adjust positioning if needed */
-        bottom: 5px !important; /* Position closer to bottom */
-    }
-    .swiper-pagination-bullet {
-      background: #6c757d; /* Grey bullets */
-      opacity: 0.6;
-    }
     .swiper-pagination-bullet-active {
-      opacity: 1;
-      background: #007aff; /* Active bullet color */
+      background: #fff;
     }
   </style>
 </head>
-<body class="bg-gray-100 font-sans text-gray-800">
+
+<body class="bg-nyc-light-gray text-nyc-gray font-sans antialiased flex flex-col min-h-screen">
 
   <!-- Header -->
-  <header class="bg-gray-900 text-white p-6 text-center shadow-md">
-    <h1 class="text-3xl md:text-4xl font-semibold mb-1">Grove Court</h1>
-    <a href="/index.html" class="text-sm text-gray-300 hover:text-white hover:underline">← Back to Main Map</a>
+  <header class="bg-nyc-black text-white py-6 shadow-lg sticky top-0 z-50">
+    <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+      <div class="text-center md:text-left mb-4 md:mb-0">
+        <h1 class="text-2xl md:text-3xl font-serif font-bold tracking-wide truncate max-w-md">Grove Court</h1>
+        <a href="../../index.html"
+          class="text-sm text-gray-400 hover:text-white transition-colors flex items-center gap-1 mt-1">
+          <span>&larr;</span> Back to Main Map
+        </a>
+      </div>
+      <div class="text-xs text-gray-500 uppercase tracking-widest">
+        N/A / N/A
+      </div>
+    </div>
   </header>
 
-  <!-- Subtitle / Meta Info -->
-  <section class="bg-gray-800 text-gray-300 p-4 text-center text-sm md:text-base font-light shadow-inner">
-    <p><strong class="font-medium text-white">Description:</strong> A hidden courtyard of six townhouses located in Greenwich Village, Manhattan.</p>
-    <p><strong class="font-medium text-white">History:</strong> Grove Court was developed in the 1850s by Samuel Cocks, a local grocer, to provide housing for working-class families. The courtyard's secluded nature made it a quiet retreat within the bustling city. Over time, it has become a charming and sought-after residential enclave.</p>
-  </section>
-
   <!-- Main Content -->
-  <main class="container mx-auto px-4 py-8 max-w-7xl">
+  <main class="flex-grow container mx-auto px-4 py-8 max-w-6xl">
 
-    <!-- Image Carousel Section -->
-    <section class="mb-8 bg-white rounded-lg shadow-lg overflow-hidden p-6">
-      <h2 class="text-2xl font-semibold text-gray-800 mb-4 text-center">Photos</h2>
-      <!-- Swiper -->
-      <div class="swiper mySwiper rounded-md relative group"> 
-        <div class="swiper-wrapper">
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+
+      <!-- Left Column: Info & History -->
+      <div class="lg:col-span-1 space-y-8">
+
+        <!-- Description Card -->
+        <section class="bg-white rounded-xl shadow-md p-6 border border-gray-200">
+          <h2 class="text-xl font-serif font-bold mb-4 text-nyc-black border-b pb-2 border-gray-100">About</h2>
+          <p class="text-gray-600 leading-relaxed mb-4">A hidden courtyard of six townhouses located in Greenwich Village, Manhattan.</p>
+
+          <div class="mt-6 space-y-2 text-sm text-gray-500">
+            <p><strong class="text-gray-800">Address:</strong> N/A</p>
+            <p><strong class="text-gray-800">Cross Streets:</strong> N/A</p>
+          </div>
+        </section>
+
+        <!-- History Card -->
+        <section class="bg-white rounded-xl shadow-md p-6 border border-gray-200">
+          <h2 class="text-xl font-serif font-bold mb-4 text-nyc-black border-b pb-2 border-gray-100">History</h2>
+          <p class="text-gray-600 leading-relaxed text-sm">Grove Court was developed in the 1850s by Samuel Cocks, a local grocer, to provide housing for working-class families. The courtyard's secluded nature made it a quiet retreat within the bustling city. Over time, it has become a charming and sought-after residential enclave.</p>
+        </section>
+
+        <!-- Share Card -->
+        <section class="bg-nyc-gray text-white rounded-xl shadow-md p-6">
+          <h3 class="font-serif font-bold mb-2">Contribute</h3>
+          <p class="text-sm text-gray-300 mb-4">Have more info or photos of this spot?</p>
+          <a href="https://forms.gle/4HR5RrvrfV2Nt2718" target="_blank" rel="noopener noreferrer"
+            class="inline-block bg-white text-nyc-black px-4 py-2 rounded text-sm font-semibold hover:bg-gray-200 transition-colors">
+            Submit Info
+          </a>
+        </section>
+
+      </div>
+
+      <!-- Right Column: Visuals -->
+      <div class="lg:col-span-2 space-y-8">
+
+        <!-- Photo Carousel -->
+        <section class="bg-black rounded-xl shadow-2xl overflow-hidden relative">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              
+              <div class="swiper-slide bg-nyc-gray text-gray-500">
+                <p>No photos available yet.</p>
+              </div>
+              
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
           
-          <p>No photos available.</p>
+          <div class="absolute bottom-0 right-0 bg-black/70 text-white text-[10px] px-2 py-1 rounded-tl-md z-10">
+            Photos: <a href="https://maps.google.com/maps/contrib/107244119634886511268" target="_blank" rel="noopener noreferrer">Jason Braun</a>, <a href="https://maps.google.com/maps/contrib/109896805750470100724" target="_blank" rel="noopener noreferrer">Maria Eugenia</a>, <a href="https://maps.google.com/maps/contrib/108585025234485852384" target="_blank" rel="noopener noreferrer">David Herszenson</a>, <a href="https://maps.google.com/maps/contrib/105430715092960872220" target="_blank" rel="noopener noreferrer">Naďa Černá</a>, <a href="https://maps.google.com/maps/contrib/116882937263130282699" target="_blank" rel="noopener noreferrer">TheMrscarface2009</a>, <a href="https://maps.google.com/maps/contrib/114746178391836128377" target="_blank" rel="noopener noreferrer">Slava Shpigel</a>, <a href="https://maps.google.com/maps/contrib/110390378869201954710" target="_blank" rel="noopener noreferrer">vivi chan</a>, <a href="https://maps.google.com/maps/contrib/106589154225819663493" target="_blank" rel="noopener noreferrer">Carlos Usán</a>
+          </div>
           
-        </div>
-        <!-- Add Pagination -->
-        <div class="swiper-pagination"></div>
-        <!-- Add Navigation -->
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-      </div>
-      
-      <div class="photo-attributions text-xs text-gray-500 mt-2 px-4 text-center">
-          Photos provided by Google users: <a href="https://maps.google.com/maps/contrib/107244119634886511268" target="_blank" rel="noopener noreferrer">Jason Braun</a>, <a href="https://maps.google.com/maps/contrib/109896805750470100724" target="_blank" rel="noopener noreferrer">Maria Eugenia</a>, <a href="https://maps.google.com/maps/contrib/108585025234485852384" target="_blank" rel="noopener noreferrer">David Herszenson</a>, <a href="https://maps.google.com/maps/contrib/105430715092960872220" target="_blank" rel="noopener noreferrer">Naďa Černá</a>, <a href="https://maps.google.com/maps/contrib/116882937263130282699" target="_blank" rel="noopener noreferrer">TheMrscarface2009</a>, <a href="https://maps.google.com/maps/contrib/114746178391836128377" target="_blank" rel="noopener noreferrer">Slava Shpigel</a>, <a href="https://maps.google.com/maps/contrib/110390378869201954710" target="_blank" rel="noopener noreferrer">vivi chan</a>, <a href="https://maps.google.com/maps/contrib/106589154225819663493" target="_blank" rel="noopener noreferrer">Carlos Usán</a>
-      </div>
-      
-    </section>
+        </section>
 
-    <!-- Street View Section -->
-    <section class="mb-8 bg-white rounded-lg shadow-lg overflow-hidden p-6">
-      <h2 class="text-2xl font-semibold text-gray-800 mb-4 text-center">Street View & Directions</h2>
-      <div class="content-padding text-center"> 
-        <!-- Replaced img with iframe for Planning Labs Roadview -->
-        <iframe src="https://roadview.planninglabs.nyc/view/-74.0057827/40.7322081"
-                width="100%"
-                height="450" 
-                style="border:0; max-width: 800px; margin-left: auto; margin-right: auto;" 
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-                class="mb-4 rounded shadow"> 
-        </iframe>
+        <!-- Street View / Map -->
+        <section class="bg-white rounded-xl shadow-md overflow-hidden border border-gray-200">
+          <div class="p-4 border-b border-gray-100 flex justify-between items-center">
+            <h2 class="text-lg font-serif font-bold text-nyc-black">Street View</h2>
+            <a href="https://www.google.com/maps/dir/?api=1&destination=40.7322081,-74.0057827" target="_blank"
+              rel="noopener noreferrer" class="text-nyc-blue text-sm font-medium hover:underline">
+              Get Directions &rarr;
+            </a>
+          </div>
+          <div class="aspect-video w-full bg-gray-100">
+            <iframe src="https://roadview.planninglabs.nyc/view/-74.0057827/40.7322081" class="w-full h-full border-0" allowfullscreen=""
+              loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </section>
 
-        <p><a href="https://www.google.com/maps/dir/?api=1&destination=40.7322081,-74.0057827" target="_blank" rel="noopener noreferrer"
-              class="inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition duration-300">Get Directions on Google Maps</a></p>
-      </div>
-    </section>
+        <!-- Comments -->
+        <section class="bg-white rounded-xl shadow-md p-6 border border-gray-200">
+          <h2 class="text-xl font-serif font-bold mb-6 text-nyc-black">Discussion</h2>
+          <script src="https://giscus.app/client.js" data-repo="nfjesifb/offthegridnyc" data-repo-id="R_kgDOOCIF_w"
+            data-category="Announcements" data-category-id="DIC_kwDOOCIF_84CpfwD" data-mapping="pathname"
+            data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom"
+            data-theme="light" data-lang="en" crossorigin="anonymous" async>
+            </script>
+        </section>
 
-    <!-- Share Info Section -->
-    <section class="mb-8 bg-white rounded-lg shadow-lg overflow-hidden p-6">
-      <h2 class="text-2xl font-semibold text-gray-800 mb-4 text-center">Share Your Photos & Info</h2>
-      <div class="content-padding">
-        <p>Do you have photos of this location or interesting information to share? 
-           <a href="https://forms.gle/4HR5RrvrfV2Nt2718" target="_blank" rel="noopener noreferrer" class="text-blue-600 underline hover:text-blue-800">Submit them using this Google Form</a>.
-        </p>
       </div>
-    </section>
+    </div>
 
   </main>
 
-  <!-- Comments Section -->
-  <div class="container mx-auto px-4 py-8 max-w-7xl">
-    <h2 class="text-2xl font-semibold text-gray-800 mb-4 text-center">Comments & Discussion</h2>
-    <div class="content-padding">
-        <script src="https://giscus.app/client.js"
-                data-repo="nfjesifb/offthegridnyc"
-                data-repo-id="R_kgDOOCIF_w"
-                data-category="Announcements"
-                data-category-id="DIC_kwDOOCIF_84CpfwD"
-                data-mapping="pathname"
-                data-strict="0"
-                data-reactions-enabled="1"
-                data-emit-metadata="0"
-                data-input-position="bottom"
-                data-theme="preferred_color_scheme"
-                data-lang="en"
-                crossorigin="anonymous"
-                async>
-        </script>
-    </div>
-  </div>
-
   <!-- Footer -->
-  <footer class="bg-gray-800 text-gray-400 text-center py-4 mt-8 text-sm">
-    &copy; 2024 Off the Grid NYC - <a href="/index.html" class="hover:text-white hover:underline">Back to Main Map</a>
+  <footer class="bg-nyc-black text-gray-500 text-center py-8 mt-auto border-t border-gray-800">
+    <div class="container mx-auto px-4">
+      <p class="text-xs">&copy; 2025 Off The Grid NYC. <a href="../../index.html" class="hover:text-white">Back to
+          Map</a></p>
+    </div>
   </footer>
 
   <!-- Swiper JS -->
@@ -219,27 +186,23 @@
 
   <!-- Initialization Script -->
   <script>
-    // --- Swiper Initialization ---
     var swiper = new Swiper(".mySwiper", {
-      initialSlide: 0, // Start on the first slide
-      grabCursor: true,
-      centeredSlides: true, // Keep slides centered (after initial load)
-      slidesPerView: "auto", // Show partial next/prev slides
-      spaceBetween: 20, // Space between slides
-      // Add Pagination
+      loop: true,
       pagination: {
         el: ".swiper-pagination",
-        clickable: true, // Allow clicking bullets
+        clickable: true,
       },
-      // Add Navigation
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
       },
-      // Optional: Add loop if desired
-      // loop: true,
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+      },
     });
   </script>
 
 </body>
+
 </html>

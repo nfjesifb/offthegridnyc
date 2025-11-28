@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Poppins', sans-serif;
+  --font-serif: 'Playfair Display', serif;
+  
+  --color-nyc-black: #111111;
+  --color-nyc-gray: #2b2b2b;
+  --color-nyc-light-gray: #e5e5e5;
+  --color-nyc-accent: #f7b731; /* Taxi Yellow */
+  --color-nyc-blue: #3498db;
+}
+
+@layer base {
+  body {
+    @apply bg-nyc-light-gray text-nyc-black font-sans antialiased;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply px-6 py-2 bg-nyc-black text-white font-semibold rounded hover:bg-nyc-gray transition-colors duration-300;
+  }
+  .btn-accent {
+    @apply px-6 py-2 bg-nyc-accent text-nyc-black font-semibold rounded hover:bg-yellow-400 transition-colors duration-300;
+  }
+}

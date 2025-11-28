@@ -1,400 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-DS1YWJT1KC"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-DS1YWJT1KC');
-</script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DS1YWJT1KC"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-DS1YWJT1KC');
+  </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Off The Grid NYC</title>
+  <title>Off The Grid NYC - Hidden Gems & Unique Spots</title>
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    // Optional: Configure Tailwind CDN if needed (e.g., custom fonts)
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: {
-            sans: ['Poppins', 'sans-serif'],
-          }
-        }
-      }
-    }
-  </script>
-  <!-- Keep existing Map Styling for InfoWindows etc. for now -->
-  <!-- We will replace this later or integrate with Tailwind -->
-  <style>
-    /* Info Window Styling - Placeholder until replaced */
-    .gm-style .gm-style-iw-c { /* Target the default white box */
-      padding: 0 !important; /* Remove default padding */
-      max-height: none !important; /* Allow our content div to control height */
-      border-radius: 8px !important; /* Add some rounding */
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1) !important;
-    }
-    .gm-style .gm-style-iw-d { /* Target the default content container */
-      overflow: auto !important; /* Use auto instead of hidden for potential scroll */
-    }
-    .gm-style .gm-style-iw-t::after { /* Customize the little triangle */
-      background: white !important;
-    }
-    .info-window-content {
-      padding: 1rem; /* Tailwind p-4 equivalent */
-      font-size: 0.875rem; /* Tailwind text-sm */
-      line-height: 1.4;
-    }
-    .info-window-content h3 {
-      margin-top: 0;
-      margin-bottom: 0.5rem; /* Tailwind mb-2 */
-      font-size: 1.125rem; /* Tailwind text-lg */
-      font-weight: 600; /* Tailwind font-semibold */
-      color: #111827; /* Tailwind gray-900 */
-    }
-    .info-window-content img {
-      max-width: 100%;
-      height: auto;
-      max-height: 150px; /* Limit image height */
-      display: block;
-      margin-top: 0.5rem; /* Tailwind mt-2 */
-      margin-bottom: 0.75rem; /* Tailwind mb-3 */
-      border-radius: 0.375rem; /* Tailwind rounded-md */
-    }
-    .info-window-content p {
-      margin-bottom: 0.5rem; /* Tailwind mb-2 */
-    }
-    .info-window-content p:last-child {
-      margin-bottom: 0;
-    }
-    .info-window-content a {
-      color: #1e40af; /* Tailwind blue-800 */
-      text-decoration: none;
-      font-weight: 500; /* Tailwind font-medium */
-    }
-    .info-window-content a:hover {
-      text-decoration: underline;
-      color: #1d4ed8; /* Tailwind blue-700 */
-    }
-    /* Hide the default close button */
-    .gm-style-iw button[aria-label="Close"] {
-        display: none !important;
-    }
-    #map {
-        height: 65vh; /* Maintain map height */
-        width: 100%;
-    }
-    .map-container h2 {
-        display: none; /* Hide the old h2 title */
-    }
-  </style>
-
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  
+  <!-- Custom CSS -->
+  <link href="assets/css/styles.css" rel="stylesheet">
+  
+  <!-- Map Logic -->
+  <script src="src/js/map.js"></script>
 </head>
-<body class="bg-gray-100 font-sans text-gray-800">
+<body class="bg-nyc-light-gray text-nyc-gray font-sans antialiased flex flex-col min-h-screen">
+
   <!-- Header -->
-  <header class="bg-gray-900 text-white p-6 text-center shadow-md">
-    <h1 class="text-3xl md:text-4xl font-semibold">Off The Grid NYC</h1>
-    <p class="text-lg md:text-xl font-light mt-1 text-gray-300">proof nyc has depth of character</p>
-    <p class="text-xs font-light mt-2 text-gray-400 max-w-xl mx-auto">this entire site was coded by an llm so double check the facts in the descriptions but the locations are real and curated by a human</p>
-    <p class="mt-3 text-sm text-gray-300">
-      Explore on Google Maps: 
-      <a href="https://www.google.com/maps/d/edit?mid=1gl24kbeTNZ13SmaCbMsam2CYe8Ury7M&usp=sharing" target="_blank" rel="noopener noreferrer" class="underline hover:text-white">here</a>.
-    </p>
+  <header class="bg-nyc-black text-white py-6 shadow-lg sticky top-0 z-50">
+    <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+      <div class="text-center md:text-left mb-4 md:mb-0">
+        <h1 class="text-3xl md:text-4xl font-serif font-bold tracking-wide">Off The Grid NYC</h1>
+        <p class="text-sm text-gray-400 font-light tracking-wider uppercase mt-1">Proof NYC has depth of character</p>
+      </div>
+      <nav>
+        <a href="#map-section" class="text-gray-300 hover:text-white mx-3 transition-colors text-sm uppercase tracking-widest">Map</a>
+        <a href="#submit-section" class="text-gray-300 hover:text-white mx-3 transition-colors text-sm uppercase tracking-widest">Submit</a>
+      </nav>
+    </div>
   </header>
 
+  <!-- Hero / Intro -->
+  <section class="bg-nyc-gray text-white py-12">
+    <div class="container mx-auto px-4 text-center max-w-3xl">
+      <h2 class="text-2xl md:text-3xl font-serif mb-4">Explore the Unseen</h2>
+      <p class="text-gray-300 mb-6 font-light leading-relaxed">
+        This project curates the hidden, the weird, and the wonderful locations of New York City. 
+        From secret gardens to forgotten history, explore the depth of character that defines the city.
+      </p>
+      <p class="text-xs text-gray-500 italic">
+        Note: Descriptions generated by AI, locations curated by humans. Always verify before you go.
+      </p>
+    </div>
+  </section>
+
   <!-- Main Content -->
-  <main class="container mx-auto px-4 py-8 max-w-7xl">
+  <main class="flex-grow container mx-auto px-4 py-8 max-w-7xl">
 
     <!-- Map Section -->
-    <section class="map-container bg-white rounded-lg shadow-lg overflow-hidden mb-8">
-      <!-- Removed h2 title as it was redundant/unnecessary -->
-      <div id="map" class="w-full"></div>
+    <section id="map-section" class="bg-white rounded-xl shadow-2xl overflow-hidden mb-12 border border-gray-200">
+      <div id="map" class="w-full h-[70vh] min-h-[500px]"></div>
+      <div class="p-4 bg-gray-50 border-t border-gray-200 text-center">
+        <p class="text-sm text-gray-600">
+          Explore on Google Maps directly: 
+          <a href="https://www.google.com/maps/d/edit?mid=1gl24kbeTNZ13SmaCbMsam2CYe8Ury7M&usp=sharing" target="_blank" rel="noopener noreferrer" class="text-nyc-blue hover:underline font-medium">Open Map</a>
+        </p>
+      </div>
     </section>
 
     <!-- Submission Form Section -->
-    <section id="submit-section" class="form-container bg-white rounded-lg shadow-lg overflow-hidden p-6 mb-8">
-      <h2 class="text-2xl font-semibold text-gray-800 mb-4 text-center">Submit a Location</h2>
-      <p class="text-center text-gray-600 mb-6">Know a spot that fits in around here? Submit it using the form below.</p>
-      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf-3Fi0LTuKLsSUQvrr_uVkenJkpHBEO5bDQXM567_NW4U5Ag/viewform?embedded=true" class="w-full h-[750px] border-0 mx-auto block max-w-3xl">Loading...</iframe>
+    <section id="submit-section" class="max-w-4xl mx-auto bg-white rounded-xl shadow-xl overflow-hidden border border-gray-200">
+      <div class="bg-nyc-black text-white p-6 text-center">
+        <h2 class="text-2xl font-serif">Know a Hidden Gem?</h2>
+        <p class="text-gray-400 mt-2 font-light">Help us document the depth of NYC. Submit a location below.</p>
+      </div>
+      <div class="p-6 bg-gray-50">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf-3Fi0LTuKLsSUQvrr_uVkenJkpHBEO5bDQXM567_NW4U5Ag/viewform?embedded=true" class="w-full h-[800px] border-0 mx-auto block">Loading...</iframe>
+      </div>
     </section>
 
   </main>
 
   <!-- Footer -->
-  <footer class="bg-gray-800 text-gray-400 text-center py-4 mt-8 text-sm">
-    &copy; 2025 Off The Grid NYC.
+  <footer class="bg-nyc-black text-gray-500 text-center py-8 mt-auto border-t border-gray-800">
+    <div class="container mx-auto px-4">
+      <p class="mb-2 font-serif text-lg text-gray-400">Off The Grid NYC</p>
+      <p class="text-xs">&copy; 2025. All rights reserved.</p>
+    </div>
   </footer>
 
   <!-- Google Maps JavaScript API -->
-  <script>
-    let map; // Define map globally
-    let kmlDoc; // Define kmlDoc globally
-    let locMap = {}; // Define locMap globally
-
-    // Map Style (Optional - Light Dream from Snazzy Maps)
-    const mapStyle = [
-        {elementType: 'geometry', stylers: [{color: '#f5f5f5'}]},
-        {elementType: 'labels.icon', stylers: [{visibility: 'off'}]},
-        {elementType: 'labels.text.fill', stylers: [{color: '#616161'}]},
-        {elementType: 'labels.text.stroke', stylers: [{color: '#f5f5f5'}]},
-        {
-          featureType: 'administrative.land_parcel',
-          elementType: 'labels.text.fill',
-          stylers: [{color: '#bdbdbd'}]
-        },
-        {
-          featureType: 'poi',
-          elementType: 'geometry',
-          stylers: [{color: '#eeeeee'}]
-        },
-        {
-          featureType: 'poi',
-          elementType: 'labels.text.fill',
-          stylers: [{color: '#757575'}]
-        },
-        {
-          featureType: 'poi.park',
-          elementType: 'geometry',
-          stylers: [{color: '#e5e5e5'}]
-        },
-        {
-          featureType: 'poi.park',
-          elementType: 'labels.text.fill',
-          stylers: [{color: '#9e9e9e'}]
-        },
-        {
-          featureType: 'road',
-          elementType: 'geometry',
-          stylers: [{color: '#ffffff'}]
-        },
-        {
-          featureType: 'road.arterial',
-          elementType: 'labels.text.fill',
-          stylers: [{color: '#757575'}]
-        },
-        {
-          featureType: 'road.highway',
-          elementType: 'geometry',
-          stylers: [{color: '#dadada'}]
-        },
-        {
-          featureType: 'road.highway',
-          elementType: 'labels.text.fill',
-          stylers: [{color: '#616161'}]
-        },
-        {
-          featureType: 'road.local',
-          elementType: 'labels.text.fill',
-          stylers: [{color: '#9e9e9e'}]
-        },
-        {
-          featureType: 'transit.line',
-          elementType: 'geometry',
-          stylers: [{color: '#e5e5e5'}]
-        },
-        {
-          featureType: 'transit.station',
-          elementType: 'geometry',
-          stylers: [{color: '#eeeeee'}]
-        },
-        {
-          featureType: 'water',
-          elementType: 'geometry',
-          stylers: [{color: '#c9c9c9'}]
-        },
-        {
-          featureType: 'water',
-          elementType: 'labels.text.fill',
-          stylers: [{color: '#9e9e9e'}]
-        }
-    ];
-
-    const iconMap = {
-      'icon-1899-0288D1': 'img/icons/blue-dot.png',
-      'icon-1899-E65100': 'img/icons/orange-dot.png',
-      'icon-1899-FAD165': 'img/icons/yellow-dot.png',
-      'icon-1899-558B2F': 'img/icons/green-dot.png',
-      'icon-1899-A52714': 'img/icons/brown-dot.png',
-      'icon-1899-616161': 'img/icons/grey-dot.png',
-      'icon-1899-FFEA00': 'img/icons/ltblue-dot.png',
-      // Add other style ID to icon URL mappings here
-    };
-
-    async function fetchKML() {
-      try {
-        const response = await fetch('offthegridnyc.kml');
-        const kmlText = await response.text();
-        const parser = new DOMParser();
-        kmlDoc = parser.parseFromString(kmlText, 'application/xml');
-        // Error Handling
-        const parseError = kmlDoc.querySelector('parsererror');
-        if (parseError) {
-          console.error('Error parsing KML:', parseError.textContent);
-          return; // Stop if KML is invalid
-        }
-      } catch (error) {
-        console.error('Error fetching or parsing KML:', error);
-      }
-    }
-
-    async function fetchLocations() {
-      try {
-        const response = await fetch('locations.json');
-        const locationsData = await response.json();
-        // Map location data by slug for accurate lookup
-        locMap = locationsData.reduce((map, loc) => {
-          const slugKey = loc.name.toLowerCase().replace(/\W+/g, '-');
-          map[slugKey] = loc;
-          return map;
-        }, {});
-      } catch (error) {
-        console.error('Error fetching locations.json:', error);
-      }
-    }
-
-    // Initialize Map Function
-    async function initMap() {
-      map = new google.maps.Map(document.getElementById('map'), {
-        center: { lat: 40.75, lng: -73.98 }, // Center on Midtown Manhattan
-        zoom: 12,
-        mapId: 'b58947e633f1fb21', // Your Map ID
-        styles: mapStyle,
-        gestureHandling: 'greedy', // Enable one-finger pan & standard zoom
-        mapTypeControl: false,
-        fullscreenControl: false,
-        streetViewControl: false
-      });
-
-      await Promise.all([fetchKML(), fetchLocations()]);
-
-      if (!kmlDoc) {
-        console.error('KML document not loaded, cannot create markers.');
-        return;
-      }
-
-      const markers = {};
-      const infoWindow = new google.maps.InfoWindow(); // Single InfoWindow
-
-      kmlDoc.querySelectorAll('Placemark').forEach(pm => {
-        const name = pm.querySelector('name')?.textContent;
-        const coordsNode = pm.querySelector('Point > coordinates');
-        if (!name || !coordsNode) return; // Skip if essential data missing
-
-        const coords = coordsNode.textContent.trim().split(',');
-        if (coords.length < 2) return; // Skip if coords are invalid
-
-        const [lng, lat] = coords.map(Number);
-        const sid = pm.querySelector('styleUrl')?.textContent.slice(1);
-
-        const markerOpts = {
-          position: { lat, lng },
-          map,
-          title: name,
-          gmpClickable: true
-        };
-
-        // Custom icon logic (requires AdvancedMarkerElement content styling)
-        if (sid && iconMap[sid]) {
-          const iconElement = document.createElement('img');
-          iconElement.src = iconMap[sid];
-          iconElement.style.width = '30px';
-          iconElement.style.height = 'auto'; // Maintain aspect ratio
-          // Simple offset - might need adjustment
-          // iconElement.style.transform = 'translate(-50%, -100%)';
-          markerOpts.content = iconElement;
-        }
-
-        const marker = new google.maps.marker.AdvancedMarkerElement(markerOpts);
-
-        // Style the default pin black if no custom icon was set
-        if (!markerOpts.content) {
-             // Simple black circle fallback
-             const simpleBlackPin = document.createElement('div');
-             simpleBlackPin.style.width = '12px'; // Smaller dot
-             simpleBlackPin.style.height = '12px';
-             simpleBlackPin.style.backgroundColor = '#111827'; // gray-900
-             simpleBlackPin.style.borderRadius = '50%';
-             simpleBlackPin.style.border = '2px solid white'; // White border for contrast
-             simpleBlackPin.style.boxShadow = '0 1px 3px rgba(0,0,0,0.3)';
-             marker.content = simpleBlackPin;
-        }
-
-        // Determine slug and lookup location data
-        const slug = name.toLowerCase().replace(/\W+/g, '-');
-        const loc = locMap[slug] || {}; // Get description and details
-        const locationUrl = `locations/${slug}/index.html`;
-        const satelliteImagePath = loc.satellite_image_local; // Get the local path
-
-        // Truncate description if it's too long
-        const maxLength = 100;
-        let popupDescription = loc.description || "No description available.";
-        if (popupDescription.length > maxLength) {
-          popupDescription = popupDescription.substring(0, maxLength) + "...";
-        }
-
-        // Ensure we have a valid path before adding the image
-        const satelliteImageHtml = satelliteImagePath
-            ? `<img src="${satelliteImagePath}" alt="Satellite view of ${name}" style="width:100%; max-width: 200px; height: auto; margin-top: 10px; border-radius: 4px;">`
-            : ''; // Empty string if no path
-
-        let photoThumbnailHtml = '';
-        if (loc.hasPhotos && loc.slug) {
-            const thumbnailUrl = `/locations/${loc.slug}/images/photo_1.jpg`;
-            photoThumbnailHtml = `
-              <img src="${thumbnailUrl}" alt="Thumbnail for ${name}" style="width:100%; max-width: 200px; height: auto; margin-top: 10px; margin-bottom: 10px; border-radius: 4px;">
-            `;
-        }
-
-        const closeButtonHtml = `
-            <span onclick="infoWindow.close()" style="position: absolute; top: 5px; right: 10px; cursor: pointer; font-size: 1.2em; color: #666;" title="Close">
-                &times;
-            </span>
-        `;
-
-        const infoWindowContent = `
-          <div class="info-window-content" style="max-width: 250px; font-family: sans-serif; position: relative;">
-            ${closeButtonHtml} 
-            <h3>${name}</h3>
-            ${photoThumbnailHtml} 
-            <p style="margin: 5px 0; font-size: 0.9em;">
-              ${popupDescription}
-            </p>
-            ${satelliteImageHtml}
-            <div style="margin-top: 10px; font-size: 0.9em;">
-              <a href="${locationUrl}" target="_blank" style="color: #4285F4; text-decoration: none; margin-right: 10px;">More Details →</a>
-              <a href="https://www.google.com/maps/dir/?api=1&destination=${lat},${lng}" target="_blank" style="color: #4285F4; text-decoration: none;">Get Directions on Google Maps</a>
-            </div>
-          </div>`;
-
-        marker.addListener('gmp-click', () => {
-          infoWindow.close();
-          infoWindow.setContent(infoWindowContent);
-          infoWindow.open(map, marker);
-
-          // Add event listener for the custom close button
-          const closeButton = document.querySelector('.info-window-content span[title="Close"]');
-          if (closeButton) {
-            closeButton.addEventListener('click', () => {
-              infoWindow.close();
-            });
-          }
-        });
-
-        markers[name] = marker; // Store marker reference
-      });
-    }
-    // Assign initMap to the window object *before* the API script loads
-    window.initMap = initMap;
-  </script>
   <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAmyMcwz10htD0p0FLI3S4WgAAnnVQdf4I&callback=initMap&libraries=marker,places&v=beta">
-    </script>
+  </script>
 </body>
 </html>
