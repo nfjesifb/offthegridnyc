@@ -459,6 +459,12 @@ if __name__ == "__main__":
             # Path root-absolute for template: '/locations/<slug>/images/photo_1.jpg'
             path_for_template = '/' + os.path.join('locations', location_slug, 'images', photo_filename).replace('\\', '/')
                         
+            # Check if file exists
+            if os.path.exists(photo_save_path_abs) and os.path.getsize(photo_save_path_abs) > 0:
+                 print(f"  Using existing photo: {photo_filename}")
+                 local_photo_paths.append(path_for_template)
+                 continue
+
             # Download the image
             if download_image(url, photo_save_path_abs):
                 local_photo_paths.append(path_for_template)
