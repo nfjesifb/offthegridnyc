@@ -187,14 +187,14 @@ async function initMap() {
     const marker = new google.maps.marker.AdvancedMarkerElement(markerOpts);
 
     if (!markerOpts.content) {
-         const simplePin = document.createElement('div');
-         simplePin.className = 'w-3 h-3 bg-nyc-accent rounded-full border-2 border-white shadow-md';
-         marker.content = simplePin;
+      const simplePin = document.createElement('div');
+      simplePin.className = 'w-3 h-3 bg-nyc-accent rounded-full border-2 border-white shadow-md';
+      marker.content = simplePin;
     }
 
     const slug = name.toLowerCase().replace(/\W+/g, '-');
     const loc = locMap[slug] || {};
-    const locationUrl = `locations/${slug}/index.html`;
+    const locationUrl = loc.slug ? `locations/${loc.slug}/index.html` : `locations/${slug}/index.html`;
     const satelliteImagePath = loc.satellite_image_local;
 
     const maxLength = 100;
@@ -204,13 +204,13 @@ async function initMap() {
     }
 
     const satelliteImageHtml = satelliteImagePath
-        ? `<img src="${satelliteImagePath}" alt="Satellite view" class="w-full max-w-[200px] h-auto mt-2 rounded">`
-        : '';
+      ? `<img src="${satelliteImagePath}" alt="Satellite view" class="w-full max-w-[200px] h-auto mt-2 rounded">`
+      : '';
 
     let photoThumbnailHtml = '';
     if (loc.hasPhotos && loc.slug) {
-        const thumbnailUrl = `/locations/${loc.slug}/images/photo_1.jpg`;
-        photoThumbnailHtml = `
+      const thumbnailUrl = `/locations/${loc.slug}/images/photo_1.jpg`;
+      photoThumbnailHtml = `
           <img src="${thumbnailUrl}" alt="${name}" class="w-full max-w-[200px] h-auto mt-2 mb-2 rounded">
         `;
     }

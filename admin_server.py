@@ -46,7 +46,7 @@ def update_kml_marker(name, lat, lng):
         name_elem.text = name
         
         style_elem = ET.SubElement(placemark, f'{namespace}styleUrl')
-        style_elem.text = '#icon-1899-0288D1'
+        style_elem.text = '#icon-1552-0288D1'
         
         point = ET.SubElement(placemark, f'{namespace}Point')
         coords = ET.SubElement(point, f'{namespace}coordinates')
