@@ -71,6 +71,9 @@ def update_streetview_kml(name, lat, lng):
         
         name_elem = ET.SubElement(placemark, f'{namespace}name')
         name_elem.text = name
+
+        style_elem = ET.SubElement(placemark, f'{namespace}styleUrl')
+        style_elem.text = '#icon-1552-0288D1'
         
         # Only saving Point (Lat/Lng) as Heading/Pitch are not used by the template
         point = ET.SubElement(placemark, f'{namespace}Point')
@@ -148,7 +151,10 @@ def add_location():
         # 3. Update Street View KML
         update_streetview_kml(name, sv_lat, sv_lng)
         
-        # 4. Run generation script
+        # 4. Run normalization script to ensure formatting is perfect
+        subprocess.run(['python', 'normalize_kml.py'], check=True)
+
+        # 5. Run generation script
         subprocess.run(['python', 'generate_pages.py'], check=True)
         
         flash(f'Successfully added "{name}" and regenerated pages!')

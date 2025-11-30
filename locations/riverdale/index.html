@@ -85,51 +85,52 @@
   </header>
 
   <!-- Main Content -->
-  <main class="flex-grow container mx-auto px-4 py-8 max-w-7xl">
+  <main class="flex-grow container mx-auto px-4 py-8 max-w-[1600px]">
 
-    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 items-start">
 
-      <!-- Left Column: Visuals (Span 7) -->
-      <div class="lg:col-span-7 space-y-8">
+      <!-- Left Column: Visuals -->
+      <div class="space-y-6 lg:sticky lg:top-24">
 
         
         <!-- Photo Carousel -->
-        <section class="bg-black rounded-xl shadow-2xl overflow-hidden relative aspect-[4/3]">
+        <section class="card aspect-video relative group">
           <div class="swiper mySwiper h-full w-full">
             <div class="swiper-wrapper">
               
-              <div class="swiper-slide">
+              <div class="swiper-slide bg-gray-900">
                 <img src="/locations/riverdale/images/photo_1.jpg" alt="Riverdale - Photo 1" class="w-full h-full object-cover"
                   loading="lazy">
               </div>
               
-              <div class="swiper-slide">
+              <div class="swiper-slide bg-gray-900">
                 <img src="/locations/riverdale/images/photo_2.jpg" alt="Riverdale - Photo 2" class="w-full h-full object-cover"
                   loading="lazy">
               </div>
               
-              <div class="swiper-slide">
+              <div class="swiper-slide bg-gray-900">
                 <img src="/locations/riverdale/images/photo_3.jpg" alt="Riverdale - Photo 3" class="w-full h-full object-cover"
                   loading="lazy">
               </div>
               
-              <div class="swiper-slide">
+              <div class="swiper-slide bg-gray-900">
                 <img src="/locations/riverdale/images/photo_4.jpg" alt="Riverdale - Photo 4" class="w-full h-full object-cover"
                   loading="lazy">
               </div>
               
-              <div class="swiper-slide">
+              <div class="swiper-slide bg-gray-900">
                 <img src="/locations/riverdale/images/photo_5.jpg" alt="Riverdale - Photo 5" class="w-full h-full object-cover"
                   loading="lazy">
               </div>
               
             </div>
             <div class="swiper-pagination"></div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next !text-white/80 hover:!text-white"></div>
+            <div class="swiper-button-prev !text-white/80 hover:!text-white"></div>
           </div>
           
-          <div class="absolute bottom-0 right-0 bg-black/70 text-white text-[10px] px-2 py-1 rounded-tl-md z-10">
+          <div
+            class="absolute bottom-0 right-0 bg-black/60 text-white/90 text-xs px-3 py-1 rounded-tl-lg z-10 backdrop-blur-sm">
             Photos: <a href="https://maps.google.com/maps/contrib/108585025234485852384" target="_blank" rel="noopener noreferrer">David Herszenson</a>, <a href="https://maps.google.com/maps/contrib/112811715626655745719" target="_blank" rel="noopener noreferrer">marc carchipulla</a>, <a href="https://maps.google.com/maps/contrib/115275896668336162213" target="_blank" rel="noopener noreferrer">David B</a>, <a href="https://maps.google.com/maps/contrib/102169021195287746448" target="_blank" rel="noopener noreferrer">alla bevzenko</a>, <a href="https://maps.google.com/maps/contrib/111649775342102021103" target="_blank" rel="noopener noreferrer">Keyra Fernandez</a>, <a href="https://maps.google.com/maps/contrib/107927022956823006827" target="_blank" rel="noopener noreferrer">Dorothy Oshin</a>, <a href="https://maps.google.com/maps/contrib/112385749461986717978" target="_blank" rel="noopener noreferrer">Daniel Catano</a>
           </div>
           
@@ -137,14 +138,14 @@
         
 
         <!-- Street View -->
-        <section class="bg-white rounded-xl shadow-md overflow-hidden border border-gray-200 aspect-[4/3]">
-          <div class="relative w-full h-full">
+        <section class="card aspect-video relative group">
+          <div class="w-full h-full">
             <iframe src="https://roadview.planninglabs.nyc/view/-73.9036014/40.8941674" class="w-full h-full border-0" allowfullscreen=""
               loading="lazy" referrerpolicy="no-referrer-when-downgrade">
             </iframe>
             <a href="https://www.google.com/maps/dir/?api=1&destination=40.8941674,-73.9036014" target="_blank"
               rel="noopener noreferrer"
-              class="absolute bottom-4 right-4 bg-white/90 text-nyc-blue px-3 py-1 rounded shadow text-sm font-medium hover:bg-white z-10">
+              class="absolute bottom-4 right-4 btn-secondary text-sm py-2 px-4 shadow-lg z-10 opacity-90 hover:opacity-100">
               Get Directions &rarr;
             </a>
           </div>
@@ -152,31 +153,31 @@
 
       </div>
 
-      <!-- Right Column: Info (Span 5) -->
-      <div class="lg:col-span-5 space-y-8 lg:sticky lg:top-24 h-fit">
+      <!-- Right Column: Info -->
+      <div class="space-y-8 lg:py-4">
 
         <!-- About Section -->
-        <section class="bg-white rounded-xl shadow-md p-8 border border-gray-200">
-          <h2 class="text-2xl font-serif font-bold mb-4 text-nyc-black border-b pb-2 border-gray-100">About</h2>
-          <p class="text-gray-700 leading-relaxed text-lg">A residential neighborhood in the Bronx, known for its hilly terrain and upscale homes.</p>
+        <section class="card p-8 lg:p-10">
+          <h2 class="text-3xl font-serif font-bold mb-6 text-nyc-black">About</h2>
+          <div class="prose prose-lg text-gray-600 leading-relaxed max-w-none">
+            <p>A residential neighborhood in the Bronx, known for its hilly terrain and upscale homes.</p>
+          </div>
         </section>
 
         <!-- Contribute Section -->
-        <section
-          class="bg-gradient-to-br from-nyc-black to-nyc-gray text-white rounded-xl shadow-lg p-8 flex flex-col justify-center items-center text-center border border-gray-700 relative overflow-hidden group">
-          <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-500 to-purple-500"></div>
-          <h3 class="font-serif font-bold mb-3 text-2xl tracking-wide">Contribute</h3>
-          <p class="text-gray-300 mb-6 max-w-xs mx-auto leading-relaxed">Know more about this spot? Have better photos?
-            Help us document the unseen city.</p>
+        <section class="card p-8 bg-gray-900 text-white text-center">
+          <h3 class="font-serif font-bold mb-3 text-2xl">Contribute</h3>
+          <p class="text-gray-300 mb-6 max-w-md mx-auto">Know more about this spot? Have better photos? Help us document
+            the unseen city.</p>
           <a href="https://forms.gle/4HR5RrvrfV2Nt2718" target="_blank" rel="noopener noreferrer"
-            class="bg-white text-nyc-black px-8 py-3 rounded-full font-bold hover:bg-gray-100 transition-all transform hover:scale-105 shadow-xl w-full sm:w-auto">
+            class="btn-secondary border-transparent hover:bg-gray-100">
             Submit Info
           </a>
         </section>
 
         <!-- Comments Section -->
-        <section class="bg-white rounded-xl shadow-md p-6 border border-gray-200">
-          <h2 class="text-xl font-serif font-bold mb-6 text-nyc-black">Discussion</h2>
+        <section class="card p-8">
+          <h2 class="text-2xl font-serif font-bold mb-6 text-nyc-black">Discussion</h2>
           <script src="https://giscus.app/client.js" data-repo="nfjesifb/offthegridnyc" data-repo-id="R_kgDOOCIF_w"
             data-category="Announcements" data-category-id="DIC_kwDOOCIF_84CpfwD" data-mapping="pathname"
             data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom"
