@@ -1,8 +1,8 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" ?>
 <kml xmlns="http://www.opengis.net/kml/2.2">
   <Document>
     <name>offthegridnycstreetview</name>
-    <description />
+    <description/>
     <Style id="icon-1502-0288D1-normal">
       <IconStyle>
         <color>ffd18802</color>
@@ -550,7 +550,7 @@
       </Placemark>
       <Placemark>
         <name>Stuy Town</name>
-        <description>"The best idea private equity has ever had"</description>
+        <description>&quot;The best idea private equity has ever had&quot;</description>
         <styleUrl>#icon-1582-0288D1</styleUrl>
         <Point>
           <coordinates>
@@ -632,7 +632,7 @@
       <name>Off the Grid Communities</name>
       <Placemark>
         <name>Grove Court</name>
-        <description>The story of Grove Court begins in the mid-19th century. In 1848, Samuel Cocks, a grocer with a store at the corner of Grove and Bedford Streets, acquired the rear yards of properties along Grove Street from Samuel Stryker, who had been leasing the land from Trinity Church. Cocks saw an opportunity to create housing for working-class families, likely with the practical aim of securing a steady customer base for his grocery business. Construction of the six three-story Federal-style houses began shortly after and was completed in 1854. Initially, these homes were considered a single tax lot, addressed as 10½ Grove Street, and were modest in size—about 990 square feet each—compared to the larger townhouses typical of the era.&lt;br&gt;&lt;br&gt;In its early days, Grove Court was far from the picturesque retreat it is today. Built for laborers and tradesmen, the enclave was a working-class community, and its secluded location behind the main street contributed to its reputation as a less desirable area. Historical accounts suggest it was once a rough spot, even earning the nickname "Mixed Ale Alley" due to the drinking habits of its residents. Photographs from the early 20th century, such as those by Jessie Tarbox Beals and Arthur D. Chapman, show laundry hanging in the courtyard, a testament to its utilitarian roots.</description>
+        <description>The story of Grove Court begins in the mid-19th century. In 1848, Samuel Cocks, a grocer with a store at the corner of Grove and Bedford Streets, acquired the rear yards of properties along Grove Street from Samuel Stryker, who had been leasing the land from Trinity Church. Cocks saw an opportunity to create housing for working-class families, likely with the practical aim of securing a steady customer base for his grocery business. Construction of the six three-story Federal-style houses began shortly after and was completed in 1854. Initially, these homes were considered a single tax lot, addressed as 10½ Grove Street, and were modest in size—about 990 square feet each—compared to the larger townhouses typical of the era.&lt;br&gt;&lt;br&gt;In its early days, Grove Court was far from the picturesque retreat it is today. Built for laborers and tradesmen, the enclave was a working-class community, and its secluded location behind the main street contributed to its reputation as a less desirable area. Historical accounts suggest it was once a rough spot, even earning the nickname &quot;Mixed Ale Alley&quot; due to the drinking habits of its residents. Photographs from the early 20th century, such as those by Jessie Tarbox Beals and Arthur D. Chapman, show laundry hanging in the courtyard, a testament to its utilitarian roots.</description>
         <styleUrl>#icon-1604-0288D1</styleUrl>
         <Point>
           <coordinates>
@@ -652,7 +652,7 @@
       </Placemark>
       <Placemark>
         <name>Milligan Place</name>
-        <description>Milligan Place, a secluded triangular courtyard in Greenwich Village, New York City, was constructed in 1852 by Aaron Patchin, who named it after his father-in-law, Daniel Milligan. Originally built as boarding houses for waiters from the nearby Brevoort House hotel, the four three-story brick homes were modest and housed working-class residents. Located off Sixth Avenue between West 10th and 11th Streets, it was once a gritty, overlooked spot, dubbed a "hole in the wall" by a 1915 New York Times article. In the early 20th century, it gained cultural significance as home to notable figures like playwright Eugene O’Neill and Provincetown Players founders George Cram Cook and Susan Glaspell. Over time, the courtyard transformed from a rough enclave to a charming, gated retreat, reflecting Greenwich Village’s shift from working-class roots to artistic haven. Designated part of the Greenwich Village Historic District in 1969, Milligan Place now commands high rents and epitomizes the area’s historic allure.</description>
+        <description>Milligan Place, a secluded triangular courtyard in Greenwich Village, New York City, was constructed in 1852 by Aaron Patchin, who named it after his father-in-law, Daniel Milligan. Originally built as boarding houses for waiters from the nearby Brevoort House hotel, the four three-story brick homes were modest and housed working-class residents. Located off Sixth Avenue between West 10th and 11th Streets, it was once a gritty, overlooked spot, dubbed a &quot;hole in the wall&quot; by a 1915 New York Times article. In the early 20th century, it gained cultural significance as home to notable figures like playwright Eugene O’Neill and Provincetown Players founders George Cram Cook and Susan Glaspell. Over time, the courtyard transformed from a rough enclave to a charming, gated retreat, reflecting Greenwich Village’s shift from working-class roots to artistic haven. Designated part of the Greenwich Village Historic District in 1969, Milligan Place now commands high rents and epitomizes the area’s historic allure.</description>
         <styleUrl>#icon-1604-0288D1</styleUrl>
         <Point>
           <coordinates>
@@ -1115,7 +1115,7 @@
       </Placemark>
       <Placemark>
         <name>Ditmas Park</name>
-        <description>This kind of applied to the whole area south of here! But its absolutely beautiful and this street in particular is amazing because in the summer people have picnics on the green median and children learn to ride bikes in the street. Crazy that you can walk to blocks and be back in "normal" NYC low density looking stuff.&lt;br&gt;&lt;br&gt;Fun fact if you look at the satellite view of the city you can clearly see the three sections of ditmas park where all of these nice houses and streets are because they are so green in comparison to the rest of the city. This is also true of riverdale in the bronx and forest hills in queens.</description>
+        <description>This kind of applied to the whole area south of here! But its absolutely beautiful and this street in particular is amazing because in the summer people have picnics on the green median and children learn to ride bikes in the street. Crazy that you can walk to blocks and be back in &quot;normal&quot; NYC low density looking stuff.&lt;br&gt;&lt;br&gt;Fun fact if you look at the satellite view of the city you can clearly see the three sections of ditmas park where all of these nice houses and streets are because they are so green in comparison to the rest of the city. This is also true of riverdale in the bronx and forest hills in queens.</description>
         <styleUrl>#icon-1720-0288D1</styleUrl>
         <Point>
           <coordinates>
@@ -1218,5 +1218,40 @@
         </Point>
       </Placemark>
     </Folder>
-  <Placemark><name>137 Oak St</name><Point><coordinates>-73.955272,40.728190,0</coordinates></Point></Placemark><Placemark><name>Sunny Side Gardens</name><Point><coordinates>-73.917689,40.748314,0</coordinates></Point></Placemark><Placemark><name>Claremont/Vanderbilt New townhouses with communal garden</name><Point><coordinates>-73.971140,40.697108,0</coordinates></Point></Placemark><Placemark><name>Jones Wood Garden</name><Point><coordinates>-73.964279,40.765827,0</coordinates></Point></Placemark><Placemark><name>Jones Wood Garden</name><Point><coordinates>-73.964279,40.765827,0</coordinates></Point></Placemark></Document>
+    <Placemark>
+      <name>137 Oak St</name>
+      <styleUrl>#icon-1552-0288D1</styleUrl>
+      <Point>
+        <coordinates>-73.955272,40.728190,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Sunny Side Gardens</name>
+      <styleUrl>#icon-1552-0288D1</styleUrl>
+      <Point>
+        <coordinates>-73.917689,40.748314,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Claremont/Vanderbilt New townhouses with communal garden</name>
+      <styleUrl>#icon-1552-0288D1</styleUrl>
+      <Point>
+        <coordinates>-73.971140,40.697108,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Jones Wood Garden</name>
+      <styleUrl>#icon-1552-0288D1</styleUrl>
+      <Point>
+        <coordinates>-73.964279,40.765827,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Jones Wood Garden</name>
+      <styleUrl>#icon-1552-0288D1</styleUrl>
+      <Point>
+        <coordinates>-73.964279,40.765827,0</coordinates>
+      </Point>
+    </Placemark>
+  </Document>
 </kml>
