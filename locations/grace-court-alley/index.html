@@ -2,6 +2,11 @@
 <html lang="en">
 
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grace Court Alley - Off The Grid NYC</title>
+  <link rel="icon" href="../../favicon.ico" type="image/x-icon">
+
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-DS1YWJT1KC"></script>
   <script>
@@ -10,10 +15,6 @@
     gtag('js', new Date());
     gtag('config', 'G-DS1YWJT1KC');
   </script>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Grace Court Alley - Off The Grid NYC</title>
-  <link rel="icon" href="../../favicon.ico" type="image/x-icon">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,7 +33,8 @@
     /* Swiper Customization */
     .swiper {
       width: 100%;
-      height: 500px;
+      height: 400px;
+      /* Adjusted height */
     }
 
     .swiper-slide {
@@ -82,110 +84,100 @@
   </header>
 
   <!-- Main Content -->
-  <main class="flex-grow container mx-auto px-4 py-8 max-w-6xl">
+  <main class="flex-grow container mx-auto px-4 py-8 max-w-7xl">
 
-    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+    <!-- Top Row: About & Contribute -->
+    <div class="grid grid-cols-1 lg:grid-cols-4 gap-8 mb-8">
 
-      <!-- Left Column: Info & History -->
-      <div class="lg:col-span-1 space-y-8">
-
-        <!-- Description Card -->
-        <section class="bg-white rounded-xl shadow-md p-6 border border-gray-200">
-          <h2 class="text-xl font-serif font-bold mb-4 text-nyc-black border-b pb-2 border-gray-100">About</h2>
-          <p class="text-gray-600 leading-relaxed mb-4">A hidden alley in Brooklyn Heights, featuring converted carriage houses.</p>
-
-          <div class="mt-6 space-y-2 text-sm text-gray-500">
-            <p><strong class="text-gray-800">Address:</strong> N/A</p>
-            <p><strong class="text-gray-800">Cross Streets:</strong> N/A</p>
-          </div>
+      <!-- About Section (Takes up 3/4 width) -->
+      <div class="lg:col-span-3">
+        <section class="bg-white rounded-xl shadow-md p-8 border border-gray-200 h-full">
+          <h2 class="text-2xl font-serif font-bold mb-4 text-nyc-black border-b pb-2 border-gray-100">About</h2>
+          <p class="text-gray-700 leading-relaxed text-lg">A hidden alley in Brooklyn Heights, featuring converted carriage houses.</p>
         </section>
+      </div>
 
-        <!-- History Card -->
-        <section class="bg-white rounded-xl shadow-md p-6 border border-gray-200">
-          <h2 class="text-xl font-serif font-bold mb-4 text-nyc-black border-b pb-2 border-gray-100">History</h2>
-          <p class="text-gray-600 leading-relaxed text-sm">Grace Court Alley was originally used for stables and carriage houses serving the grand homes of Brooklyn Heights. In the 20th century, these structures were converted into residences, creating a unique and secluded living environment.</p>
-        </section>
-
-        <!-- Share Card -->
-        <section class="bg-nyc-gray text-white rounded-xl shadow-md p-6">
-          <h3 class="font-serif font-bold mb-2">Contribute</h3>
-          <p class="text-sm text-gray-300 mb-4">Have more info or photos of this spot?</p>
+      <!-- Contribute Section (Takes up 1/4 width) -->
+      <div class="lg:col-span-1">
+        <section
+          class="bg-nyc-gray text-white rounded-xl shadow-md p-6 h-full flex flex-col justify-center items-center text-center">
+          <h3 class="font-serif font-bold mb-2 text-xl">Contribute</h3>
+          <p class="text-sm text-gray-300 mb-6">Know more about this spot? Have photos?</p>
           <a href="https://forms.gle/4HR5RrvrfV2Nt2718" target="_blank" rel="noopener noreferrer"
-            class="inline-block bg-white text-nyc-black px-4 py-2 rounded text-sm font-semibold hover:bg-gray-200 transition-colors">
+            class="bg-white text-nyc-black px-6 py-3 rounded-lg font-semibold hover:bg-gray-200 transition-colors shadow-lg w-full">
             Submit Info
           </a>
         </section>
-
-      </div>
-
-      <!-- Right Column: Visuals -->
-      <div class="lg:col-span-2 space-y-8">
-
-        <!-- Photo Carousel -->
-        <section class="bg-black rounded-xl shadow-2xl overflow-hidden relative">
-          <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-              
-              <div class="swiper-slide">
-                <img src="/locations/grace-court-alley/images/photo_1.jpg" alt="Grace Court Alley - Photo 1" loading="lazy">
-              </div>
-              
-              <div class="swiper-slide">
-                <img src="/locations/grace-court-alley/images/photo_2.jpg" alt="Grace Court Alley - Photo 2" loading="lazy">
-              </div>
-              
-              <div class="swiper-slide">
-                <img src="/locations/grace-court-alley/images/photo_3.jpg" alt="Grace Court Alley - Photo 3" loading="lazy">
-              </div>
-              
-              <div class="swiper-slide">
-                <img src="/locations/grace-court-alley/images/photo_4.jpg" alt="Grace Court Alley - Photo 4" loading="lazy">
-              </div>
-              
-              <div class="swiper-slide">
-                <img src="/locations/grace-court-alley/images/photo_5.jpg" alt="Grace Court Alley - Photo 5" loading="lazy">
-              </div>
-              
-            </div>
-            <div class="swiper-pagination"></div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-          </div>
-          
-          <div class="absolute bottom-0 right-0 bg-black/70 text-white text-[10px] px-2 py-1 rounded-tl-md z-10">
-            Photos: <a href="https://maps.google.com/maps/contrib/106384674004290807486" target="_blank" rel="noopener noreferrer">Oguz Yucel</a>
-          </div>
-          
-        </section>
-
-        <!-- Street View / Map -->
-        <section class="bg-white rounded-xl shadow-md overflow-hidden border border-gray-200">
-          <div class="p-4 border-b border-gray-100 flex justify-between items-center">
-            <h2 class="text-lg font-serif font-bold text-nyc-black">Street View</h2>
-            <a href="https://www.google.com/maps/dir/?api=1&destination=40.6939393,-73.9960372" target="_blank"
-              rel="noopener noreferrer" class="text-nyc-blue text-sm font-medium hover:underline">
-              Get Directions &rarr;
-            </a>
-          </div>
-          <div class="aspect-video w-full bg-gray-100">
-            <iframe src="https://roadview.planninglabs.nyc/view/-73.9960372/40.6939393" class="w-full h-full border-0" allowfullscreen=""
-              loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-          </div>
-        </section>
-
-        <!-- Comments -->
-        <section class="bg-white rounded-xl shadow-md p-6 border border-gray-200">
-          <h2 class="text-xl font-serif font-bold mb-6 text-nyc-black">Discussion</h2>
-          <script src="https://giscus.app/client.js" data-repo="nfjesifb/offthegridnyc" data-repo-id="R_kgDOOCIF_w"
-            data-category="Announcements" data-category-id="DIC_kwDOOCIF_84CpfwD" data-mapping="pathname"
-            data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom"
-            data-theme="light" data-lang="en" crossorigin="anonymous" async>
-            </script>
-        </section>
-
       </div>
     </div>
+
+    <!-- Bottom Row: Visuals -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+
+      
+      <!-- Photo Carousel -->
+      <section class="bg-black rounded-xl shadow-2xl overflow-hidden relative h-[400px]">
+        <div class="swiper mySwiper h-full">
+          <div class="swiper-wrapper">
+            
+            <div class="swiper-slide">
+              <img src="/locations/grace-court-alley/images/photo_1.jpg" alt="Grace Court Alley - Photo 1" loading="lazy">
+            </div>
+            
+            <div class="swiper-slide">
+              <img src="/locations/grace-court-alley/images/photo_2.jpg" alt="Grace Court Alley - Photo 2" loading="lazy">
+            </div>
+            
+            <div class="swiper-slide">
+              <img src="/locations/grace-court-alley/images/photo_3.jpg" alt="Grace Court Alley - Photo 3" loading="lazy">
+            </div>
+            
+            <div class="swiper-slide">
+              <img src="/locations/grace-court-alley/images/photo_4.jpg" alt="Grace Court Alley - Photo 4" loading="lazy">
+            </div>
+            
+            <div class="swiper-slide">
+              <img src="/locations/grace-court-alley/images/photo_5.jpg" alt="Grace Court Alley - Photo 5" loading="lazy">
+            </div>
+            
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+        
+        <div class="absolute bottom-0 right-0 bg-black/70 text-white text-[10px] px-2 py-1 rounded-tl-md z-10">
+          Photos: <a href="https://maps.google.com/maps/contrib/106384674004290807486" target="_blank" rel="noopener noreferrer">Oguz Yucel</a>
+        </div>
+        
+      </section>
+      
+
+      <!-- Street View -->
+      <section class="bg-white rounded-xl shadow-md overflow-hidden border border-gray-200 h-[400px]">
+        <div class="relative w-full h-full">
+          <iframe src="https://roadview.planninglabs.nyc/view/-73.9960372/40.6939393" class="w-full h-full border-0" allowfullscreen=""
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+          <a href="https://www.google.com/maps/dir/?api=1&destination=40.6939393,-73.9960372" target="_blank"
+            rel="noopener noreferrer"
+            class="absolute bottom-4 right-4 bg-white/90 text-nyc-blue px-3 py-1 rounded shadow text-sm font-medium hover:bg-white">
+            Get Directions &rarr;
+          </a>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- Comments Section -->
+    <section class="mt-12 bg-white rounded-xl shadow-md p-6 border border-gray-200">
+      <h2 class="text-xl font-serif font-bold mb-6 text-nyc-black">Discussion</h2>
+      <script src="https://giscus.app/client.js" data-repo="nfjesifb/offthegridnyc" data-repo-id="R_kgDOOCIF_w"
+        data-category="Announcements" data-category-id="DIC_kwDOOCIF_84CpfwD" data-mapping="pathname" data-strict="0"
+        data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="light" data-lang="en"
+        crossorigin="anonymous" async>
+        </script>
+    </section>
 
   </main>
 
@@ -202,6 +194,7 @@
 
   <!-- Initialization Script -->
   <script>
+    
     var swiper = new Swiper(".mySwiper", {
       loop: true,
       pagination: {
@@ -217,6 +210,7 @@
         disableOnInteraction: false,
       },
     });
+    
   </script>
 
 </body>

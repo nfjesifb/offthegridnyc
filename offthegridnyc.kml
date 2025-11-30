@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <kml xmlns="http://www.opengis.net/kml/2.2">
   <Document>
     <name>offthegridnyc</name>
-    <description/>
+    <description />
     <Style id="icon-1502-0288D1-normal">
       <IconStyle>
         <color>ffd18802</color>
@@ -83,7 +83,7 @@
         <scale>0</scale>
       </LabelStyle>
       <BalloonStyle>
-        <text><![CDATA[<h3>$[name]</h3>]]></text>
+        <text>&lt;h3&gt;$[name]&lt;/h3&gt;</text>
       </BalloonStyle>
     </Style>
     <Style id="icon-1552-0288D1-nodesc-highlight">
@@ -98,7 +98,7 @@
         <scale>1</scale>
       </LabelStyle>
       <BalloonStyle>
-        <text><![CDATA[<h3>$[name]</h3>]]></text>
+        <text>&lt;h3&gt;$[name]&lt;/h3&gt;</text>
       </BalloonStyle>
     </Style>
     <StyleMap id="icon-1552-0288D1-nodesc">
@@ -157,7 +157,7 @@
         <scale>0</scale>
       </LabelStyle>
       <BalloonStyle>
-        <text><![CDATA[<h3>$[name]</h3>]]></text>
+        <text>&lt;h3&gt;$[name]&lt;/h3&gt;</text>
       </BalloonStyle>
     </Style>
     <Style id="icon-1582-0288D1-nodesc-highlight">
@@ -172,7 +172,7 @@
         <scale>1</scale>
       </LabelStyle>
       <BalloonStyle>
-        <text><![CDATA[<h3>$[name]</h3>]]></text>
+        <text>&lt;h3&gt;$[name]&lt;/h3&gt;</text>
       </BalloonStyle>
     </Style>
     <StyleMap id="icon-1582-0288D1-nodesc">
@@ -265,7 +265,7 @@
         <scale>0</scale>
       </LabelStyle>
       <BalloonStyle>
-        <text><![CDATA[<h3>$[name]</h3>]]></text>
+        <text>&lt;h3&gt;$[name]&lt;/h3&gt;</text>
       </BalloonStyle>
     </Style>
     <Style id="icon-1604-0288D1-nodesc-highlight">
@@ -280,7 +280,7 @@
         <scale>1</scale>
       </LabelStyle>
       <BalloonStyle>
-        <text><![CDATA[<h3>$[name]</h3>]]></text>
+        <text>&lt;h3&gt;$[name]&lt;/h3&gt;</text>
       </BalloonStyle>
     </Style>
     <StyleMap id="icon-1604-0288D1-nodesc">
@@ -373,7 +373,7 @@
         <scale>0</scale>
       </LabelStyle>
       <BalloonStyle>
-        <text><![CDATA[<h3>$[name]</h3>]]></text>
+        <text>&lt;h3&gt;$[name]&lt;/h3&gt;</text>
       </BalloonStyle>
     </Style>
     <Style id="icon-1731-0288D1-nodesc-highlight">
@@ -388,7 +388,7 @@
         <scale>1</scale>
       </LabelStyle>
       <BalloonStyle>
-        <text><![CDATA[<h3>$[name]</h3>]]></text>
+        <text>&lt;h3&gt;$[name]&lt;/h3&gt;</text>
       </BalloonStyle>
     </Style>
     <StyleMap id="icon-1731-0288D1-nodesc">
@@ -487,7 +487,7 @@
       </Placemark>
       <Placemark>
         <name>Sky Port</name>
-        <description><![CDATA[The only airport in manhattan.<br><br>There used to be many. now only one. <br><br>Laguardia made it a priority ot build these. At one point you could commute by plane from Westchester to Manhattan those days are over now its just traffic.]]></description>
+        <description>The only airport in manhattan.&lt;br&gt;&lt;br&gt;There used to be many. now only one. &lt;br&gt;&lt;br&gt;Laguardia made it a priority ot build these. At one point you could commute by plane from Westchester to Manhattan those days are over now its just traffic.</description>
         <styleUrl>#icon-1502-0288D1</styleUrl>
         <Point>
           <coordinates>
@@ -507,7 +507,7 @@
       </Placemark>
       <Placemark>
         <name>Cliff House (Pumpkin House)</name>
-        <description><![CDATA[A house suspended in the air litterally hanging off a cliff. Interestingly it looks like there is another slightly larger lot defined next to it zoned for residential! Someone's got to do it but it wont be me I dont have ten year to kill getting approved by the DOB for another cliff house.]]></description>
+        <description>A house suspended in the air litterally hanging off a cliff. Interestingly it looks like there is another slightly larger lot defined next to it zoned for residential! Someone's got to do it but it wont be me I dont have ten year to kill getting approved by the DOB for another cliff house.</description>
         <styleUrl>#icon-1502-0288D1</styleUrl>
         <Point>
           <coordinates>
@@ -550,7 +550,7 @@
       </Placemark>
       <Placemark>
         <name>Stuy Town</name>
-        <description><![CDATA["The best idea private equity has ever had"]]></description>
+        <description>"The best idea private equity has ever had"</description>
         <styleUrl>#icon-1582-0288D1</styleUrl>
         <Point>
           <coordinates>
@@ -579,7 +579,7 @@
       </Placemark>
       <Placemark>
         <name>Waterside</name>
-        <description><![CDATA[The thing your supposed to do when you run out of land! Really human centric once your there but its sad that its next to the FDR.<br><br>Waterside Plaza, a residential complex in NYC’s Kips Bay along the East River, was envisioned in 1961 by developer Richard Ravitch to address housing shortages for UN staff. Built on a platform over the river—supported by 2,000 steel piles sunk 80 feet into the riverbed—it opened in 1973, with completion in 1974. Designed by Davis, Brody & Associates, it features four brown-brick towers (31 to 37 stories) and duplex townhouses around a two-acre plaza, originally part of the Mitchell-Lama affordable housing program. The site, east of the FDR Drive, used landfill from England and was isolated, accessible only by a pedestrian overpass at 25th Street. It won a Construction Achievement Award in 1974 from the American Society of Civil Engineers. Plans for further waterfront expansion in the 1980s were scrapped, and Stuyvesant Cove Park took its place. Once home to a diverse mix of income groups, it’s now a luxury rental community managed by Brookfield Properties, known for its river views and self-contained feel.]]></description>
+        <description>The thing your supposed to do when you run out of land! Really human centric once your there but its sad that its next to the FDR.&lt;br&gt;&lt;br&gt;Waterside Plaza, a residential complex in NYC’s Kips Bay along the East River, was envisioned in 1961 by developer Richard Ravitch to address housing shortages for UN staff. Built on a platform over the river—supported by 2,000 steel piles sunk 80 feet into the riverbed—it opened in 1973, with completion in 1974. Designed by Davis, Brody &amp; Associates, it features four brown-brick towers (31 to 37 stories) and duplex townhouses around a two-acre plaza, originally part of the Mitchell-Lama affordable housing program. The site, east of the FDR Drive, used landfill from England and was isolated, accessible only by a pedestrian overpass at 25th Street. It won a Construction Achievement Award in 1974 from the American Society of Civil Engineers. Plans for further waterfront expansion in the 1980s were scrapped, and Stuyvesant Cove Park took its place. Once home to a diverse mix of income groups, it’s now a luxury rental community managed by Brookfield Properties, known for its river views and self-contained feel.</description>
         <styleUrl>#icon-1582-0288D1</styleUrl>
         <Point>
           <coordinates>
@@ -632,7 +632,7 @@
       <name>Off the Grid Communities</name>
       <Placemark>
         <name>Grove Court</name>
-        <description><![CDATA[The story of Grove Court begins in the mid-19th century. In 1848, Samuel Cocks, a grocer with a store at the corner of Grove and Bedford Streets, acquired the rear yards of properties along Grove Street from Samuel Stryker, who had been leasing the land from Trinity Church. Cocks saw an opportunity to create housing for working-class families, likely with the practical aim of securing a steady customer base for his grocery business. Construction of the six three-story Federal-style houses began shortly after and was completed in 1854. Initially, these homes were considered a single tax lot, addressed as 10½ Grove Street, and were modest in size—about 990 square feet each—compared to the larger townhouses typical of the era.<br><br>In its early days, Grove Court was far from the picturesque retreat it is today. Built for laborers and tradesmen, the enclave was a working-class community, and its secluded location behind the main street contributed to its reputation as a less desirable area. Historical accounts suggest it was once a rough spot, even earning the nickname "Mixed Ale Alley" due to the drinking habits of its residents. Photographs from the early 20th century, such as those by Jessie Tarbox Beals and Arthur D. Chapman, show laundry hanging in the courtyard, a testament to its utilitarian roots.]]></description>
+        <description>The story of Grove Court begins in the mid-19th century. In 1848, Samuel Cocks, a grocer with a store at the corner of Grove and Bedford Streets, acquired the rear yards of properties along Grove Street from Samuel Stryker, who had been leasing the land from Trinity Church. Cocks saw an opportunity to create housing for working-class families, likely with the practical aim of securing a steady customer base for his grocery business. Construction of the six three-story Federal-style houses began shortly after and was completed in 1854. Initially, these homes were considered a single tax lot, addressed as 10½ Grove Street, and were modest in size—about 990 square feet each—compared to the larger townhouses typical of the era.&lt;br&gt;&lt;br&gt;In its early days, Grove Court was far from the picturesque retreat it is today. Built for laborers and tradesmen, the enclave was a working-class community, and its secluded location behind the main street contributed to its reputation as a less desirable area. Historical accounts suggest it was once a rough spot, even earning the nickname "Mixed Ale Alley" due to the drinking habits of its residents. Photographs from the early 20th century, such as those by Jessie Tarbox Beals and Arthur D. Chapman, show laundry hanging in the courtyard, a testament to its utilitarian roots.</description>
         <styleUrl>#icon-1604-0288D1</styleUrl>
         <Point>
           <coordinates>
@@ -652,7 +652,7 @@
       </Placemark>
       <Placemark>
         <name>Milligan Place</name>
-        <description><![CDATA[Milligan Place, a secluded triangular courtyard in Greenwich Village, New York City, was constructed in 1852 by Aaron Patchin, who named it after his father-in-law, Daniel Milligan. Originally built as boarding houses for waiters from the nearby Brevoort House hotel, the four three-story brick homes were modest and housed working-class residents. Located off Sixth Avenue between West 10th and 11th Streets, it was once a gritty, overlooked spot, dubbed a "hole in the wall" by a 1915 New York Times article. In the early 20th century, it gained cultural significance as home to notable figures like playwright Eugene O’Neill and Provincetown Players founders George Cram Cook and Susan Glaspell. Over time, the courtyard transformed from a rough enclave to a charming, gated retreat, reflecting Greenwich Village’s shift from working-class roots to artistic haven. Designated part of the Greenwich Village Historic District in 1969, Milligan Place now commands high rents and epitomizes the area’s historic allure.]]></description>
+        <description>Milligan Place, a secluded triangular courtyard in Greenwich Village, New York City, was constructed in 1852 by Aaron Patchin, who named it after his father-in-law, Daniel Milligan. Originally built as boarding houses for waiters from the nearby Brevoort House hotel, the four three-story brick homes were modest and housed working-class residents. Located off Sixth Avenue between West 10th and 11th Streets, it was once a gritty, overlooked spot, dubbed a "hole in the wall" by a 1915 New York Times article. In the early 20th century, it gained cultural significance as home to notable figures like playwright Eugene O’Neill and Provincetown Players founders George Cram Cook and Susan Glaspell. Over time, the courtyard transformed from a rough enclave to a charming, gated retreat, reflecting Greenwich Village’s shift from working-class roots to artistic haven. Designated part of the Greenwich Village Historic District in 1969, Milligan Place now commands high rents and epitomizes the area’s historic allure.</description>
         <styleUrl>#icon-1604-0288D1</styleUrl>
         <Point>
           <coordinates>
@@ -662,7 +662,7 @@
       </Placemark>
       <Placemark>
         <name>Pomander Walk</name>
-        <description><![CDATA[Inspired by a 1910 romantic comedy play by Louis N. Parker called Pomander Walk—set in a fictional London lane—Healy intended it as a temporary project to generate income while he raised funds for a grand hotel. Designed by the New York architecture firm King and Campbell, the two- and three-story homes feature stucco, brick, and half-timber facades, evoking an English village. Healy’s death in 1927 halted his hotel plans, leaving Pomander Walk as a permanent fixture.<br><br>Originally an all-rental complex with about 61 units (each building typically had one apartment per floor), it housed theatrical folks like Rosalind Russell and Humphrey Bogart, drawn to its whimsy. By the 1970s, it had deteriorated and faced demolition, but residents fought back, securing its designation as a New York City Landmark and a spot on the National Register of Historic Places in 1982. A 2009 renovation restored its pastel charm—think green, blue, and red facades with flower boxes—earning it a preservation award.]]></description>
+        <description>Inspired by a 1910 romantic comedy play by Louis N. Parker called Pomander Walk—set in a fictional London lane—Healy intended it as a temporary project to generate income while he raised funds for a grand hotel. Designed by the New York architecture firm King and Campbell, the two- and three-story homes feature stucco, brick, and half-timber facades, evoking an English village. Healy’s death in 1927 halted his hotel plans, leaving Pomander Walk as a permanent fixture.&lt;br&gt;&lt;br&gt;Originally an all-rental complex with about 61 units (each building typically had one apartment per floor), it housed theatrical folks like Rosalind Russell and Humphrey Bogart, drawn to its whimsy. By the 1970s, it had deteriorated and faced demolition, but residents fought back, securing its designation as a New York City Landmark and a spot on the National Register of Historic Places in 1982. A 2009 renovation restored its pastel charm—think green, blue, and red facades with flower boxes—earning it a preservation award.</description>
         <styleUrl>#icon-1604-0288D1</styleUrl>
         <Point>
           <coordinates>
@@ -959,7 +959,7 @@
       </Placemark>
       <Placemark>
         <name>Broadway Between 40th and 17th</name>
-        <description><![CDATA[janette sadik-khan's opus]]></description>
+        <description>janette sadik-khan's opus</description>
         <styleUrl>#icon-1731-0288D1</styleUrl>
         <Point>
           <coordinates>
@@ -1012,7 +1012,7 @@
       </Placemark>
       <Placemark>
         <name>117 Underhill Avenue</name>
-        <description><![CDATA[Really deep in the block! And off one of Janette Sadik-Khan's best creations at that (underhill ave has next generation street design)]]></description>
+        <description>Really deep in the block! And off one of Janette Sadik-Khan's best creations at that (underhill ave has next generation street design)</description>
         <styleUrl>#icon-1603-0288D1</styleUrl>
         <Point>
           <coordinates>
@@ -1092,7 +1092,7 @@
       </Placemark>
       <Placemark>
         <name>1288 Prospect Place</name>
-        <description><![CDATA[In the block. I've never seen this one but I found it through my lot shape data scrapping. ]]></description>
+        <description>In the block. I've never seen this one but I found it through my lot shape data scrapping. </description>
         <styleUrl>#icon-1603-0288D1</styleUrl>
         <Point>
           <coordinates>
@@ -1115,7 +1115,7 @@
       </Placemark>
       <Placemark>
         <name>Ditmas Park</name>
-        <description><![CDATA[This kind of applied to the whole area south of here! But its absolutely beautiful and this street in particular is amazing because in the summer people have picnics on the green median and children learn to ride bikes in the street. Crazy that you can walk to blocks and be back in "normal" NYC low density looking stuff.<br><br>Fun fact if you look at the satellite view of the city you can clearly see the three sections of ditmas park where all of these nice houses and streets are because they are so green in comparison to the rest of the city. This is also true of riverdale in the bronx and forest hills in queens.]]></description>
+        <description>This kind of applied to the whole area south of here! But its absolutely beautiful and this street in particular is amazing because in the summer people have picnics on the green median and children learn to ride bikes in the street. Crazy that you can walk to blocks and be back in "normal" NYC low density looking stuff.&lt;br&gt;&lt;br&gt;Fun fact if you look at the satellite view of the city you can clearly see the three sections of ditmas park where all of these nice houses and streets are because they are so green in comparison to the rest of the city. This is also true of riverdale in the bronx and forest hills in queens.</description>
         <styleUrl>#icon-1720-0288D1</styleUrl>
         <Point>
           <coordinates>
@@ -1155,7 +1155,7 @@
       </Placemark>
     </Folder>
     <Folder>
-      <name><![CDATA[Brownstones with Deep lots (>170ft)]]></name>
+      <name>Brownstones with Deep lots (&gt;170ft)</name>
       <Placemark>
         <name>30-36 Remsen</name>
         <description>Deep lots in Brooklyn Heights (these people really should get there stuff together to write up an easement and make a dope garden.</description>
@@ -1218,5 +1218,5 @@
         </Point>
       </Placemark>
     </Folder>
-  </Document>
+  <Placemark><name>137 Oak St</name><styleUrl>#icon-1899-0288D1</styleUrl><Point><coordinates>-73.955272,40.728190,0</coordinates></Point></Placemark><Placemark><name>Sunny Side Gardens</name><styleUrl>#icon-1899-0288D1</styleUrl><Point><coordinates>-73.917689,40.748314,0</coordinates></Point></Placemark><Placemark><name>Claremont/Vanderbilt New townhouses with communal garden</name><styleUrl>#icon-1899-0288D1</styleUrl><Point><coordinates>-73.971140,40.697108,0</coordinates></Point></Placemark><Placemark><name>Jones Wood Garden</name><styleUrl>#icon-1899-0288D1</styleUrl><Point><coordinates>-73.964279,40.765827,0</coordinates></Point></Placemark><Placemark><name>Jones Wood Garden</name><styleUrl>#icon-1899-0288D1</styleUrl><Point><coordinates>-73.964279,40.765827,0</coordinates></Point></Placemark></Document>
 </kml>

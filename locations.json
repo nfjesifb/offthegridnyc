@@ -565,5 +565,50 @@
     "history": "",
     "hasPhotos": false,
     "slug": "193-prospect-place"
+  },
+  {
+    "name": "137 Oak St",
+    "description": "cool house in a cool corner on a cool street in cool greenpoint",
+    "borough": "NYC",
+    "neighborhood": "",
+    "satellite_image_local": "",
+    "hasPhotos": false,
+    "slug": "137-oak-st"
+  },
+  {
+    "name": "Sunny Side Gardens",
+    "description": "Secret paths and secret communal gardens. another historical example of how homes are cheap and very nice neighborhoods are still cheap, but only if you build them when society was an order of magnitude less wealth",
+    "borough": "NYC",
+    "neighborhood": "",
+    "satellite_image_local": "",
+    "hasPhotos": false,
+    "slug": "sunny-side-gardens"
+  },
+  {
+    "name": "Claremont/Vanderbilt New townhouses with communal garden",
+    "description": "One of few modern examples of private shared space. the houses r kinda ugly but ill take what I can get",
+    "borough": "NYC",
+    "neighborhood": "",
+    "satellite_image_local": "",
+    "hasPhotos": false,
+    "slug": "claremontvanderbilt-new-townhouses-with-communal-garden"
+  },
+  {
+    "name": "Jones Wood Garden",
+    "description": "Prime shared townhouse garden!",
+    "borough": "NYC",
+    "neighborhood": "",
+    "satellite_image_local": "",
+    "hasPhotos": false,
+    "slug": "jones-wood-garden"
+  },
+  {
+    "name": "Jones Wood Garden",
+    "description": "Prime shared townhouse garden!",
+    "borough": "NYC",
+    "neighborhood": "",
+    "satellite_image_local": "",
+    "hasPhotos": false,
+    "slug": "jones-wood-garden"
   }
 ]

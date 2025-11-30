@@ -1,0 +1,186 @@
+{% extends "admin/layout.html" %}
+
+{% block content %}
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+<div class="max-w-6xl mx-auto">
+    <div class="flex justify-between items-center mb-6">
+        <h1 class="text-3xl font-bold text-white">Add New Location</h1>
+    </div>
+
+    <form action="/add_location" method="POST" class="space-y-8">
+
+        <!-- 1. Basic Info -->
+        <div class="bg-gray-800 rounded-lg shadow-xl border border-gray-700 p-6">
+            <h2 class="text-xl font-semibold text-white mb-4">1. Basic Info</h2>
+            <div class="space-y-4">
+                <div>
+                    <label class="block text-gray-400 text-sm font-bold mb-2">Location Name</label>
+                    <input type="text" name="name"
+                        class="w-full bg-gray-700 text-white border border-gray-600 rounded p-2 focus:border-blue-500 focus:outline-none"
+                        required>
+                </div>
+                <div>
+                    <label class="block text-gray-400 text-sm font-bold mb-2">About (Description)</label>
+                    <textarea name="description" rows="4"
+                        class="w-full bg-gray-700 text-white border border-gray-600 rounded p-2 focus:border-blue-500 focus:outline-none"
+                        required></textarea>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2. Map Location -->
+        <div class="bg-gray-800 rounded-lg shadow-xl border border-gray-700 p-6">
+            <h2 class="text-xl font-semibold text-white mb-2">2. Map Location</h2>
+            <p class="text-sm text-gray-400 mb-4">Drag the blue pin to set the main map location.</p>
+
+            <div id="map-picker" class="w-full h-[400px] rounded border border-gray-600 z-0"></div>
+
+            <div class="grid grid-cols-2 gap-4 mt-4">
+                <input type="text" name="lat" id="lat" placeholder="Latitude"
+                    class="bg-gray-900 text-gray-400 border border-gray-700 rounded p-2 text-sm" readonly required>
+                <input type="text" name="lng" id="lng" placeholder="Longitude"
+                    class="bg-gray-900 text-gray-400 border border-gray-700 rounded p-2 text-sm" readonly required>
+            </div>
+        </div>
+
+        <!-- 3. Street View Location -->
+        <div class="bg-gray-800 rounded-lg shadow-xl border border-gray-700 p-6">
+            <div class="flex justify-between items-center mb-2">
+                <h2 class="text-xl font-semibold text-white">3. Street View Location</h2>
+                <label class="inline-flex items-center cursor-pointer">
+                    <input type="checkbox" id="sync-location" class="sr-only peer">
+                    <div
+                        class="relative w-11 h-6 bg-gray-700 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-800 rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-blue-600">
+                    </div>
+                    <span class="ms-3 text-sm font-medium text-gray-300">Use same location</span>
+                </label>
+            </div>
+            <p class="text-sm text-gray-400 mb-4">
+                <strong>Left:</strong> Drag the blue pin to set the Street View location. <br>
+                <strong>Right:</strong> Live preview of the Roadview.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 h-[400px]">
+                <!-- Overhead Map -->
+                <div id="sv-map-picker" class="w-full h-full rounded border border-gray-600 z-0"></div>
+                <!-- Live Preview Iframe -->
+                <iframe id="sv-preview" src="about:blank"
+                    class="w-full h-full rounded border border-gray-600 bg-gray-900"></iframe>
+            </div>
+
+            <div class="grid grid-cols-2 gap-4 mt-4">
+                <input type="text" name="sv_lat" id="sv_lat" placeholder="SV Lat"
+                    class="bg-gray-900 text-gray-400 border border-gray-700 rounded p-2 text-sm" readonly required>
+                <input type="text" name="sv_lng" id="sv_lng" placeholder="SV Lng"
+                    class="bg-gray-900 text-gray-400 border border-gray-700 rounded p-2 text-sm" readonly required>
+            </div>
+        </div>
+
+        <div class="pt-4 pb-8">
+            <button type="submit"
+                class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-4 rounded-lg shadow-lg transition-colors text-xl">
+                Add Location & Build Site
+            </button>
+        </div>
+
+    </form>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const defaultCenter = [40.730610, -73.935242]; // NYC Centerish
+
+        // --- 1. Main Location Map (Leaflet) ---
+        const map1 = L.map('map-picker').setView(defaultCenter, 12);
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; OpenStreetMap contributors'
+        }).addTo(map1);
+
+        const marker1 = L.marker(defaultCenter, { draggable: true }).addTo(map1);
+
+        function updateLocationInputs(lat, lng) {
+            document.getElementById('lat').value = lat.toFixed(6);
+            document.getElementById('lng').value = lng.toFixed(6);
+
+            // Sync logic
+            const syncCheckbox = document.getElementById('sync-location');
+            if (syncCheckbox.checked) {
+                marker2.setLatLng([lat, lng]);
+                map2.setView([lat, lng]);
+                updateSVInputs(lat, lng);
+            }
+        }
+        updateLocationInputs(defaultCenter[0], defaultCenter[1]);
+
+        marker1.on('dragend', function (e) {
+            const pos = e.target.getLatLng();
+            updateLocationInputs(pos.lat, pos.lng);
+        });
+
+        map1.on('click', function (e) {
+            marker1.setLatLng(e.latlng);
+            updateLocationInputs(e.latlng.lat, e.latlng.lng);
+        });
+
+
+        // --- 2. Street View Map (Leaflet) ---
+        const map2 = L.map('sv-map-picker').setView(defaultCenter, 12);
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; OpenStreetMap contributors'
+        }).addTo(map2);
+
+        const marker2 = L.marker(defaultCenter, { draggable: true }).addTo(map2);
+        const iframe = document.getElementById('sv-preview');
+
+        function updateSVInputs(lat, lng) {
+            document.getElementById('sv_lat').value = lat.toFixed(6);
+            document.getElementById('sv_lng').value = lng.toFixed(6);
+            // Update Iframe Preview
+            iframe.src = `https://roadview.planninglabs.nyc/view/${lng.toFixed(6)}/${lat.toFixed(6)}`;
+        }
+        updateSVInputs(defaultCenter[0], defaultCenter[1]);
+
+        marker2.on('dragend', function (e) {
+            const syncCheckbox = document.getElementById('sync-location');
+            if (syncCheckbox.checked) return;
+
+            const pos = e.target.getLatLng();
+            updateSVInputs(pos.lat, pos.lng);
+        });
+
+        map2.on('click', function (e) {
+            const syncCheckbox = document.getElementById('sync-location');
+            if (syncCheckbox.checked) return;
+
+            marker2.setLatLng(e.latlng);
+            updateSVInputs(e.latlng.lat, e.latlng.lng);
+        });
+
+        // Checkbox Logic
+        const syncCheckbox = document.getElementById('sync-location');
+        syncCheckbox.addEventListener('change', function () {
+            if (this.checked) {
+                // Immediately sync
+                const lat = parseFloat(document.getElementById('lat').value);
+                const lng = parseFloat(document.getElementById('lng').value);
+                marker2.setLatLng([lat, lng]);
+                map2.setView([lat, lng]);
+                updateSVInputs(lat, lng);
+
+                // Disable SV map interaction visually
+                map2.dragging.disable();
+                marker2.dragging.disable();
+                document.getElementById('sv-map-picker').style.opacity = '0.5';
+            } else {
+                map2.dragging.enable();
+                marker2.dragging.enable();
+                document.getElementById('sv-map-picker').style.opacity = '1';
+            }
+        });
+    });
+</script>
+{% endblock %}

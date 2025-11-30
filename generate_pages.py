@@ -337,15 +337,11 @@ if __name__ == "__main__":
     for location in locations_data:
         name = location.get('name', 'Unknown Location')
         description = location.get('description', 'No description available.')
-        history = location.get('history', 'No history available.')
         borough = location.get('borough', 'N/A')
         neighborhood = location.get('neighborhood', 'N/A')
-        cross_streets = location.get('cross_streets', 'N/A')
-        address = location.get('address', 'N/A')
 
         # Ensure empty strings if null/None
         description = description if description else 'No description available.'
-        history = history if history else 'No history available.'
 
         # Get coordinates from parsed KML data
         if name not in map_coords:
@@ -476,10 +472,7 @@ if __name__ == "__main__":
             'name': name,
             'borough': borough,
             'neighborhood': neighborhood,
-            'cross_streets': cross_streets,
-            'address': address,
             'description': description,
-            'history': history,
             'lat': streetview_lat, # Use coords consistent with Street View
             'lng': streetview_lng,
             'google_maps_api_key': API_KEY,
