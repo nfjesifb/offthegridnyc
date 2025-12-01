@@ -72,7 +72,7 @@
   <header class="bg-nyc-black text-white py-6 shadow-lg sticky top-0 z-50">
     <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
       <div class="text-center md:text-left mb-4 md:mb-0">
-        <h1 class="text-2xl md:text-3xl font-serif font-bold tracking-wide leading-tight">116 Pinehurst</h1>
+        <h1 class="text-2xl md:text-3xl font-serif font-bold tracking-wide leading-tight break-words">116 Pinehurst</h1>
         <a href="../../index.html"
           class="text-sm text-gray-400 hover:text-white transition-colors flex items-center gap-1 mt-1">
           <span>&larr;</span> Back to Main Map
@@ -94,38 +94,39 @@
 
         
         <!-- Photo Carousel -->
-        <section class="card aspect-video relative group">
-          <div class="swiper mySwiper h-full w-full">
-            <div class="swiper-wrapper">
-              
-              <div class="swiper-slide bg-gray-900">
-                <img src="/locations/116-pinehurst/images/photo_1.jpg" alt="116 Pinehurst - Photo 1" class="w-full h-full object-cover"
-                  loading="lazy">
+        <section class="card overflow-hidden group">
+          <div class="aspect-video relative">
+            <div class="swiper mySwiper h-full w-full">
+              <div class="swiper-wrapper">
+                
+                <div class="swiper-slide bg-gray-900">
+                  <img src="/locations/116-pinehurst/images/photo_1.jpg" alt="116 Pinehurst - Photo 1"
+                    class="w-full h-full object-cover" loading="lazy">
+                </div>
+                
+                <div class="swiper-slide bg-gray-900">
+                  <img src="/locations/116-pinehurst/images/photo_2.jpg" alt="116 Pinehurst - Photo 2"
+                    class="w-full h-full object-cover" loading="lazy">
+                </div>
+                
+                <div class="swiper-slide bg-gray-900">
+                  <img src="/locations/116-pinehurst/images/photo_3.jpg" alt="116 Pinehurst - Photo 3"
+                    class="w-full h-full object-cover" loading="lazy">
+                </div>
+                
+                <div class="swiper-slide bg-gray-900">
+                  <img src="/locations/116-pinehurst/images/photo_4.jpg" alt="116 Pinehurst - Photo 4"
+                    class="w-full h-full object-cover" loading="lazy">
+                </div>
+                
               </div>
-              
-              <div class="swiper-slide bg-gray-900">
-                <img src="/locations/116-pinehurst/images/photo_2.jpg" alt="116 Pinehurst - Photo 2" class="w-full h-full object-cover"
-                  loading="lazy">
-              </div>
-              
-              <div class="swiper-slide bg-gray-900">
-                <img src="/locations/116-pinehurst/images/photo_3.jpg" alt="116 Pinehurst - Photo 3" class="w-full h-full object-cover"
-                  loading="lazy">
-              </div>
-              
-              <div class="swiper-slide bg-gray-900">
-                <img src="/locations/116-pinehurst/images/photo_4.jpg" alt="116 Pinehurst - Photo 4" class="w-full h-full object-cover"
-                  loading="lazy">
-              </div>
-              
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-next !text-white/80 hover:!text-white"></div>
+              <div class="swiper-button-prev !text-white/80 hover:!text-white"></div>
             </div>
-            <div class="swiper-pagination"></div>
-            <div class="swiper-button-next !text-white/80 hover:!text-white"></div>
-            <div class="swiper-button-prev !text-white/80 hover:!text-white"></div>
           </div>
           
-          <div
-            class="absolute bottom-0 right-0 bg-black/60 text-white/90 text-xs px-3 py-1 rounded-tl-lg z-10 backdrop-blur-sm">
+          <div class="bg-gray-100 text-gray-500 text-xs px-4 py-2 border-t border-gray-200">
             Photos: <a href="https://maps.google.com/maps/contrib/103365869787954635804" target="_blank" rel="noopener noreferrer">Arno Klein</a>
           </div>
           
@@ -133,14 +134,16 @@
         
 
         <!-- Street View -->
-        <section class="card aspect-video relative group">
-          <div class="w-full h-full">
+        <!-- Street View -->
+        <section class="card overflow-hidden group">
+          <div class="aspect-video w-full relative">
             <iframe src="https://roadview.planninglabs.nyc/view/-73.9384445/40.8538463" class="w-full h-full border-0" allowfullscreen=""
               loading="lazy" referrerpolicy="no-referrer-when-downgrade">
             </iframe>
+          </div>
+          <div class="bg-gray-50 p-3 border-t border-gray-200 flex justify-end">
             <a href="https://www.google.com/maps/dir/?api=1&destination=40.8538463,-73.9384445" target="_blank"
-              rel="noopener noreferrer"
-              class="absolute bottom-4 right-4 btn-secondary text-sm py-2 px-4 shadow-lg z-10 opacity-90 hover:opacity-100">
+              rel="noopener noreferrer" class="btn-secondary text-sm py-2 px-4 shadow-sm hover:shadow-md">
               Get Directions &rarr;
             </a>
           </div>
