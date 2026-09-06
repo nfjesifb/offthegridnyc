@@ -1,46 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin - Off The Grid NYC</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-        }
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>{% block title %}Admin{% endblock %} · Off The Grid NYC</title>
+  <link rel="icon" href="/assets/img/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/vendor/leaflet/leaflet.css">
+  <link rel="stylesheet" href="/assets/css/styles.css">
 </head>
-
-<body class="bg-gray-900 text-gray-200 min-h-screen flex flex-col">
-    <nav class="bg-black p-4 shadow-lg">
-        <div class="container mx-auto flex justify-between items-center">
-            <a href="/" class="text-xl font-bold text-white">Off The Grid Admin</a>
-            {% if session.get('logged_in') %}
-            <a href="/logout" class="text-sm text-gray-400 hover:text-white">Logout</a>
-            {% endif %}
-        </div>
-    </nav>
-
-    <main class="container mx-auto p-4 flex-grow">
-        {% with messages = get_flashed_messages() %}
-        {% if messages %}
-        <div class="mb-4">
-            {% for message in messages %}
-            <div class="bg-blue-600 text-white p-3 rounded shadow">{{ message }}</div>
-            {% endfor %}
-        </div>
+<body class="flex min-h-screen flex-col">
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="brand" href="{{ url_for('index') }}"><span class="brand__name">Off The Grid</span><span class="brand__tag">Admin</span></a>
+      <nav class="site-nav" aria-label="Admin">
+        {% if session.get('logged_in') %}
+        <a href="{{ url_for('dashboard') }}">Places</a>
+        <a href="{{ url_for('new_place') }}" class="is-cta">Add a place</a>
+        <form method="post" action="{{ url_for('logout') }}" class="ml-2"><input type="hidden" name="csrf" value="{{ csrf_token() }}"><button type="submit" class="btn btn--outline-light btn--small">Log out</button></form>
         {% endif %}
-        {% endwith %}
-
-        {% block content %}{% endblock %}
-    </main>
-
-    <footer class="bg-black text-gray-500 text-center p-4 text-xs">
-        &copy; 2025 Off The Grid NYC Admin
-    </footer>
+      </nav>
+    </div>
+  </header>
+  <main class="wrap flex-1 py-8">
+    {% with messages = get_flashed_messages(with_categories=true) %}
+      {% for category, message in messages %}
+      <p class="mb-4 rounded-xl border px-4 py-3 text-sm {% if category == 'error' %}border-red-300 bg-red-50 text-red-800{% else %}border-green-300 bg-green-50 text-green-900{% endif %}" role="status">{{ message }}</p>
+      {% endfor %}
+    {% endwith %}
+    {% block content %}{% endblock %}
+  </main>
+  <footer class="site-footer"><p class="wrap text-xs text-white/40">Local admin tool. Changes are written to data/locations.json; commit and push to publish.</p></footer>
+  <script src="/assets/vendor/leaflet/leaflet.js" defer></script>
+  {% block scripts %}{% endblock %}
 </body>
-
 </html>

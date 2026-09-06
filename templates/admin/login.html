@@ -1,25 +1,16 @@
 {% extends "admin/layout.html" %}
-
+{% block title %}Sign in{% endblock %}
 {% block content %}
-<div class="flex justify-center items-center h-full mt-20">
-    <div class="bg-gray-800 p-8 rounded-lg shadow-xl w-full max-w-md border border-gray-700">
-        <h2 class="text-2xl font-bold mb-6 text-center text-white">Admin Login</h2>
-        <form method="POST" action="/login">
-            <div class="mb-4">
-                <label class="block text-gray-400 text-sm font-bold mb-2" for="password">Password</label>
-                <input
-                    class="shadow appearance-none border border-gray-600 rounded w-full py-2 px-3 text-gray-200 bg-gray-700 leading-tight focus:outline-none focus:border-blue-500"
-                    id="password" name="password" type="password" placeholder="Enter password" required>
-            </div>
-            <div class="flex items-center justify-center">
-                <button
-                    class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline transition-colors w-full"
-                    type="submit">
-                    Sign In
-                </button>
-            </div>
-        </form>
-        <p class="text-center text-gray-500 text-xs mt-4">Hint: The password is 'admin'</p>
+<div class="card mx-auto mt-12 max-w-md p-8">
+  <h1 class="text-2xl">Sign in</h1>
+  <p class="mt-2 text-sm text-muted">The password is the OTG_ADMIN_PASSWORD you started the tool with.</p>
+  <form method="post" class="mt-6 space-y-4">
+    <input type="hidden" name="csrf" value="{{ csrf_token() }}">
+    <div>
+      <label for="password" class="mb-1 block text-sm font-medium">Password</label>
+      <input id="password" name="password" type="password" required autocomplete="current-password" class="w-full rounded-lg border border-line px-3 py-2 focus:border-ink focus:outline-none">
     </div>
+    <button type="submit" class="btn btn--primary w-full">Sign in</button>
+  </form>
 </div>
 {% endblock %}
