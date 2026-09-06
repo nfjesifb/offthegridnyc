@@ -1,0 +1,1262 @@
+{
+ "name": "Off The Grid NYC",
+ "url": "https://offthegridnyc.com",
+ "license": "Descriptions CC BY 4.0; photos belong to their Google Maps contributors.",
+ "count": 85,
+ "places": [
+  {
+   "name": "10 Bedford St",
+   "slug": "10-bedford-st",
+   "url": "https://offthegridnyc.com/locations/10-bedford-st/",
+   "borough": "Manhattan",
+   "neighborhood": "West Village",
+   "lat": 40.7291162,
+   "lng": -74.0031112,
+   "description": "No description yet.",
+   "history": "",
+   "photos": []
+  },
+  {
+   "name": "116 Pinehurst",
+   "slug": "116-pinehurst",
+   "url": "https://offthegridnyc.com/locations/116-pinehurst/",
+   "borough": "Manhattan",
+   "neighborhood": "Washington Heights (North)",
+   "lat": 40.8539663,
+   "lng": -73.9389458,
+   "description": "A residential building located in the Washington Heights neighborhood of Manhattan.",
+   "history": "116 Pinehurst Avenue is part of the Hudson View Gardens complex, developed in the 1920s. The building is known for its Tudor-style architecture and communal amenities, including gardens and playgrounds. It remains a desirable residence in Upper Manhattan.",
+   "photos": [
+    "https://offthegridnyc.com/locations/116-pinehurst/images/photo_1-1200.webp",
+    "https://offthegridnyc.com/locations/116-pinehurst/images/photo_2-1200.webp",
+    "https://offthegridnyc.com/locations/116-pinehurst/images/photo_3-1200.webp",
+    "https://offthegridnyc.com/locations/116-pinehurst/images/photo_4-1200.webp"
+   ]
+  },
+  {
+   "name": "117 Underhill Avenue",
+   "slug": "117-underhill-avenue",
+   "url": "https://offthegridnyc.com/locations/117-underhill-avenue/",
+   "borough": "Brooklyn",
+   "neighborhood": "Prospect Heights",
+   "lat": 40.6772844,
+   "lng": -73.9653462,
+   "description": "No description yet.",
+   "history": "",
+   "photos": []
+  },
+  {
+   "name": "1288 Prospect Place",
+   "slug": "1288-prospect-place",
+   "url": "https://offthegridnyc.com/locations/1288-prospect-place/",
+   "borough": "Brooklyn",
+   "neighborhood": "Crown Heights (North)",
+   "lat": 40.6730685,
+   "lng": -73.9344064,
+   "description": "No description yet.",
+   "history": "",
+   "photos": []
+  },
+  {
+   "name": "129 Degraw ABCD",
+   "slug": "129-degraw-abcd",
+   "url": "https://offthegridnyc.com/locations/129-degraw-abcd/",
+   "borough": "Brooklyn",
+   "neighborhood": "Carroll Gardens-Cobble Hill-Gowanus-Red Hook",
+   "lat": 40.685794,
+   "lng": -74.0018464,
+   "description": "No description yet.",
+   "history": "",
+   "photos": []
+  },
+  {
+   "name": "137 Oak St",
+   "slug": "137-oak-st",
+   "url": "https://offthegridnyc.com/locations/137-oak-st/",
+   "borough": "Brooklyn",
+   "neighborhood": "Greenpoint",
+   "lat": 40.72819,
+   "lng": -73.955272,
+   "description": "cool house in a cool corner on a cool street in cool greenpoint",
+   "history": "",
+   "photos": []
+  },
+  {
+   "name": "158 Prospect Place",
+   "slug": "158-prospect-place",
+   "url": "https://offthegridnyc.com/locations/158-prospect-place/",
+   "borough": "Brooklyn",
+   "neighborhood": "Prospect Heights",
+   "lat": 40.6778346,
+   "lng": -73.9716971,
+   "description": "No description yet.",
+   "history": "",
+   "photos": []
+  },
+  {
+   "name": "193 Prospect Place",
+   "slug": "193-prospect-place",
+   "url": "https://offthegridnyc.com/locations/193-prospect-place/",
+   "borough": "Brooklyn",
+   "neighborhood": "Prospect Heights",
+   "lat": 40.6781787,
+   "lng": -73.9700769,
+   "description": "No description yet.",
+   "history": "",
+   "photos": []
+  },
+  {
+   "name": "210 W 90th (Astor Court)",
+   "slug": "210-w-90th-astor-court",
+   "url": "https://offthegridnyc.com/locations/210-w-90th-astor-court/",
+   "borough": "Manhattan",
+   "neighborhood": "Upper West Side (Central)",
+   "lat": 40.7903112,
+   "lng": -73.9742209,
+   "description": "A residential building on the Upper West Side of Manhattan, featuring a central courtyard.",
+   "history": "Astor Court was built in the early 20th century as part of the Astor family's real estate developments. The building's design includes a large central courtyard, providing residents with a private outdoor space. It is a notable example of early 20th-century apartment architecture in New York City.",
+   "photos": [
+    "https://offthegridnyc.com/locations/210-w-90th-astor-court/images/photo_1-1200.webp",
+    "https://offthegridnyc.com/locations/210-w-90th-astor-court/images/photo_2-1200.webp",
+    "https://offthegridnyc.com/locations/210-w-90th-astor-court/images/photo_3-1200.webp",
+    "https://offthegridnyc.com/locations/210-w-90th-astor-court/images/photo_4-1200.webp",
+    "https://offthegridnyc.com/locations/210-w-90th-astor-court/images/photo_5-1200.webp"
+   ]
+  },
+  {
+   "name": "245 Washington Ave",
+   "slug": "245-washington-ave",
+   "url": "https://offthegridnyc.com/locations/245-washington-ave/",
+   "borough": "Brooklyn",
+   "neighborhood": "Clinton Hill",
+   "lat": 40.6914085,
+   "lng": -73.966115,
+   "description": "No description yet.",
+   "history": "",
+   "photos": []
+  },
+  {
+   "name": "246 Washington Ave",
+   "slug": "246-washington-ave",
+   "url": "https://offthegridnyc.com/locations/246-washington-ave/",
+   "borough": "Brooklyn",
+   "neighborhood": "Clinton Hill",
+   "lat": 40.6911636,
+   "lng": -73.9668614,
+   "description": "No description yet.",
+   "history": "",
+   "photos": []
+  },
+  {
+   "name": "280 Washington Ave",
+   "slug": "280-washington-ave",
+   "url": "https://offthegridnyc.com/locations/280-washington-ave/",
+   "borough": "Brooklyn",
+   "neighborhood": "Clinton Hill",
+   "lat": 40.6903082,
+   "lng": -73.9666332,
+   "description": "No description yet.",
+   "history": "",
+   "photos": []
+  },
+  {
+   "name": "30-36 Remsen",
+   "slug": "30-36-remsen",
+   "url": "https://offthegridnyc.com/locations/30-36-remsen/",
+   "borough": "Brooklyn",
+   "neighborhood": "Brooklyn Heights",
+   "lat": 40.6944148,
+   "lng": -73.9974074,
+   "description": "No description yet.",
+   "history": "",
+   "photos": []
+  },
+  {
+   "name": "301 Greene Ave",
+   "slug": "301-greene-ave",
+   "url": "https://offthegridnyc.com/locations/301-greene-ave/",
+   "borough": "Brooklyn",
+   "neighborhood": "Bedford-Stuyvesant (West)",
+   "lat": 40.6878609,
+   "lng": -73.9593718,
+   "description": "No description yet.",
+   "history": "",
+   "photos": []
+  },
+  {
+   "name": "34 Strong Place",
+   "slug": "34-strong-place",
+   "url": "https://offthegridnyc.com/locations/34-strong-place/",
+   "borough": "Brooklyn",
+   "neighborhood": "Carroll Gardens-Cobble Hill-Gowanus-Red Hook",
+   "lat": 40.6855823,
+   "lng": -73.9981886,
+   "description": "No description yet.",
+   "history": "",
+   "photos": []
+  },
+  {
+   "name": "46 7th Ave",
+   "slug": "46-7th-ave",
+   "url": "https://offthegridnyc.com/locations/46-7th-ave/",
+   "borough": "Manhattan",
+   "neighborhood": "West Village",
+   "lat": 40.7313394,
+   "lng": -74.0043972,
+   "description": "No description yet.",
+   "history": "",
+   "photos": []
+  },
+  {
+   "name": "46-58 Remsen",
+   "slug": "46-58-remsen",
+   "url": "https://offthegridnyc.com/locations/46-58-remsen/",
+   "borough": "Brooklyn",
+   "neighborhood": "Brooklyn Heights",
+   "lat": 40.6942521,
+   "lng": -73.9967287,
+   "description": "No description yet.",
+   "history": "",
+   "photos": []
+  },
+  {
+   "name": "46A Prospect Park Southwest",
+   "slug": "46a-prospect-park-southwest",
+   "url": "https://offthegridnyc.com/locations/46a-prospect-park-southwest/",
+   "borough": "Brooklyn",
+   "neighborhood": "Windsor Terrace-South Slope",
+   "lat": 40.6593121,
+   "lng": -73.9771148,
+   "description": "No description yet.",
+   "history": "",
+   "photos": []
+  },
+  {
+   "name": "48 Tiffany Place",
+   "slug": "48-tiffany-place",
+   "url": "https://offthegridnyc.com/locations/48-tiffany-place/",
+   "borough": "Brooklyn",
+   "neighborhood": "Carroll Gardens-Cobble Hill-Gowanus-Red Hook",
+   "lat": 40.6860808,
+   "lng": -74.0015567,
+   "description": "No description yet.",
+   "history": "",
+   "photos": []
+  },
+  {
+   "name": "5 Carmine St ABC",
+   "slug": "5-carmine-st-abc",
+   "url": "https://offthegridnyc.com/locations/5-carmine-st-abc/",
+   "borough": "Manhattan",
+   "neighborhood": "West Village",
+   "lat": 40.7308213,
+   "lng": -74.0021932,
+   "description": "No description yet.",
+   "history": "",
+   "photos": [
+    "https://offthegridnyc.com/locations/5-carmine-st-abc/images/photo_1-1200.webp",
+    "https://offthegridnyc.com/locations/5-carmine-st-abc/images/photo_2-1200.webp",
+    "https://offthegridnyc.com/locations/5-carmine-st-abc/images/photo_3-1200.webp",
+    "https://offthegridnyc.com/locations/5-carmine-st-abc/images/photo_4-1200.webp",
+    "https://offthegridnyc.com/locations/5-carmine-st-abc/images/photo_5-1200.webp"
+   ]
+  },
+  {
+   "name": "Ablemarle Terrace",
+   "slug": "ablemarle-terrace",
+   "url": "https://offthegridnyc.com/locations/ablemarle-terrace/",
+   "borough": "Brooklyn",
+   "neighborhood": "Flatbush",
+   "lat": 40.6486124,
+   "lng": -73.9592343,
+   "description": "No description yet.",
+   "history": "",
+   "photos": []
+  },
+  {
+   "name": "Ansonia Clock Factory",
+   "slug": "ansonia-clock-factory",
+   "url": "https://offthegridnyc.com/locations/ansonia-clock-factory/",
+   "borough": "Brooklyn",
+   "neighborhood": "Park Slope",
+   "lat": 40.6646062,
+   "lng": -73.9829468,
+   "description": "A historic building in Brooklyn, originally a factory for the Ansonia Clock Company.",
+   "history": "The Ansonia Clock Factory was established in the late 19th century and became known for producing high-quality clocks. The factory building, with its distinctive architecture, has since been repurposed for residential and commercial use, preserving its industrial heritage.",
+   "photos": []
+  },
+  {
+   "name": "Barwell Terrace",
+   "slug": "barwell-terrace",
+   "url": "https://offthegridnyc.com/locations/barwell-terrace/",
+   "borough": "Brooklyn",
+   "neighborhood": "Bay Ridge",
+   "lat": 40.6150808,
+   "lng": -74.0334827,
+   "description": "No description yet.",
+   "history": "",
+   "photos": []
+  },
+  {
+   "name": "Broadway Between 40th and 17th",
+   "slug": "broadway-between-40th-and-17th",
+   "url": "https://offthegridnyc.com/locations/broadway-between-40th-and-17th/",
+   "borough": "Manhattan",
+   "neighborhood": "Midtown-Times Square",
+   "lat": 40.7525651,
+   "lng": -73.987471,
+   "description": "A section of Broadway in Manhattan, known for its pedestrian-friendly design and public spaces.",
+   "history": "This stretch of Broadway was reimagined in the early 21st century as part of New York City's efforts to create more pedestrian-friendly urban environments. The project, led by Janette Sadik-Khan, transformed parts of Broadway into public plazas, enhancing the street's role as a cultural and commercial hub.",
+   "photos": [
+    "https://offthegridnyc.com/locations/broadway-between-40th-and-17th/images/photo_1-1200.webp",
+    "https://offthegridnyc.com/locations/broadway-between-40th-and-17th/images/photo_2-1200.webp",
+    "https://offthegridnyc.com/locations/broadway-between-40th-and-17th/images/photo_3-1200.webp",
+    "https://offthegridnyc.com/locations/broadway-between-40th-and-17th/images/photo_4-1200.webp",
+    "https://offthegridnyc.com/locations/broadway-between-40th-and-17th/images/photo_5-1200.webp"
+   ]
+  },
+  {
+   "name": "Brooklyn Bridge Parks",
+   "slug": "brooklyn-bridge-parks",
+   "url": "https://offthegridnyc.com/locations/brooklyn-bridge-parks/",
+   "borough": "Brooklyn",
+   "neighborhood": "Brooklyn Heights",
+   "lat": 40.7018997,
+   "lng": -73.9961015,
+   "description": "Top public private parnership and the only park in nyc you can live in? Thanks bloomberg.",
+   "history": "The development of Brooklyn Bridge Park began in the early 2000s, transforming former industrial piers into a vibrant public space. The park officially opened in 2010 and has since become a popular destination for both locals and tourists, offering green spaces, sports facilities, and cultural events.",
+   "photos": [
+    "https://offthegridnyc.com/locations/brooklyn-bridge-parks/images/photo_1-1200.webp",
+    "https://offthegridnyc.com/locations/brooklyn-bridge-parks/images/photo_2-1200.webp",
+    "https://offthegridnyc.com/locations/brooklyn-bridge-parks/images/photo_3-1200.webp",
+    "https://offthegridnyc.com/locations/brooklyn-bridge-parks/images/photo_4-1200.webp",
+    "https://offthegridnyc.com/locations/brooklyn-bridge-parks/images/photo_5-1200.webp"
+   ]
+  },
+  {
+   "name": "Brooklyn Navy Yard",
+   "slug": "brooklyn-navy-yard",
+   "url": "https://offthegridnyc.com/locations/brooklyn-navy-yard/",
+   "borough": "Brooklyn",
+   "neighborhood": "Brooklyn Navy Yard",
+   "lat": 40.6991147,
+   "lng": -73.9728531,
+   "description": "A historic shipyard and industrial complex located in Brooklyn, now repurposed as a hub for manufacturing, technology, and creative industries.",
+   "history": "Established in 1801, the Brooklyn Navy Yard was a key naval shipbuilding facility for the U.S. Navy until its closure in 1966. It was later redeveloped into an industrial park, preserving its historic structures while fostering modern industries. Today, it is a model for adaptive reuse and urban regeneration.",
+   "photos": [
+    "https://offthegridnyc.com/locations/brooklyn-navy-yard/images/photo_1-1200.webp",
+    "https://offthegridnyc.com/locations/brooklyn-navy-yard/images/photo_2-1200.webp",
+    "https://offthegridnyc.com/locations/brooklyn-navy-yard/images/photo_3-1200.webp",
+    "https://offthegridnyc.com/locations/brooklyn-navy-yard/images/photo_4-1200.webp",
+    "https://offthegridnyc.com/locations/brooklyn-navy-yard/images/photo_5-1200.webp"
+   ]
+  },
+  {
+   "name": "Charlotte Gardens",
+   "slug": "charlotte-gardens",
+   "url": "https://offthegridnyc.com/locations/charlotte-gardens/",
+   "borough": "Bronx",
+   "neighborhood": "Crotona Park East",
+   "lat": 40.8342736,
+   "lng": -73.892205,
+   "description": "A housing development in the South Bronx, known for its suburban-style homes.",
+   "history": "Charlotte Gardens was developed in the 1980s as part of efforts to revitalize the South Bronx. The project involved building single-family homes on vacant lots, offering an alternative to the high-rise public housing typical of the area. It is a notable example of urban renewal through suburban-style development.",
+   "photos": [
+    "https://offthegridnyc.com/locations/charlotte-gardens/images/photo_1-1200.webp"
+   ]
+  },
+  {
+   "name": "Chester Court",
+   "slug": "chester-court",
+   "url": "https://offthegridnyc.com/locations/chester-court/",
+   "borough": "Brooklyn",
+   "neighborhood": "Prospect Lefferts Gardens-Wingate",
+   "lat": 40.6583386,
+   "lng": -73.9613947,
+   "description": "No description yet.",
+   "history": "",
+   "photos": []
+  },
+  {
+   "name": "Chittenden Road",
+   "slug": "chittenden-road",
+   "url": "https://offthegridnyc.com/locations/chittenden-road/",
+   "borough": "Manhattan",
+   "neighborhood": "Washington Heights (North)",
+   "lat": 40.8554451,
+   "lng": -73.9390084,
+   "description": "A street in Washington Heights, offering views of the Hudson River.",
+   "history": "Chittenden Road is part of the Fort Washington area, developed in the early 20th century. Its elevated position provides residents with scenic views, making it a unique location in Upper Manhattan.",
+   "photos": [
+    "https://offthegridnyc.com/locations/chittenden-road/images/photo_1-1200.webp",
+    "https://offthegridnyc.com/locations/chittenden-road/images/photo_2-1200.webp"
+   ]
+  },
+  {
+   "name": "Claremont/Vanderbilt New townhouses with communal garden",
+   "slug": "claremontvanderbilt-new-townhouses-with-communal-garden",
+   "url": "https://offthegridnyc.com/locations/claremontvanderbilt-new-townhouses-with-communal-garden/",
+   "borough": "Brooklyn",
+   "neighborhood": "Fort Greene",
+   "lat": 40.697108,
+   "lng": -73.97114,
+   "description": "One of few modern examples of private shared space. the houses r kinda ugly but ill take what I can get",
+   "history": "",
+   "photos": []
+  },
+  {
+   "name": "Cliff House (Pumpkin House)",
+   "slug": "cliff-house-pumpkin-house",
+   "url": "https://offthegridnyc.com/locations/cliff-house-pumpkin-house/",
+   "borough": "Manhattan",
+   "neighborhood": "Washington Heights (North)",
+   "lat": 40.8549866,
+   "lng": -73.9395154,
+   "description": "A unique residential building in Manhattan, known for its distinctive appearance and location on a cliff.",
+   "history": "The Cliff House, often referred to as the Pumpkin House due to its orange color, was built in the early 20th century. Its design takes advantage of the steep terrain, offering residents stunning views of the Hudson River. The building is a notable example of adaptive architecture in urban settings.",
+   "photos": [
+    "https://offthegridnyc.com/locations/cliff-house-pumpkin-house/images/photo_1-1200.webp",
+    "https://offthegridnyc.com/locations/cliff-house-pumpkin-house/images/photo_2-1200.webp",
+    "https://offthegridnyc.com/locations/cliff-house-pumpkin-house/images/photo_3-1200.webp",
+    "https://offthegridnyc.com/locations/cliff-house-pumpkin-house/images/photo_4-1200.webp",
+    "https://offthegridnyc.com/locations/cliff-house-pumpkin-house/images/photo_5-1200.webp"
+   ]
+  },
+  {
+   "name": "Clinton Court",
+   "slug": "clinton-court",
+   "url": "https://offthegridnyc.com/locations/clinton-court/",
+   "borough": "Manhattan",
+   "neighborhood": "Hell's Kitchen",
+   "lat": 40.76128,
+   "lng": -73.9921142,
+   "description": "No description yet.",
+   "history": "",
+   "photos": [
+    "https://offthegridnyc.com/locations/clinton-court/images/photo_1-1200.webp",
+    "https://offthegridnyc.com/locations/clinton-court/images/photo_2-1200.webp",
+    "https://offthegridnyc.com/locations/clinton-court/images/photo_3-1200.webp",
+    "https://offthegridnyc.com/locations/clinton-court/images/photo_4-1200.webp",
+    "https://offthegridnyc.com/locations/clinton-court/images/photo_5-1200.webp"
+   ]
+  },
+  {
+   "name": "College Place",
+   "slug": "college-place",
+   "url": "https://offthegridnyc.com/locations/college-place/",
+   "borough": "Brooklyn",
+   "neighborhood": "Brooklyn Heights",
+   "lat": 40.6965814,
+   "lng": -73.9943281,
+   "description": "A short, dead-end street in Brooklyn Heights, offering a peaceful retreat.",
+   "history": "College Place is part of the Brooklyn Heights Historic District and features homes from the 19th century. Its secluded nature and historic architecture make it a desirable location within the neighborhood.",
+   "photos": []
+  },
+  {
+   "name": "Colonial Gardens",
+   "slug": "colonial-gardens",
+   "url": "https://offthegridnyc.com/locations/colonial-gardens/",
+   "borough": "Brooklyn",
+   "neighborhood": "Bay Ridge",
+   "lat": 40.6225689,
+   "lng": -74.0395689,
+   "description": "No description yet.",
+   "history": "",
+   "photos": [
+    "https://offthegridnyc.com/locations/colonial-gardens/images/photo_1-1200.webp",
+    "https://offthegridnyc.com/locations/colonial-gardens/images/photo_2-1200.webp"
+   ]
+  },
+  {
+   "name": "Commandants Mansion",
+   "slug": "commandants-mansion",
+   "url": "https://offthegridnyc.com/locations/commandants-mansion/",
+   "borough": "Brooklyn",
+   "neighborhood": "Downtown Brooklyn-DUMBO-Boerum Hill",
+   "lat": 40.7023811,
+   "lng": -73.9803764,
+   "description": "Estate in downtown",
+   "history": "The Commandant's Mansion, also known as the Admiral's House, was built in the early 19th century. It served as the residence for the commanding officers of the navy yard. The building is a notable example of Federal-style architecture.",
+   "photos": [
+    "https://offthegridnyc.com/locations/commandants-mansion/images/photo_1-1200.webp",
+    "https://offthegridnyc.com/locations/commandants-mansion/images/photo_2-1200.webp",
+    "https://offthegridnyc.com/locations/commandants-mansion/images/photo_3-1200.webp",
+    "https://offthegridnyc.com/locations/commandants-mansion/images/photo_4-1200.webp",
+    "https://offthegridnyc.com/locations/commandants-mansion/images/photo_5-1200.webp"
+   ]
+  },
+  {
+   "name": "Dennett Place",
+   "slug": "dennett-place",
+   "url": "https://offthegridnyc.com/locations/dennett-place/",
+   "borough": "Brooklyn",
+   "neighborhood": "Carroll Gardens-Cobble Hill-Gowanus-Red Hook",
+   "lat": 40.6765077,
+   "lng": -73.9975594,
+   "description": "A small, historic street in Carroll Gardens, Brooklyn, known for its charming row houses.",
+   "history": "Dennett Place was developed in the mid-19th century as part of the expansion of Carroll Gardens. The street is notable for its well-preserved Italianate and Greek Revival-style homes, reflecting the neighborhood's architectural heritage.",
+   "photos": []
+  },
+  {
+   "name": "Ditmas Park",
+   "slug": "ditmas-park",
+   "url": "https://offthegridnyc.com/locations/ditmas-park/",
+   "borough": "Brooklyn",
+   "neighborhood": "Flatbush (West)-Ditmas Park-Parkville",
+   "lat": 40.6465746,
+   "lng": -73.9667459,
+   "description": "A neighborhood in Brooklyn known for its large, Victorian-style homes and tree-lined streets.",
+   "history": "Ditmas Park was developed in the early 20th century as a suburban enclave within Brooklyn. The neighborhood's homes, many of which are freestanding with front porches and gardens, were designed to attract middle-class families seeking a respite from urban density.",
+   "photos": [
+    "https://offthegridnyc.com/locations/ditmas-park/images/photo_1-1200.webp",
+    "https://offthegridnyc.com/locations/ditmas-park/images/photo_2-1200.webp",
+    "https://offthegridnyc.com/locations/ditmas-park/images/photo_3-1200.webp",
+    "https://offthegridnyc.com/locations/ditmas-park/images/photo_4-1200.webp",
+    "https://offthegridnyc.com/locations/ditmas-park/images/photo_5-1200.webp"
+   ]
+  },
+  {
+   "name": "Doyer Street",
+   "slug": "doyer-street",
+   "url": "https://offthegridnyc.com/locations/doyer-street/",
+   "borough": "Manhattan",
+   "neighborhood": "Chinatown-Two Bridges",
+   "lat": 40.7145149,
+   "lng": -73.9981452,
+   "description": "A historic street in Chinatown, Manhattan, known for its sharp bend and cultural significance.",
+   "history": "Doyer Street, also known as the 'Bloody Angle,' has a storied past tied to the early Chinese immigrant community and gang activity in the late 19th and early 20th centuries. Today, it is a vibrant part of Chinatown, with restaurants and shops that reflect its cultural heritage.",
+   "photos": [
+    "https://offthegridnyc.com/locations/doyer-street/images/photo_1-1200.webp",
+    "https://offthegridnyc.com/locations/doyer-street/images/photo_2-1200.webp",
+    "https://offthegridnyc.com/locations/doyer-street/images/photo_3-1200.webp",
+    "https://offthegridnyc.com/locations/doyer-street/images/photo_4-1200.webp",
+    "https://offthegridnyc.com/locations/doyer-street/images/photo_5-1200.webp"
+   ]
+  },
+  {
+   "name": "Elevated Acre",
+   "slug": "elevated-acre",
+   "url": "https://offthegridnyc.com/locations/elevated-acre/",
+   "borough": "Manhattan",
+   "neighborhood": "Financial District-Battery Park City",
+   "lat": 40.7033047,
+   "lng": -74.0086169,
+   "description": "The spiritual precurser to the highline. A one-acre elevated public park located in Manhattan's Financial District, offering green space, seating, and views of the East River.",
+   "history": "The Elevated Acre was created in the 1970s as part of the development of 55 Water Street. It was designed to provide public open space in a densely built urban area. The park underwent renovations in the early 2000s, enhancing its landscaping and accessibility. It remains a unique example of urban green space in Lower Manhattan.",
+   "photos": [
+    "https://offthegridnyc.com/locations/elevated-acre/images/photo_1-1200.webp",
+    "https://offthegridnyc.com/locations/elevated-acre/images/photo_2-1200.webp",
+    "https://offthegridnyc.com/locations/elevated-acre/images/photo_3-1200.webp",
+    "https://offthegridnyc.com/locations/elevated-acre/images/photo_4-1200.webp",
+    "https://offthegridnyc.com/locations/elevated-acre/images/photo_5-1200.webp"
+   ]
+  },
+  {
+   "name": "Forest Hills",
+   "slug": "forest-hills",
+   "url": "https://offthegridnyc.com/locations/forest-hills/",
+   "borough": "Queens",
+   "neighborhood": "Forest Hills",
+   "lat": 40.7195745,
+   "lng": -73.8449253,
+   "description": "A neighborhood in Queens, known for its Tudor-style homes and the historic Forest Hills Gardens.",
+   "history": "Forest Hills was developed in the early 20th century by the Russell Sage Foundation as a model community. The neighborhood's design, inspired by the English Garden City movement, features winding streets, parks, and a mix of housing types, making it a unique example of planned suburban development.",
+   "photos": [
+    "https://offthegridnyc.com/locations/forest-hills/images/photo_1-1200.webp",
+    "https://offthegridnyc.com/locations/forest-hills/images/photo_2-1200.webp",
+    "https://offthegridnyc.com/locations/forest-hills/images/photo_3-1200.webp",
+    "https://offthegridnyc.com/locations/forest-hills/images/photo_4-1200.webp",
+    "https://offthegridnyc.com/locations/forest-hills/images/photo_5-1200.webp"
+   ]
+  },
+  {
+   "name": "Freeman Alley",
+   "slug": "freeman-alley",
+   "url": "https://offthegridnyc.com/locations/freeman-alley/",
+   "borough": "Manhattan",
+   "neighborhood": "Lower East Side",
+   "lat": 40.7218056,
+   "lng": -73.9925468,
+   "description": "A small, graffiti-covered alley in the Lower East Side of Manhattan.",
+   "history": "Freeman Alley has become a canvas for street artists and is home to a popular restaurant. Its history is tied to the artistic and cultural evolution of the Lower East Side, reflecting the neighborhood's vibrant street art scene.",
+   "photos": [
+    "https://offthegridnyc.com/locations/freeman-alley/images/photo_1-1200.webp",
+    "https://offthegridnyc.com/locations/freeman-alley/images/photo_2-1200.webp",
+    "https://offthegridnyc.com/locations/freeman-alley/images/photo_3-1200.webp",
+    "https://offthegridnyc.com/locations/freeman-alley/images/photo_4-1200.webp",
+    "https://offthegridnyc.com/locations/freeman-alley/images/photo_5-1200.webp"
+   ]
+  },
+  {
+   "name": "Govoners Island",
+   "slug": "govoners-island",
+   "url": "https://offthegridnyc.com/locations/govoners-island/",
+   "borough": "Manhattan",
+   "neighborhood": "The Battery-Governors Island-Ellis Island-Liberty Island",
+   "lat": 40.6892172,
+   "lng": -74.0185413,
+   "description": "Why cant I live in one of the 1000 empy army baraks? Extremely disappointing amount of latent potential. A 172-acre island in New York Harbor, formerly a military base and now a public park and cultural venue.",
+   "history": "Governors Island has a rich history dating back to the colonial era. It served as a military outpost for both the British and American forces. In 2003, the island was transferred to the public and has since been developed into a recreational and cultural destination, featuring historic buildings, art installations, and open spaces.",
+   "photos": [
+    "https://offthegridnyc.com/locations/govoners-island/images/photo_1-1200.webp",
+    "https://offthegridnyc.com/locations/govoners-island/images/photo_2-1200.webp",
+    "https://offthegridnyc.com/locations/govoners-island/images/photo_3-1200.webp",
+    "https://offthegridnyc.com/locations/govoners-island/images/photo_4-1200.webp",
+    "https://offthegridnyc.com/locations/govoners-island/images/photo_5-1200.webp"
+   ]
+  },
+  {
+   "name": "Grace Court",
+   "slug": "grace-court",
+   "url": "https://offthegridnyc.com/locations/grace-court/",
+   "borough": "Brooklyn",
+   "neighborhood": "Brooklyn Heights",
+   "lat": 40.6943062,
+   "lng": -73.9976479,
+   "description": "A quiet, dead-end street in Brooklyn Heights, lined with historic townhouses.",
+   "history": "Grace Court is part of the Brooklyn Heights Historic District, developed in the 19th century. The street is named after Grace Church, a nearby landmark, and its homes are prized for their architectural detail and serene setting.",
+   "photos": []
+  },
+  {
+   "name": "Grace Court Alley",
+   "slug": "grace-court-alley",
+   "url": "https://offthegridnyc.com/locations/grace-court-alley/",
+   "borough": "Brooklyn",
+   "neighborhood": "Brooklyn Heights",
+   "lat": 40.6938832,
+   "lng": -73.9957757,
+   "description": "A hidden alley in Brooklyn Heights, featuring converted carriage houses.",
+   "history": "Grace Court Alley was originally used for stables and carriage houses serving the grand homes of Brooklyn Heights. In the 20th century, these structures were converted into residences, creating a unique and secluded living environment.",
+   "photos": [
+    "https://offthegridnyc.com/locations/grace-court-alley/images/photo_1-1200.webp",
+    "https://offthegridnyc.com/locations/grace-court-alley/images/photo_2-1200.webp",
+    "https://offthegridnyc.com/locations/grace-court-alley/images/photo_3-1200.webp",
+    "https://offthegridnyc.com/locations/grace-court-alley/images/photo_4-1200.webp",
+    "https://offthegridnyc.com/locations/grace-court-alley/images/photo_5-1200.webp"
+   ]
+  },
+  {
+   "name": "Greenwich Mews",
+   "slug": "greenwich-mews",
+   "url": "https://offthegridnyc.com/locations/greenwich-mews/",
+   "borough": "Manhattan",
+   "neighborhood": "West Village",
+   "lat": 40.7333401,
+   "lng": -74.0071101,
+   "description": "No description yet.",
+   "history": "",
+   "photos": [
+    "https://offthegridnyc.com/locations/greenwich-mews/images/photo_1-1200.webp",
+    "https://offthegridnyc.com/locations/greenwich-mews/images/photo_2-1200.webp",
+    "https://offthegridnyc.com/locations/greenwich-mews/images/photo_3-1200.webp",
+    "https://offthegridnyc.com/locations/greenwich-mews/images/photo_4-1200.webp",
+    "https://offthegridnyc.com/locations/greenwich-mews/images/photo_5-1200.webp"
+   ]
+  },
+  {
+   "name": "Grove Court",
+   "slug": "grove-court",
+   "url": "https://offthegridnyc.com/locations/grove-court/",
+   "borough": "Manhattan",
+   "neighborhood": "West Village",
+   "lat": 40.7320619,
+   "lng": -74.0058125,
+   "description": "A hidden courtyard of six townhouses located in Greenwich Village, Manhattan.",
+   "history": "Grove Court was developed in the 1850s by Samuel Cocks, a local grocer, to provide housing for working-class families. The courtyard's secluded nature made it a quiet retreat within the bustling city. Over time, it has become a charming and sought-after residential enclave.",
+   "photos": [
+    "https://offthegridnyc.com/locations/grove-court/images/photo_1-1200.webp",
+    "https://offthegridnyc.com/locations/grove-court/images/photo_2-1200.webp",
+    "https://offthegridnyc.com/locations/grove-court/images/photo_3-1200.webp",
+    "https://offthegridnyc.com/locations/grove-court/images/photo_4-1200.webp",
+    "https://offthegridnyc.com/locations/grove-court/images/photo_5-1200.webp"
+   ]
+  },
+  {
+   "name": "Hamilton Terrace",
+   "slug": "hamilton-terrace",
+   "url": "https://offthegridnyc.com/locations/hamilton-terrace/",
+   "borough": "Manhattan",
+   "neighborhood": "Hamilton Heights-Sugar Hill",
+   "lat": 40.8228782,
+   "lng": -73.9464374,
+   "description": "A residential street in Hamilton Heights, Manhattan, known for its elegant townhouses.",
+   "history": "Hamilton Terrace was developed in the late 19th century as part of the expansion of Hamilton Heights. The street is lined with well-preserved row houses, reflecting the architectural styles of the period.",
+   "photos": []
+  },
+  {
+   "name": "Hamilton Walk",
+   "slug": "hamilton-walk",
+   "url": "https://offthegridnyc.com/locations/hamilton-walk/",
+   "borough": "Brooklyn",
+   "neighborhood": "Bay Ridge",
+   "lat": 40.617658,
+   "lng": -74.0321126,
+   "description": "No description yet.",
+   "history": "",
+   "photos": []
+  },
+  {
+   "name": "Henderson Place",
+   "slug": "henderson-place",
+   "url": "https://offthegridnyc.com/locations/henderson-place/",
+   "borough": "Manhattan",
+   "neighborhood": "Upper East Side-Yorkville",
+   "lat": 40.7755536,
+   "lng": -73.9449743,
+   "description": "A historic district in the Upper East Side of Manhattan, featuring Queen Anne-style row houses.",
+   "history": "Henderson Place was developed in the 1880s by John C. Henderson, a fur importer, as housing for middle-class families. The row houses are known for their distinctive turrets and gables, and the area is a designated historic district.",
+   "photos": [
+    "https://offthegridnyc.com/locations/henderson-place/images/photo_1-1200.webp",
+    "https://offthegridnyc.com/locations/henderson-place/images/photo_2-1200.webp",
+    "https://offthegridnyc.com/locations/henderson-place/images/photo_3-1200.webp"
+   ]
+  },
+  {
+   "name": "Hunts Lane",
+   "slug": "hunts-lane",
+   "url": "https://offthegridnyc.com/locations/hunts-lane/",
+   "borough": "Brooklyn",
+   "neighborhood": "Brooklyn Heights",
+   "lat": 40.6934724,
+   "lng": -73.9941074,
+   "description": "A small, historic lane in Brooklyn Heights, known for its charming residences.",
+   "history": "Hunts Lane dates back to the 19th century and was originally a service alley for nearby townhouses. It has since been transformed into a residential street, with homes that reflect the neighborhood's historic character.",
+   "photos": []
+  },
+  {
+   "name": "Indian Road",
+   "slug": "indian-road",
+   "url": "https://offthegridnyc.com/locations/indian-road/",
+   "borough": "Manhattan",
+   "neighborhood": "Inwood Hill Park",
+   "lat": 40.8721217,
+   "lng": -73.9196605,
+   "description": "A scenic road located in Inwood, Manhattan, offering views of the Hudson River.",
+   "history": "Indian Road runs along the edge of Inwood Hill Park, an area with a rich history dating back to Native American settlements. The road itself was developed in the early 20th century as part of the park's infrastructure.",
+   "photos": []
+  },
+  {
+   "name": "Jones Wood Garden",
+   "slug": "jones-wood-garden",
+   "url": "https://offthegridnyc.com/locations/jones-wood-garden/",
+   "borough": "Manhattan",
+   "neighborhood": "Upper East Side-Carnegie Hill",
+   "lat": 40.765827,
+   "lng": -73.964279,
+   "description": "Prime shared townhouse garden!",
+   "history": "",
+   "photos": []
+  },
+  {
+   "name": "Kenmore Terrace",
+   "slug": "kenmore-terrace",
+   "url": "https://offthegridnyc.com/locations/kenmore-terrace/",
+   "borough": "Brooklyn",
+   "neighborhood": "Flatbush",
+   "lat": 40.6492046,
+   "lng": -73.9593604,
+   "description": "No description yet.",
+   "history": "",
+   "photos": []
+  },
+  {
+   "name": "Kips Bay Towers",
+   "slug": "kips-bay-towers",
+   "url": "https://offthegridnyc.com/locations/kips-bay-towers/",
+   "borough": "Manhattan",
+   "neighborhood": "Murray Hill-Kips Bay",
+   "lat": 40.7426759,
+   "lng": -73.9758258,
+   "description": "A pair of residential towers located in the Kips Bay neighborhood of Manhattan, known for their modernist architecture.",
+   "history": "Designed by architect I.M. Pei, Kips Bay Towers were completed in the 1960s. The buildings are notable for their Brutalist design and the large private courtyard that provides green space for residents. They are a significant example of mid-20th-century urban housing.",
+   "photos": [
+    "https://offthegridnyc.com/locations/kips-bay-towers/images/photo_1-1200.webp",
+    "https://offthegridnyc.com/locations/kips-bay-towers/images/photo_2-1200.webp",
+    "https://offthegridnyc.com/locations/kips-bay-towers/images/photo_3-1200.webp",
+    "https://offthegridnyc.com/locations/kips-bay-towers/images/photo_4-1200.webp",
+    "https://offthegridnyc.com/locations/kips-bay-towers/images/photo_5-1200.webp"
+   ]
+  },
+  {
+   "name": "Knickerbocker Village",
+   "slug": "knickerbocker-village",
+   "url": "https://offthegridnyc.com/locations/knickerbocker-village/",
+   "borough": "Manhattan",
+   "neighborhood": "Chinatown-Two Bridges",
+   "lat": 40.7108205,
+   "lng": -73.9960392,
+   "description": "A historic housing complex in Manhattan's Lower East Side, known for its early adoption of modern housing concepts.",
+   "history": "Knickerbocker Village was built in the 1930s as one of the first federally funded housing projects in the United States. It was designed to provide affordable housing for middle-income families and features a distinctive architectural style with interior courtyards.",
+   "photos": [
+    "https://offthegridnyc.com/locations/knickerbocker-village/images/photo_1-1200.webp",
+    "https://offthegridnyc.com/locations/knickerbocker-village/images/photo_2-1200.webp",
+    "https://offthegridnyc.com/locations/knickerbocker-village/images/photo_3-1200.webp",
+    "https://offthegridnyc.com/locations/knickerbocker-village/images/photo_4-1200.webp"
+   ]
+  },
+  {
+   "name": "Lafayette Walk",
+   "slug": "lafayette-walk",
+   "url": "https://offthegridnyc.com/locations/lafayette-walk/",
+   "borough": "Brooklyn",
+   "neighborhood": "Bay Ridge",
+   "lat": 40.6174686,
+   "lng": -74.0316834,
+   "description": "No description yet.",
+   "history": "",
+   "photos": []
+  },
+  {
+   "name": "Little/Evans Street",
+   "slug": "littleevans-street",
+   "url": "https://offthegridnyc.com/locations/littleevans-street/",
+   "borough": "Brooklyn",
+   "neighborhood": "Downtown Brooklyn-DUMBO-Boerum Hill",
+   "lat": 40.7030725,
+   "lng": -73.9803093,
+   "description": "A pair of narrow, historic streets in the Vinegar Hill neighborhood of Brooklyn.",
+   "history": "Little Street and Evans Street are remnants of the 19th-century development of Vinegar Hill, originally an industrial area. The streets are known for their cobblestone surfaces and preserved row houses, offering a glimpse into Brooklyn's past.",
+   "photos": []
+  },
+  {
+   "name": "Madeline Court",
+   "slug": "madeline-court",
+   "url": "https://offthegridnyc.com/locations/madeline-court/",
+   "borough": "Brooklyn",
+   "neighborhood": "Bay Ridge",
+   "lat": 40.6368416,
+   "lng": -74.0275419,
+   "description": "No description yet.",
+   "history": "",
+   "photos": []
+  },
+  {
+   "name": "Maple Street",
+   "slug": "maple-street",
+   "url": "https://offthegridnyc.com/locations/maple-street/",
+   "borough": "Brooklyn",
+   "neighborhood": "Prospect Lefferts Gardens-Wingate",
+   "lat": 40.660357,
+   "lng": -73.9587125,
+   "description": "A street in the Prospect Lefferts Gardens neighborhood of Brooklyn, known for its historic homes.",
+   "history": "Maple Street is part of the Prospect Lefferts Gardens Historic District, developed in the early 20th century. The street features a variety of architectural styles, including Colonial Revival and Tudor Revival, reflecting the neighborhood's suburban character within the city.",
+   "photos": [
+    "https://offthegridnyc.com/locations/maple-street/images/photo_1-1200.webp",
+    "https://offthegridnyc.com/locations/maple-street/images/photo_2-1200.webp",
+    "https://offthegridnyc.com/locations/maple-street/images/photo_3-1200.webp"
+   ]
+  },
+  {
+   "name": "Marble Hill",
+   "slug": "marble-hill",
+   "url": "https://offthegridnyc.com/locations/marble-hill/",
+   "borough": "Bronx",
+   "neighborhood": "Kingsbridge-Marble Hill",
+   "lat": 40.8757049,
+   "lng": -73.9115166,
+   "description": "A neighborhood in the northern part of Manhattan, known for its suburban feel.",
+   "history": "Marble Hill was originally part of Manhattan Island but was separated by the Harlem River Ship Canal in the 19th century. Despite being physically connected to the Bronx, it remains administratively part of Manhattan.",
+   "photos": [
+    "https://offthegridnyc.com/locations/marble-hill/images/photo_1-1200.webp",
+    "https://offthegridnyc.com/locations/marble-hill/images/photo_2-1200.webp",
+    "https://offthegridnyc.com/locations/marble-hill/images/photo_3-1200.webp",
+    "https://offthegridnyc.com/locations/marble-hill/images/photo_4-1200.webp",
+    "https://offthegridnyc.com/locations/marble-hill/images/photo_5-1200.webp"
+   ]
+  },
+  {
+   "name": "Milligan Place",
+   "slug": "milligan-place",
+   "url": "https://offthegridnyc.com/locations/milligan-place/",
+   "borough": "Manhattan",
+   "neighborhood": "West Village",
+   "lat": 40.7351299,
+   "lng": -73.9988065,
+   "description": "A tiny, triangular courtyard in Greenwich Village, featuring four townhouses.",
+   "history": "Milligan Place was created in the 1850s and named after its developer, Samuel Milligan. Like Patchin Place, it has a rich history of housing artists and writers, contributing to the Village's reputation as a bohemian enclave.",
+   "photos": []
+  },
+  {
+   "name": "Mott Haven Water Front",
+   "slug": "mott-haven-water-front",
+   "url": "https://offthegridnyc.com/locations/mott-haven-water-front/",
+   "borough": "Bronx",
+   "neighborhood": "Mott Haven-Port Morris",
+   "lat": 40.8074399,
+   "lng": -73.9311497,
+   "description": "Public private patnership to fix up some nonexistant waterfront in the Mott Haven neighborhood of the Bronx, featuring parks and recreational spaces.",
+   "history": "The Mott Haven waterfront underwent significant redevelopment in the early 21st century, transforming from an industrial zone into a public space with parks, walkways, and access to the Harlem River. This project is part of broader efforts to improve public access to waterfronts across New York City.",
+   "photos": [
+    "https://offthegridnyc.com/locations/mott-haven-water-front/images/photo_1-1200.webp",
+    "https://offthegridnyc.com/locations/mott-haven-water-front/images/photo_2-1200.webp",
+    "https://offthegridnyc.com/locations/mott-haven-water-front/images/photo_3-1200.webp",
+    "https://offthegridnyc.com/locations/mott-haven-water-front/images/photo_4-1200.webp"
+   ]
+  },
+  {
+   "name": "Patchin Place",
+   "slug": "patchin-place",
+   "url": "https://offthegridnyc.com/locations/patchin-place/",
+   "borough": "Manhattan",
+   "neighborhood": "West Village",
+   "lat": 40.7351334,
+   "lng": -73.9993554,
+   "description": "A small, gated alley in Greenwich Village, lined with historic townhouses.",
+   "history": "Patchin Place was developed in the 1840s and has been home to various artists and writers, including E.E. Cummings and Djuna Barnes. The alley's quaint atmosphere and historic architecture make it a unique part of the Village's cultural landscape.",
+   "photos": []
+  },
+  {
+   "name": "Pomander Walk",
+   "slug": "pomander-walk",
+   "url": "https://offthegridnyc.com/locations/pomander-walk/",
+   "borough": "Manhattan",
+   "neighborhood": "Upper West Side (Central)",
+   "lat": 40.7939961,
+   "lng": -73.9733071,
+   "description": "A Tudor-style residential complex located on the Upper West Side of Manhattan.",
+   "history": "Pomander Walk was built in the 1920s and designed to resemble a quaint English village. The complex includes 27 buildings with half-timbered facades and is a designated New York City landmark, celebrated for its distinctive architecture.",
+   "photos": [
+    "https://offthegridnyc.com/locations/pomander-walk/images/photo_1-1200.webp",
+    "https://offthegridnyc.com/locations/pomander-walk/images/photo_2-1200.webp",
+    "https://offthegridnyc.com/locations/pomander-walk/images/photo_3-1200.webp",
+    "https://offthegridnyc.com/locations/pomander-walk/images/photo_4-1200.webp",
+    "https://offthegridnyc.com/locations/pomander-walk/images/photo_5-1200.webp"
+   ]
+  },
+  {
+   "name": "Riverdale",
+   "slug": "riverdale",
+   "url": "https://offthegridnyc.com/locations/riverdale/",
+   "borough": "Bronx",
+   "neighborhood": "Riverdale-Spuyten Duyvil",
+   "lat": 40.8935758,
+   "lng": -73.9068976,
+   "description": "A residential neighborhood in the Bronx, known for its hilly terrain and upscale homes.",
+   "history": "Riverdale was originally a rural area with large estates and farms. In the late 19th and early 20th centuries, it was developed into a suburban community, attracting wealthy New Yorkers. Today, it is one of the most affluent neighborhoods in the Bronx, with a mix of historic mansions and modern residences.",
+   "photos": [
+    "https://offthegridnyc.com/locations/riverdale/images/photo_1-1200.webp",
+    "https://offthegridnyc.com/locations/riverdale/images/photo_2-1200.webp",
+    "https://offthegridnyc.com/locations/riverdale/images/photo_3-1200.webp",
+    "https://offthegridnyc.com/locations/riverdale/images/photo_4-1200.webp",
+    "https://offthegridnyc.com/locations/riverdale/images/photo_5-1200.webp"
+   ]
+  },
+  {
+   "name": "Riverview Terrace",
+   "slug": "riverview-terrace",
+   "url": "https://offthegridnyc.com/locations/riverview-terrace/",
+   "borough": "Manhattan",
+   "neighborhood": "East Midtown-Turtle Bay",
+   "lat": 40.7579249,
+   "lng": -73.9593522,
+   "description": "No description yet.",
+   "history": "",
+   "photos": []
+  },
+  {
+   "name": "Roof Top Cape Cod",
+   "slug": "roof-top-cape-cod",
+   "url": "https://offthegridnyc.com/locations/roof-top-cape-cod/",
+   "borough": "Manhattan",
+   "neighborhood": "East Village",
+   "lat": 40.7234933,
+   "lng": -73.9886127,
+   "description": "No description yet.",
+   "history": "",
+   "photos": [
+    "https://offthegridnyc.com/locations/roof-top-cape-cod/images/photo_1-1200.webp",
+    "https://offthegridnyc.com/locations/roof-top-cape-cod/images/photo_2-1200.webp",
+    "https://offthegridnyc.com/locations/roof-top-cape-cod/images/photo_3-1200.webp",
+    "https://offthegridnyc.com/locations/roof-top-cape-cod/images/photo_4-1200.webp",
+    "https://offthegridnyc.com/locations/roof-top-cape-cod/images/photo_5-1200.webp"
+   ]
+  },
+  {
+   "name": "Sky Port",
+   "slug": "sky-port",
+   "url": "https://offthegridnyc.com/locations/sky-port/",
+   "borough": "Manhattan",
+   "neighborhood": "Murray Hill-Kips Bay",
+   "lat": 40.7355885,
+   "lng": -73.9744233,
+   "description": "Manhattans only airport.",
+   "history": "The Sky Port, was established in the 1970s to serve as a transportation hub for helicopter commuters and tourists. It has since become a key facility for aerial tours of New York City and emergency services.",
+   "photos": [
+    "https://offthegridnyc.com/locations/sky-port/images/photo_1-1200.webp",
+    "https://offthegridnyc.com/locations/sky-port/images/photo_2-1200.webp",
+    "https://offthegridnyc.com/locations/sky-port/images/photo_3-1200.webp",
+    "https://offthegridnyc.com/locations/sky-port/images/photo_4-1200.webp",
+    "https://offthegridnyc.com/locations/sky-port/images/photo_5-1200.webp"
+   ]
+  },
+  {
+   "name": "SkyTrack",
+   "slug": "skytrack",
+   "url": "https://offthegridnyc.com/locations/skytrack/",
+   "borough": "Brooklyn",
+   "neighborhood": "Downtown Brooklyn-DUMBO-Boerum Hill",
+   "lat": 40.6879331,
+   "lng": -73.9918461,
+   "description": "We could have had pedestrianized the sky. At least we are left with this amazing example of what might have been :)",
+   "history": "The SkyTrack was part of an innovative urban design concept in the 1980s, aiming to integrate fitness and recreation into the city's vertical landscape. Although the original vision for a network of rooftop tracks did not fully materialize, the existing track remains a testament to creative urban planning.",
+   "photos": [
+    "https://offthegridnyc.com/locations/skytrack/images/photo_1-1200.webp",
+    "https://offthegridnyc.com/locations/skytrack/images/photo_2-1200.webp",
+    "https://offthegridnyc.com/locations/skytrack/images/photo_3-1200.webp",
+    "https://offthegridnyc.com/locations/skytrack/images/photo_4-1200.webp",
+    "https://offthegridnyc.com/locations/skytrack/images/photo_5-1200.webp"
+   ]
+  },
+  {
+   "name": "Sniffen Court",
+   "slug": "sniffen-court",
+   "url": "https://offthegridnyc.com/locations/sniffen-court/",
+   "borough": "Manhattan",
+   "neighborhood": "Murray Hill-Kips Bay",
+   "lat": 40.7470204,
+   "lng": -73.9780114,
+   "description": "A small, private alley in Murray Hill, Manhattan, featuring Romanesque Revival-style carriage houses.",
+   "history": "Sniffen Court was built in the 1860s as stables for nearby residences. The carriage houses were later converted into homes and studios, and the court is now a designated historic district, known for its architectural significance.",
+   "photos": [
+    "https://offthegridnyc.com/locations/sniffen-court/images/photo_1-1200.webp",
+    "https://offthegridnyc.com/locations/sniffen-court/images/photo_2-1200.webp"
+   ]
+  },
+  {
+   "name": "South Bridge Towers",
+   "slug": "south-bridge-towers",
+   "url": "https://offthegridnyc.com/locations/south-bridge-towers/",
+   "borough": "Manhattan",
+   "neighborhood": "Financial District-Battery Park City",
+   "lat": 40.7094761,
+   "lng": -74.0042551,
+   "description": "A cooperative housing complex located near the South Street Seaport in Manhattan.",
+   "history": "South Bridge Towers was developed in the 1960s as part of urban renewal efforts in Lower Manhattan. The complex includes multiple high-rise buildings and offers residents access to communal facilities and proximity to the waterfront.",
+   "photos": [
+    "https://offthegridnyc.com/locations/south-bridge-towers/images/photo_1-1200.webp",
+    "https://offthegridnyc.com/locations/south-bridge-towers/images/photo_2-1200.webp",
+    "https://offthegridnyc.com/locations/south-bridge-towers/images/photo_3-1200.webp",
+    "https://offthegridnyc.com/locations/south-bridge-towers/images/photo_4-1200.webp",
+    "https://offthegridnyc.com/locations/south-bridge-towers/images/photo_5-1200.webp"
+   ]
+  },
+  {
+   "name": "Strivers Row",
+   "slug": "strivers-row",
+   "url": "https://offthegridnyc.com/locations/strivers-row/",
+   "borough": "Manhattan",
+   "neighborhood": "Harlem (North)",
+   "lat": 40.8175433,
+   "lng": -73.9439576,
+   "description": "A historic district in Harlem, known for its well-preserved row houses and cultural significance.",
+   "history": "Strivers Row, officially known as the St. Nicholas Historic District, was developed in the late 19th century. The row houses were originally built for affluent white residents but later became home to prominent African American professionals, earning the nickname 'Strivers Row.' The district is a symbol of Harlem's rich cultural heritage.",
+   "photos": [
+    "https://offthegridnyc.com/locations/strivers-row/images/photo_1-1200.webp"
+   ]
+  },
+  {
+   "name": "Stuy Town",
+   "slug": "stuy-town",
+   "url": "https://offthegridnyc.com/locations/stuy-town/",
+   "borough": "Manhattan",
+   "neighborhood": "Stuyvesant Town-Peter Cooper Village",
+   "lat": 40.7318054,
+   "lng": -73.9778906,
+   "description": "A large residential complex in Manhattan, known for its extensive green spaces and community amenities.",
+   "history": "Stuyvesant Town, commonly known as Stuy Town, was developed in the 1940s as a post-war housing project. It was designed to provide affordable housing for veterans and their families. Over the years, it has evolved into a diverse community with a mix of rent-stabilized and market-rate apartments.",
+   "photos": [
+    "https://offthegridnyc.com/locations/stuy-town/images/photo_1-1200.webp",
+    "https://offthegridnyc.com/locations/stuy-town/images/photo_2-1200.webp",
+    "https://offthegridnyc.com/locations/stuy-town/images/photo_3-1200.webp",
+    "https://offthegridnyc.com/locations/stuy-town/images/photo_4-1200.webp",
+    "https://offthegridnyc.com/locations/stuy-town/images/photo_5-1200.webp"
+   ]
+  },
+  {
+   "name": "Sullivan Street",
+   "slug": "sullivan-street",
+   "url": "https://offthegridnyc.com/locations/sullivan-street/",
+   "borough": "Manhattan",
+   "neighborhood": "Greenwich Village",
+   "lat": 40.7284723,
+   "lng": -74.0012998,
+   "description": "A street in Manhattan's Greenwich Village, known for its historic buildings and communal garden.",
+   "history": "Sullivan Street has been a part of Greenwich Village since the early 19th century. The communal garden in the middle of the block was established in the 20th century, providing a shared green space for residents. The street is lined with well-preserved townhouses and is a testament to the neighborhood's historic charm.",
+   "photos": [
+    "https://offthegridnyc.com/locations/sullivan-street/images/photo_1-1200.webp",
+    "https://offthegridnyc.com/locations/sullivan-street/images/photo_2-1200.webp",
+    "https://offthegridnyc.com/locations/sullivan-street/images/photo_3-1200.webp",
+    "https://offthegridnyc.com/locations/sullivan-street/images/photo_4-1200.webp",
+    "https://offthegridnyc.com/locations/sullivan-street/images/photo_5-1200.webp"
+   ]
+  },
+  {
+   "name": "Sunny Side Gardens",
+   "slug": "sunny-side-gardens",
+   "url": "https://offthegridnyc.com/locations/sunny-side-gardens/",
+   "borough": "Queens",
+   "neighborhood": "Sunnyside",
+   "lat": 40.748314,
+   "lng": -73.917689,
+   "description": "Secret paths and secret communal gardens. another historical example of how homes are cheap and very nice neighborhoods are still cheap, but only if you build them when society was an order of magnitude less wealth",
+   "history": "",
+   "photos": []
+  },
+  {
+   "name": "Sutton Square",
+   "slug": "sutton-square",
+   "url": "https://offthegridnyc.com/locations/sutton-square/",
+   "borough": "Manhattan",
+   "neighborhood": "East Midtown-Turtle Bay",
+   "lat": 40.7574713,
+   "lng": -73.9598883,
+   "description": "A private enclave of townhouses located in the Sutton Place neighborhood of Manhattan.",
+   "history": "Sutton Square was developed in the early 20th century as an exclusive residential area. The townhouses, with their elegant facades and private gardens, reflect the architectural style of the period. The square remains one of the most prestigious addresses in New York City.",
+   "photos": [
+    "https://offthegridnyc.com/locations/sutton-square/images/photo_1-1200.webp"
+   ]
+  },
+  {
+   "name": "Sylvan Court",
+   "slug": "sylvan-court",
+   "url": "https://offthegridnyc.com/locations/sylvan-court/",
+   "borough": "Manhattan",
+   "neighborhood": "East Harlem (North)",
+   "lat": 40.801804,
+   "lng": -73.9384614,
+   "description": "No description yet.",
+   "history": "",
+   "photos": []
+  },
+  {
+   "name": "Sylvan Terrace",
+   "slug": "sylvan-terrace",
+   "url": "https://offthegridnyc.com/locations/sylvan-terrace/",
+   "borough": "Manhattan",
+   "neighborhood": "Washington Heights (South)",
+   "lat": 40.8347234,
+   "lng": -73.9393878,
+   "description": "A cobblestone street in Washington Heights, lined with wooden row houses.",
+   "history": "Sylvan Terrace was built in the 1880s as part of the Morris-Jumel Mansion estate. The houses were originally intended for working-class families but have since been restored and are now part of a historic district, reflecting the area's 19th-century charm.",
+   "photos": [
+    "https://offthegridnyc.com/locations/sylvan-terrace/images/photo_1-1200.webp",
+    "https://offthegridnyc.com/locations/sylvan-terrace/images/photo_2-1200.webp",
+    "https://offthegridnyc.com/locations/sylvan-terrace/images/photo_3-1200.webp",
+    "https://offthegridnyc.com/locations/sylvan-terrace/images/photo_4-1200.webp",
+    "https://offthegridnyc.com/locations/sylvan-terrace/images/photo_5-1200.webp"
+   ]
+  },
+  {
+   "name": "Temple Court",
+   "slug": "temple-court",
+   "url": "https://offthegridnyc.com/locations/temple-court/",
+   "borough": "Brooklyn",
+   "neighborhood": "Windsor Terrace-South Slope",
+   "lat": 40.6557988,
+   "lng": -73.9745873,
+   "description": "No description yet.",
+   "history": "",
+   "photos": [
+    "https://offthegridnyc.com/locations/temple-court/images/photo_1-1200.webp",
+    "https://offthegridnyc.com/locations/temple-court/images/photo_2-1200.webp",
+    "https://offthegridnyc.com/locations/temple-court/images/photo_3-1200.webp",
+    "https://offthegridnyc.com/locations/temple-court/images/photo_4-1200.webp",
+    "https://offthegridnyc.com/locations/temple-court/images/photo_5-1200.webp"
+   ]
+  },
+  {
+   "name": "Track on the roof",
+   "slug": "track-on-the-roof",
+   "url": "https://offthegridnyc.com/locations/track-on-the-roof/",
+   "borough": "Manhattan",
+   "neighborhood": "Upper West Side-Lincoln Square",
+   "lat": 40.7748443,
+   "lng": -73.9814742,
+   "description": "There is a running track on the roof of this building. more of this please",
+   "history": "",
+   "photos": [
+    "https://offthegridnyc.com/locations/track-on-the-roof/images/photo_1-1200.webp",
+    "https://offthegridnyc.com/locations/track-on-the-roof/images/photo_2-1200.webp",
+    "https://offthegridnyc.com/locations/track-on-the-roof/images/photo_3-1200.webp",
+    "https://offthegridnyc.com/locations/track-on-the-roof/images/photo_4-1200.webp",
+    "https://offthegridnyc.com/locations/track-on-the-roof/images/photo_5-1200.webp"
+   ]
+  },
+  {
+   "name": "Verandah Place",
+   "slug": "verandah-place",
+   "url": "https://offthegridnyc.com/locations/verandah-place/",
+   "borough": "Brooklyn",
+   "neighborhood": "Carroll Gardens-Cobble Hill-Gowanus-Red Hook",
+   "lat": 40.6881867,
+   "lng": -73.9964295,
+   "description": "A narrow, historic street in Cobble Hill, Brooklyn, featuring small row houses.",
+   "history": "Verandah Place was developed in the mid-19th century and is known for its quaint, cottage-like homes. The street's name likely refers to the verandas or porches that were once common on its houses.",
+   "photos": []
+  },
+  {
+   "name": "Wallabout Hasidic Compound",
+   "slug": "wallabout-hasidic-compound",
+   "url": "https://offthegridnyc.com/locations/wallabout-hasidic-compound/",
+   "borough": "Brooklyn",
+   "neighborhood": "South Williamsburg",
+   "lat": 40.7012609,
+   "lng": -73.9495343,
+   "description": "Political will can build houses all you need is the right god. A large housing development in the Wallabout neighborhood of Brooklyn, primarily serving the Hasidic community.",
+   "history": "Developed by the Rabsky Group, this compound transformed a former industrial site, previously used by Pfizer, into a residential complex with approximately 1,000 housing units. The project faced zoning challenges but was eventually approved, showcasing the influence of organized community efforts in urban development.",
+   "photos": [
+    "https://offthegridnyc.com/locations/wallabout-hasidic-compound/images/photo_1-1200.webp",
+    "https://offthegridnyc.com/locations/wallabout-hasidic-compound/images/photo_2-1200.webp",
+    "https://offthegridnyc.com/locations/wallabout-hasidic-compound/images/photo_3-1200.webp",
+    "https://offthegridnyc.com/locations/wallabout-hasidic-compound/images/photo_4-1200.webp",
+    "https://offthegridnyc.com/locations/wallabout-hasidic-compound/images/photo_5-1200.webp"
+   ]
+  },
+  {
+   "name": "Warren Place Mews",
+   "slug": "warren-place-mews",
+   "url": "https://offthegridnyc.com/locations/warren-place-mews/",
+   "borough": "Brooklyn",
+   "neighborhood": "Carroll Gardens-Cobble Hill-Gowanus-Red Hook",
+   "lat": 40.6879287,
+   "lng": -73.9984916,
+   "description": "A historic row of cottages in Cobble Hill, Brooklyn, designed for working-class families.",
+   "history": "Warren Place Mews was developed in the 1870s by Alfred Tredway White, a philanthropist who aimed to provide affordable, quality housing. The cottages are a rare example of 19th-century workers' housing and are now highly valued residences.",
+   "photos": []
+  },
+  {
+   "name": "Washington Mews",
+   "slug": "washington-mews",
+   "url": "https://offthegridnyc.com/locations/washington-mews/",
+   "borough": "Manhattan",
+   "neighborhood": "Greenwich Village",
+   "lat": 40.7315753,
+   "lng": -73.9959466,
+   "description": "A private street in Greenwich Village, originally built as stables for nearby townhouses.",
+   "history": "Washington Mews was constructed in the 19th century and later converted into residences and artists' studios. It is now owned by New York University and serves as faculty housing and academic offices, preserving its historic character.",
+   "photos": [
+    "https://offthegridnyc.com/locations/washington-mews/images/photo_1-1200.webp",
+    "https://offthegridnyc.com/locations/washington-mews/images/photo_2-1200.webp",
+    "https://offthegridnyc.com/locations/washington-mews/images/photo_3-1200.webp",
+    "https://offthegridnyc.com/locations/washington-mews/images/photo_4-1200.webp",
+    "https://offthegridnyc.com/locations/washington-mews/images/photo_5-1200.webp"
+   ]
+  },
+  {
+   "name": "Waterside",
+   "slug": "waterside",
+   "url": "https://offthegridnyc.com/locations/waterside/",
+   "borough": "Manhattan",
+   "neighborhood": "Murray Hill-Kips Bay",
+   "lat": 40.7374817,
+   "lng": -73.9732056,
+   "description": "A residential complex located along the East River in Manhattan, offering waterfront living.",
+   "history": "Waterside Plaza was constructed in the 1970s on a platform over the East River. It was designed to address housing shortages and provide modern amenities. The complex includes residential towers, townhouses, and a plaza, making it a self-contained community.",
+   "photos": [
+    "https://offthegridnyc.com/locations/waterside/images/photo_1-1200.webp",
+    "https://offthegridnyc.com/locations/waterside/images/photo_2-1200.webp",
+    "https://offthegridnyc.com/locations/waterside/images/photo_3-1200.webp"
+   ]
+  }
+ ]
+}

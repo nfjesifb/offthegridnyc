@@ -1,108 +1,874 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DS1YWJT1KC"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-    gtag('config', 'G-DS1YWJT1KC');
-  </script>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Off The Grid NYC</title>
-  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src &#39;self&#39;; script-src &#39;self&#39; https://giscus.app https://www.googletagmanager.com; style-src &#39;self&#39;; img-src &#39;self&#39; data: https://tile.openstreetmap.org https://*.google-analytics.com https://*.googletagmanager.com; font-src &#39;self&#39;; connect-src &#39;self&#39; https://giscus.app https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com https://www.google.com; frame-src https://giscus.app https://roadview.planninglabs.nyc https://docs.google.com https://accounts.google.com; object-src &#39;none&#39;; base-uri &#39;self&#39;; form-action &#39;self&#39;; upgrade-insecure-requests">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Off The Grid NYC · Proof NYC has depth of character</title>
+  <meta name="description" content="A hand-curated map of New York City&#39;s mews, courtyards, rooftop tracks, hidden gardens and other quiet corners. The historical and modern political economy of niceness in NYC.">
+  <link rel="canonical" href="https://offthegridnyc.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Off The Grid NYC">
+  <meta property="og:title" content="Off The Grid NYC · Proof NYC has depth of character">
+  <meta property="og:description" content="A hand-curated map of New York City&#39;s mews, courtyards, rooftop tracks, hidden gardens and other quiet corners. The historical and modern political economy of niceness in NYC.">
+  <meta property="og:url" content="https://offthegridnyc.com/">
+  <meta property="og:image" content="https://offthegridnyc.com/assets/img/og-default.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#161616">
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="icon" href="/assets/img/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="preload" href="/assets/fonts/playfair-display-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/poppins-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/vendor/leaflet/leaflet.css">  <link rel="stylesheet" href="/assets/css/styles.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Off The Grid NYC","url":"https://offthegridnyc.com/","description":"A hand-curated map of New York City's mews, courtyards, rooftop tracks, hidden gardens and other quiet corners. The historical and modern political economy of niceness in NYC."}</script></head>
+<body class="flex min-h-screen flex-col">
+  <a class="skip-link" href="#main">Skip to content</a>
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap"
-    rel="stylesheet">
-
-  <!-- Custom CSS -->
-  <link href="assets/css/styles.css" rel="stylesheet">
-
-  <!-- Map Logic -->
-  <script src="src/js/map.js"></script>
-</head>
-
-<body class="bg-nyc-light-gray text-nyc-gray font-sans antialiased flex flex-col min-h-screen">
-
-  <!-- Header -->
-  <header class="bg-nyc-black text-white py-6 shadow-lg sticky top-0 z-50">
-    <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
-      <div class="text-center md:text-left mb-4 md:mb-0">
-        <h1 class="text-3xl md:text-4xl font-serif font-bold tracking-wide">Off The Grid NYC</h1>
-        <p class="text-sm text-gray-400 font-light tracking-wider uppercase mt-1">Proof NYC has depth of character</p>
-      </div>
-      <nav>
-        <a href="#map-section"
-          class="text-gray-300 hover:text-white mx-3 transition-colors text-sm uppercase tracking-widest">Map</a>
-        <a href="#submit-section"
-          class="text-gray-300 hover:text-white mx-3 transition-colors text-sm uppercase tracking-widest">Submit</a>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="brand" href="/" aria-label="Off The Grid NYC home">
+<svg class="brand__mark" viewBox="0 0 64 64" aria-hidden="true" focusable="false"><rect width="64" height="64" rx="14" fill="#f6f4ef"/><g fill="#161616"><circle cx="18" cy="18" r="4.5"/><circle cx="32" cy="18" r="4.5"/><circle cx="46" cy="18" r="4.5"/><circle cx="18" cy="32" r="4.5"/><circle cx="32" cy="32" r="4.5"/><circle cx="46" cy="32" r="4.5"/><circle cx="18" cy="46" r="4.5"/><circle cx="32" cy="46" r="4.5"/></g><circle cx="51" cy="51" r="6" fill="#f59e0b"/></svg>        <span>
+          <span class="brand__name">Off The Grid NYC</span>
+          <span class="brand__tag">Proof NYC has depth of character</span>
+        </span>
+      </a>
+      <button class="nav-toggle" type="button" id="nav-toggle" aria-controls="site-nav" aria-expanded="false" aria-label="Menu">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Primary">
+        <a href="/#explorer">Map</a>
+        <a href="/locations/">All places</a>
+        <a href="/#about">About</a>
+        <a href="/#submit" class="is-cta">Submit a place</a>
       </nav>
     </div>
   </header>
 
-  <!-- Hero / Intro -->
-  <section class="bg-nyc-gray text-white py-12">
-    <div class="container mx-auto px-4 text-center max-w-3xl">
-      <h2 class="text-2xl md:text-3xl font-serif mb-4">Why</h2>
-      <p class="text-gray-300 mb-6 font-light leading-relaxed">
-        The historical and modern political economy of niceness in NYC.
-      </p>
-      <p class="text-xs text-gray-500 italic">
-        Note: Descriptions generated by AI, locations curated by humans. Always verify before you go.
-      </p>
+  <main id="main" class="flex-1" tabindex="-1">
+<section class="hero">
+  <div class="hero__inner">
+    <p class="eyebrow text-brass">A field guide to the city's quiet corners</p>
+    <h1>Proof NYC has depth of character.</h1>
+    <p class="hero__lede">A hand-curated map of New York City&#39;s mews, courtyards, rooftop tracks, hidden gardens and other quiet corners. The historical and modern political economy of niceness in NYC.</p>
+    <div class="hero__actions">
+      <a class="btn btn--light" href="#explorer">Explore the map</a>
+      <a class="btn btn--outline-light" href="/locations/">Browse all places</a>
     </div>
-  </section>
+    <dl class="hero__stats">
+      <div><dt>Places</dt><dd>85</dd></div>
+      <div><dt>Boroughs</dt><dd>4</dd></div>
+      <div><dt>Photos</dt><dd>190</dd></div>
+    </dl>
+  </div>
+</section>
 
-  <!-- Main Content -->
-  <main class="flex-grow container mx-auto px-4 py-8 max-w-7xl">
-
-    <!-- Map Section -->
-    <section id="map-section" class="bg-white rounded-xl shadow-2xl overflow-hidden mb-12 border border-gray-200">
-      <div id="map" class="w-full h-[70vh] min-h-[500px]"></div>
-      <div class="p-4 bg-gray-50 border-t border-gray-200 text-center">
-        <p class="text-sm text-gray-600">
-          Explore on Google Maps directly:
-          <a href="https://www.google.com/maps/d/edit?mid=1gl24kbeTNZ13SmaCbMsam2CYe8Ury7M&usp=sharing" target="_blank"
-            rel="noopener noreferrer" class="text-nyc-blue hover:underline font-medium">Open Map</a>
-        </p>
+<section id="explorer" class="section" aria-labelledby="explorer-title">
+  <div class="wrap">
+    <div class="explorer__toolbar">
+      <div>
+        <h2 id="explorer-title" class="section-title">Explore</h2>
+        <p class="mt-1 text-sm text-muted">Search, filter by borough, or sort by what's closest to you.</p>
       </div>
-    </section>
-
-    <!-- Submission Form Section -->
-    <section id="submit-section"
-      class="max-w-4xl mx-auto bg-white rounded-xl shadow-xl overflow-hidden border border-gray-200">
-      <div class="bg-nyc-black text-white p-6 text-center">
-        <h2 class="text-2xl font-serif">Know a Hidden Gem?</h2>
-        <p class="text-gray-400 mt-2 font-light">Help us document the depth of NYC. Submit a location below.</p>
+      <form class="search" role="search" data-no-submit>
+        <label for="search" class="sr-only">Search places</label>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <input id="search" type="search" placeholder="Search by name, neighborhood or borough" autocomplete="off">
+      </form>
+    </div>
+    <div class="explorer__toolbar">
+      <div class="explorer__filters" id="borough-filters" role="group" aria-label="Filter by borough">
+        <button type="button" class="filter-chip" data-borough="all" aria-pressed="true">All <span class="filter-chip__count">85</span></button>
+<button type="button" class="filter-chip" data-borough="manhattan" aria-pressed="false">Manhattan <span class="filter-chip__count">38</span></button><button type="button" class="filter-chip" data-borough="brooklyn" aria-pressed="false">Brooklyn <span class="filter-chip__count">41</span></button><button type="button" class="filter-chip" data-borough="queens" aria-pressed="false">Queens <span class="filter-chip__count">2</span></button><button type="button" class="filter-chip" data-borough="bronx" aria-pressed="false">Bronx <span class="filter-chip__count">4</span></button>      </div>
+      <div class="flex items-center gap-2" id="explorer-tools" hidden>
+        <button type="button" class="btn btn--ghost btn--small" id="near-me">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="1.5"/></svg>
+          Near me
+        </button>
+        <button type="button" class="btn btn--ghost btn--small" id="reset-filters">Reset</button>
       </div>
-      <div class="p-6 bg-gray-50">
-        <iframe
-          src="https://docs.google.com/forms/d/e/1FAIpQLSf-3Fi0LTuKLsSUQvrr_uVkenJkpHBEO5bDQXM567_NW4U5Ag/viewform?embedded=true"
-          class="w-full h-[800px] border-0 mx-auto block">Loading...</iframe>
-      </div>
-    </section>
+    </div>
 
+    <div class="explorer__layout">
+      <div class="explorer__map">
+        <div id="map" class="map" role="region" aria-label="Map of places" data-tiles-url="https://tile.openstreetmap.org/{z}/{x}/{y}.png" data-tiles-attribution="&amp;copy; &lt;a href=&#34;https://www.openstreetmap.org/copyright&#34; rel=&#34;noopener noreferrer&#34;&gt;OpenStreetMap&lt;/a&gt; contributors" data-tiles-max-zoom="19" data-tiles-subdomains="">
+          <noscript><p class="p-6 text-sm text-muted">Enable JavaScript to use the interactive map, or browse the list.</p></noscript>
+        </div>
+      </div>
+      <div class="explorer__list">
+        <p id="results-count" class="results-count" aria-live="polite">Showing all 85 places, A to Z</p>
+        <p id="explorer-status" class="explorer-status" aria-live="polite"></p>
+        <ul id="place-list" class="place-list">
+<li class="place-card" data-slug="10-bedford-st" data-borough="manhattan" data-search="10 bedford st west village manhattan no description yet.">
+  <a class="place-card__media" href="/locations/10-bedford-st/" tabindex="-1" aria-hidden="true">
+<img src="/locations/10-bedford-st/images/satellite_10-bedford-st-480.webp" alt="" width="480" height="320" loading="lazy" decoding="async">  </a>
+  <div class="place-card__body">
+    <p class="place-card__meta"><span class="chip chip--manhattan">Manhattan</span><span>West Village</span></p>
+    <h3 class="place-card__title"><a href="/locations/10-bedford-st/">10 Bedford St</a></h3>
+    <p class="place-card__desc">No description yet.</p>
+  </div>
+</li><li class="place-card" data-slug="116-pinehurst" data-borough="manhattan" data-search="116 pinehurst washington heights (north) manhattan a residential building located in the washington heights neighborhood of manhattan.">
+  <a class="place-card__media" href="/locations/116-pinehurst/" tabindex="-1" aria-hidden="true">
+<img src="/locations/116-pinehurst/images/photo_1-480.webp" alt="" width="480" height="637" loading="lazy" decoding="async">  </a>
+  <div class="place-card__body">
+    <p class="place-card__meta"><span class="chip chip--manhattan">Manhattan</span><span>Washington Heights (North)</span></p>
+    <h3 class="place-card__title"><a href="/locations/116-pinehurst/">116 Pinehurst</a></h3>
+    <p class="place-card__desc">A residential building located in the Washington Heights neighborhood of Manhattan.</p>
+  </div>
+</li><li class="place-card" data-slug="117-underhill-avenue" data-borough="brooklyn" data-search="117 underhill avenue prospect heights brooklyn no description yet.">
+  <a class="place-card__media" href="/locations/117-underhill-avenue/" tabindex="-1" aria-hidden="true">
+<img src="/locations/117-underhill-avenue/images/satellite_117-underhill-avenue-480.webp" alt="" width="480" height="320" loading="lazy" decoding="async">  </a>
+  <div class="place-card__body">
+    <p class="place-card__meta"><span class="chip chip--brooklyn">Brooklyn</span><span>Prospect Heights</span></p>
+    <h3 class="place-card__title"><a href="/locations/117-underhill-avenue/">117 Underhill Avenue</a></h3>
+    <p class="place-card__desc">No description yet.</p>
+  </div>
+</li><li class="place-card" data-slug="1288-prospect-place" data-borough="brooklyn" data-search="1288 prospect place crown heights (north) brooklyn no description yet.">
+  <a class="place-card__media" href="/locations/1288-prospect-place/" tabindex="-1" aria-hidden="true">
+<img src="/locations/1288-prospect-place/images/satellite_1288-prospect-place-480.webp" alt="" width="480" height="320" loading="lazy" decoding="async">  </a>
+  <div class="place-card__body">
+    <p class="place-card__meta"><span class="chip chip--brooklyn">Brooklyn</span><span>Crown Heights (North)</span></p>
+    <h3 class="place-card__title"><a href="/locations/1288-prospect-place/">1288 Prospect Place</a></h3>
+    <p class="place-card__desc">No description yet.</p>
+  </div>
+</li><li class="place-card" data-slug="129-degraw-abcd" data-borough="brooklyn" data-search="129 degraw abcd carroll gardens-cobble hill-gowanus-red hook brooklyn no description yet.">
+  <a class="place-card__media" href="/locations/129-degraw-abcd/" tabindex="-1" aria-hidden="true">
+<img src="/locations/129-degraw-abcd/images/satellite_129-degraw-abcd-480.webp" alt="" width="480" height="320" loading="lazy" decoding="async">  </a>
+  <div class="place-card__body">
+    <p class="place-card__meta"><span class="chip chip--brooklyn">Brooklyn</span><span>Carroll Gardens-Cobble Hill-Gowanus-Red Hook</span></p>
+    <h3 class="place-card__title"><a href="/locations/129-degraw-abcd/">129 Degraw ABCD</a></h3>
+    <p class="place-card__desc">No description yet.</p>
+  </div>
+</li><li class="place-card" data-slug="137-oak-st" data-borough="brooklyn" data-search="137 oak st greenpoint brooklyn cool house in a cool corner on a cool street in cool greenpoint">
+  <a class="place-card__media" href="/locations/137-oak-st/" tabindex="-1" aria-hidden="true">
+<span class="place-card__placeholder"></span>  </a>
+  <div class="place-card__body">
+    <p class="place-card__meta"><span class="chip chip--brooklyn">Brooklyn</span><span>Greenpoint</span></p>
+    <h3 class="place-card__title"><a href="/locations/137-oak-st/">137 Oak St</a></h3>
+    <p class="place-card__desc">cool house in a cool corner on a cool street in cool greenpoint</p>
+  </div>
+</li><li class="place-card" data-slug="158-prospect-place" data-borough="brooklyn" data-search="158 prospect place prospect heights brooklyn no description yet.">
+  <a class="place-card__media" href="/locations/158-prospect-place/" tabindex="-1" aria-hidden="true">
+<img src="/locations/158-prospect-place/images/satellite_158-prospect-place-480.webp" alt="" width="480" height="320" loading="lazy" decoding="async">  </a>
+  <div class="place-card__body">
+    <p class="place-card__meta"><span class="chip chip--brooklyn">Brooklyn</span><span>Prospect Heights</span></p>
+    <h3 class="place-card__title"><a href="/locations/158-prospect-place/">158 Prospect Place</a></h3>
+    <p class="place-card__desc">No description yet.</p>
+  </div>
+</li><li class="place-card" data-slug="193-prospect-place" data-borough="brooklyn" data-search="193 prospect place prospect heights brooklyn no description yet.">
+  <a class="place-card__media" href="/locations/193-prospect-place/" tabindex="-1" aria-hidden="true">
+<img src="/locations/193-prospect-place/images/satellite_193-prospect-place-480.webp" alt="" width="480" height="320" loading="lazy" decoding="async">  </a>
+  <div class="place-card__body">
+    <p class="place-card__meta"><span class="chip chip--brooklyn">Brooklyn</span><span>Prospect Heights</span></p>
+    <h3 class="place-card__title"><a href="/locations/193-prospect-place/">193 Prospect Place</a></h3>
+    <p class="place-card__desc">No description yet.</p>
+  </div>
+</li><li class="place-card" data-slug="210-w-90th-astor-court" data-borough="manhattan" data-search="210 w 90th (astor court) upper west side (central) manhattan a residential building on the upper west side of manhattan, featuring a central courtyard.">
+  <a class="place-card__media" href="/locations/210-w-90th-astor-court/" tabindex="-1" aria-hidden="true">
+<img src="/locations/210-w-90th-astor-court/images/photo_1-480.webp" alt="" width="480" height="360" loading="lazy" decoding="async">  </a>
+  <div class="place-card__body">
+    <p class="place-card__meta"><span class="chip chip--manhattan">Manhattan</span><span>Upper West Side (Central)</span></p>
+    <h3 class="place-card__title"><a href="/locations/210-w-90th-astor-court/">210 W 90th (Astor Court)</a></h3>
+    <p class="place-card__desc">A residential building on the Upper West Side of Manhattan, featuring a central courtyard.</p>
+  </div>
+</li><li class="place-card" data-slug="245-washington-ave" data-borough="brooklyn" data-search="245 washington ave clinton hill brooklyn no description yet.">
+  <a class="place-card__media" href="/locations/245-washington-ave/" tabindex="-1" aria-hidden="true">
+<img src="/locations/245-washington-ave/images/satellite_245-washington-ave-480.webp" alt="" width="480" height="320" loading="lazy" decoding="async">  </a>
+  <div class="place-card__body">
+    <p class="place-card__meta"><span class="chip chip--brooklyn">Brooklyn</span><span>Clinton Hill</span></p>
+    <h3 class="place-card__title"><a href="/locations/245-washington-ave/">245 Washington Ave</a></h3>
+    <p class="place-card__desc">No description yet.</p>
+  </div>
+</li><li class="place-card" data-slug="246-washington-ave" data-borough="brooklyn" data-search="246 washington ave clinton hill brooklyn no description yet.">
+  <a class="place-card__media" href="/locations/246-washington-ave/" tabindex="-1" aria-hidden="true">
+<img src="/locations/246-washington-ave/images/satellite_246-washington-ave-480.webp" alt="" width="480" height="320" loading="lazy" decoding="async">  </a>
+  <div class="place-card__body">
+    <p class="place-card__meta"><span class="chip chip--brooklyn">Brooklyn</span><span>Clinton Hill</span></p>
+    <h3 class="place-card__title"><a href="/locations/246-washington-ave/">246 Washington Ave</a></h3>
+    <p class="place-card__desc">No description yet.</p>
+  </div>
+</li><li class="place-card" data-slug="280-washington-ave" data-borough="brooklyn" data-search="280 washington ave clinton hill brooklyn no description yet.">
+  <a class="place-card__media" href="/locations/280-washington-ave/" tabindex="-1" aria-hidden="true">
+<img src="/locations/280-washington-ave/images/satellite_280-washington-ave-480.webp" alt="" width="480" height="320" loading="lazy" decoding="async">  </a>
+  <div class="place-card__body">
+    <p class="place-card__meta"><span class="chip chip--brooklyn">Brooklyn</span><span>Clinton Hill</span></p>
+    <h3 class="place-card__title"><a href="/locations/280-washington-ave/">280 Washington Ave</a></h3>
+    <p class="place-card__desc">No description yet.</p>
+  </div>
+</li><li class="place-card" data-slug="30-36-remsen" data-borough="brooklyn" data-search="30-36 remsen brooklyn heights brooklyn no description yet.">
+  <a class="place-card__media" href="/locations/30-36-remsen/" tabindex="-1" aria-hidden="true">
+<img src="/locations/30-36-remsen/images/satellite_30-36-remsen-480.webp" alt="" width="480" height="320" loading="lazy" decoding="async">  </a>
+  <div class="place-card__body">
+    <p class="place-card__meta"><span class="chip chip--brooklyn">Brooklyn</span><span>Brooklyn Heights</span></p>
+    <h3 class="place-card__title"><a href="/locations/30-36-remsen/">30-36 Remsen</a></h3>
+    <p class="place-card__desc">No description yet.</p>
+  </div>
+</li><li class="place-card" data-slug="301-greene-ave" data-borough="brooklyn" data-search="301 greene ave bedford-stuyvesant (west) brooklyn no description yet.">
+  <a class="place-card__media" href="/locations/301-greene-ave/" tabindex="-1" aria-hidden="true">
+<img src="/locations/301-greene-ave/images/satellite_301-greene-ave-480.webp" alt="" width="480" height="320" loading="lazy" decoding="async">  </a>
+  <div class="place-card__body">
+    <p class="place-card__meta"><span class="chip chip--brooklyn">Brooklyn</span><span>Bedford-Stuyvesant (West)</span></p>
+    <h3 class="place-card__title"><a href="/locations/301-greene-ave/">301 Greene Ave</a></h3>
+    <p class="place-card__desc">No description yet.</p>
+  </div>
+</li><li class="place-card" data-slug="34-strong-place" data-borough="brooklyn" data-search="34 strong place carroll gardens-cobble hill-gowanus-red hook brooklyn no description yet.">
+  <a class="place-card__media" href="/locations/34-strong-place/" tabindex="-1" aria-hidden="true">
+<img src="/locations/34-strong-place/images/satellite_34-strong-place-480.webp" alt="" width="480" height="320" loading="lazy" decoding="async">  </a>
+  <div class="place-card__body">
+    <p class="place-card__meta"><span class="chip chip--brooklyn">Brooklyn</span><span>Carroll Gardens-Cobble Hill-Gowanus-Red Hook</span></p>
+    <h3 class="place-card__title"><a href="/locations/34-strong-place/">34 Strong Place</a></h3>
+    <p class="place-card__desc">No description yet.</p>
+  </div>
+</li><li class="place-card" data-slug="46-7th-ave" data-borough="manhattan" data-search="46 7th ave west village manhattan no description yet.">
+  <a class="place-card__media" href="/locations/46-7th-ave/" tabindex="-1" aria-hidden="true">
+<img src="/locations/46-7th-ave/images/satellite_46-7th-ave-480.webp" alt="" width="480" height="320" loading="lazy" decoding="async">  </a>
+  <div class="place-card__body">
+    <p class="place-card__meta"><span class="chip chip--manhattan">Manhattan</span><span>West Village</span></p>
+    <h3 class="place-card__title"><a href="/locations/46-7th-ave/">46 7th Ave</a></h3>
+    <p class="place-card__desc">No description yet.</p>
+  </div>
+</li><li class="place-card" data-slug="46-58-remsen" data-borough="brooklyn" data-search="46-58 remsen brooklyn heights brooklyn no description yet.">
+  <a class="place-card__media" href="/locations/46-58-remsen/" tabindex="-1" aria-hidden="true">
+<img src="/locations/46-58-remsen/images/satellite_46-58-remsen-480.webp" alt="" width="480" height="320" loading="lazy" decoding="async">  </a>
+  <div class="place-card__body">
+    <p class="place-card__meta"><span class="chip chip--brooklyn">Brooklyn</span><span>Brooklyn Heights</span></p>
+    <h3 class="place-card__title"><a href="/locations/46-58-remsen/">46-58 Remsen</a></h3>
+    <p class="place-card__desc">No description yet.</p>
+  </div>
+</li><li class="place-card" data-slug="46a-prospect-park-southwest" data-borough="brooklyn" data-search="46a prospect park southwest windsor terrace-south slope brooklyn no description yet.">
+  <a class="place-card__media" href="/locations/46a-prospect-park-southwest/" tabindex="-1" aria-hidden="true">
+<img src="/locations/46a-prospect-park-southwest/images/satellite_46a-prospect-park-southwest-480.webp" alt="" width="480" height="320" loading="lazy" decoding="async">  </a>
+  <div class="place-card__body">
+    <p class="place-card__meta"><span class="chip chip--brooklyn">Brooklyn</span><span>Windsor Terrace-South Slope</span></p>
+    <h3 class="place-card__title"><a href="/locations/46a-prospect-park-southwest/">46A Prospect Park Southwest</a></h3>
+    <p class="place-card__desc">No description yet.</p>
+  </div>
+</li><li class="place-card" data-slug="48-tiffany-place" data-borough="brooklyn" data-search="48 tiffany place carroll gardens-cobble hill-gowanus-red hook brooklyn no description yet.">
+  <a class="place-card__media" href="/locations/48-tiffany-place/" tabindex="-1" aria-hidden="true">
+<img src="/locations/48-tiffany-place/images/satellite_48-tiffany-place-480.webp" alt="" width="480" height="320" loading="lazy" decoding="async">  </a>
+  <div class="place-card__body">
+    <p class="place-card__meta"><span class="chip chip--brooklyn">Brooklyn</span><span>Carroll Gardens-Cobble Hill-Gowanus-Red Hook</span></p>
+    <h3 class="place-card__title"><a href="/locations/48-tiffany-place/">48 Tiffany Place</a></h3>
+    <p class="place-card__desc">No description yet.</p>
+  </div>
+</li><li class="place-card" data-slug="5-carmine-st-abc" data-borough="manhattan" data-search="5 carmine st abc west village manhattan no description yet.">
+  <a class="place-card__media" href="/locations/5-carmine-st-abc/" tabindex="-1" aria-hidden="true">
+<img src="/locations/5-carmine-st-abc/images/photo_1-480.webp" alt="" width="480" height="640" loading="lazy" decoding="async">  </a>
+  <div class="place-card__body">
+    <p class="place-card__meta"><span class="chip chip--manhattan">Manhattan</span><span>West Village</span></p>
+    <h3 class="place-card__title"><a href="/locations/5-carmine-st-abc/">5 Carmine St ABC</a></h3>
+    <p class="place-card__desc">No description yet.</p>
+  </div>
+</li><li class="place-card" data-slug="ablemarle-terrace" data-borough="brooklyn" data-search="ablemarle terrace flatbush brooklyn no description yet.">
+  <a class="place-card__media" href="/locations/ablemarle-terrace/" tabindex="-1" aria-hidden="true">
+<img src="/locations/ablemarle-terrace/images/satellite_ablemarle-terrace-480.webp" alt="" width="480" height="320" loading="lazy" decoding="async">  </a>
+  <div class="place-card__body">
+    <p class="place-card__meta"><span class="chip chip--brooklyn">Brooklyn</span><span>Flatbush</span></p>
+    <h3 class="place-card__title"><a href="/locations/ablemarle-terrace/">Ablemarle Terrace</a></h3>
+    <p class="place-card__desc">No description yet.</p>
+  </div>
+</li><li class="place-card" data-slug="ansonia-clock-factory" data-borough="brooklyn" data-search="ansonia clock factory park slope brooklyn a historic building in brooklyn, originally a factory for the ansonia clock company.">
+  <a class="place-card__media" href="/locations/ansonia-clock-factory/" tabindex="-1" aria-hidden="true">
+<img src="/locations/ansonia-clock-factory/images/satellite_ansonia-clock-factory-480.webp" alt="" width="480" height="320" loading="lazy" decoding="async">  </a>
+  <div class="place-card__body">
+    <p class="place-card__meta"><span class="chip chip--brooklyn">Brooklyn</span><span>Park Slope</span></p>
+    <h3 class="place-card__title"><a href="/locations/ansonia-clock-factory/">Ansonia Clock Factory</a></h3>
+    <p class="place-card__desc">A historic building in Brooklyn, originally a factory for the Ansonia Clock Company.</p>
+  </div>
+</li><li class="place-card" data-slug="barwell-terrace" data-borough="brooklyn" data-search="barwell terrace bay ridge brooklyn no description yet.">
+  <a class="place-card__media" href="/locations/barwell-terrace/" tabindex="-1" aria-hidden="true">
+<img src="/locations/barwell-terrace/images/satellite_barwell-terrace-480.webp" alt="" width="480" height="320" loading="lazy" decoding="async">  </a>
+  <div class="place-card__body">
+    <p class="place-card__meta"><span class="chip chip--brooklyn">Brooklyn</span><span>Bay Ridge</span></p>
+    <h3 class="place-card__title"><a href="/locations/barwell-terrace/">Barwell Terrace</a></h3>
+    <p class="place-card__desc">No description yet.</p>
+  </div>
+</li><li class="place-card" data-slug="broadway-between-40th-and-17th" data-borough="manhattan" data-search="broadway between 40th and 17th midtown-times square manhattan a section of broadway in manhattan, known for its pedestrian-friendly design and public spaces.">
+  <a class="place-card__media" href="/locations/broadway-between-40th-and-17th/" tabindex="-1" aria-hidden="true">
+<img src="/locations/broadway-between-40th-and-17th/images/photo_1-480.webp" alt="" width="480" height="362" loading="lazy" decoding="async">  </a>
+  <div class="place-card__body">
+    <p class="place-card__meta"><span class="chip chip--manhattan">Manhattan</span><span>Midtown-Times Square</span></p>
+    <h3 class="place-card__title"><a href="/locations/broadway-between-40th-and-17th/">Broadway Between 40th and 17th</a></h3>
+    <p class="place-card__desc">A section of Broadway in Manhattan, known for its pedestrian-friendly design and public spaces.</p>
+  </div>
+</li><li class="place-card" data-slug="brooklyn-bridge-parks" data-borough="brooklyn" data-search="brooklyn bridge parks brooklyn heights brooklyn top public private parnership and the only park in nyc you can live in? thanks bloomberg.">
+  <a class="place-card__media" href="/locations/brooklyn-bridge-parks/" tabindex="-1" aria-hidden="true">
+<img src="/locations/brooklyn-bridge-parks/images/photo_1-480.webp" alt="" width="480" height="360" loading="lazy" decoding="async">  </a>
+  <div class="place-card__body">
+    <p class="place-card__meta"><span class="chip chip--brooklyn">Brooklyn</span><span>Brooklyn Heights</span></p>
+    <h3 class="place-card__title"><a href="/locations/brooklyn-bridge-parks/">Brooklyn Bridge Parks</a></h3>
+    <p class="place-card__desc">Top public private parnership and the only park in nyc you can live in? Thanks bloomberg.</p>
+  </div>
+</li><li class="place-card" data-slug="brooklyn-navy-yard" data-borough="brooklyn" data-search="brooklyn navy yard brooklyn navy yard brooklyn a historic shipyard and industrial complex located in brooklyn, now repurposed as a hub for manufacturing, technology, and creative industries.">
+  <a class="place-card__media" href="/locations/brooklyn-navy-yard/" tabindex="-1" aria-hidden="true">
+<img src="/locations/brooklyn-navy-yard/images/photo_1-480.webp" alt="" width="480" height="360" loading="lazy" decoding="async">  </a>
+  <div class="place-card__body">
+    <p class="place-card__meta"><span class="chip chip--brooklyn">Brooklyn</span><span>Brooklyn Navy Yard</span></p>
+    <h3 class="place-card__title"><a href="/locations/brooklyn-navy-yard/">Brooklyn Navy Yard</a></h3>
+    <p class="place-card__desc">A historic shipyard and industrial complex located in Brooklyn, now repurposed as a hub for manufacturing, technology, and creative industries.</p>
+  </div>
+</li><li class="place-card" data-slug="charlotte-gardens" data-borough="bronx" data-search="charlotte gardens crotona park east bronx a housing development in the south bronx, known for its suburban-style homes.">
+  <a class="place-card__media" href="/locations/charlotte-gardens/" tabindex="-1" aria-hidden="true">
+<img src="/locations/charlotte-gardens/images/photo_1-480.webp" alt="" width="480" height="346" loading="lazy" decoding="async">  </a>
+  <div class="place-card__body">
+    <p class="place-card__meta"><span class="chip chip--bronx">Bronx</span><span>Crotona Park East</span></p>
+    <h3 class="place-card__title"><a href="/locations/charlotte-gardens/">Charlotte Gardens</a></h3>
+    <p class="place-card__desc">A housing development in the South Bronx, known for its suburban-style homes.</p>
+  </div>
+</li><li class="place-card" data-slug="chester-court" data-borough="brooklyn" data-search="chester court prospect lefferts gardens-wingate brooklyn no description yet.">
+  <a class="place-card__media" href="/locations/chester-court/" tabindex="-1" aria-hidden="true">
+<img src="/locations/chester-court/images/satellite_chester-court-480.webp" alt="" width="480" height="320" loading="lazy" decoding="async">  </a>
+  <div class="place-card__body">
+    <p class="place-card__meta"><span class="chip chip--brooklyn">Brooklyn</span><span>Prospect Lefferts Gardens-Wingate</span></p>
+    <h3 class="place-card__title"><a href="/locations/chester-court/">Chester Court</a></h3>
+    <p class="place-card__desc">No description yet.</p>
+  </div>
+</li><li class="place-card" data-slug="chittenden-road" data-borough="manhattan" data-search="chittenden road washington heights (north) manhattan a street in washington heights, offering views of the hudson river.">
+  <a class="place-card__media" href="/locations/chittenden-road/" tabindex="-1" aria-hidden="true">
+<img src="/locations/chittenden-road/images/photo_1-480.webp" alt="" width="480" height="360" loading="lazy" decoding="async">  </a>
+  <div class="place-card__body">
+    <p class="place-card__meta"><span class="chip chip--manhattan">Manhattan</span><span>Washington Heights (North)</span></p>
+    <h3 class="place-card__title"><a href="/locations/chittenden-road/">Chittenden Road</a></h3>
+    <p class="place-card__desc">A street in Washington Heights, offering views of the Hudson River.</p>
+  </div>
+</li><li class="place-card" data-slug="claremontvanderbilt-new-townhouses-with-communal-garden" data-borough="brooklyn" data-search="claremont/vanderbilt new townhouses with communal garden fort greene brooklyn one of few modern examples of private shared space. the houses r kinda ugly but ill take what i can get">
+  <a class="place-card__media" href="/locations/claremontvanderbilt-new-townhouses-with-communal-garden/" tabindex="-1" aria-hidden="true">
+<span class="place-card__placeholder"></span>  </a>
+  <div class="place-card__body">
+    <p class="place-card__meta"><span class="chip chip--brooklyn">Brooklyn</span><span>Fort Greene</span></p>
+    <h3 class="place-card__title"><a href="/locations/claremontvanderbilt-new-townhouses-with-communal-garden/">Claremont/Vanderbilt New townhouses with communal garden</a></h3>
+    <p class="place-card__desc">One of few modern examples of private shared space. the houses r kinda ugly but ill take what I can get</p>
+  </div>
+</li><li class="place-card" data-slug="cliff-house-pumpkin-house" data-borough="manhattan" data-search="cliff house (pumpkin house) washington heights (north) manhattan a unique residential building in manhattan, known for its distinctive appearance and location on a cliff.">
+  <a class="place-card__media" href="/locations/cliff-house-pumpkin-house/" tabindex="-1" aria-hidden="true">
+<img src="/locations/cliff-house-pumpkin-house/images/photo_1-480.webp" alt="" width="480" height="270" loading="lazy" decoding="async">  </a>
+  <div class="place-card__body">
+    <p class="place-card__meta"><span class="chip chip--manhattan">Manhattan</span><span>Washington Heights (North)</span></p>
+    <h3 class="place-card__title"><a href="/locations/cliff-house-pumpkin-house/">Cliff House (Pumpkin House)</a></h3>
+    <p class="place-card__desc">A unique residential building in Manhattan, known for its distinctive appearance and location on a cliff.</p>
+  </div>
+</li><li class="place-card" data-slug="clinton-court" data-borough="manhattan" data-search="clinton court hell&#39;s kitchen manhattan no description yet.">
+  <a class="place-card__media" href="/locations/clinton-court/" tabindex="-1" aria-hidden="true">
+<img src="/locations/clinton-court/images/photo_1-480.webp" alt="" width="480" height="637" loading="lazy" decoding="async">  </a>
+  <div class="place-card__body">
+    <p class="place-card__meta"><span class="chip chip--manhattan">Manhattan</span><span>Hell&#39;s Kitchen</span></p>
+    <h3 class="place-card__title"><a href="/locations/clinton-court/">Clinton Court</a></h3>
+    <p class="place-card__desc">No description yet.</p>
+  </div>
+</li><li class="place-card" data-slug="college-place" data-borough="brooklyn" data-search="college place brooklyn heights brooklyn a short, dead-end street in brooklyn heights, offering a peaceful retreat.">
+  <a class="place-card__media" href="/locations/college-place/" tabindex="-1" aria-hidden="true">
+<img src="/locations/college-place/images/satellite_college-place-480.webp" alt="" width="480" height="320" loading="lazy" decoding="async">  </a>
+  <div class="place-card__body">
+    <p class="place-card__meta"><span class="chip chip--brooklyn">Brooklyn</span><span>Brooklyn Heights</span></p>
+    <h3 class="place-card__title"><a href="/locations/college-place/">College Place</a></h3>
+    <p class="place-card__desc">A short, dead-end street in Brooklyn Heights, offering a peaceful retreat.</p>
+  </div>
+</li><li class="place-card" data-slug="colonial-gardens" data-borough="brooklyn" data-search="colonial gardens bay ridge brooklyn no description yet.">
+  <a class="place-card__media" href="/locations/colonial-gardens/" tabindex="-1" aria-hidden="true">
+<img src="/locations/colonial-gardens/images/photo_1-480.webp" alt="" width="480" height="360" loading="lazy" decoding="async">  </a>
+  <div class="place-card__body">
+    <p class="place-card__meta"><span class="chip chip--brooklyn">Brooklyn</span><span>Bay Ridge</span></p>
+    <h3 class="place-card__title"><a href="/locations/colonial-gardens/">Colonial Gardens</a></h3>
+    <p class="place-card__desc">No description yet.</p>
+  </div>
+</li><li class="place-card" data-slug="commandants-mansion" data-borough="brooklyn" data-search="commandants mansion downtown brooklyn-dumbo-boerum hill brooklyn estate in downtown">
+  <a class="place-card__media" href="/locations/commandants-mansion/" tabindex="-1" aria-hidden="true">
+<img src="/locations/commandants-mansion/images/photo_1-480.webp" alt="" width="480" height="360" loading="lazy" decoding="async">  </a>
+  <div class="place-card__body">
+    <p class="place-card__meta"><span class="chip chip--brooklyn">Brooklyn</span><span>Downtown Brooklyn-DUMBO-Boerum Hill</span></p>
+    <h3 class="place-card__title"><a href="/locations/commandants-mansion/">Commandants Mansion</a></h3>
+    <p class="place-card__desc">Estate in downtown</p>
+  </div>
+</li><li class="place-card" data-slug="dennett-place" data-borough="brooklyn" data-search="dennett place carroll gardens-cobble hill-gowanus-red hook brooklyn a small, historic street in carroll gardens, brooklyn, known for its charming row houses.">
+  <a class="place-card__media" href="/locations/dennett-place/" tabindex="-1" aria-hidden="true">
+<img src="/locations/dennett-place/images/satellite_dennett-place-480.webp" alt="" width="480" height="320" loading="lazy" decoding="async">  </a>
+  <div class="place-card__body">
+    <p class="place-card__meta"><span class="chip chip--brooklyn">Brooklyn</span><span>Carroll Gardens-Cobble Hill-Gowanus-Red Hook</span></p>
+    <h3 class="place-card__title"><a href="/locations/dennett-place/">Dennett Place</a></h3>
+    <p class="place-card__desc">A small, historic street in Carroll Gardens, Brooklyn, known for its charming row houses.</p>
+  </div>
+</li><li class="place-card" data-slug="ditmas-park" data-borough="brooklyn" data-search="ditmas park flatbush (west)-ditmas park-parkville brooklyn a neighborhood in brooklyn known for its large, victorian-style homes and tree-lined streets.">
+  <a class="place-card__media" href="/locations/ditmas-park/" tabindex="-1" aria-hidden="true">
+<img src="/locations/ditmas-park/images/photo_1-480.webp" alt="" width="480" height="640" loading="lazy" decoding="async">  </a>
+  <div class="place-card__body">
+    <p class="place-card__meta"><span class="chip chip--brooklyn">Brooklyn</span><span>Flatbush (West)-Ditmas Park-Parkville</span></p>
+    <h3 class="place-card__title"><a href="/locations/ditmas-park/">Ditmas Park</a></h3>
+    <p class="place-card__desc">A neighborhood in Brooklyn known for its large, Victorian-style homes and tree-lined streets.</p>
+  </div>
+</li><li class="place-card" data-slug="doyer-street" data-borough="manhattan" data-search="doyer street chinatown-two bridges manhattan a historic street in chinatown, manhattan, known for its sharp bend and cultural significance.">
+  <a class="place-card__media" href="/locations/doyer-street/" tabindex="-1" aria-hidden="true">
+<img src="/locations/doyer-street/images/photo_1-480.webp" alt="" width="480" height="360" loading="lazy" decoding="async">  </a>
+  <div class="place-card__body">
+    <p class="place-card__meta"><span class="chip chip--manhattan">Manhattan</span><span>Chinatown-Two Bridges</span></p>
+    <h3 class="place-card__title"><a href="/locations/doyer-street/">Doyer Street</a></h3>
+    <p class="place-card__desc">A historic street in Chinatown, Manhattan, known for its sharp bend and cultural significance.</p>
+  </div>
+</li><li class="place-card" data-slug="elevated-acre" data-borough="manhattan" data-search="elevated acre financial district-battery park city manhattan the spiritual precurser to the highline. a one-acre elevated public park located in manhattan&#39;s financial district, offering green space, seating, and views of the east river.">
+  <a class="place-card__media" href="/locations/elevated-acre/" tabindex="-1" aria-hidden="true">
+<img src="/locations/elevated-acre/images/photo_1-480.webp" alt="" width="480" height="337" loading="lazy" decoding="async">  </a>
+  <div class="place-card__body">
+    <p class="place-card__meta"><span class="chip chip--manhattan">Manhattan</span><span>Financial District-Battery Park City</span></p>
+    <h3 class="place-card__title"><a href="/locations/elevated-acre/">Elevated Acre</a></h3>
+    <p class="place-card__desc">The spiritual precurser to the highline. A one-acre elevated public park located in Manhattan&#39;s Financial District, offering green space, seating, and…</p>
+  </div>
+</li><li class="place-card" data-slug="forest-hills" data-borough="queens" data-search="forest hills forest hills queens a neighborhood in queens, known for its tudor-style homes and the historic forest hills gardens.">
+  <a class="place-card__media" href="/locations/forest-hills/" tabindex="-1" aria-hidden="true">
+<img src="/locations/forest-hills/images/photo_1-480.webp" alt="" width="480" height="640" loading="lazy" decoding="async">  </a>
+  <div class="place-card__body">
+    <p class="place-card__meta"><span class="chip chip--queens">Queens</span><span>Forest Hills</span></p>
+    <h3 class="place-card__title"><a href="/locations/forest-hills/">Forest Hills</a></h3>
+    <p class="place-card__desc">A neighborhood in Queens, known for its Tudor-style homes and the historic Forest Hills Gardens.</p>
+  </div>
+</li><li class="place-card" data-slug="freeman-alley" data-borough="manhattan" data-search="freeman alley lower east side manhattan a small, graffiti-covered alley in the lower east side of manhattan.">
+  <a class="place-card__media" href="/locations/freeman-alley/" tabindex="-1" aria-hidden="true">
+<img src="/locations/freeman-alley/images/photo_1-480.webp" alt="" width="480" height="360" loading="lazy" decoding="async">  </a>
+  <div class="place-card__body">
+    <p class="place-card__meta"><span class="chip chip--manhattan">Manhattan</span><span>Lower East Side</span></p>
+    <h3 class="place-card__title"><a href="/locations/freeman-alley/">Freeman Alley</a></h3>
+    <p class="place-card__desc">A small, graffiti-covered alley in the Lower East Side of Manhattan.</p>
+  </div>
+</li><li class="place-card" data-slug="govoners-island" data-borough="manhattan" data-search="govoners island the battery-governors island-ellis island-liberty island manhattan why cant i live in one of the 1000 empy army baraks? extremely disappointing amount of latent potential. a 172-acre island in new york harbor, formerly a military base and now a public park and cultural venue.">
+  <a class="place-card__media" href="/locations/govoners-island/" tabindex="-1" aria-hidden="true">
+<img src="/locations/govoners-island/images/photo_1-480.webp" alt="" width="480" height="320" loading="lazy" decoding="async">  </a>
+  <div class="place-card__body">
+    <p class="place-card__meta"><span class="chip chip--manhattan">Manhattan</span><span>The Battery-Governors Island-Ellis Island-Liberty Island</span></p>
+    <h3 class="place-card__title"><a href="/locations/govoners-island/">Govoners Island</a></h3>
+    <p class="place-card__desc">Why cant I live in one of the 1000 empy army baraks? Extremely disappointing amount of latent potential. A 172-acre island in New York Harbor…</p>
+  </div>
+</li><li class="place-card" data-slug="grace-court" data-borough="brooklyn" data-search="grace court brooklyn heights brooklyn a quiet, dead-end street in brooklyn heights, lined with historic townhouses.">
+  <a class="place-card__media" href="/locations/grace-court/" tabindex="-1" aria-hidden="true">
+<img src="/locations/grace-court/images/satellite_grace-court-480.webp" alt="" width="480" height="320" loading="lazy" decoding="async">  </a>
+  <div class="place-card__body">
+    <p class="place-card__meta"><span class="chip chip--brooklyn">Brooklyn</span><span>Brooklyn Heights</span></p>
+    <h3 class="place-card__title"><a href="/locations/grace-court/">Grace Court</a></h3>
+    <p class="place-card__desc">A quiet, dead-end street in Brooklyn Heights, lined with historic townhouses.</p>
+  </div>
+</li><li class="place-card" data-slug="grace-court-alley" data-borough="brooklyn" data-search="grace court alley brooklyn heights brooklyn a hidden alley in brooklyn heights, featuring converted carriage houses.">
+  <a class="place-card__media" href="/locations/grace-court-alley/" tabindex="-1" aria-hidden="true">
+<img src="/locations/grace-court-alley/images/photo_1-480.webp" alt="" width="480" height="360" loading="lazy" decoding="async">  </a>
+  <div class="place-card__body">
+    <p class="place-card__meta"><span class="chip chip--brooklyn">Brooklyn</span><span>Brooklyn Heights</span></p>
+    <h3 class="place-card__title"><a href="/locations/grace-court-alley/">Grace Court Alley</a></h3>
+    <p class="place-card__desc">A hidden alley in Brooklyn Heights, featuring converted carriage houses.</p>
+  </div>
+</li><li class="place-card" data-slug="greenwich-mews" data-borough="manhattan" data-search="greenwich mews west village manhattan no description yet.">
+  <a class="place-card__media" href="/locations/greenwich-mews/" tabindex="-1" aria-hidden="true">
+<img src="/locations/greenwich-mews/images/photo_1-480.webp" alt="" width="480" height="360" loading="lazy" decoding="async">  </a>
+  <div class="place-card__body">
+    <p class="place-card__meta"><span class="chip chip--manhattan">Manhattan</span><span>West Village</span></p>
+    <h3 class="place-card__title"><a href="/locations/greenwich-mews/">Greenwich Mews</a></h3>
+    <p class="place-card__desc">No description yet.</p>
+  </div>
+</li><li class="place-card" data-slug="grove-court" data-borough="manhattan" data-search="grove court west village manhattan a hidden courtyard of six townhouses located in greenwich village, manhattan.">
+  <a class="place-card__media" href="/locations/grove-court/" tabindex="-1" aria-hidden="true">
+<img src="/locations/grove-court/images/photo_1-480.webp" alt="" width="480" height="383" loading="lazy" decoding="async">  </a>
+  <div class="place-card__body">
+    <p class="place-card__meta"><span class="chip chip--manhattan">Manhattan</span><span>West Village</span></p>
+    <h3 class="place-card__title"><a href="/locations/grove-court/">Grove Court</a></h3>
+    <p class="place-card__desc">A hidden courtyard of six townhouses located in Greenwich Village, Manhattan.</p>
+  </div>
+</li><li class="place-card" data-slug="hamilton-terrace" data-borough="manhattan" data-search="hamilton terrace hamilton heights-sugar hill manhattan a residential street in hamilton heights, manhattan, known for its elegant townhouses.">
+  <a class="place-card__media" href="/locations/hamilton-terrace/" tabindex="-1" aria-hidden="true">
+<img src="/locations/hamilton-terrace/images/satellite_hamilton-terrace-480.webp" alt="" width="480" height="320" loading="lazy" decoding="async">  </a>
+  <div class="place-card__body">
+    <p class="place-card__meta"><span class="chip chip--manhattan">Manhattan</span><span>Hamilton Heights-Sugar Hill</span></p>
+    <h3 class="place-card__title"><a href="/locations/hamilton-terrace/">Hamilton Terrace</a></h3>
+    <p class="place-card__desc">A residential street in Hamilton Heights, Manhattan, known for its elegant townhouses.</p>
+  </div>
+</li><li class="place-card" data-slug="hamilton-walk" data-borough="brooklyn" data-search="hamilton walk bay ridge brooklyn no description yet.">
+  <a class="place-card__media" href="/locations/hamilton-walk/" tabindex="-1" aria-hidden="true">
+<img src="/locations/hamilton-walk/images/satellite_hamilton-walk-480.webp" alt="" width="480" height="320" loading="lazy" decoding="async">  </a>
+  <div class="place-card__body">
+    <p class="place-card__meta"><span class="chip chip--brooklyn">Brooklyn</span><span>Bay Ridge</span></p>
+    <h3 class="place-card__title"><a href="/locations/hamilton-walk/">Hamilton Walk</a></h3>
+    <p class="place-card__desc">No description yet.</p>
+  </div>
+</li><li class="place-card" data-slug="henderson-place" data-borough="manhattan" data-search="henderson place upper east side-yorkville manhattan a historic district in the upper east side of manhattan, featuring queen anne-style row houses.">
+  <a class="place-card__media" href="/locations/henderson-place/" tabindex="-1" aria-hidden="true">
+<img src="/locations/henderson-place/images/photo_1-480.webp" alt="" width="480" height="360" loading="lazy" decoding="async">  </a>
+  <div class="place-card__body">
+    <p class="place-card__meta"><span class="chip chip--manhattan">Manhattan</span><span>Upper East Side-Yorkville</span></p>
+    <h3 class="place-card__title"><a href="/locations/henderson-place/">Henderson Place</a></h3>
+    <p class="place-card__desc">A historic district in the Upper East Side of Manhattan, featuring Queen Anne-style row houses.</p>
+  </div>
+</li><li class="place-card" data-slug="hunts-lane" data-borough="brooklyn" data-search="hunts lane brooklyn heights brooklyn a small, historic lane in brooklyn heights, known for its charming residences.">
+  <a class="place-card__media" href="/locations/hunts-lane/" tabindex="-1" aria-hidden="true">
+<img src="/locations/hunts-lane/images/satellite_hunts-lane-480.webp" alt="" width="480" height="320" loading="lazy" decoding="async">  </a>
+  <div class="place-card__body">
+    <p class="place-card__meta"><span class="chip chip--brooklyn">Brooklyn</span><span>Brooklyn Heights</span></p>
+    <h3 class="place-card__title"><a href="/locations/hunts-lane/">Hunts Lane</a></h3>
+    <p class="place-card__desc">A small, historic lane in Brooklyn Heights, known for its charming residences.</p>
+  </div>
+</li><li class="place-card" data-slug="indian-road" data-borough="manhattan" data-search="indian road inwood hill park manhattan a scenic road located in inwood, manhattan, offering views of the hudson river.">
+  <a class="place-card__media" href="/locations/indian-road/" tabindex="-1" aria-hidden="true">
+<img src="/locations/indian-road/images/satellite_indian-road-480.webp" alt="" width="480" height="320" loading="lazy" decoding="async">  </a>
+  <div class="place-card__body">
+    <p class="place-card__meta"><span class="chip chip--manhattan">Manhattan</span><span>Inwood Hill Park</span></p>
+    <h3 class="place-card__title"><a href="/locations/indian-road/">Indian Road</a></h3>
+    <p class="place-card__desc">A scenic road located in Inwood, Manhattan, offering views of the Hudson River.</p>
+  </div>
+</li><li class="place-card" data-slug="jones-wood-garden" data-borough="manhattan" data-search="jones wood garden upper east side-carnegie hill manhattan prime shared townhouse garden!">
+  <a class="place-card__media" href="/locations/jones-wood-garden/" tabindex="-1" aria-hidden="true">
+<span class="place-card__placeholder"></span>  </a>
+  <div class="place-card__body">
+    <p class="place-card__meta"><span class="chip chip--manhattan">Manhattan</span><span>Upper East Side-Carnegie Hill</span></p>
+    <h3 class="place-card__title"><a href="/locations/jones-wood-garden/">Jones Wood Garden</a></h3>
+    <p class="place-card__desc">Prime shared townhouse garden!</p>
+  </div>
+</li><li class="place-card" data-slug="kenmore-terrace" data-borough="brooklyn" data-search="kenmore terrace flatbush brooklyn no description yet.">
+  <a class="place-card__media" href="/locations/kenmore-terrace/" tabindex="-1" aria-hidden="true">
+<img src="/locations/kenmore-terrace/images/satellite_kenmore-terrace-480.webp" alt="" width="480" height="320" loading="lazy" decoding="async">  </a>
+  <div class="place-card__body">
+    <p class="place-card__meta"><span class="chip chip--brooklyn">Brooklyn</span><span>Flatbush</span></p>
+    <h3 class="place-card__title"><a href="/locations/kenmore-terrace/">Kenmore Terrace</a></h3>
+    <p class="place-card__desc">No description yet.</p>
+  </div>
+</li><li class="place-card" data-slug="kips-bay-towers" data-borough="manhattan" data-search="kips bay towers murray hill-kips bay manhattan a pair of residential towers located in the kips bay neighborhood of manhattan, known for their modernist architecture.">
+  <a class="place-card__media" href="/locations/kips-bay-towers/" tabindex="-1" aria-hidden="true">
+<img src="/locations/kips-bay-towers/images/photo_1-480.webp" alt="" width="480" height="640" loading="lazy" decoding="async">  </a>
+  <div class="place-card__body">
+    <p class="place-card__meta"><span class="chip chip--manhattan">Manhattan</span><span>Murray Hill-Kips Bay</span></p>
+    <h3 class="place-card__title"><a href="/locations/kips-bay-towers/">Kips Bay Towers</a></h3>
+    <p class="place-card__desc">A pair of residential towers located in the Kips Bay neighborhood of Manhattan, known for their modernist architecture.</p>
+  </div>
+</li><li class="place-card" data-slug="knickerbocker-village" data-borough="manhattan" data-search="knickerbocker village chinatown-two bridges manhattan a historic housing complex in manhattan&#39;s lower east side, known for its early adoption of modern housing concepts.">
+  <a class="place-card__media" href="/locations/knickerbocker-village/" tabindex="-1" aria-hidden="true">
+<img src="/locations/knickerbocker-village/images/photo_1-480.webp" alt="" width="480" height="640" loading="lazy" decoding="async">  </a>
+  <div class="place-card__body">
+    <p class="place-card__meta"><span class="chip chip--manhattan">Manhattan</span><span>Chinatown-Two Bridges</span></p>
+    <h3 class="place-card__title"><a href="/locations/knickerbocker-village/">Knickerbocker Village</a></h3>
+    <p class="place-card__desc">A historic housing complex in Manhattan&#39;s Lower East Side, known for its early adoption of modern housing concepts.</p>
+  </div>
+</li><li class="place-card" data-slug="lafayette-walk" data-borough="brooklyn" data-search="lafayette walk bay ridge brooklyn no description yet.">
+  <a class="place-card__media" href="/locations/lafayette-walk/" tabindex="-1" aria-hidden="true">
+<img src="/locations/lafayette-walk/images/satellite_lafayette-walk-480.webp" alt="" width="480" height="320" loading="lazy" decoding="async">  </a>
+  <div class="place-card__body">
+    <p class="place-card__meta"><span class="chip chip--brooklyn">Brooklyn</span><span>Bay Ridge</span></p>
+    <h3 class="place-card__title"><a href="/locations/lafayette-walk/">Lafayette Walk</a></h3>
+    <p class="place-card__desc">No description yet.</p>
+  </div>
+</li><li class="place-card" data-slug="littleevans-street" data-borough="brooklyn" data-search="little/evans street downtown brooklyn-dumbo-boerum hill brooklyn a pair of narrow, historic streets in the vinegar hill neighborhood of brooklyn.">
+  <a class="place-card__media" href="/locations/littleevans-street/" tabindex="-1" aria-hidden="true">
+<img src="/locations/littleevans-street/images/satellite_littleevans-street-480.webp" alt="" width="480" height="320" loading="lazy" decoding="async">  </a>
+  <div class="place-card__body">
+    <p class="place-card__meta"><span class="chip chip--brooklyn">Brooklyn</span><span>Downtown Brooklyn-DUMBO-Boerum Hill</span></p>
+    <h3 class="place-card__title"><a href="/locations/littleevans-street/">Little/Evans Street</a></h3>
+    <p class="place-card__desc">A pair of narrow, historic streets in the Vinegar Hill neighborhood of Brooklyn.</p>
+  </div>
+</li><li class="place-card" data-slug="madeline-court" data-borough="brooklyn" data-search="madeline court bay ridge brooklyn no description yet.">
+  <a class="place-card__media" href="/locations/madeline-court/" tabindex="-1" aria-hidden="true">
+<img src="/locations/madeline-court/images/satellite_madeline-court-480.webp" alt="" width="480" height="320" loading="lazy" decoding="async">  </a>
+  <div class="place-card__body">
+    <p class="place-card__meta"><span class="chip chip--brooklyn">Brooklyn</span><span>Bay Ridge</span></p>
+    <h3 class="place-card__title"><a href="/locations/madeline-court/">Madeline Court</a></h3>
+    <p class="place-card__desc">No description yet.</p>
+  </div>
+</li><li class="place-card" data-slug="maple-street" data-borough="brooklyn" data-search="maple street prospect lefferts gardens-wingate brooklyn a street in the prospect lefferts gardens neighborhood of brooklyn, known for its historic homes.">
+  <a class="place-card__media" href="/locations/maple-street/" tabindex="-1" aria-hidden="true">
+<img src="/locations/maple-street/images/photo_1-480.webp" alt="" width="480" height="640" loading="lazy" decoding="async">  </a>
+  <div class="place-card__body">
+    <p class="place-card__meta"><span class="chip chip--brooklyn">Brooklyn</span><span>Prospect Lefferts Gardens-Wingate</span></p>
+    <h3 class="place-card__title"><a href="/locations/maple-street/">Maple Street</a></h3>
+    <p class="place-card__desc">A street in the Prospect Lefferts Gardens neighborhood of Brooklyn, known for its historic homes.</p>
+  </div>
+</li><li class="place-card" data-slug="marble-hill" data-borough="bronx" data-search="marble hill kingsbridge-marble hill bronx a neighborhood in the northern part of manhattan, known for its suburban feel.">
+  <a class="place-card__media" href="/locations/marble-hill/" tabindex="-1" aria-hidden="true">
+<img src="/locations/marble-hill/images/photo_1-480.webp" alt="" width="480" height="360" loading="lazy" decoding="async">  </a>
+  <div class="place-card__body">
+    <p class="place-card__meta"><span class="chip chip--bronx">Bronx</span><span>Kingsbridge-Marble Hill</span></p>
+    <h3 class="place-card__title"><a href="/locations/marble-hill/">Marble Hill</a></h3>
+    <p class="place-card__desc">A neighborhood in the northern part of Manhattan, known for its suburban feel.</p>
+  </div>
+</li><li class="place-card" data-slug="milligan-place" data-borough="manhattan" data-search="milligan place west village manhattan a tiny, triangular courtyard in greenwich village, featuring four townhouses.">
+  <a class="place-card__media" href="/locations/milligan-place/" tabindex="-1" aria-hidden="true">
+<img src="/locations/milligan-place/images/satellite_milligan-place-480.webp" alt="" width="480" height="320" loading="lazy" decoding="async">  </a>
+  <div class="place-card__body">
+    <p class="place-card__meta"><span class="chip chip--manhattan">Manhattan</span><span>West Village</span></p>
+    <h3 class="place-card__title"><a href="/locations/milligan-place/">Milligan Place</a></h3>
+    <p class="place-card__desc">A tiny, triangular courtyard in Greenwich Village, featuring four townhouses.</p>
+  </div>
+</li><li class="place-card" data-slug="mott-haven-water-front" data-borough="bronx" data-search="mott haven water front mott haven-port morris bronx public private patnership to fix up some nonexistant waterfront in the mott haven neighborhood of the bronx, featuring parks and recreational spaces.">
+  <a class="place-card__media" href="/locations/mott-haven-water-front/" tabindex="-1" aria-hidden="true">
+<img src="/locations/mott-haven-water-front/images/photo_1-480.webp" alt="" width="480" height="640" loading="lazy" decoding="async">  </a>
+  <div class="place-card__body">
+    <p class="place-card__meta"><span class="chip chip--bronx">Bronx</span><span>Mott Haven-Port Morris</span></p>
+    <h3 class="place-card__title"><a href="/locations/mott-haven-water-front/">Mott Haven Water Front</a></h3>
+    <p class="place-card__desc">Public private patnership to fix up some nonexistant waterfront in the Mott Haven neighborhood of the Bronx, featuring parks and recreational spaces.</p>
+  </div>
+</li><li class="place-card" data-slug="patchin-place" data-borough="manhattan" data-search="patchin place west village manhattan a small, gated alley in greenwich village, lined with historic townhouses.">
+  <a class="place-card__media" href="/locations/patchin-place/" tabindex="-1" aria-hidden="true">
+<img src="/locations/patchin-place/images/satellite_patchin-place-480.webp" alt="" width="480" height="320" loading="lazy" decoding="async">  </a>
+  <div class="place-card__body">
+    <p class="place-card__meta"><span class="chip chip--manhattan">Manhattan</span><span>West Village</span></p>
+    <h3 class="place-card__title"><a href="/locations/patchin-place/">Patchin Place</a></h3>
+    <p class="place-card__desc">A small, gated alley in Greenwich Village, lined with historic townhouses.</p>
+  </div>
+</li><li class="place-card" data-slug="pomander-walk" data-borough="manhattan" data-search="pomander walk upper west side (central) manhattan a tudor-style residential complex located on the upper west side of manhattan.">
+  <a class="place-card__media" href="/locations/pomander-walk/" tabindex="-1" aria-hidden="true">
+<img src="/locations/pomander-walk/images/photo_1-480.webp" alt="" width="480" height="720" loading="lazy" decoding="async">  </a>
+  <div class="place-card__body">
+    <p class="place-card__meta"><span class="chip chip--manhattan">Manhattan</span><span>Upper West Side (Central)</span></p>
+    <h3 class="place-card__title"><a href="/locations/pomander-walk/">Pomander Walk</a></h3>
+    <p class="place-card__desc">A Tudor-style residential complex located on the Upper West Side of Manhattan.</p>
+  </div>
+</li><li class="place-card" data-slug="riverdale" data-borough="bronx" data-search="riverdale riverdale-spuyten duyvil bronx a residential neighborhood in the bronx, known for its hilly terrain and upscale homes.">
+  <a class="place-card__media" href="/locations/riverdale/" tabindex="-1" aria-hidden="true">
+<img src="/locations/riverdale/images/photo_1-480.webp" alt="" width="480" height="360" loading="lazy" decoding="async">  </a>
+  <div class="place-card__body">
+    <p class="place-card__meta"><span class="chip chip--bronx">Bronx</span><span>Riverdale-Spuyten Duyvil</span></p>
+    <h3 class="place-card__title"><a href="/locations/riverdale/">Riverdale</a></h3>
+    <p class="place-card__desc">A residential neighborhood in the Bronx, known for its hilly terrain and upscale homes.</p>
+  </div>
+</li><li class="place-card" data-slug="riverview-terrace" data-borough="manhattan" data-search="riverview terrace east midtown-turtle bay manhattan no description yet.">
+  <a class="place-card__media" href="/locations/riverview-terrace/" tabindex="-1" aria-hidden="true">
+<img src="/locations/riverview-terrace/images/satellite_riverview-terrace-480.webp" alt="" width="480" height="320" loading="lazy" decoding="async">  </a>
+  <div class="place-card__body">
+    <p class="place-card__meta"><span class="chip chip--manhattan">Manhattan</span><span>East Midtown-Turtle Bay</span></p>
+    <h3 class="place-card__title"><a href="/locations/riverview-terrace/">Riverview Terrace</a></h3>
+    <p class="place-card__desc">No description yet.</p>
+  </div>
+</li><li class="place-card" data-slug="roof-top-cape-cod" data-borough="manhattan" data-search="roof top cape cod east village manhattan no description yet.">
+  <a class="place-card__media" href="/locations/roof-top-cape-cod/" tabindex="-1" aria-hidden="true">
+<img src="/locations/roof-top-cape-cod/images/photo_1-480.webp" alt="" width="480" height="270" loading="lazy" decoding="async">  </a>
+  <div class="place-card__body">
+    <p class="place-card__meta"><span class="chip chip--manhattan">Manhattan</span><span>East Village</span></p>
+    <h3 class="place-card__title"><a href="/locations/roof-top-cape-cod/">Roof Top Cape Cod</a></h3>
+    <p class="place-card__desc">No description yet.</p>
+  </div>
+</li><li class="place-card" data-slug="sky-port" data-borough="manhattan" data-search="sky port murray hill-kips bay manhattan manhattans only airport.">
+  <a class="place-card__media" href="/locations/sky-port/" tabindex="-1" aria-hidden="true">
+<img src="/locations/sky-port/images/photo_1-480.webp" alt="" width="480" height="360" loading="lazy" decoding="async">  </a>
+  <div class="place-card__body">
+    <p class="place-card__meta"><span class="chip chip--manhattan">Manhattan</span><span>Murray Hill-Kips Bay</span></p>
+    <h3 class="place-card__title"><a href="/locations/sky-port/">Sky Port</a></h3>
+    <p class="place-card__desc">Manhattans only airport.</p>
+  </div>
+</li><li class="place-card" data-slug="skytrack" data-borough="brooklyn" data-search="skytrack downtown brooklyn-dumbo-boerum hill brooklyn we could have had pedestrianized the sky. at least we are left with this amazing example of what might have been :)">
+  <a class="place-card__media" href="/locations/skytrack/" tabindex="-1" aria-hidden="true">
+<img src="/locations/skytrack/images/photo_1-480.webp" alt="" width="480" height="521" loading="lazy" decoding="async">  </a>
+  <div class="place-card__body">
+    <p class="place-card__meta"><span class="chip chip--brooklyn">Brooklyn</span><span>Downtown Brooklyn-DUMBO-Boerum Hill</span></p>
+    <h3 class="place-card__title"><a href="/locations/skytrack/">SkyTrack</a></h3>
+    <p class="place-card__desc">We could have had pedestrianized the sky. At least we are left with this amazing example of what might have been :)</p>
+  </div>
+</li><li class="place-card" data-slug="sniffen-court" data-borough="manhattan" data-search="sniffen court murray hill-kips bay manhattan a small, private alley in murray hill, manhattan, featuring romanesque revival-style carriage houses.">
+  <a class="place-card__media" href="/locations/sniffen-court/" tabindex="-1" aria-hidden="true">
+<img src="/locations/sniffen-court/images/photo_1-480.webp" alt="" width="480" height="360" loading="lazy" decoding="async">  </a>
+  <div class="place-card__body">
+    <p class="place-card__meta"><span class="chip chip--manhattan">Manhattan</span><span>Murray Hill-Kips Bay</span></p>
+    <h3 class="place-card__title"><a href="/locations/sniffen-court/">Sniffen Court</a></h3>
+    <p class="place-card__desc">A small, private alley in Murray Hill, Manhattan, featuring Romanesque Revival-style carriage houses.</p>
+  </div>
+</li><li class="place-card" data-slug="south-bridge-towers" data-borough="manhattan" data-search="south bridge towers financial district-battery park city manhattan a cooperative housing complex located near the south street seaport in manhattan.">
+  <a class="place-card__media" href="/locations/south-bridge-towers/" tabindex="-1" aria-hidden="true">
+<img src="/locations/south-bridge-towers/images/photo_1-480.webp" alt="" width="480" height="222" loading="lazy" decoding="async">  </a>
+  <div class="place-card__body">
+    <p class="place-card__meta"><span class="chip chip--manhattan">Manhattan</span><span>Financial District-Battery Park City</span></p>
+    <h3 class="place-card__title"><a href="/locations/south-bridge-towers/">South Bridge Towers</a></h3>
+    <p class="place-card__desc">A cooperative housing complex located near the South Street Seaport in Manhattan.</p>
+  </div>
+</li><li class="place-card" data-slug="strivers-row" data-borough="manhattan" data-search="strivers row harlem (north) manhattan a historic district in harlem, known for its well-preserved row houses and cultural significance.">
+  <a class="place-card__media" href="/locations/strivers-row/" tabindex="-1" aria-hidden="true">
+<img src="/locations/strivers-row/images/photo_1-480.webp" alt="" width="480" height="344" loading="lazy" decoding="async">  </a>
+  <div class="place-card__body">
+    <p class="place-card__meta"><span class="chip chip--manhattan">Manhattan</span><span>Harlem (North)</span></p>
+    <h3 class="place-card__title"><a href="/locations/strivers-row/">Strivers Row</a></h3>
+    <p class="place-card__desc">A historic district in Harlem, known for its well-preserved row houses and cultural significance.</p>
+  </div>
+</li><li class="place-card" data-slug="stuy-town" data-borough="manhattan" data-search="stuy town stuyvesant town-peter cooper village manhattan a large residential complex in manhattan, known for its extensive green spaces and community amenities.">
+  <a class="place-card__media" href="/locations/stuy-town/" tabindex="-1" aria-hidden="true">
+<img src="/locations/stuy-town/images/photo_1-480.webp" alt="" width="480" height="853" loading="lazy" decoding="async">  </a>
+  <div class="place-card__body">
+    <p class="place-card__meta"><span class="chip chip--manhattan">Manhattan</span><span>Stuyvesant Town-Peter Cooper Village</span></p>
+    <h3 class="place-card__title"><a href="/locations/stuy-town/">Stuy Town</a></h3>
+    <p class="place-card__desc">A large residential complex in Manhattan, known for its extensive green spaces and community amenities.</p>
+  </div>
+</li><li class="place-card" data-slug="sullivan-street" data-borough="manhattan" data-search="sullivan street greenwich village manhattan a street in manhattan&#39;s greenwich village, known for its historic buildings and communal garden.">
+  <a class="place-card__media" href="/locations/sullivan-street/" tabindex="-1" aria-hidden="true">
+<img src="/locations/sullivan-street/images/photo_1-480.webp" alt="" width="480" height="360" loading="lazy" decoding="async">  </a>
+  <div class="place-card__body">
+    <p class="place-card__meta"><span class="chip chip--manhattan">Manhattan</span><span>Greenwich Village</span></p>
+    <h3 class="place-card__title"><a href="/locations/sullivan-street/">Sullivan Street</a></h3>
+    <p class="place-card__desc">A street in Manhattan&#39;s Greenwich Village, known for its historic buildings and communal garden.</p>
+  </div>
+</li><li class="place-card" data-slug="sunny-side-gardens" data-borough="queens" data-search="sunny side gardens sunnyside queens secret paths and secret communal gardens. another historical example of how homes are cheap and very nice neighborhoods are still cheap, but only if you build them when society was an order of magnitude less wealth">
+  <a class="place-card__media" href="/locations/sunny-side-gardens/" tabindex="-1" aria-hidden="true">
+<span class="place-card__placeholder"></span>  </a>
+  <div class="place-card__body">
+    <p class="place-card__meta"><span class="chip chip--queens">Queens</span><span>Sunnyside</span></p>
+    <h3 class="place-card__title"><a href="/locations/sunny-side-gardens/">Sunny Side Gardens</a></h3>
+    <p class="place-card__desc">Secret paths and secret communal gardens. another historical example of how homes are cheap and very nice neighborhoods are still cheap, but only if…</p>
+  </div>
+</li><li class="place-card" data-slug="sutton-square" data-borough="manhattan" data-search="sutton square east midtown-turtle bay manhattan a private enclave of townhouses located in the sutton place neighborhood of manhattan.">
+  <a class="place-card__media" href="/locations/sutton-square/" tabindex="-1" aria-hidden="true">
+<img src="/locations/sutton-square/images/photo_1-480.webp" alt="" width="480" height="320" loading="lazy" decoding="async">  </a>
+  <div class="place-card__body">
+    <p class="place-card__meta"><span class="chip chip--manhattan">Manhattan</span><span>East Midtown-Turtle Bay</span></p>
+    <h3 class="place-card__title"><a href="/locations/sutton-square/">Sutton Square</a></h3>
+    <p class="place-card__desc">A private enclave of townhouses located in the Sutton Place neighborhood of Manhattan.</p>
+  </div>
+</li><li class="place-card" data-slug="sylvan-court" data-borough="manhattan" data-search="sylvan court east harlem (north) manhattan no description yet.">
+  <a class="place-card__media" href="/locations/sylvan-court/" tabindex="-1" aria-hidden="true">
+<img src="/locations/sylvan-court/images/satellite_sylvan-court-480.webp" alt="" width="480" height="320" loading="lazy" decoding="async">  </a>
+  <div class="place-card__body">
+    <p class="place-card__meta"><span class="chip chip--manhattan">Manhattan</span><span>East Harlem (North)</span></p>
+    <h3 class="place-card__title"><a href="/locations/sylvan-court/">Sylvan Court</a></h3>
+    <p class="place-card__desc">No description yet.</p>
+  </div>
+</li><li class="place-card" data-slug="sylvan-terrace" data-borough="manhattan" data-search="sylvan terrace washington heights (south) manhattan a cobblestone street in washington heights, lined with wooden row houses.">
+  <a class="place-card__media" href="/locations/sylvan-terrace/" tabindex="-1" aria-hidden="true">
+<img src="/locations/sylvan-terrace/images/photo_1-480.webp" alt="" width="480" height="640" loading="lazy" decoding="async">  </a>
+  <div class="place-card__body">
+    <p class="place-card__meta"><span class="chip chip--manhattan">Manhattan</span><span>Washington Heights (South)</span></p>
+    <h3 class="place-card__title"><a href="/locations/sylvan-terrace/">Sylvan Terrace</a></h3>
+    <p class="place-card__desc">A cobblestone street in Washington Heights, lined with wooden row houses.</p>
+  </div>
+</li><li class="place-card" data-slug="temple-court" data-borough="brooklyn" data-search="temple court windsor terrace-south slope brooklyn no description yet.">
+  <a class="place-card__media" href="/locations/temple-court/" tabindex="-1" aria-hidden="true">
+<img src="/locations/temple-court/images/photo_1-480.webp" alt="" width="480" height="470" loading="lazy" decoding="async">  </a>
+  <div class="place-card__body">
+    <p class="place-card__meta"><span class="chip chip--brooklyn">Brooklyn</span><span>Windsor Terrace-South Slope</span></p>
+    <h3 class="place-card__title"><a href="/locations/temple-court/">Temple Court</a></h3>
+    <p class="place-card__desc">No description yet.</p>
+  </div>
+</li><li class="place-card" data-slug="track-on-the-roof" data-borough="manhattan" data-search="track on the roof upper west side-lincoln square manhattan there is a running track on the roof of this building. more of this please">
+  <a class="place-card__media" href="/locations/track-on-the-roof/" tabindex="-1" aria-hidden="true">
+<img src="/locations/track-on-the-roof/images/photo_1-480.webp" alt="" width="480" height="270" loading="lazy" decoding="async">  </a>
+  <div class="place-card__body">
+    <p class="place-card__meta"><span class="chip chip--manhattan">Manhattan</span><span>Upper West Side-Lincoln Square</span></p>
+    <h3 class="place-card__title"><a href="/locations/track-on-the-roof/">Track on the roof</a></h3>
+    <p class="place-card__desc">There is a running track on the roof of this building. more of this please</p>
+  </div>
+</li><li class="place-card" data-slug="verandah-place" data-borough="brooklyn" data-search="verandah place carroll gardens-cobble hill-gowanus-red hook brooklyn a narrow, historic street in cobble hill, brooklyn, featuring small row houses.">
+  <a class="place-card__media" href="/locations/verandah-place/" tabindex="-1" aria-hidden="true">
+<img src="/locations/verandah-place/images/satellite_verandah-place-480.webp" alt="" width="480" height="320" loading="lazy" decoding="async">  </a>
+  <div class="place-card__body">
+    <p class="place-card__meta"><span class="chip chip--brooklyn">Brooklyn</span><span>Carroll Gardens-Cobble Hill-Gowanus-Red Hook</span></p>
+    <h3 class="place-card__title"><a href="/locations/verandah-place/">Verandah Place</a></h3>
+    <p class="place-card__desc">A narrow, historic street in Cobble Hill, Brooklyn, featuring small row houses.</p>
+  </div>
+</li><li class="place-card" data-slug="wallabout-hasidic-compound" data-borough="brooklyn" data-search="wallabout hasidic compound south williamsburg brooklyn political will can build houses all you need is the right god. a large housing development in the wallabout neighborhood of brooklyn, primarily serving the hasidic community.">
+  <a class="place-card__media" href="/locations/wallabout-hasidic-compound/" tabindex="-1" aria-hidden="true">
+<img src="/locations/wallabout-hasidic-compound/images/photo_1-480.webp" alt="" width="480" height="403" loading="lazy" decoding="async">  </a>
+  <div class="place-card__body">
+    <p class="place-card__meta"><span class="chip chip--brooklyn">Brooklyn</span><span>South Williamsburg</span></p>
+    <h3 class="place-card__title"><a href="/locations/wallabout-hasidic-compound/">Wallabout Hasidic Compound</a></h3>
+    <p class="place-card__desc">Political will can build houses all you need is the right god. A large housing development in the Wallabout neighborhood of Brooklyn, primarily…</p>
+  </div>
+</li><li class="place-card" data-slug="warren-place-mews" data-borough="brooklyn" data-search="warren place mews carroll gardens-cobble hill-gowanus-red hook brooklyn a historic row of cottages in cobble hill, brooklyn, designed for working-class families.">
+  <a class="place-card__media" href="/locations/warren-place-mews/" tabindex="-1" aria-hidden="true">
+<img src="/locations/warren-place-mews/images/satellite_warren-place-mews-480.webp" alt="" width="480" height="320" loading="lazy" decoding="async">  </a>
+  <div class="place-card__body">
+    <p class="place-card__meta"><span class="chip chip--brooklyn">Brooklyn</span><span>Carroll Gardens-Cobble Hill-Gowanus-Red Hook</span></p>
+    <h3 class="place-card__title"><a href="/locations/warren-place-mews/">Warren Place Mews</a></h3>
+    <p class="place-card__desc">A historic row of cottages in Cobble Hill, Brooklyn, designed for working-class families.</p>
+  </div>
+</li><li class="place-card" data-slug="washington-mews" data-borough="manhattan" data-search="washington mews greenwich village manhattan a private street in greenwich village, originally built as stables for nearby townhouses.">
+  <a class="place-card__media" href="/locations/washington-mews/" tabindex="-1" aria-hidden="true">
+<img src="/locations/washington-mews/images/photo_1-480.webp" alt="" width="480" height="360" loading="lazy" decoding="async">  </a>
+  <div class="place-card__body">
+    <p class="place-card__meta"><span class="chip chip--manhattan">Manhattan</span><span>Greenwich Village</span></p>
+    <h3 class="place-card__title"><a href="/locations/washington-mews/">Washington Mews</a></h3>
+    <p class="place-card__desc">A private street in Greenwich Village, originally built as stables for nearby townhouses.</p>
+  </div>
+</li><li class="place-card" data-slug="waterside" data-borough="manhattan" data-search="waterside murray hill-kips bay manhattan a residential complex located along the east river in manhattan, offering waterfront living.">
+  <a class="place-card__media" href="/locations/waterside/" tabindex="-1" aria-hidden="true">
+<img src="/locations/waterside/images/photo_1-480.webp" alt="" width="480" height="360" loading="lazy" decoding="async">  </a>
+  <div class="place-card__body">
+    <p class="place-card__meta"><span class="chip chip--manhattan">Manhattan</span><span>Murray Hill-Kips Bay</span></p>
+    <h3 class="place-card__title"><a href="/locations/waterside/">Waterside</a></h3>
+    <p class="place-card__desc">A residential complex located along the East River in Manhattan, offering waterfront living.</p>
+  </div>
+</li>        </ul>
+        <p class="place-list__empty" id="place-list-empty" hidden>No places match. Try another search or reset the filters.</p>
+        <button type="button" class="btn btn--ghost mt-4 w-full lg:hidden" id="show-more" hidden>Show more places</button>
+      </div>
+    </div>
+  </div>
+  <script type="application/json" id="places-data">[{"name":"10 Bedford St","slug":"10-bedford-st","url":"/locations/10-bedford-st/","borough":"Manhattan","boroughSlug":"manhattan","neighborhood":"West Village","lat":40.7291162,"lng":-74.0031112,"summary":"No description yet.","thumb":"/locations/10-bedford-st/images/satellite_10-bedford-st-480.webp","search":"10 bedford st west village manhattan no description yet."},{"name":"116 Pinehurst","slug":"116-pinehurst","url":"/locations/116-pinehurst/","borough":"Manhattan","boroughSlug":"manhattan","neighborhood":"Washington Heights (North)","lat":40.8539663,"lng":-73.9389458,"summary":"A residential building located in the Washington Heights neighborhood of Manhattan.","thumb":"/locations/116-pinehurst/images/photo_1-480.webp","search":"116 pinehurst washington heights (north) manhattan a residential building located in the washington heights neighborhood of manhattan."},{"name":"117 Underhill Avenue","slug":"117-underhill-avenue","url":"/locations/117-underhill-avenue/","borough":"Brooklyn","boroughSlug":"brooklyn","neighborhood":"Prospect Heights","lat":40.6772844,"lng":-73.9653462,"summary":"No description yet.","thumb":"/locations/117-underhill-avenue/images/satellite_117-underhill-avenue-480.webp","search":"117 underhill avenue prospect heights brooklyn no description yet."},{"name":"1288 Prospect Place","slug":"1288-prospect-place","url":"/locations/1288-prospect-place/","borough":"Brooklyn","boroughSlug":"brooklyn","neighborhood":"Crown Heights (North)","lat":40.6730685,"lng":-73.9344064,"summary":"No description yet.","thumb":"/locations/1288-prospect-place/images/satellite_1288-prospect-place-480.webp","search":"1288 prospect place crown heights (north) brooklyn no description yet."},{"name":"129 Degraw ABCD","slug":"129-degraw-abcd","url":"/locations/129-degraw-abcd/","borough":"Brooklyn","boroughSlug":"brooklyn","neighborhood":"Carroll Gardens-Cobble Hill-Gowanus-Red Hook","lat":40.685794,"lng":-74.0018464,"summary":"No description yet.","thumb":"/locations/129-degraw-abcd/images/satellite_129-degraw-abcd-480.webp","search":"129 degraw abcd carroll gardens-cobble hill-gowanus-red hook brooklyn no description yet."},{"name":"137 Oak St","slug":"137-oak-st","url":"/locations/137-oak-st/","borough":"Brooklyn","boroughSlug":"brooklyn","neighborhood":"Greenpoint","lat":40.72819,"lng":-73.955272,"summary":"cool house in a cool corner on a cool street in cool greenpoint","thumb":"","search":"137 oak st greenpoint brooklyn cool house in a cool corner on a cool street in cool greenpoint"},{"name":"158 Prospect Place","slug":"158-prospect-place","url":"/locations/158-prospect-place/","borough":"Brooklyn","boroughSlug":"brooklyn","neighborhood":"Prospect Heights","lat":40.6778346,"lng":-73.9716971,"summary":"No description yet.","thumb":"/locations/158-prospect-place/images/satellite_158-prospect-place-480.webp","search":"158 prospect place prospect heights brooklyn no description yet."},{"name":"193 Prospect Place","slug":"193-prospect-place","url":"/locations/193-prospect-place/","borough":"Brooklyn","boroughSlug":"brooklyn","neighborhood":"Prospect Heights","lat":40.6781787,"lng":-73.9700769,"summary":"No description yet.","thumb":"/locations/193-prospect-place/images/satellite_193-prospect-place-480.webp","search":"193 prospect place prospect heights brooklyn no description yet."},{"name":"210 W 90th (Astor Court)","slug":"210-w-90th-astor-court","url":"/locations/210-w-90th-astor-court/","borough":"Manhattan","boroughSlug":"manhattan","neighborhood":"Upper West Side (Central)","lat":40.7903112,"lng":-73.9742209,"summary":"A residential building on the Upper West Side of Manhattan, featuring a central courtyard.","thumb":"/locations/210-w-90th-astor-court/images/photo_1-480.webp","search":"210 w 90th (astor court) upper west side (central) manhattan a residential building on the upper west side of manhattan, featuring a central courtyard."},{"name":"245 Washington Ave","slug":"245-washington-ave","url":"/locations/245-washington-ave/","borough":"Brooklyn","boroughSlug":"brooklyn","neighborhood":"Clinton Hill","lat":40.6914085,"lng":-73.966115,"summary":"No description yet.","thumb":"/locations/245-washington-ave/images/satellite_245-washington-ave-480.webp","search":"245 washington ave clinton hill brooklyn no description yet."},{"name":"246 Washington Ave","slug":"246-washington-ave","url":"/locations/246-washington-ave/","borough":"Brooklyn","boroughSlug":"brooklyn","neighborhood":"Clinton Hill","lat":40.6911636,"lng":-73.9668614,"summary":"No description yet.","thumb":"/locations/246-washington-ave/images/satellite_246-washington-ave-480.webp","search":"246 washington ave clinton hill brooklyn no description yet."},{"name":"280 Washington Ave","slug":"280-washington-ave","url":"/locations/280-washington-ave/","borough":"Brooklyn","boroughSlug":"brooklyn","neighborhood":"Clinton Hill","lat":40.6903082,"lng":-73.9666332,"summary":"No description yet.","thumb":"/locations/280-washington-ave/images/satellite_280-washington-ave-480.webp","search":"280 washington ave clinton hill brooklyn no description yet."},{"name":"30-36 Remsen","slug":"30-36-remsen","url":"/locations/30-36-remsen/","borough":"Brooklyn","boroughSlug":"brooklyn","neighborhood":"Brooklyn Heights","lat":40.6944148,"lng":-73.9974074,"summary":"No description yet.","thumb":"/locations/30-36-remsen/images/satellite_30-36-remsen-480.webp","search":"30-36 remsen brooklyn heights brooklyn no description yet."},{"name":"301 Greene Ave","slug":"301-greene-ave","url":"/locations/301-greene-ave/","borough":"Brooklyn","boroughSlug":"brooklyn","neighborhood":"Bedford-Stuyvesant (West)","lat":40.6878609,"lng":-73.9593718,"summary":"No description yet.","thumb":"/locations/301-greene-ave/images/satellite_301-greene-ave-480.webp","search":"301 greene ave bedford-stuyvesant (west) brooklyn no description yet."},{"name":"34 Strong Place","slug":"34-strong-place","url":"/locations/34-strong-place/","borough":"Brooklyn","boroughSlug":"brooklyn","neighborhood":"Carroll Gardens-Cobble Hill-Gowanus-Red Hook","lat":40.6855823,"lng":-73.9981886,"summary":"No description yet.","thumb":"/locations/34-strong-place/images/satellite_34-strong-place-480.webp","search":"34 strong place carroll gardens-cobble hill-gowanus-red hook brooklyn no description yet."},{"name":"46 7th Ave","slug":"46-7th-ave","url":"/locations/46-7th-ave/","borough":"Manhattan","boroughSlug":"manhattan","neighborhood":"West Village","lat":40.7313394,"lng":-74.0043972,"summary":"No description yet.","thumb":"/locations/46-7th-ave/images/satellite_46-7th-ave-480.webp","search":"46 7th ave west village manhattan no description yet."},{"name":"46-58 Remsen","slug":"46-58-remsen","url":"/locations/46-58-remsen/","borough":"Brooklyn","boroughSlug":"brooklyn","neighborhood":"Brooklyn Heights","lat":40.6942521,"lng":-73.9967287,"summary":"No description yet.","thumb":"/locations/46-58-remsen/images/satellite_46-58-remsen-480.webp","search":"46-58 remsen brooklyn heights brooklyn no description yet."},{"name":"46A Prospect Park Southwest","slug":"46a-prospect-park-southwest","url":"/locations/46a-prospect-park-southwest/","borough":"Brooklyn","boroughSlug":"brooklyn","neighborhood":"Windsor Terrace-South Slope","lat":40.6593121,"lng":-73.9771148,"summary":"No description yet.","thumb":"/locations/46a-prospect-park-southwest/images/satellite_46a-prospect-park-southwest-480.webp","search":"46a prospect park southwest windsor terrace-south slope brooklyn no description yet."},{"name":"48 Tiffany Place","slug":"48-tiffany-place","url":"/locations/48-tiffany-place/","borough":"Brooklyn","boroughSlug":"brooklyn","neighborhood":"Carroll Gardens-Cobble Hill-Gowanus-Red Hook","lat":40.6860808,"lng":-74.0015567,"summary":"No description yet.","thumb":"/locations/48-tiffany-place/images/satellite_48-tiffany-place-480.webp","search":"48 tiffany place carroll gardens-cobble hill-gowanus-red hook brooklyn no description yet."},{"name":"5 Carmine St ABC","slug":"5-carmine-st-abc","url":"/locations/5-carmine-st-abc/","borough":"Manhattan","boroughSlug":"manhattan","neighborhood":"West Village","lat":40.7308213,"lng":-74.0021932,"summary":"No description yet.","thumb":"/locations/5-carmine-st-abc/images/photo_1-480.webp","search":"5 carmine st abc west village manhattan no description yet."},{"name":"Ablemarle Terrace","slug":"ablemarle-terrace","url":"/locations/ablemarle-terrace/","borough":"Brooklyn","boroughSlug":"brooklyn","neighborhood":"Flatbush","lat":40.6486124,"lng":-73.9592343,"summary":"No description yet.","thumb":"/locations/ablemarle-terrace/images/satellite_ablemarle-terrace-480.webp","search":"ablemarle terrace flatbush brooklyn no description yet."},{"name":"Ansonia Clock Factory","slug":"ansonia-clock-factory","url":"/locations/ansonia-clock-factory/","borough":"Brooklyn","boroughSlug":"brooklyn","neighborhood":"Park Slope","lat":40.6646062,"lng":-73.9829468,"summary":"A historic building in Brooklyn, originally a factory for the Ansonia Clock Company.","thumb":"/locations/ansonia-clock-factory/images/satellite_ansonia-clock-factory-480.webp","search":"ansonia clock factory park slope brooklyn a historic building in brooklyn, originally a factory for the ansonia clock company."},{"name":"Barwell Terrace","slug":"barwell-terrace","url":"/locations/barwell-terrace/","borough":"Brooklyn","boroughSlug":"brooklyn","neighborhood":"Bay Ridge","lat":40.6150808,"lng":-74.0334827,"summary":"No description yet.","thumb":"/locations/barwell-terrace/images/satellite_barwell-terrace-480.webp","search":"barwell terrace bay ridge brooklyn no description yet."},{"name":"Broadway Between 40th and 17th","slug":"broadway-between-40th-and-17th","url":"/locations/broadway-between-40th-and-17th/","borough":"Manhattan","boroughSlug":"manhattan","neighborhood":"Midtown-Times Square","lat":40.7525651,"lng":-73.987471,"summary":"A section of Broadway in Manhattan, known for its pedestrian-friendly design and public spaces.","thumb":"/locations/broadway-between-40th-and-17th/images/photo_1-480.webp","search":"broadway between 40th and 17th midtown-times square manhattan a section of broadway in manhattan, known for its pedestrian-friendly design and public spaces."},{"name":"Brooklyn Bridge Parks","slug":"brooklyn-bridge-parks","url":"/locations/brooklyn-bridge-parks/","borough":"Brooklyn","boroughSlug":"brooklyn","neighborhood":"Brooklyn Heights","lat":40.7018997,"lng":-73.9961015,"summary":"Top public private parnership and the only park in nyc you can live in? Thanks bloomberg.","thumb":"/locations/brooklyn-bridge-parks/images/photo_1-480.webp","search":"brooklyn bridge parks brooklyn heights brooklyn top public private parnership and the only park in nyc you can live in? thanks bloomberg."},{"name":"Brooklyn Navy Yard","slug":"brooklyn-navy-yard","url":"/locations/brooklyn-navy-yard/","borough":"Brooklyn","boroughSlug":"brooklyn","neighborhood":"Brooklyn Navy Yard","lat":40.6991147,"lng":-73.9728531,"summary":"A historic shipyard and industrial complex located in Brooklyn, now repurposed as a hub for manufacturing, technology, and creative industries.","thumb":"/locations/brooklyn-navy-yard/images/photo_1-480.webp","search":"brooklyn navy yard brooklyn navy yard brooklyn a historic shipyard and industrial complex located in brooklyn, now repurposed as a hub for manufacturing, technology, and creative industries."},{"name":"Charlotte Gardens","slug":"charlotte-gardens","url":"/locations/charlotte-gardens/","borough":"Bronx","boroughSlug":"bronx","neighborhood":"Crotona Park East","lat":40.8342736,"lng":-73.892205,"summary":"A housing development in the South Bronx, known for its suburban-style homes.","thumb":"/locations/charlotte-gardens/images/photo_1-480.webp","search":"charlotte gardens crotona park east bronx a housing development in the south bronx, known for its suburban-style homes."},{"name":"Chester Court","slug":"chester-court","url":"/locations/chester-court/","borough":"Brooklyn","boroughSlug":"brooklyn","neighborhood":"Prospect Lefferts Gardens-Wingate","lat":40.6583386,"lng":-73.9613947,"summary":"No description yet.","thumb":"/locations/chester-court/images/satellite_chester-court-480.webp","search":"chester court prospect lefferts gardens-wingate brooklyn no description yet."},{"name":"Chittenden Road","slug":"chittenden-road","url":"/locations/chittenden-road/","borough":"Manhattan","boroughSlug":"manhattan","neighborhood":"Washington Heights (North)","lat":40.8554451,"lng":-73.9390084,"summary":"A street in Washington Heights, offering views of the Hudson River.","thumb":"/locations/chittenden-road/images/photo_1-480.webp","search":"chittenden road washington heights (north) manhattan a street in washington heights, offering views of the hudson river."},{"name":"Claremont/Vanderbilt New townhouses with communal garden","slug":"claremontvanderbilt-new-townhouses-with-communal-garden","url":"/locations/claremontvanderbilt-new-townhouses-with-communal-garden/","borough":"Brooklyn","boroughSlug":"brooklyn","neighborhood":"Fort Greene","lat":40.697108,"lng":-73.97114,"summary":"One of few modern examples of private shared space. the houses r kinda ugly but ill take what I can get","thumb":"","search":"claremont/vanderbilt new townhouses with communal garden fort greene brooklyn one of few modern examples of private shared space. the houses r kinda ugly but ill take what i can get"},{"name":"Cliff House (Pumpkin House)","slug":"cliff-house-pumpkin-house","url":"/locations/cliff-house-pumpkin-house/","borough":"Manhattan","boroughSlug":"manhattan","neighborhood":"Washington Heights (North)","lat":40.8549866,"lng":-73.9395154,"summary":"A unique residential building in Manhattan, known for its distinctive appearance and location on a cliff.","thumb":"/locations/cliff-house-pumpkin-house/images/photo_1-480.webp","search":"cliff house (pumpkin house) washington heights (north) manhattan a unique residential building in manhattan, known for its distinctive appearance and location on a cliff."},{"name":"Clinton Court","slug":"clinton-court","url":"/locations/clinton-court/","borough":"Manhattan","boroughSlug":"manhattan","neighborhood":"Hell's Kitchen","lat":40.76128,"lng":-73.9921142,"summary":"No description yet.","thumb":"/locations/clinton-court/images/photo_1-480.webp","search":"clinton court hell's kitchen manhattan no description yet."},{"name":"College Place","slug":"college-place","url":"/locations/college-place/","borough":"Brooklyn","boroughSlug":"brooklyn","neighborhood":"Brooklyn Heights","lat":40.6965814,"lng":-73.9943281,"summary":"A short, dead-end street in Brooklyn Heights, offering a peaceful retreat.","thumb":"/locations/college-place/images/satellite_college-place-480.webp","search":"college place brooklyn heights brooklyn a short, dead-end street in brooklyn heights, offering a peaceful retreat."},{"name":"Colonial Gardens","slug":"colonial-gardens","url":"/locations/colonial-gardens/","borough":"Brooklyn","boroughSlug":"brooklyn","neighborhood":"Bay Ridge","lat":40.6225689,"lng":-74.0395689,"summary":"No description yet.","thumb":"/locations/colonial-gardens/images/photo_1-480.webp","search":"colonial gardens bay ridge brooklyn no description yet."},{"name":"Commandants Mansion","slug":"commandants-mansion","url":"/locations/commandants-mansion/","borough":"Brooklyn","boroughSlug":"brooklyn","neighborhood":"Downtown Brooklyn-DUMBO-Boerum Hill","lat":40.7023811,"lng":-73.9803764,"summary":"Estate in downtown","thumb":"/locations/commandants-mansion/images/photo_1-480.webp","search":"commandants mansion downtown brooklyn-dumbo-boerum hill brooklyn estate in downtown"},{"name":"Dennett Place","slug":"dennett-place","url":"/locations/dennett-place/","borough":"Brooklyn","boroughSlug":"brooklyn","neighborhood":"Carroll Gardens-Cobble Hill-Gowanus-Red Hook","lat":40.6765077,"lng":-73.9975594,"summary":"A small, historic street in Carroll Gardens, Brooklyn, known for its charming row houses.","thumb":"/locations/dennett-place/images/satellite_dennett-place-480.webp","search":"dennett place carroll gardens-cobble hill-gowanus-red hook brooklyn a small, historic street in carroll gardens, brooklyn, known for its charming row houses."},{"name":"Ditmas Park","slug":"ditmas-park","url":"/locations/ditmas-park/","borough":"Brooklyn","boroughSlug":"brooklyn","neighborhood":"Flatbush (West)-Ditmas Park-Parkville","lat":40.6465746,"lng":-73.9667459,"summary":"A neighborhood in Brooklyn known for its large, Victorian-style homes and tree-lined streets.","thumb":"/locations/ditmas-park/images/photo_1-480.webp","search":"ditmas park flatbush (west)-ditmas park-parkville brooklyn a neighborhood in brooklyn known for its large, victorian-style homes and tree-lined streets."},{"name":"Doyer Street","slug":"doyer-street","url":"/locations/doyer-street/","borough":"Manhattan","boroughSlug":"manhattan","neighborhood":"Chinatown-Two Bridges","lat":40.7145149,"lng":-73.9981452,"summary":"A historic street in Chinatown, Manhattan, known for its sharp bend and cultural significance.","thumb":"/locations/doyer-street/images/photo_1-480.webp","search":"doyer street chinatown-two bridges manhattan a historic street in chinatown, manhattan, known for its sharp bend and cultural significance."},{"name":"Elevated Acre","slug":"elevated-acre","url":"/locations/elevated-acre/","borough":"Manhattan","boroughSlug":"manhattan","neighborhood":"Financial District-Battery Park City","lat":40.7033047,"lng":-74.0086169,"summary":"The spiritual precurser to the highline. A one-acre elevated public park located in Manhattan's Financial District, offering green space, seating, and…","thumb":"/locations/elevated-acre/images/photo_1-480.webp","search":"elevated acre financial district-battery park city manhattan the spiritual precurser to the highline. a one-acre elevated public park located in manhattan's financial district, offering green space, seating, and views of the east river."},{"name":"Forest Hills","slug":"forest-hills","url":"/locations/forest-hills/","borough":"Queens","boroughSlug":"queens","neighborhood":"Forest Hills","lat":40.7195745,"lng":-73.8449253,"summary":"A neighborhood in Queens, known for its Tudor-style homes and the historic Forest Hills Gardens.","thumb":"/locations/forest-hills/images/photo_1-480.webp","search":"forest hills forest hills queens a neighborhood in queens, known for its tudor-style homes and the historic forest hills gardens."},{"name":"Freeman Alley","slug":"freeman-alley","url":"/locations/freeman-alley/","borough":"Manhattan","boroughSlug":"manhattan","neighborhood":"Lower East Side","lat":40.7218056,"lng":-73.9925468,"summary":"A small, graffiti-covered alley in the Lower East Side of Manhattan.","thumb":"/locations/freeman-alley/images/photo_1-480.webp","search":"freeman alley lower east side manhattan a small, graffiti-covered alley in the lower east side of manhattan."},{"name":"Govoners Island","slug":"govoners-island","url":"/locations/govoners-island/","borough":"Manhattan","boroughSlug":"manhattan","neighborhood":"The Battery-Governors Island-Ellis Island-Liberty Island","lat":40.6892172,"lng":-74.0185413,"summary":"Why cant I live in one of the 1000 empy army baraks? Extremely disappointing amount of latent potential. A 172-acre island in New York Harbor…","thumb":"/locations/govoners-island/images/photo_1-480.webp","search":"govoners island the battery-governors island-ellis island-liberty island manhattan why cant i live in one of the 1000 empy army baraks? extremely disappointing amount of latent potential. a 172-acre island in new york harbor, formerly a military base and now a public park and cultural venue."},{"name":"Grace Court","slug":"grace-court","url":"/locations/grace-court/","borough":"Brooklyn","boroughSlug":"brooklyn","neighborhood":"Brooklyn Heights","lat":40.6943062,"lng":-73.9976479,"summary":"A quiet, dead-end street in Brooklyn Heights, lined with historic townhouses.","thumb":"/locations/grace-court/images/satellite_grace-court-480.webp","search":"grace court brooklyn heights brooklyn a quiet, dead-end street in brooklyn heights, lined with historic townhouses."},{"name":"Grace Court Alley","slug":"grace-court-alley","url":"/locations/grace-court-alley/","borough":"Brooklyn","boroughSlug":"brooklyn","neighborhood":"Brooklyn Heights","lat":40.6938832,"lng":-73.9957757,"summary":"A hidden alley in Brooklyn Heights, featuring converted carriage houses.","thumb":"/locations/grace-court-alley/images/photo_1-480.webp","search":"grace court alley brooklyn heights brooklyn a hidden alley in brooklyn heights, featuring converted carriage houses."},{"name":"Greenwich Mews","slug":"greenwich-mews","url":"/locations/greenwich-mews/","borough":"Manhattan","boroughSlug":"manhattan","neighborhood":"West Village","lat":40.7333401,"lng":-74.0071101,"summary":"No description yet.","thumb":"/locations/greenwich-mews/images/photo_1-480.webp","search":"greenwich mews west village manhattan no description yet."},{"name":"Grove Court","slug":"grove-court","url":"/locations/grove-court/","borough":"Manhattan","boroughSlug":"manhattan","neighborhood":"West Village","lat":40.7320619,"lng":-74.0058125,"summary":"A hidden courtyard of six townhouses located in Greenwich Village, Manhattan.","thumb":"/locations/grove-court/images/photo_1-480.webp","search":"grove court west village manhattan a hidden courtyard of six townhouses located in greenwich village, manhattan."},{"name":"Hamilton Terrace","slug":"hamilton-terrace","url":"/locations/hamilton-terrace/","borough":"Manhattan","boroughSlug":"manhattan","neighborhood":"Hamilton Heights-Sugar Hill","lat":40.8228782,"lng":-73.9464374,"summary":"A residential street in Hamilton Heights, Manhattan, known for its elegant townhouses.","thumb":"/locations/hamilton-terrace/images/satellite_hamilton-terrace-480.webp","search":"hamilton terrace hamilton heights-sugar hill manhattan a residential street in hamilton heights, manhattan, known for its elegant townhouses."},{"name":"Hamilton Walk","slug":"hamilton-walk","url":"/locations/hamilton-walk/","borough":"Brooklyn","boroughSlug":"brooklyn","neighborhood":"Bay Ridge","lat":40.617658,"lng":-74.0321126,"summary":"No description yet.","thumb":"/locations/hamilton-walk/images/satellite_hamilton-walk-480.webp","search":"hamilton walk bay ridge brooklyn no description yet."},{"name":"Henderson Place","slug":"henderson-place","url":"/locations/henderson-place/","borough":"Manhattan","boroughSlug":"manhattan","neighborhood":"Upper East Side-Yorkville","lat":40.7755536,"lng":-73.9449743,"summary":"A historic district in the Upper East Side of Manhattan, featuring Queen Anne-style row houses.","thumb":"/locations/henderson-place/images/photo_1-480.webp","search":"henderson place upper east side-yorkville manhattan a historic district in the upper east side of manhattan, featuring queen anne-style row houses."},{"name":"Hunts Lane","slug":"hunts-lane","url":"/locations/hunts-lane/","borough":"Brooklyn","boroughSlug":"brooklyn","neighborhood":"Brooklyn Heights","lat":40.6934724,"lng":-73.9941074,"summary":"A small, historic lane in Brooklyn Heights, known for its charming residences.","thumb":"/locations/hunts-lane/images/satellite_hunts-lane-480.webp","search":"hunts lane brooklyn heights brooklyn a small, historic lane in brooklyn heights, known for its charming residences."},{"name":"Indian Road","slug":"indian-road","url":"/locations/indian-road/","borough":"Manhattan","boroughSlug":"manhattan","neighborhood":"Inwood Hill Park","lat":40.8721217,"lng":-73.9196605,"summary":"A scenic road located in Inwood, Manhattan, offering views of the Hudson River.","thumb":"/locations/indian-road/images/satellite_indian-road-480.webp","search":"indian road inwood hill park manhattan a scenic road located in inwood, manhattan, offering views of the hudson river."},{"name":"Jones Wood Garden","slug":"jones-wood-garden","url":"/locations/jones-wood-garden/","borough":"Manhattan","boroughSlug":"manhattan","neighborhood":"Upper East Side-Carnegie Hill","lat":40.765827,"lng":-73.964279,"summary":"Prime shared townhouse garden!","thumb":"","search":"jones wood garden upper east side-carnegie hill manhattan prime shared townhouse garden!"},{"name":"Kenmore Terrace","slug":"kenmore-terrace","url":"/locations/kenmore-terrace/","borough":"Brooklyn","boroughSlug":"brooklyn","neighborhood":"Flatbush","lat":40.6492046,"lng":-73.9593604,"summary":"No description yet.","thumb":"/locations/kenmore-terrace/images/satellite_kenmore-terrace-480.webp","search":"kenmore terrace flatbush brooklyn no description yet."},{"name":"Kips Bay Towers","slug":"kips-bay-towers","url":"/locations/kips-bay-towers/","borough":"Manhattan","boroughSlug":"manhattan","neighborhood":"Murray Hill-Kips Bay","lat":40.7426759,"lng":-73.9758258,"summary":"A pair of residential towers located in the Kips Bay neighborhood of Manhattan, known for their modernist architecture.","thumb":"/locations/kips-bay-towers/images/photo_1-480.webp","search":"kips bay towers murray hill-kips bay manhattan a pair of residential towers located in the kips bay neighborhood of manhattan, known for their modernist architecture."},{"name":"Knickerbocker Village","slug":"knickerbocker-village","url":"/locations/knickerbocker-village/","borough":"Manhattan","boroughSlug":"manhattan","neighborhood":"Chinatown-Two Bridges","lat":40.7108205,"lng":-73.9960392,"summary":"A historic housing complex in Manhattan's Lower East Side, known for its early adoption of modern housing concepts.","thumb":"/locations/knickerbocker-village/images/photo_1-480.webp","search":"knickerbocker village chinatown-two bridges manhattan a historic housing complex in manhattan's lower east side, known for its early adoption of modern housing concepts."},{"name":"Lafayette Walk","slug":"lafayette-walk","url":"/locations/lafayette-walk/","borough":"Brooklyn","boroughSlug":"brooklyn","neighborhood":"Bay Ridge","lat":40.6174686,"lng":-74.0316834,"summary":"No description yet.","thumb":"/locations/lafayette-walk/images/satellite_lafayette-walk-480.webp","search":"lafayette walk bay ridge brooklyn no description yet."},{"name":"Little/Evans Street","slug":"littleevans-street","url":"/locations/littleevans-street/","borough":"Brooklyn","boroughSlug":"brooklyn","neighborhood":"Downtown Brooklyn-DUMBO-Boerum Hill","lat":40.7030725,"lng":-73.9803093,"summary":"A pair of narrow, historic streets in the Vinegar Hill neighborhood of Brooklyn.","thumb":"/locations/littleevans-street/images/satellite_littleevans-street-480.webp","search":"little/evans street downtown brooklyn-dumbo-boerum hill brooklyn a pair of narrow, historic streets in the vinegar hill neighborhood of brooklyn."},{"name":"Madeline Court","slug":"madeline-court","url":"/locations/madeline-court/","borough":"Brooklyn","boroughSlug":"brooklyn","neighborhood":"Bay Ridge","lat":40.6368416,"lng":-74.0275419,"summary":"No description yet.","thumb":"/locations/madeline-court/images/satellite_madeline-court-480.webp","search":"madeline court bay ridge brooklyn no description yet."},{"name":"Maple Street","slug":"maple-street","url":"/locations/maple-street/","borough":"Brooklyn","boroughSlug":"brooklyn","neighborhood":"Prospect Lefferts Gardens-Wingate","lat":40.660357,"lng":-73.9587125,"summary":"A street in the Prospect Lefferts Gardens neighborhood of Brooklyn, known for its historic homes.","thumb":"/locations/maple-street/images/photo_1-480.webp","search":"maple street prospect lefferts gardens-wingate brooklyn a street in the prospect lefferts gardens neighborhood of brooklyn, known for its historic homes."},{"name":"Marble Hill","slug":"marble-hill","url":"/locations/marble-hill/","borough":"Bronx","boroughSlug":"bronx","neighborhood":"Kingsbridge-Marble Hill","lat":40.8757049,"lng":-73.9115166,"summary":"A neighborhood in the northern part of Manhattan, known for its suburban feel.","thumb":"/locations/marble-hill/images/photo_1-480.webp","search":"marble hill kingsbridge-marble hill bronx a neighborhood in the northern part of manhattan, known for its suburban feel."},{"name":"Milligan Place","slug":"milligan-place","url":"/locations/milligan-place/","borough":"Manhattan","boroughSlug":"manhattan","neighborhood":"West Village","lat":40.7351299,"lng":-73.9988065,"summary":"A tiny, triangular courtyard in Greenwich Village, featuring four townhouses.","thumb":"/locations/milligan-place/images/satellite_milligan-place-480.webp","search":"milligan place west village manhattan a tiny, triangular courtyard in greenwich village, featuring four townhouses."},{"name":"Mott Haven Water Front","slug":"mott-haven-water-front","url":"/locations/mott-haven-water-front/","borough":"Bronx","boroughSlug":"bronx","neighborhood":"Mott Haven-Port Morris","lat":40.8074399,"lng":-73.9311497,"summary":"Public private patnership to fix up some nonexistant waterfront in the Mott Haven neighborhood of the Bronx, featuring parks and recreational spaces.","thumb":"/locations/mott-haven-water-front/images/photo_1-480.webp","search":"mott haven water front mott haven-port morris bronx public private patnership to fix up some nonexistant waterfront in the mott haven neighborhood of the bronx, featuring parks and recreational spaces."},{"name":"Patchin Place","slug":"patchin-place","url":"/locations/patchin-place/","borough":"Manhattan","boroughSlug":"manhattan","neighborhood":"West Village","lat":40.7351334,"lng":-73.9993554,"summary":"A small, gated alley in Greenwich Village, lined with historic townhouses.","thumb":"/locations/patchin-place/images/satellite_patchin-place-480.webp","search":"patchin place west village manhattan a small, gated alley in greenwich village, lined with historic townhouses."},{"name":"Pomander Walk","slug":"pomander-walk","url":"/locations/pomander-walk/","borough":"Manhattan","boroughSlug":"manhattan","neighborhood":"Upper West Side (Central)","lat":40.7939961,"lng":-73.9733071,"summary":"A Tudor-style residential complex located on the Upper West Side of Manhattan.","thumb":"/locations/pomander-walk/images/photo_1-480.webp","search":"pomander walk upper west side (central) manhattan a tudor-style residential complex located on the upper west side of manhattan."},{"name":"Riverdale","slug":"riverdale","url":"/locations/riverdale/","borough":"Bronx","boroughSlug":"bronx","neighborhood":"Riverdale-Spuyten Duyvil","lat":40.8935758,"lng":-73.9068976,"summary":"A residential neighborhood in the Bronx, known for its hilly terrain and upscale homes.","thumb":"/locations/riverdale/images/photo_1-480.webp","search":"riverdale riverdale-spuyten duyvil bronx a residential neighborhood in the bronx, known for its hilly terrain and upscale homes."},{"name":"Riverview Terrace","slug":"riverview-terrace","url":"/locations/riverview-terrace/","borough":"Manhattan","boroughSlug":"manhattan","neighborhood":"East Midtown-Turtle Bay","lat":40.7579249,"lng":-73.9593522,"summary":"No description yet.","thumb":"/locations/riverview-terrace/images/satellite_riverview-terrace-480.webp","search":"riverview terrace east midtown-turtle bay manhattan no description yet."},{"name":"Roof Top Cape Cod","slug":"roof-top-cape-cod","url":"/locations/roof-top-cape-cod/","borough":"Manhattan","boroughSlug":"manhattan","neighborhood":"East Village","lat":40.7234933,"lng":-73.9886127,"summary":"No description yet.","thumb":"/locations/roof-top-cape-cod/images/photo_1-480.webp","search":"roof top cape cod east village manhattan no description yet."},{"name":"Sky Port","slug":"sky-port","url":"/locations/sky-port/","borough":"Manhattan","boroughSlug":"manhattan","neighborhood":"Murray Hill-Kips Bay","lat":40.7355885,"lng":-73.9744233,"summary":"Manhattans only airport.","thumb":"/locations/sky-port/images/photo_1-480.webp","search":"sky port murray hill-kips bay manhattan manhattans only airport."},{"name":"SkyTrack","slug":"skytrack","url":"/locations/skytrack/","borough":"Brooklyn","boroughSlug":"brooklyn","neighborhood":"Downtown Brooklyn-DUMBO-Boerum Hill","lat":40.6879331,"lng":-73.9918461,"summary":"We could have had pedestrianized the sky. At least we are left with this amazing example of what might have been :)","thumb":"/locations/skytrack/images/photo_1-480.webp","search":"skytrack downtown brooklyn-dumbo-boerum hill brooklyn we could have had pedestrianized the sky. at least we are left with this amazing example of what might have been :)"},{"name":"Sniffen Court","slug":"sniffen-court","url":"/locations/sniffen-court/","borough":"Manhattan","boroughSlug":"manhattan","neighborhood":"Murray Hill-Kips Bay","lat":40.7470204,"lng":-73.9780114,"summary":"A small, private alley in Murray Hill, Manhattan, featuring Romanesque Revival-style carriage houses.","thumb":"/locations/sniffen-court/images/photo_1-480.webp","search":"sniffen court murray hill-kips bay manhattan a small, private alley in murray hill, manhattan, featuring romanesque revival-style carriage houses."},{"name":"South Bridge Towers","slug":"south-bridge-towers","url":"/locations/south-bridge-towers/","borough":"Manhattan","boroughSlug":"manhattan","neighborhood":"Financial District-Battery Park City","lat":40.7094761,"lng":-74.0042551,"summary":"A cooperative housing complex located near the South Street Seaport in Manhattan.","thumb":"/locations/south-bridge-towers/images/photo_1-480.webp","search":"south bridge towers financial district-battery park city manhattan a cooperative housing complex located near the south street seaport in manhattan."},{"name":"Strivers Row","slug":"strivers-row","url":"/locations/strivers-row/","borough":"Manhattan","boroughSlug":"manhattan","neighborhood":"Harlem (North)","lat":40.8175433,"lng":-73.9439576,"summary":"A historic district in Harlem, known for its well-preserved row houses and cultural significance.","thumb":"/locations/strivers-row/images/photo_1-480.webp","search":"strivers row harlem (north) manhattan a historic district in harlem, known for its well-preserved row houses and cultural significance."},{"name":"Stuy Town","slug":"stuy-town","url":"/locations/stuy-town/","borough":"Manhattan","boroughSlug":"manhattan","neighborhood":"Stuyvesant Town-Peter Cooper Village","lat":40.7318054,"lng":-73.9778906,"summary":"A large residential complex in Manhattan, known for its extensive green spaces and community amenities.","thumb":"/locations/stuy-town/images/photo_1-480.webp","search":"stuy town stuyvesant town-peter cooper village manhattan a large residential complex in manhattan, known for its extensive green spaces and community amenities."},{"name":"Sullivan Street","slug":"sullivan-street","url":"/locations/sullivan-street/","borough":"Manhattan","boroughSlug":"manhattan","neighborhood":"Greenwich Village","lat":40.7284723,"lng":-74.0012998,"summary":"A street in Manhattan's Greenwich Village, known for its historic buildings and communal garden.","thumb":"/locations/sullivan-street/images/photo_1-480.webp","search":"sullivan street greenwich village manhattan a street in manhattan's greenwich village, known for its historic buildings and communal garden."},{"name":"Sunny Side Gardens","slug":"sunny-side-gardens","url":"/locations/sunny-side-gardens/","borough":"Queens","boroughSlug":"queens","neighborhood":"Sunnyside","lat":40.748314,"lng":-73.917689,"summary":"Secret paths and secret communal gardens. another historical example of how homes are cheap and very nice neighborhoods are still cheap, but only if…","thumb":"","search":"sunny side gardens sunnyside queens secret paths and secret communal gardens. another historical example of how homes are cheap and very nice neighborhoods are still cheap, but only if you build them when society was an order of magnitude less wealth"},{"name":"Sutton Square","slug":"sutton-square","url":"/locations/sutton-square/","borough":"Manhattan","boroughSlug":"manhattan","neighborhood":"East Midtown-Turtle Bay","lat":40.7574713,"lng":-73.9598883,"summary":"A private enclave of townhouses located in the Sutton Place neighborhood of Manhattan.","thumb":"/locations/sutton-square/images/photo_1-480.webp","search":"sutton square east midtown-turtle bay manhattan a private enclave of townhouses located in the sutton place neighborhood of manhattan."},{"name":"Sylvan Court","slug":"sylvan-court","url":"/locations/sylvan-court/","borough":"Manhattan","boroughSlug":"manhattan","neighborhood":"East Harlem (North)","lat":40.801804,"lng":-73.9384614,"summary":"No description yet.","thumb":"/locations/sylvan-court/images/satellite_sylvan-court-480.webp","search":"sylvan court east harlem (north) manhattan no description yet."},{"name":"Sylvan Terrace","slug":"sylvan-terrace","url":"/locations/sylvan-terrace/","borough":"Manhattan","boroughSlug":"manhattan","neighborhood":"Washington Heights (South)","lat":40.8347234,"lng":-73.9393878,"summary":"A cobblestone street in Washington Heights, lined with wooden row houses.","thumb":"/locations/sylvan-terrace/images/photo_1-480.webp","search":"sylvan terrace washington heights (south) manhattan a cobblestone street in washington heights, lined with wooden row houses."},{"name":"Temple Court","slug":"temple-court","url":"/locations/temple-court/","borough":"Brooklyn","boroughSlug":"brooklyn","neighborhood":"Windsor Terrace-South Slope","lat":40.6557988,"lng":-73.9745873,"summary":"No description yet.","thumb":"/locations/temple-court/images/photo_1-480.webp","search":"temple court windsor terrace-south slope brooklyn no description yet."},{"name":"Track on the roof","slug":"track-on-the-roof","url":"/locations/track-on-the-roof/","borough":"Manhattan","boroughSlug":"manhattan","neighborhood":"Upper West Side-Lincoln Square","lat":40.7748443,"lng":-73.9814742,"summary":"There is a running track on the roof of this building. more of this please","thumb":"/locations/track-on-the-roof/images/photo_1-480.webp","search":"track on the roof upper west side-lincoln square manhattan there is a running track on the roof of this building. more of this please"},{"name":"Verandah Place","slug":"verandah-place","url":"/locations/verandah-place/","borough":"Brooklyn","boroughSlug":"brooklyn","neighborhood":"Carroll Gardens-Cobble Hill-Gowanus-Red Hook","lat":40.6881867,"lng":-73.9964295,"summary":"A narrow, historic street in Cobble Hill, Brooklyn, featuring small row houses.","thumb":"/locations/verandah-place/images/satellite_verandah-place-480.webp","search":"verandah place carroll gardens-cobble hill-gowanus-red hook brooklyn a narrow, historic street in cobble hill, brooklyn, featuring small row houses."},{"name":"Wallabout Hasidic Compound","slug":"wallabout-hasidic-compound","url":"/locations/wallabout-hasidic-compound/","borough":"Brooklyn","boroughSlug":"brooklyn","neighborhood":"South Williamsburg","lat":40.7012609,"lng":-73.9495343,"summary":"Political will can build houses all you need is the right god. A large housing development in the Wallabout neighborhood of Brooklyn, primarily…","thumb":"/locations/wallabout-hasidic-compound/images/photo_1-480.webp","search":"wallabout hasidic compound south williamsburg brooklyn political will can build houses all you need is the right god. a large housing development in the wallabout neighborhood of brooklyn, primarily serving the hasidic community."},{"name":"Warren Place Mews","slug":"warren-place-mews","url":"/locations/warren-place-mews/","borough":"Brooklyn","boroughSlug":"brooklyn","neighborhood":"Carroll Gardens-Cobble Hill-Gowanus-Red Hook","lat":40.6879287,"lng":-73.9984916,"summary":"A historic row of cottages in Cobble Hill, Brooklyn, designed for working-class families.","thumb":"/locations/warren-place-mews/images/satellite_warren-place-mews-480.webp","search":"warren place mews carroll gardens-cobble hill-gowanus-red hook brooklyn a historic row of cottages in cobble hill, brooklyn, designed for working-class families."},{"name":"Washington Mews","slug":"washington-mews","url":"/locations/washington-mews/","borough":"Manhattan","boroughSlug":"manhattan","neighborhood":"Greenwich Village","lat":40.7315753,"lng":-73.9959466,"summary":"A private street in Greenwich Village, originally built as stables for nearby townhouses.","thumb":"/locations/washington-mews/images/photo_1-480.webp","search":"washington mews greenwich village manhattan a private street in greenwich village, originally built as stables for nearby townhouses."},{"name":"Waterside","slug":"waterside","url":"/locations/waterside/","borough":"Manhattan","boroughSlug":"manhattan","neighborhood":"Murray Hill-Kips Bay","lat":40.7374817,"lng":-73.9732056,"summary":"A residential complex located along the East River in Manhattan, offering waterfront living.","thumb":"/locations/waterside/images/photo_1-480.webp","search":"waterside murray hill-kips bay manhattan a residential complex located along the east river in manhattan, offering waterfront living."}]</script>
+</section>
+
+<section id="about" class="section bg-white" aria-labelledby="about-title">
+  <div class="wrap about-grid">
+    <div>
+      <p class="eyebrow text-accent-strong">Why</p>
+      <h2 id="about-title" class="section-title mt-2">The political economy of niceness</h2>
+      <div class="prose-otg mt-5">
+        <p>New York is loud, dense and relentless, and yet it is full of mews, courtyards, shared gardens, rooftop tracks and waterfront edges where the city goes quiet. Most were built by a specific mix of money, zoning and stubborn neighbors. This map collects them.</p>
+        <p>Every location was visited or vetted by a person. The write-ups are drafted with AI and edited by hand, so treat them as a starting point, not gospel. Some places are private, gated or only open at certain hours: look before you go, and be a good guest when you get there.</p>
+      </div>
+    </div>
+    <div class="flex flex-col gap-4">
+      <div class="about-card">
+        <h3>Open data</h3>
+        <p>Every place on this site, with coordinates and descriptions, is published as a <a href="/assets/data/locations.json" class="text-accent-strong">JSON dataset</a> you can reuse with attribution.</p>
+      </div>
+      <div class="about-card">
+        <h3>Also on Google Maps</h3>
+        <p>Prefer the Google Maps app? <a href="https://www.google.com/maps/d/viewer?mid=1gl24kbeTNZ13SmaCbMsam2CYe8Ury7M" class="text-accent-strong" rel="noopener noreferrer" target="_blank">Open the public map</a> to take the pins with you.</p>
+      </div>
+      <div class="about-card">
+        <h3>Privacy</h3>
+        <p>No account, no cookies of our own. Street view panoramas and comments only load when you ask for them.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="submit" class="section" aria-labelledby="submit-title">
+  <div class="wrap">
+    <div class="card card--dark overflow-hidden">
+      <div class="grid gap-8 p-8 md:grid-cols-2 md:p-12">
+        <div>
+          <p class="eyebrow text-brass">Contribute</p>
+          <h2 id="submit-title" class="mt-2 font-serif text-3xl text-white md:text-4xl">Know a hidden gem?</h2>
+          <p class="mt-4 text-white/70">Help document the depth of the city. Tell us where it is, what makes it special, and whether the public can get in. Photos welcome.</p>
+          <div class="mt-6 flex flex-wrap gap-3">
+            <button type="button" class="btn btn--light" id="load-form" data-src="https://docs.google.com/forms/d/e/1FAIpQLSf-3Fi0LTuKLsSUQvrr_uVkenJkpHBEO5bDQXM567_NW4U5Ag/viewform?embedded=true">Open the form here</button>
+            <a class="btn btn--outline-light" href="https://forms.gle/4HR5RrvrfV2Nt2718" target="_blank" rel="noopener noreferrer">Open in a new tab</a>
+          </div>
+          <p class="mt-4 text-xs text-white/50">The form is hosted by Google Forms and loads only when you open it.</p>
+        </div>
+        <ul class="grid gap-3 self-center text-sm text-white/80">
+          <li class="rounded-xl border border-white/10 p-4">1. Drop a pin or paste an address.</li>
+          <li class="rounded-xl border border-white/10 p-4">2. Say what it is and why it belongs off the grid.</li>
+          <li class="rounded-xl border border-white/10 p-4">3. We verify it, write it up and add it to the map.</li>
+        </ul>
+      </div>
+      <div id="submit-form-embed" class="embed embed--form rounded-none border-0 shadow-none" hidden></div>
+    </div>
+  </div>
+</section>
   </main>
 
-  <!-- Footer -->
-  <footer class="bg-nyc-black text-gray-500 text-center py-8 mt-auto border-t border-gray-800">
-    <div class="container mx-auto px-4">
-      <p class="mb-2 font-serif text-lg text-gray-400">Off The Grid NYC</p>
-      <p class="text-xs">&copy; 2025. All rights reserved.</p>
+  <footer class="site-footer">
+    <div class="mx-auto grid w-full max-w-7xl gap-10 px-4 sm:px-6 md:grid-cols-[2fr_1fr_1fr] lg:px-8">
+      <div>
+        <p class="font-serif text-xl text-white">Off The Grid NYC</p>
+        <p class="mt-2 max-w-md text-white/60">Proof NYC has depth of character. Descriptions are generated by AI and locations are curated by humans. Always verify before you go.</p>
+        <p class="mt-6 text-xs text-white/40">&copy; Off The Grid NYC. Map data &copy; <a href="https://www.openstreetmap.org/copyright" rel="noopener noreferrer">OpenStreetMap</a> contributors.</p>
+      </div>
+      <div>
+        <h2>Explore</h2>
+        <ul class="space-y-2">
+          <li><a href="/#explorer">Interactive map</a></li>
+          <li><a href="/locations/">All 85 places</a></li>
+<li><a href="/locations/#manhattan">Manhattan (38)</a></li><li><a href="/locations/#brooklyn">Brooklyn (41)</a></li><li><a href="/locations/#queens">Queens (2)</a></li><li><a href="/locations/#bronx">Bronx (4)</a></li>        </ul>
+      </div>
+      <div>
+        <h2>Contribute</h2>
+        <ul class="space-y-2">
+          <li><a href="/#submit">Submit a place</a></li>
+          <li><a href="https://www.google.com/maps/d/viewer?mid=1gl24kbeTNZ13SmaCbMsam2CYe8Ury7M" rel="noopener noreferrer" target="_blank">Open in Google My Maps</a></li>
+          <li><a href="/assets/data/locations.json">Open dataset (JSON)</a></li>
+          <li><a href="https://github.com/nfjesifb/offthegridnyc" rel="noopener noreferrer" target="_blank">Source on GitHub</a></li>
+        </ul>
+      </div>
     </div>
   </footer>
 
-  <!-- Google Maps JavaScript API -->
-  <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAmyMcwz10htD0p0FLI3S4WgAAnnVQdf4I&callback=initMap&libraries=marker,places&v=beta">
-    </script>
-</body>
-
+<script src="/assets/vendor/leaflet/leaflet.js" defer></script>  <script src="/assets/js/site.js" defer></script>
+<script src="/assets/js/map.js" defer></script><script src="/assets/js/analytics.js" data-ga-id="G-DS1YWJT1KC" defer></script></body>
 </html>

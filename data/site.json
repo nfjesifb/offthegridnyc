@@ -1,0 +1,24 @@
+{
+  "name": "Off The Grid NYC",
+  "tagline": "Proof NYC has depth of character",
+  "description": "A hand-curated map of New York City's mews, courtyards, rooftop tracks, hidden gardens and other quiet corners. The historical and modern political economy of niceness in NYC.",
+  "url": "https://offthegridnyc.com",
+  "ga_id": "G-DS1YWJT1KC",
+  "giscus": {
+    "repo": "nfjesifb/offthegridnyc",
+    "repo_id": "R_kgDOOCIF_w",
+    "category": "Announcements",
+    "category_id": "DIC_kwDOOCIF_84CpfwD"
+  },
+  "submit_form_url": "https://forms.gle/4HR5RrvrfV2Nt2718",
+  "submit_form_embed_url": "https://docs.google.com/forms/d/e/1FAIpQLSf-3Fi0LTuKLsSUQvrr_uVkenJkpHBEO5bDQXM567_NW4U5Ag/viewform?embedded=true",
+  "my_maps_url": "https://www.google.com/maps/d/viewer?mid=1gl24kbeTNZ13SmaCbMsam2CYe8Ury7M",
+  "github_url": "https://github.com/nfjesifb/offthegridnyc",
+  "og_image": "/assets/img/og-default.png",
+  "tiles": {
+    "url": "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+    "attribution": "&copy; <a href=\"https://www.openstreetmap.org/copyright\" rel=\"noopener noreferrer\">OpenStreetMap</a> contributors",
+    "max_zoom": 19,
+    "subdomains": ""
+  }
+}

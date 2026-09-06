@@ -1,0 +1,12 @@
+{
+  "_comment": "Page names from the first version of the site -> current slug. An empty target sends visitors to the directory. Every current slug also gets a locations/<slug>.html stub automatically.",
+  "210-w-90th-(astor-court)": "210-w-90th-astor-court",
+  "brooklyn-bridge-park": "brooklyn-bridge-parks",
+  "chittenden-rd": "chittenden-road",
+  "cliff-house-(pumpkin-house)": "cliff-house-pumpkin-house",
+  "indian-rd": "indian-road",
+  "little-evans-street": "littleevans-street",
+  "apthorp": "",
+  "belnord": "",
+  "dakota": ""
+}

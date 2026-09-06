@@ -1,0 +1,133 @@
+{% extends "base.html" %}
+{% block content %}
+<article class="wrap py-8 md:py-10">
+  <nav class="breadcrumbs" aria-label="Breadcrumb">
+    <ol>
+      <li><a href="/">Home</a></li>
+      <li><a href="/locations/">Places</a></li>
+      <li><a href="/locations/#{{ p.borough_slug }}">{{ p.borough }}</a></li>
+      <li aria-current="page">{{ p.name }}</li>
+    </ol>
+  </nav>
+
+  <header class="place__header">
+    <p class="place__meta"><span class="chip chip--{{ p.borough_slug }}">{{ p.borough }}</span><span>{{ p.neighborhood }}</span></p>
+    <h1>{{ p.name }}</h1>
+    <div class="place__actions">
+      <a class="btn btn--primary" href="{{ p.directions_url }}" target="_blank" rel="noopener noreferrer">Directions</a>
+      <a class="btn btn--ghost" href="/#place={{ p.slug }}">Show on the map</a>
+      <button type="button" class="btn btn--ghost" id="share-button" data-url="{{ page.canonical }}" data-title="{{ p.name }} · {{ site.name }}">Share</button>
+      <span class="status" id="share-status" aria-live="polite"></span>
+    </div>
+  </header>
+
+  <div class="place__layout">
+    <div class="min-w-0">
+      {% if p.photos %}
+      <section class="gallery" id="gallery" aria-label="Photos of {{ p.name }}">
+        <figure class="gallery__main">
+          <button type="button" class="gallery__open" data-index="0" aria-label="Open photo viewer">
+            <img id="gallery-main-img" src="{{ p.photos[0].src }}" srcset="{{ p.photos[0].srcset }}" sizes="(min-width: 1024px) 60vw, 100vw" width="{{ p.photos[0].width }}" height="{{ p.photos[0].height }}" alt="{{ p.photos[0].alt }}" fetchpriority="high" decoding="async">
+          </button>
+        </figure>
+        <p class="gallery__caption" id="gallery-caption">{{ p.photos[0].caption }}</p>
+        {% if p.photos|length > 1 %}
+        <ul class="gallery__thumbs" role="list" aria-label="Choose a photo">
+          {% for ph in p.photos %}
+          <li><button type="button" class="gallery__thumb" data-index="{{ loop.index0 }}" aria-pressed="{{ 'true' if loop.first else 'false' }}" aria-label="Show photo {{ loop.index }} of {{ p.photos|length }}"><img src="{{ ph.thumb }}" alt="" width="160" height="160" loading="lazy" decoding="async"></button></li>
+          {% endfor %}
+        </ul>
+        {% endif %}
+        {% if p.attributions %}
+        <p class="gallery__credits">Photos via Google Maps contributors: {% for a in p.attributions %}{% if a.uri %}<a href="{{ a.uri }}" rel="noopener noreferrer nofollow ugc" target="_blank">{{ a.name }}</a>{% else %}{{ a.name }}{% endif %}{% if not loop.last %}, {% endif %}{% endfor %}.</p>
+        {% endif %}
+      </section>
+      <dialog class="lightbox" id="lightbox" aria-label="Photo viewer">
+        <button type="button" class="lightbox__btn lightbox__close" aria-label="Close">&times;</button>
+        <button type="button" class="lightbox__btn lightbox__prev" aria-label="Previous photo">&lsaquo;</button>
+        <figure class="lightbox__figure">
+          <img id="lightbox-img" src="" alt="">
+          <figcaption class="lightbox__caption" id="lightbox-caption"></figcaption>
+        </figure>
+        <button type="button" class="lightbox__btn lightbox__next" aria-label="Next photo">&rsaquo;</button>
+      </dialog>
+      {% else %}
+      <div class="no-photos">
+        <p class="font-serif text-lg text-ink">No photos yet</p>
+        <p class="mt-1">Been here? <a href="{{ site.submit_form_url }}" class="text-accent-strong" target="_blank" rel="noopener noreferrer">Send us a picture</a>.</p>
+      </div>
+      {% endif %}
+
+      <section class="place__section">
+        <h2>About</h2>
+        <div class="prose-otg">
+          {% for para in p.description_paragraphs %}<p>{{ para }}</p>{% endfor %}
+        </div>
+      </section>
+
+      {% if p.history_paragraphs %}
+      <section class="place__section">
+        <h2>History</h2>
+        <div class="prose-otg">
+          {% for para in p.history_paragraphs %}<p>{{ para }}</p>{% endfor %}
+        </div>
+      </section>
+      {% endif %}
+
+      <section class="place__section" id="streetview" data-src="{{ p.roadview_url }}" data-name="{{ p.name }}">
+        <h2>Street view</h2>
+        <div class="embed embed--streetview">
+          <div class="embed__placeholder">
+            <button type="button" class="btn btn--primary" id="load-streetview">Load street view</button>
+            <p>An interactive panorama from NYC Planning Labs' Roadview. It loads from a third-party site only when you ask for it.</p>
+            <a class="text-xs text-accent-strong" href="{{ p.roadview_url }}" target="_blank" rel="noopener noreferrer">Open Roadview in a new tab</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="place__section" id="comments" data-giscus-repo="{{ site.giscus.repo }}" data-giscus-repo-id="{{ site.giscus.repo_id }}" data-giscus-category="{{ site.giscus.category }}" data-giscus-category-id="{{ site.giscus.category_id }}" data-giscus-term="/locations/{{ p.slug }}/index.html">
+        <h2>Discussion</h2>
+        <p class="mb-4 text-sm text-muted">Corrections, memories and tips are welcome. Comments are powered by <a href="https://giscus.app" class="text-accent-strong" rel="noopener noreferrer">giscus</a> and stored as <a href="https://github.com/{{ site.giscus.repo }}/discussions" class="text-accent-strong" rel="noopener noreferrer">GitHub discussions</a>, where you can also post directly.</p>
+        <div id="giscus-container" class="min-h-24"></div>
+        <noscript><p class="text-sm text-muted">Enable JavaScript to see comments, or <a href="https://github.com/{{ site.giscus.repo }}/discussions" rel="noopener noreferrer">join the discussion on GitHub</a>.</p></noscript>
+      </section>
+    </div>
+
+    <aside class="place__aside" aria-label="Location details">
+      <div class="card">
+        <h2>Where</h2>
+        <div id="place-map" class="place-map" data-lat="{{ p.lat }}" data-lng="{{ p.lng }}" data-name="{{ p.name }}" data-borough="{{ p.borough_slug }}" role="region" aria-label="Map showing {{ p.name }}" data-tiles-url="{{ site.tiles.url }}" data-tiles-attribution="{{ site.tiles.attribution }}" data-tiles-max-zoom="{{ site.tiles.max_zoom }}" data-tiles-subdomains="{{ site.tiles.subdomains }}"></div>
+        <a class="mt-3 inline-block text-sm text-accent-strong" href="{{ p.gmaps_url }}" target="_blank" rel="noopener noreferrer">Open in Google Maps</a>
+      </div>
+      <div class="card details">
+        <h2>Details</h2>
+        <dl>
+          <dt>Borough</dt><dd>{{ p.borough }}</dd>
+          <dt>Area</dt><dd>{{ p.neighborhood }}</dd>
+          <dt>Coordinates</dt><dd>{{ '%.5f'|format(p.lat) }}, {{ '%.5f'|format(p.lng) }}</dd>
+        </dl>
+      </div>
+      {% if p.nearby %}
+      <div class="card">
+        <h2>Nearby</h2>
+        <ul class="nearby">
+          {% for n in p.nearby %}<li><a href="{{ n.place.url }}">{{ n.place.name }}</a><span>{{ n.miles }} mi</span></li>{% endfor %}
+        </ul>
+      </div>
+      {% endif %}
+      <div class="card card--dark">
+        <h2>Know this spot?</h2>
+        <p class="text-sm text-white/75">Have better photos, a correction or a story? Help us document the unseen city.</p>
+        <a class="btn btn--light mt-4" href="{{ site.submit_form_url }}" target="_blank" rel="noopener noreferrer">Submit info</a>
+      </div>
+    </aside>
+  </div>
+
+  <nav class="place__pager" aria-label="More places">
+    <a rel="prev" href="{{ p.prev.url }}"><small>Previous</small>&larr; {{ p.prev.name }}</a>
+    <a rel="next" href="{{ p.next.url }}" class="sm:text-right"><small>Next</small>{{ p.next.name }} &rarr;</a>
+  </nav>
+</article>
+{% if p.photos %}<script type="application/json" id="gallery-data">{{ gallery_json|safe }}</script>{% endif %}
+{% endblock %}
+{% block scripts %}<script src="/assets/js/place.js" defer></script>{% endblock %}

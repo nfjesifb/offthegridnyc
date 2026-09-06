@@ -1,22 +1,31 @@
 {
   "name": "offthegridnyc",
   "version": "1.0.0",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm run vendor && npm run build:css && npm run build:site",
+    "vendor": "node tools/vendor.mjs",
     "build:css": "tailwindcss -i ./src/css/styles.css -o ./assets/css/styles.css --minify",
-    "watch:css": "tailwindcss -i ./src/css/styles.css -o ./assets/css/styles.css --watch"
+    "watch:css": "tailwindcss -i ./src/css/styles.css -o ./assets/css/styles.css --watch",
+    "build:site": "node tools/run-python.mjs tools/build.py",
+    "images": "node tools/run-python.mjs tools/optimize_images.py",
+    "icons": "node tools/run-python.mjs tools/make_icons.py",
+    "check": "node tools/check_site.mjs",
+    "serve": "node tools/serve.mjs",
+    "admin": "node tools/run-python.mjs tools/admin_server.py",
+    "test": "playwright test"
   },
-  "keywords": [],
-  "author": "",
   "license": "ISC",
-  "description": "",
+  "description": "Off The Grid NYC - a hand-curated map of New York City's quiet corners (static site).",
   "devDependencies": {
-    "autoprefixer": "^10.4.21",
-    "postcss": "^8.5.3",
-    "tailwindcss": "^4.1.4"
-  },
-  "dependencies": {
+    "@fontsource/playfair-display": "^5.3.0",
+    "@fontsource/poppins": "^5.3.0",
+    "@playwright/test": "^1.56.1",
+    "leaflet": "^1.9.4",
+    "tailwindcss": "^4.1.4",
     "@tailwindcss/cli": "^4.1.17"
+  },
+  "private": true,
+  "engines": {
+    "node": ">=20"
   }
 }

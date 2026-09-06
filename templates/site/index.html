@@ -1,0 +1,120 @@
+{% extends "base.html" %}
+{% from "_macros.html" import place_card %}
+{% block content %}
+<section class="hero">
+  <div class="hero__inner">
+    <p class="eyebrow text-brass">A field guide to the city's quiet corners</p>
+    <h1>{{ site.tagline }}.</h1>
+    <p class="hero__lede">{{ site.description }}</p>
+    <div class="hero__actions">
+      <a class="btn btn--light" href="#explorer">Explore the map</a>
+      <a class="btn btn--outline-light" href="/locations/">Browse all places</a>
+    </div>
+    <dl class="hero__stats">
+      <div><dt>Places</dt><dd>{{ places|length }}</dd></div>
+      <div><dt>Boroughs</dt><dd>{{ boroughs|length }}</dd></div>
+      <div><dt>Photos</dt><dd>{{ photo_total }}</dd></div>
+    </dl>
+  </div>
+</section>
+
+<section id="explorer" class="section" aria-labelledby="explorer-title">
+  <div class="wrap">
+    <div class="explorer__toolbar">
+      <div>
+        <h2 id="explorer-title" class="section-title">Explore</h2>
+        <p class="mt-1 text-sm text-muted">Search, filter by borough, or sort by what's closest to you.</p>
+      </div>
+      <form class="search" role="search" data-no-submit>
+        <label for="search" class="sr-only">Search places</label>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <input id="search" type="search" placeholder="Search by name, neighborhood or borough" autocomplete="off">
+      </form>
+    </div>
+    <div class="explorer__toolbar">
+      <div class="explorer__filters" id="borough-filters" role="group" aria-label="Filter by borough">
+        <button type="button" class="filter-chip" data-borough="all" aria-pressed="true">All <span class="filter-chip__count">{{ places|length }}</span></button>
+        {% for b in boroughs %}<button type="button" class="filter-chip" data-borough="{{ b.slug }}" aria-pressed="false">{{ b.name }} <span class="filter-chip__count">{{ b.count }}</span></button>{% endfor %}
+      </div>
+      <div class="flex items-center gap-2" id="explorer-tools" hidden>
+        <button type="button" class="btn btn--ghost btn--small" id="near-me">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="1.5"/></svg>
+          Near me
+        </button>
+        <button type="button" class="btn btn--ghost btn--small" id="reset-filters">Reset</button>
+      </div>
+    </div>
+
+    <div class="explorer__layout">
+      <div class="explorer__map">
+        <div id="map" class="map" role="region" aria-label="Map of places" data-tiles-url="{{ site.tiles.url }}" data-tiles-attribution="{{ site.tiles.attribution }}" data-tiles-max-zoom="{{ site.tiles.max_zoom }}" data-tiles-subdomains="{{ site.tiles.subdomains }}">
+          <noscript><p class="p-6 text-sm text-muted">Enable JavaScript to use the interactive map, or browse the list.</p></noscript>
+        </div>
+      </div>
+      <div class="explorer__list">
+        <p id="results-count" class="results-count" aria-live="polite">Showing all {{ places|length }} places, A to Z</p>
+        <p id="explorer-status" class="explorer-status" aria-live="polite"></p>
+        <ul id="place-list" class="place-list">
+          {% for p in places %}{{ place_card(p) }}{% endfor %}
+        </ul>
+        <p class="place-list__empty" id="place-list-empty" hidden>No places match. Try another search or reset the filters.</p>
+        <button type="button" class="btn btn--ghost mt-4 w-full lg:hidden" id="show-more" hidden>Show more places</button>
+      </div>
+    </div>
+  </div>
+  <script type="application/json" id="places-data">{{ places_json|safe }}</script>
+</section>
+
+<section id="about" class="section bg-white" aria-labelledby="about-title">
+  <div class="wrap about-grid">
+    <div>
+      <p class="eyebrow text-accent-strong">Why</p>
+      <h2 id="about-title" class="section-title mt-2">The political economy of niceness</h2>
+      <div class="prose-otg mt-5">
+        <p>New York is loud, dense and relentless, and yet it is full of mews, courtyards, shared gardens, rooftop tracks and waterfront edges where the city goes quiet. Most were built by a specific mix of money, zoning and stubborn neighbors. This map collects them.</p>
+        <p>Every location was visited or vetted by a person. The write-ups are drafted with AI and edited by hand, so treat them as a starting point, not gospel. Some places are private, gated or only open at certain hours: look before you go, and be a good guest when you get there.</p>
+      </div>
+    </div>
+    <div class="flex flex-col gap-4">
+      <div class="about-card">
+        <h3>Open data</h3>
+        <p>Every place on this site, with coordinates and descriptions, is published as a <a href="/assets/data/locations.json" class="text-accent-strong">JSON dataset</a> you can reuse with attribution.</p>
+      </div>
+      <div class="about-card">
+        <h3>Also on Google Maps</h3>
+        <p>Prefer the Google Maps app? <a href="{{ site.my_maps_url }}" class="text-accent-strong" rel="noopener noreferrer" target="_blank">Open the public map</a> to take the pins with you.</p>
+      </div>
+      <div class="about-card">
+        <h3>Privacy</h3>
+        <p>No account, no cookies of our own. Street view panoramas and comments only load when you ask for them.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="submit" class="section" aria-labelledby="submit-title">
+  <div class="wrap">
+    <div class="card card--dark overflow-hidden">
+      <div class="grid gap-8 p-8 md:grid-cols-2 md:p-12">
+        <div>
+          <p class="eyebrow text-brass">Contribute</p>
+          <h2 id="submit-title" class="mt-2 font-serif text-3xl text-white md:text-4xl">Know a hidden gem?</h2>
+          <p class="mt-4 text-white/70">Help document the depth of the city. Tell us where it is, what makes it special, and whether the public can get in. Photos welcome.</p>
+          <div class="mt-6 flex flex-wrap gap-3">
+            <button type="button" class="btn btn--light" id="load-form" data-src="{{ site.submit_form_embed_url }}">Open the form here</button>
+            <a class="btn btn--outline-light" href="{{ site.submit_form_url }}" target="_blank" rel="noopener noreferrer">Open in a new tab</a>
+          </div>
+          <p class="mt-4 text-xs text-white/50">The form is hosted by Google Forms and loads only when you open it.</p>
+        </div>
+        <ul class="grid gap-3 self-center text-sm text-white/80">
+          <li class="rounded-xl border border-white/10 p-4">1. Drop a pin or paste an address.</li>
+          <li class="rounded-xl border border-white/10 p-4">2. Say what it is and why it belongs off the grid.</li>
+          <li class="rounded-xl border border-white/10 p-4">3. We verify it, write it up and add it to the map.</li>
+        </ul>
+      </div>
+      <div id="submit-form-embed" class="embed embed--form rounded-none border-0 shadow-none" hidden></div>
+    </div>
+  </div>
+</section>
+{% endblock %}
+{% block scripts %}<script src="/assets/js/map.js" defer></script>{% endblock %}

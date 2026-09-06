@@ -1,0 +1,12 @@
+{% macro place_card(p) -%}
+<li class="place-card" data-slug="{{ p.slug }}" data-borough="{{ p.borough_slug }}" data-search="{{ p.search_text }}">
+  <a class="place-card__media" href="{{ p.url }}" tabindex="-1" aria-hidden="true">
+    {% if p.thumb %}<img src="{{ p.thumb.src }}" alt="" width="{{ p.thumb.width }}" height="{{ p.thumb.height }}" loading="lazy" decoding="async">{% else %}<span class="place-card__placeholder"></span>{% endif %}
+  </a>
+  <div class="place-card__body">
+    <p class="place-card__meta"><span class="chip chip--{{ p.borough_slug }}">{{ p.borough }}</span><span>{{ p.neighborhood }}</span></p>
+    <h3 class="place-card__title"><a href="{{ p.url }}">{{ p.name }}</a></h3>
+    <p class="place-card__desc">{{ p.summary }}</p>
+  </div>
+</li>
+{%- endmacro %}
