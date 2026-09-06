@@ -1,0 +1,1336 @@
+[
+  {
+    "name": "Elevated Acre",
+    "description": "The spiritual precurser to the highline. A one-acre elevated public park located in Manhattan's Financial District, offering green space, seating, and views of the East River.",
+    "history": "The Elevated Acre was created in the 1970s as part of the development of 55 Water Street. It was designed to provide public open space in a densely built urban area. The park underwent renovations in the early 2000s, enhancing its landscaping and accessibility. It remains a unique example of urban green space in Lower Manhattan.",
+    "slug": "elevated-acre",
+    "lat": 40.7033047,
+    "lng": -74.0086169,
+    "note": "Amazing space. Spiritual precursor to highline.",
+    "streetview": {
+      "lat": 40.7033047,
+      "lng": -74.0086169
+    },
+    "borough": "Manhattan",
+    "neighborhood": "Financial District-Battery Park City",
+    "geo_auto": true
+  },
+  {
+    "name": "Wallabout Hasidic Compound",
+    "description": "Political will can build houses all you need is the right god. A large housing development in the Wallabout neighborhood of Brooklyn, primarily serving the Hasidic community.",
+    "history": "Developed by the Rabsky Group, this compound transformed a former industrial site, previously used by Pfizer, into a residential complex with approximately 1,000 housing units. The project faced zoning challenges but was eventually approved, showcasing the influence of organized community efforts in urban development.",
+    "slug": "wallabout-hasidic-compound",
+    "lat": 40.7012609,
+    "lng": -73.9495343,
+    "note": "Rabsky Group, and the Hasidic power they yield turned this lot (zoned for industrial previously) which at one point was a factor or warehouse for Pfizer into around 1,000 housing units, with a bunch of retain and even closed pedestrian plaza streets. Its amazing what highly organized political will can do!",
+    "streetview": {
+      "lat": 40.7011406,
+      "lng": -73.9494766
+    },
+    "borough": "Brooklyn",
+    "neighborhood": "South Williamsburg",
+    "geo_auto": true
+  },
+  {
+    "name": "Mott Haven Water Front",
+    "description": "Public private patnership to fix up some nonexistant waterfront in the Mott Haven neighborhood of the Bronx, featuring parks and recreational spaces.",
+    "history": "The Mott Haven waterfront underwent significant redevelopment in the early 21st century, transforming from an industrial zone into a public space with parks, walkways, and access to the Harlem River. This project is part of broader efforts to improve public access to waterfronts across New York City.",
+    "slug": "mott-haven-water-front",
+    "lat": 40.8074399,
+    "lng": -73.9311497,
+    "note": "From nothing to pretty nice pretty fast",
+    "streetview": {
+      "lat": 40.8068899,
+      "lng": -73.930304
+    },
+    "borough": "Bronx",
+    "neighborhood": "Mott Haven-Port Morris",
+    "geo_auto": true
+  },
+  {
+    "name": "Brooklyn Navy Yard",
+    "description": "A historic shipyard and industrial complex located in Brooklyn, now repurposed as a hub for manufacturing, technology, and creative industries.",
+    "history": "Established in 1801, the Brooklyn Navy Yard was a key naval shipbuilding facility for the U.S. Navy until its closure in 1966. It was later redeveloped into an industrial park, preserving its historic structures while fostering modern industries. Today, it is a model for adaptive reuse and urban regeneration.",
+    "slug": "brooklyn-navy-yard",
+    "lat": 40.6991147,
+    "lng": -73.9728531,
+    "streetview": {
+      "lat": 40.7000443,
+      "lng": -73.9650851
+    },
+    "borough": "Brooklyn",
+    "neighborhood": "Brooklyn Navy Yard",
+    "geo_auto": true
+  },
+  {
+    "name": "Brooklyn Bridge Parks",
+    "description": "Top public private parnership and the only park in nyc you can live in? Thanks bloomberg.",
+    "history": "The development of Brooklyn Bridge Park began in the early 2000s, transforming former industrial piers into a vibrant public space. The park officially opened in 2010 and has since become a popular destination for both locals and tourists, offering green spaces, sports facilities, and cultural events.",
+    "slug": "brooklyn-bridge-parks",
+    "lat": 40.7018997,
+    "lng": -73.9961015,
+    "note": "The only park you can live in. More of this please.",
+    "streetview": {
+      "lat": 40.7018997,
+      "lng": -73.9961015
+    },
+    "borough": "Brooklyn",
+    "neighborhood": "Brooklyn Heights",
+    "geo_auto": false
+  },
+  {
+    "name": "Govoners Island",
+    "description": "Why cant I live in one of the 1000 empy army baraks? Extremely disappointing amount of latent potential. A 172-acre island in New York Harbor, formerly a military base and now a public park and cultural venue.",
+    "history": "Governors Island has a rich history dating back to the colonial era. It served as a military outpost for both the British and American forces. In 2003, the island was transferred to the public and has since been developed into a recreational and cultural destination, featuring historic buildings, art installations, and open spaces.",
+    "slug": "govoners-island",
+    "lat": 40.6892172,
+    "lng": -74.0185413,
+    "note": "An amazing place and depressing proof of the cities failure to make housing. there is literally an empty town filled with army barracks on this island. they are unoccupied :(",
+    "streetview": {
+      "lat": 40.6882765,
+      "lng": -74.0144012
+    },
+    "borough": "Manhattan",
+    "neighborhood": "The Battery-Governors Island-Ellis Island-Liberty Island",
+    "geo_auto": true
+  },
+  {
+    "name": "Track on the roof",
+    "description": "There is a running track on the roof of this building. more of this please",
+    "history": "",
+    "slug": "track-on-the-roof",
+    "lat": 40.7748443,
+    "lng": -73.9814742,
+    "note": "There is a  running track on the roof of this building. Crazy!",
+    "streetview": {
+      "lat": 40.7750143,
+      "lng": -73.9813904
+    },
+    "borough": "Manhattan",
+    "neighborhood": "Upper West Side-Lincoln Square",
+    "geo_auto": true
+  },
+  {
+    "name": "SkyTrack",
+    "description": "We could have had pedestrianized the sky. At least we are left with this amazing example of what might have been :)",
+    "history": "The SkyTrack was part of an innovative urban design concept in the 1980s, aiming to integrate fitness and recreation into the city's vertical landscape. Although the original vision for a network of rooftop tracks did not fully materialize, the existing track remains a testament to creative urban planning.",
+    "slug": "skytrack",
+    "lat": 40.6879331,
+    "lng": -73.9918461,
+    "note": "SkyTrack! The revolution in NYC urbanism that never was. Imagine if the SkyTrack network (TM) extended across blocks and brought the 3rd dimension to NYC pedestrians, cyclists, and mine car enthusiasts alike. Hot tube no longer around :( https://www.nytimes.com/1983/07/03/realestate/postings-a-jogging-track-with-hot-tub.html?smid=url-share",
+    "streetview": {
+      "lat": 40.6879109,
+      "lng": -73.9917113
+    },
+    "borough": "Brooklyn",
+    "neighborhood": "Downtown Brooklyn-DUMBO-Boerum Hill",
+    "geo_auto": true
+  },
+  {
+    "name": "Sky Port",
+    "description": "Manhattans only airport.",
+    "history": "The Sky Port, was established in the 1970s to serve as a transportation hub for helicopter commuters and tourists. It has since become a key facility for aerial tours of New York City and emergency services.",
+    "slug": "sky-port",
+    "lat": 40.7355885,
+    "lng": -73.9744233,
+    "note": "The only airport in manhattan.<br><br>There used to be many. now only one. <br><br>Laguardia made it a priority ot build these. At one point you could commute by plane from Westchester to Manhattan those days are over now its just traffic.",
+    "streetview": {
+      "lat": 40.7355885,
+      "lng": -73.9744233
+    },
+    "borough": "Manhattan",
+    "neighborhood": "Murray Hill-Kips Bay",
+    "geo_auto": true
+  },
+  {
+    "name": "Commandants Mansion",
+    "description": "Estate in downtown",
+    "history": "The Commandant's Mansion, also known as the Admiral's House, was built in the early 19th century. It served as the residence for the commanding officers of the navy yard. The building is a notable example of Federal-style architecture.",
+    "slug": "commandants-mansion",
+    "lat": 40.7023811,
+    "lng": -73.9803764,
+    "note": "Just the coolest house in NYC by far.",
+    "streetview": {
+      "lat": 40.7027201,
+      "lng": -73.9802195
+    },
+    "borough": "Brooklyn",
+    "neighborhood": "Downtown Brooklyn-DUMBO-Boerum Hill",
+    "geo_auto": true
+  },
+  {
+    "name": "Cliff House (Pumpkin House)",
+    "description": "A unique residential building in Manhattan, known for its distinctive appearance and location on a cliff.",
+    "history": "The Cliff House, often referred to as the Pumpkin House due to its orange color, was built in the early 20th century. Its design takes advantage of the steep terrain, offering residents stunning views of the Hudson River. The building is a notable example of adaptive architecture in urban settings.",
+    "slug": "cliff-house-pumpkin-house",
+    "lat": 40.8549866,
+    "lng": -73.9395154,
+    "note": "A house suspended in the air litterally hanging off a cliff. Interestingly it looks like there is another slightly larger lot defined next to it zoned for residential! Someone's got to do it but it wont be me I dont have ten year to kill getting approved by the DOB for another cliff house.",
+    "streetview": {
+      "lat": 40.8550316,
+      "lng": -73.9397246
+    },
+    "borough": "Manhattan",
+    "neighborhood": "Washington Heights (North)",
+    "geo_auto": true
+  },
+  {
+    "name": "Sullivan Street",
+    "description": "A street in Manhattan's Greenwich Village, known for its historic buildings and communal garden.",
+    "history": "Sullivan Street has been a part of Greenwich Village since the early 19th century. The communal garden in the middle of the block was established in the 20th century, providing a shared green space for residents. The street is lined with well-preserved townhouses and is a testament to the neighborhood's historic charm.",
+    "slug": "sullivan-street",
+    "lat": 40.7284723,
+    "lng": -74.0012998,
+    "note": "In the middle of this block there is a beautiful shared communal garden!",
+    "streetview": {
+      "lat": 40.7284723,
+      "lng": -74.0012998
+    },
+    "borough": "Manhattan",
+    "neighborhood": "Greenwich Village",
+    "geo_auto": true
+  },
+  {
+    "name": "210 W 90th (Astor Court)",
+    "description": "A residential building on the Upper West Side of Manhattan, featuring a central courtyard.",
+    "history": "Astor Court was built in the early 20th century as part of the Astor family's real estate developments. The building's design includes a large central courtyard, providing residents with a private outdoor space. It is a notable example of early 20th-century apartment architecture in New York City.",
+    "slug": "210-w-90th-astor-court",
+    "lat": 40.7903112,
+    "lng": -73.9742209,
+    "note": "This is what you are supposed to do. Make a park in the middle of the building. Amazing!",
+    "streetview": {
+      "lat": 40.7905624,
+      "lng": -73.974165
+    },
+    "borough": "Manhattan",
+    "neighborhood": "Upper West Side (Central)",
+    "geo_auto": true
+  },
+  {
+    "name": "Ansonia Clock Factory",
+    "description": "A historic building in Brooklyn, originally a factory for the Ansonia Clock Company.",
+    "history": "The Ansonia Clock Factory was established in the late 19th century and became known for producing high-quality clocks. The factory building, with its distinctive architecture, has since been repurposed for residential and commercial use, preserving its industrial heritage.",
+    "slug": "ansonia-clock-factory",
+    "lat": 40.6646062,
+    "lng": -73.9829468,
+    "note": "They put a park in their building. Dope.",
+    "streetview": {
+      "lat": 40.6646288,
+      "lng": -73.9829378
+    },
+    "borough": "Brooklyn",
+    "neighborhood": "Park Slope",
+    "geo_auto": true
+  },
+  {
+    "name": "Stuy Town",
+    "description": "A large residential complex in Manhattan, known for its extensive green spaces and community amenities.",
+    "history": "Stuyvesant Town, commonly known as Stuy Town, was developed in the 1940s as a post-war housing project. It was designed to provide affordable housing for veterans and their families. Over the years, it has evolved into a diverse community with a mix of rent-stabilized and market-rate apartments.",
+    "slug": "stuy-town",
+    "lat": 40.7318054,
+    "lng": -73.9778906,
+    "note": "\"The best idea private equity has ever had\"",
+    "streetview": {
+      "lat": 40.7318054,
+      "lng": -73.9778906
+    },
+    "borough": "Manhattan",
+    "neighborhood": "Stuyvesant Town-Peter Cooper Village",
+    "geo_auto": true
+  },
+  {
+    "name": "Sutton Square",
+    "description": "A private enclave of townhouses located in the Sutton Place neighborhood of Manhattan.",
+    "history": "Sutton Square was developed in the early 20th century as an exclusive residential area. The townhouses, with their elegant facades and private gardens, reflect the architectural style of the period. The square remains one of the most prestigious addresses in New York City.",
+    "slug": "sutton-square",
+    "lat": 40.7574713,
+    "lng": -73.9598883,
+    "streetview": {
+      "lat": 40.757795,
+      "lng": -73.959909
+    },
+    "borough": "Manhattan",
+    "neighborhood": "East Midtown-Turtle Bay",
+    "geo_auto": true
+  },
+  {
+    "name": "Strivers Row",
+    "description": "A historic district in Harlem, known for its well-preserved row houses and cultural significance.",
+    "history": "Strivers Row, officially known as the St. Nicholas Historic District, was developed in the late 19th century. The row houses were originally built for affluent white residents but later became home to prominent African American professionals, earning the nickname 'Strivers Row.' The district is a symbol of Harlem's rich cultural heritage.",
+    "slug": "strivers-row",
+    "lat": 40.8175433,
+    "lng": -73.9439576,
+    "note": "Dishonorable mention. Sad that the little roads running through the block are for cars instead of being gardens for people like down at sullivan st.",
+    "streetview": {
+      "lat": 40.8175433,
+      "lng": -73.9439576
+    },
+    "borough": "Manhattan",
+    "neighborhood": "Harlem (North)",
+    "geo_auto": true
+  },
+  {
+    "name": "Waterside",
+    "description": "A residential complex located along the East River in Manhattan, offering waterfront living.",
+    "history": "Waterside Plaza was constructed in the 1970s on a platform over the East River. It was designed to address housing shortages and provide modern amenities. The complex includes residential towers, townhouses, and a plaza, making it a self-contained community.",
+    "slug": "waterside",
+    "lat": 40.7374817,
+    "lng": -73.9732056,
+    "note": "The thing your supposed to do when you run out of land! Really human centric once your there but its sad that its next to the FDR.<br><br>Waterside Plaza, a residential complex in NYC’s Kips Bay along the East River, was envisioned in 1961 by developer Richard Ravitch to address housing shortages for UN staff. Built on a platform over the river—supported by 2,000 steel piles sunk 80 feet into the riverbed—it opened in 1973, with completion in 1974. Designed by Davis, Brody & Associates, it features four brown-brick towers (31 to 37 stories) and duplex townhouses around a two-acre plaza, originally part of the Mitchell-Lama affordable housing program. The site, east of the FDR Drive, used landfill from England and was isolated, accessible only by a pedestrian overpass at 25th Street. It won a Construction Achievement Award in 1974 from the American Society of Civil Engineers. Plans for further waterfront expansion in the 1980s were scrapped, and Stuyvesant Cove Park took its place. Once home to a diverse mix of income groups, it’s now a luxury rental community managed by Brookfield Properties, known for its river views and self-contained feel.",
+    "streetview": {
+      "lat": 40.7374817,
+      "lng": -73.9732056
+    },
+    "borough": "Manhattan",
+    "neighborhood": "Murray Hill-Kips Bay",
+    "geo_auto": true
+  },
+  {
+    "name": "Knickerbocker Village",
+    "description": "A historic housing complex in Manhattan's Lower East Side, known for its early adoption of modern housing concepts.",
+    "history": "Knickerbocker Village was built in the 1930s as one of the first federally funded housing projects in the United States. It was designed to provide affordable housing for middle-income families and features a distinctive architectural style with interior courtyards.",
+    "slug": "knickerbocker-village",
+    "lat": 40.7108205,
+    "lng": -73.9960392,
+    "note": "They have a communal garden space in there!",
+    "streetview": {
+      "lat": 40.7108205,
+      "lng": -73.9960392
+    },
+    "borough": "Manhattan",
+    "neighborhood": "Chinatown-Two Bridges",
+    "geo_auto": true
+  },
+  {
+    "name": "116 Pinehurst",
+    "description": "A residential building located in the Washington Heights neighborhood of Manhattan.",
+    "history": "116 Pinehurst Avenue is part of the Hudson View Gardens complex, developed in the 1920s. The building is known for its Tudor-style architecture and communal amenities, including gardens and playgrounds. It remains a desirable residence in Upper Manhattan.",
+    "slug": "116-pinehurst",
+    "lat": 40.8539663,
+    "lng": -73.9389458,
+    "note": "Complex from a fairy tale with communal garden and playground and a fun secret passage",
+    "streetview": {
+      "lat": 40.8538463,
+      "lng": -73.9384445
+    },
+    "borough": "Manhattan",
+    "neighborhood": "Washington Heights (North)",
+    "geo_auto": true
+  },
+  {
+    "name": "South Bridge Towers",
+    "description": "A cooperative housing complex located near the South Street Seaport in Manhattan.",
+    "history": "South Bridge Towers was developed in the 1960s as part of urban renewal efforts in Lower Manhattan. The complex includes multiple high-rise buildings and offers residents access to communal facilities and proximity to the waterfront.",
+    "slug": "south-bridge-towers",
+    "lat": 40.7094761,
+    "lng": -74.0042551,
+    "note": "Great elevated playground in this complex",
+    "streetview": {
+      "lat": 40.7094761,
+      "lng": -74.0042551
+    },
+    "borough": "Manhattan",
+    "neighborhood": "Financial District-Battery Park City",
+    "geo_auto": true
+  },
+  {
+    "name": "Kips Bay Towers",
+    "description": "A pair of residential towers located in the Kips Bay neighborhood of Manhattan, known for their modernist architecture.",
+    "history": "Designed by architect I.M. Pei, Kips Bay Towers were completed in the 1960s. The buildings are notable for their Brutalist design and the large private courtyard that provides green space for residents. They are a significant example of mid-20th-century urban housing.",
+    "slug": "kips-bay-towers",
+    "lat": 40.7426759,
+    "lng": -73.9758258,
+    "note": "3 acres of green courtyard?!?",
+    "streetview": {
+      "lat": 40.7427647,
+      "lng": -73.9757951
+    },
+    "borough": "Manhattan",
+    "neighborhood": "Murray Hill-Kips Bay",
+    "geo_auto": true
+  },
+  {
+    "name": "Grove Court",
+    "description": "A hidden courtyard of six townhouses located in Greenwich Village, Manhattan.",
+    "history": "Grove Court was developed in the 1850s by Samuel Cocks, a local grocer, to provide housing for working-class families. The courtyard's secluded nature made it a quiet retreat within the bustling city. Over time, it has become a charming and sought-after residential enclave.",
+    "slug": "grove-court",
+    "lat": 40.7320619,
+    "lng": -74.0058125,
+    "note": "The story of Grove Court begins in the mid-19th century. In 1848, Samuel Cocks, a grocer with a store at the corner of Grove and Bedford Streets, acquired the rear yards of properties along Grove Street from Samuel Stryker, who had been leasing the land from Trinity Church. Cocks saw an opportunity to create housing for working-class families, likely with the practical aim of securing a steady customer base for his grocery business. Construction of the six three-story Federal-style houses began shortly after and was completed in 1854. Initially, these homes were considered a single tax lot, addressed as 10½ Grove Street, and were modest in size—about 990 square feet each—compared to the larger townhouses typical of the era.<br><br>In its early days, Grove Court was far from the picturesque retreat it is today. Built for laborers and tradesmen, the enclave was a working-class community, and its secluded location behind the main street contributed to its reputation as a less desirable area. Historical accounts suggest it was once a rough spot, even earning the nickname \"Mixed Ale Alley\" due to the drinking habits of its residents. Photographs from the early 20th century, such as those by Jessie Tarbox Beals and Arthur D. Chapman, show laundry hanging in the courtyard, a testament to its utilitarian roots.",
+    "streetview": {
+      "lat": 40.7322081,
+      "lng": -74.0057827
+    },
+    "borough": "Manhattan",
+    "neighborhood": "West Village",
+    "geo_auto": true
+  },
+  {
+    "name": "Patchin Place",
+    "description": "A small, gated alley in Greenwich Village, lined with historic townhouses.",
+    "history": "Patchin Place was developed in the 1840s and has been home to various artists and writers, including E.E. Cummings and Djuna Barnes. The alley's quaint atmosphere and historic architecture make it a unique part of the Village's cultural landscape.",
+    "slug": "patchin-place",
+    "lat": 40.7351334,
+    "lng": -73.9993554,
+    "note": "Patchin Place, a tiny gated cul-de-sac off West 10th Street in Greenwich Village, New York City, was developed in 1848–1849 by Aaron Patchin, a surveyor who built ten three-story brick row houses on land he acquired from his father-in-law, Samuel Milligan. Originally designed as modest housing—possibly for workers at the nearby Brevoort House hotel—the homes featured small dormer windows and shared a courtyard with a gas lamp, still lit today. Early residents were largely working-class, including Basque immigrants who ran boarding houses there in the late 19th century. By the early 20th century, Patchin Place transformed into a bohemian enclave, attracting literary and artistic figures like E.E. Cummings, who lived at No. 4 from 1923 until his death in 1962, and Djuna Barnes, a resident of No. 5 for over 40 years. Theodore Dreiser and John Reed also spent time there, cementing its reputation as a creative haven. Rumors persist that the houses were built with salvaged bricks from the 1832 demolition of Newgate Prison, though this lacks firm evidence. Part of the Greenwich Village Historic District since 1969, Patchin Place remains a quiet, historic retreat, its charm preserved amid the bustling city.",
+    "streetview": {
+      "lat": 40.735022,
+      "lng": -73.9993112
+    },
+    "borough": "Manhattan",
+    "neighborhood": "West Village",
+    "geo_auto": true
+  },
+  {
+    "name": "Milligan Place",
+    "description": "A tiny, triangular courtyard in Greenwich Village, featuring four townhouses.",
+    "history": "Milligan Place was created in the 1850s and named after its developer, Samuel Milligan. Like Patchin Place, it has a rich history of housing artists and writers, contributing to the Village's reputation as a bohemian enclave.",
+    "slug": "milligan-place",
+    "lat": 40.7351299,
+    "lng": -73.9988065,
+    "note": "Milligan Place, a secluded triangular courtyard in Greenwich Village, New York City, was constructed in 1852 by Aaron Patchin, who named it after his father-in-law, Daniel Milligan. Originally built as boarding houses for waiters from the nearby Brevoort House hotel, the four three-story brick homes were modest and housed working-class residents. Located off Sixth Avenue between West 10th and 11th Streets, it was once a gritty, overlooked spot, dubbed a \"hole in the wall\" by a 1915 New York Times article. In the early 20th century, it gained cultural significance as home to notable figures like playwright Eugene O’Neill and Provincetown Players founders George Cram Cook and Susan Glaspell. Over time, the courtyard transformed from a rough enclave to a charming, gated retreat, reflecting Greenwich Village’s shift from working-class roots to artistic haven. Designated part of the Greenwich Village Historic District in 1969, Milligan Place now commands high rents and epitomizes the area’s historic allure.",
+    "streetview": {
+      "lat": 40.7351169,
+      "lng": -73.9987939
+    },
+    "borough": "Manhattan",
+    "neighborhood": "West Village",
+    "geo_auto": true
+  },
+  {
+    "name": "Pomander Walk",
+    "description": "A Tudor-style residential complex located on the Upper West Side of Manhattan.",
+    "history": "Pomander Walk was built in the 1920s and designed to resemble a quaint English village. The complex includes 27 buildings with half-timbered facades and is a designated New York City landmark, celebrated for its distinctive architecture.",
+    "slug": "pomander-walk",
+    "lat": 40.7939961,
+    "lng": -73.9733071,
+    "note": "Inspired by a 1910 romantic comedy play by Louis N. Parker called Pomander Walk—set in a fictional London lane—Healy intended it as a temporary project to generate income while he raised funds for a grand hotel. Designed by the New York architecture firm King and Campbell, the two- and three-story homes feature stucco, brick, and half-timber facades, evoking an English village. Healy’s death in 1927 halted his hotel plans, leaving Pomander Walk as a permanent fixture.<br><br>Originally an all-rental complex with about 61 units (each building typically had one apartment per floor), it housed theatrical folks like Rosalind Russell and Humphrey Bogart, drawn to its whimsy. By the 1970s, it had deteriorated and faced demolition, but residents fought back, securing its designation as a New York City Landmark and a spot on the National Register of Historic Places in 1982. A 2009 renovation restored its pastel charm—think green, blue, and red facades with flower boxes—earning it a preservation award.",
+    "streetview": {
+      "lat": 40.79379,
+      "lng": -73.9734838
+    },
+    "borough": "Manhattan",
+    "neighborhood": "Upper West Side (Central)",
+    "geo_auto": true
+  },
+  {
+    "name": "Washington Mews",
+    "description": "A private street in Greenwich Village, originally built as stables for nearby townhouses.",
+    "history": "Washington Mews was constructed in the 19th century and later converted into residences and artists' studios. It is now owned by New York University and serves as faculty housing and academic offices, preserving its historic character.",
+    "slug": "washington-mews",
+    "lat": 40.7315753,
+    "lng": -73.9959466,
+    "note": "NYU Staff Housing",
+    "streetview": {
+      "lat": 40.7317215,
+      "lng": -73.9962946
+    },
+    "borough": "Manhattan",
+    "neighborhood": "Greenwich Village",
+    "geo_auto": true
+  },
+  {
+    "name": "Sylvan Court",
+    "description": "",
+    "history": "",
+    "slug": "sylvan-court",
+    "lat": 40.801804,
+    "lng": -73.9384614,
+    "streetview": {
+      "lat": 40.8016436,
+      "lng": -73.9385741
+    },
+    "borough": "Manhattan",
+    "neighborhood": "East Harlem (North)",
+    "geo_auto": true
+  },
+  {
+    "name": "Warren Place Mews",
+    "description": "A historic row of cottages in Cobble Hill, Brooklyn, designed for working-class families.",
+    "history": "Warren Place Mews was developed in the 1870s by Alfred Tredway White, a philanthropist who aimed to provide affordable, quality housing. The cottages are a rare example of 19th-century workers' housing and are now highly valued residences.",
+    "slug": "warren-place-mews",
+    "lat": 40.6879287,
+    "lng": -73.9984916,
+    "note": "Warren Place Mews, a charming block of Gothic-style cottages in Cobble Hill, Brooklyn, was built as working-class housing in the late 1870s by philanthropist Alfred Tredway White.",
+    "streetview": {
+      "lat": 40.6881488,
+      "lng": -73.9984023
+    },
+    "borough": "Brooklyn",
+    "neighborhood": "Carroll Gardens-Cobble Hill-Gowanus-Red Hook",
+    "geo_auto": true
+  },
+  {
+    "name": "Sylvan Terrace",
+    "description": "A cobblestone street in Washington Heights, lined with wooden row houses.",
+    "history": "Sylvan Terrace was built in the 1880s as part of the Morris-Jumel Mansion estate. The houses were originally intended for working-class families but have since been restored and are now part of a historic district, reflecting the area's 19th-century charm.",
+    "slug": "sylvan-terrace",
+    "lat": 40.8347234,
+    "lng": -73.9393878,
+    "note": "Sylvan Terrace, a charming cobblestone street in Upper Manhattan’s Washington Heights, was developed in 1882 by William Paulding Jr. as part of the Morris-Jumel estate, originally the site of James Jumel’s 1765 mansion. Designed by architect Gilbert Rantus Bishop, this single-block enclave between West 160th and 161st Streets features 20 identical two-story wooden row houses with brick foundations, built in a simplified Queen Anne style. Intended as affordable housing for working-class tenants like maids and coachmen, the homes replaced earlier farm structures after Paulding subdivided the land following Jumel’s death. The name “Sylvan” nods to the wooded, rural feel of the area at the time, though it’s now a rare surviving frame-house street in Manhattan. By the early 20th century, the terrace fell into disrepair, but its proximity to the Morris-Jumel Mansion—George Washington’s 1776 headquarters—helped it gain recognition. Designated a New York City Landmark in 1975 and part of the Jumel Terrace Historic District, it was restored in the late 1970s by the Landmarks Preservation Commission and local owners. Today, these gaslit homes, painted in pastel shades, are prized residential properties, with sales—like No. 14 in 2023 for $1.1 million—reflecting their historic allure and scarcity.",
+    "streetview": {
+      "lat": 40.8347234,
+      "lng": -73.9393878
+    },
+    "borough": "Manhattan",
+    "neighborhood": "Washington Heights (South)",
+    "geo_auto": true
+  },
+  {
+    "name": "Riverview Terrace",
+    "description": "",
+    "history": "",
+    "slug": "riverview-terrace",
+    "lat": 40.7579249,
+    "lng": -73.9593522,
+    "streetview": {
+      "lat": 40.7578699,
+      "lng": -73.9595181
+    },
+    "borough": "Manhattan",
+    "neighborhood": "East Midtown-Turtle Bay",
+    "geo_auto": true
+  },
+  {
+    "name": "Greenwich Mews",
+    "description": "",
+    "history": "",
+    "slug": "greenwich-mews",
+    "lat": 40.7333401,
+    "lng": -74.0071101,
+    "streetview": {
+      "lat": 40.7333579,
+      "lng": -74.0072237
+    },
+    "borough": "Manhattan",
+    "neighborhood": "West Village",
+    "geo_auto": true
+  },
+  {
+    "name": "Sniffen Court",
+    "description": "A small, private alley in Murray Hill, Manhattan, featuring Romanesque Revival-style carriage houses.",
+    "history": "Sniffen Court was built in the 1860s as stables for nearby residences. The carriage houses were later converted into homes and studios, and the court is now a designated historic district, known for its architectural significance.",
+    "slug": "sniffen-court",
+    "lat": 40.7470204,
+    "lng": -73.9780114,
+    "streetview": {
+      "lat": 40.7471341,
+      "lng": -73.977942
+    },
+    "borough": "Manhattan",
+    "neighborhood": "Murray Hill-Kips Bay",
+    "geo_auto": true
+  },
+  {
+    "name": "Chester Court",
+    "description": "",
+    "history": "",
+    "slug": "chester-court",
+    "lat": 40.6583386,
+    "lng": -73.9613947,
+    "streetview": {
+      "lat": 40.6583714,
+      "lng": -73.9609042
+    },
+    "borough": "Brooklyn",
+    "neighborhood": "Prospect Lefferts Gardens-Wingate",
+    "geo_auto": true
+  },
+  {
+    "name": "Clinton Court",
+    "description": "",
+    "history": "",
+    "slug": "clinton-court",
+    "lat": 40.76128,
+    "lng": -73.9921142,
+    "streetview": {
+      "lat": 40.761433,
+      "lng": -73.9921061
+    },
+    "borough": "Manhattan",
+    "neighborhood": "Hell's Kitchen",
+    "geo_auto": true
+  },
+  {
+    "name": "Henderson Place",
+    "description": "A historic district in the Upper East Side of Manhattan, featuring Queen Anne-style row houses.",
+    "history": "Henderson Place was developed in the 1880s by John C. Henderson, a fur importer, as housing for middle-class families. The row houses are known for their distinctive turrets and gables, and the area is a designated historic district.",
+    "slug": "henderson-place",
+    "lat": 40.7755536,
+    "lng": -73.9449743,
+    "streetview": {
+      "lat": 40.775275,
+      "lng": -73.9452087
+    },
+    "borough": "Manhattan",
+    "neighborhood": "Upper East Side-Yorkville",
+    "geo_auto": true
+  },
+  {
+    "name": "Ablemarle Terrace",
+    "description": "",
+    "history": "",
+    "slug": "ablemarle-terrace",
+    "lat": 40.6486124,
+    "lng": -73.9592343,
+    "streetview": {
+      "lat": 40.6485891,
+      "lng": -73.9593677
+    },
+    "borough": "Brooklyn",
+    "neighborhood": "Flatbush",
+    "geo_auto": true
+  },
+  {
+    "name": "Barwell Terrace",
+    "description": "",
+    "history": "",
+    "slug": "barwell-terrace",
+    "lat": 40.6150808,
+    "lng": -74.0334827,
+    "streetview": {
+      "lat": 40.6152498,
+      "lng": -74.0333799
+    },
+    "borough": "Brooklyn",
+    "neighborhood": "Bay Ridge",
+    "geo_auto": true
+  },
+  {
+    "name": "Madeline Court",
+    "description": "",
+    "history": "",
+    "slug": "madeline-court",
+    "lat": 40.6368416,
+    "lng": -74.0275419,
+    "streetview": {
+      "lat": 40.636973,
+      "lng": -74.0274752
+    },
+    "borough": "Brooklyn",
+    "neighborhood": "Bay Ridge",
+    "geo_auto": true
+  },
+  {
+    "name": "Hamilton Walk",
+    "description": "",
+    "history": "",
+    "slug": "hamilton-walk",
+    "lat": 40.617658,
+    "lng": -74.0321126,
+    "streetview": {
+      "lat": 40.6175944,
+      "lng": -74.0321568
+    },
+    "borough": "Brooklyn",
+    "neighborhood": "Bay Ridge",
+    "geo_auto": true
+  },
+  {
+    "name": "Lafayette Walk",
+    "description": "",
+    "history": "",
+    "slug": "lafayette-walk",
+    "lat": 40.6174686,
+    "lng": -74.0316834,
+    "streetview": {
+      "lat": 40.617407,
+      "lng": -74.0317339
+    },
+    "borough": "Brooklyn",
+    "neighborhood": "Bay Ridge",
+    "geo_auto": true
+  },
+  {
+    "name": "Colonial Gardens",
+    "description": "",
+    "history": "",
+    "slug": "colonial-gardens",
+    "lat": 40.6225689,
+    "lng": -74.0395689,
+    "streetview": {
+      "lat": 40.6226722,
+      "lng": -74.0400138
+    },
+    "borough": "Brooklyn",
+    "neighborhood": "Bay Ridge",
+    "geo_auto": true
+  },
+  {
+    "name": "Kenmore Terrace",
+    "description": "",
+    "history": "",
+    "slug": "kenmore-terrace",
+    "lat": 40.6492046,
+    "lng": -73.9593604,
+    "streetview": {
+      "lat": 40.6491718,
+      "lng": -73.959501
+    },
+    "borough": "Brooklyn",
+    "neighborhood": "Flatbush",
+    "geo_auto": true
+  },
+  {
+    "name": "Temple Court",
+    "description": "",
+    "history": "",
+    "slug": "temple-court",
+    "lat": 40.6557988,
+    "lng": -73.9745873,
+    "streetview": {
+      "lat": 40.6555786,
+      "lng": -73.974443
+    },
+    "borough": "Brooklyn",
+    "neighborhood": "Windsor Terrace-South Slope",
+    "geo_auto": true
+  },
+  {
+    "name": "Dennett Place",
+    "description": "A small, historic street in Carroll Gardens, Brooklyn, known for its charming row houses.",
+    "history": "Dennett Place was developed in the mid-19th century as part of the expansion of Carroll Gardens. The street is notable for its well-preserved Italianate and Greek Revival-style homes, reflecting the neighborhood's architectural heritage.",
+    "slug": "dennett-place",
+    "lat": 40.6765077,
+    "lng": -73.9975594,
+    "note": "Sad its next to the tracks",
+    "streetview": {
+      "lat": 40.6765077,
+      "lng": -73.9975594
+    },
+    "borough": "Brooklyn",
+    "neighborhood": "Carroll Gardens-Cobble Hill-Gowanus-Red Hook",
+    "geo_auto": true
+  },
+  {
+    "name": "Grace Court",
+    "description": "A quiet, dead-end street in Brooklyn Heights, lined with historic townhouses.",
+    "history": "Grace Court is part of the Brooklyn Heights Historic District, developed in the 19th century. The street is named after Grace Church, a nearby landmark, and its homes are prized for their architectural detail and serene setting.",
+    "slug": "grace-court",
+    "lat": 40.6943062,
+    "lng": -73.9976479,
+    "note": "Another dead end. If all you knew was Brooklyn Heights you might think these are an NYC staple!",
+    "streetview": {
+      "lat": 40.6941257,
+      "lng": -73.9969735
+    },
+    "borough": "Brooklyn",
+    "neighborhood": "Brooklyn Heights",
+    "geo_auto": true
+  },
+  {
+    "name": "Indian Road",
+    "description": "A scenic road located in Inwood, Manhattan, offering views of the Hudson River.",
+    "history": "Indian Road runs along the edge of Inwood Hill Park, an area with a rich history dating back to Native American settlements. The road itself was developed in the early 20th century as part of the park's infrastructure.",
+    "slug": "indian-road",
+    "lat": 40.8721217,
+    "lng": -73.9196605,
+    "note": "Only road in Manhattan :)",
+    "streetview": {
+      "lat": 40.8729234,
+      "lng": -73.918492
+    },
+    "borough": "Manhattan",
+    "neighborhood": "Inwood Hill Park",
+    "geo_auto": true
+  },
+  {
+    "name": "Little/Evans Street",
+    "description": "A pair of narrow, historic streets in the Vinegar Hill neighborhood of Brooklyn.",
+    "history": "Little Street and Evans Street are remnants of the 19th-century development of Vinegar Hill, originally an industrial area. The streets are known for their cobblestone surfaces and preserved row houses, offering a glimpse into Brooklyn's past.",
+    "slug": "littleevans-street",
+    "lat": 40.7030725,
+    "lng": -73.9803093,
+    "note": "Cute small narrow out of the way street on Vinegar Hill",
+    "streetview": {
+      "lat": 40.7030725,
+      "lng": -73.9803093
+    },
+    "borough": "Brooklyn",
+    "neighborhood": "Downtown Brooklyn-DUMBO-Boerum Hill",
+    "geo_auto": true
+  },
+  {
+    "name": "Grace Court Alley",
+    "description": "A hidden alley in Brooklyn Heights, featuring converted carriage houses.",
+    "history": "Grace Court Alley was originally used for stables and carriage houses serving the grand homes of Brooklyn Heights. In the 20th century, these structures were converted into residences, creating a unique and secluded living environment.",
+    "slug": "grace-court-alley",
+    "lat": 40.6938832,
+    "lng": -73.9957757,
+    "note": "Brooklyn Heights carriage house dead end street.",
+    "streetview": {
+      "lat": 40.6939393,
+      "lng": -73.9960372
+    },
+    "borough": "Brooklyn",
+    "neighborhood": "Brooklyn Heights",
+    "geo_auto": true
+  },
+  {
+    "name": "Hunts Lane",
+    "description": "A small, historic lane in Brooklyn Heights, known for its charming residences.",
+    "history": "Hunts Lane dates back to the 19th century and was originally a service alley for nearby townhouses. It has since been transformed into a residential street, with homes that reflect the neighborhood's historic character.",
+    "slug": "hunts-lane",
+    "lat": 40.6934724,
+    "lng": -73.9941074,
+    "note": "Brooklyn Heights carriage house dead end street.",
+    "streetview": {
+      "lat": 40.6936023,
+      "lng": -73.9945023
+    },
+    "borough": "Brooklyn",
+    "neighborhood": "Brooklyn Heights",
+    "geo_auto": true
+  },
+  {
+    "name": "College Place",
+    "description": "A short, dead-end street in Brooklyn Heights, offering a peaceful retreat.",
+    "history": "College Place is part of the Brooklyn Heights Historic District and features homes from the 19th century. Its secluded nature and historic architecture make it a desirable location within the neighborhood.",
+    "slug": "college-place",
+    "lat": 40.6965814,
+    "lng": -73.9943281,
+    "note": "Dead end off a side street in what is already one of the quietest neighborhoods, a really unique street structure.",
+    "streetview": {
+      "lat": 40.6965103,
+      "lng": -73.9943822
+    },
+    "borough": "Brooklyn",
+    "neighborhood": "Brooklyn Heights",
+    "geo_auto": true
+  },
+  {
+    "name": "Hamilton Terrace",
+    "description": "A residential street in Hamilton Heights, Manhattan, known for its elegant townhouses.",
+    "history": "Hamilton Terrace was developed in the late 19th century as part of the expansion of Hamilton Heights. The street is lined with well-preserved row houses, reflecting the architectural styles of the period.",
+    "slug": "hamilton-terrace",
+    "lat": 40.8228782,
+    "lng": -73.9464374,
+    "note": "Nice little non standard structure here",
+    "streetview": {
+      "lat": 40.8236478,
+      "lng": -73.945983
+    },
+    "borough": "Manhattan",
+    "neighborhood": "Hamilton Heights-Sugar Hill",
+    "geo_auto": true
+  },
+  {
+    "name": "Verandah Place",
+    "description": "A narrow, historic street in Cobble Hill, Brooklyn, featuring small row houses.",
+    "history": "Verandah Place was developed in the mid-19th century and is known for its quaint, cottage-like homes. The street's name likely refers to the verandas or porches that were once common on its houses.",
+    "slug": "verandah-place",
+    "lat": 40.6881867,
+    "lng": -73.9964295,
+    "note": "One of the narrowest streets I know of. And right next to a part too!",
+    "streetview": {
+      "lat": 40.6881867,
+      "lng": -73.9964295
+    },
+    "borough": "Brooklyn",
+    "neighborhood": "Carroll Gardens-Cobble Hill-Gowanus-Red Hook",
+    "geo_auto": true
+  },
+  {
+    "name": "Chittenden Road",
+    "description": "A street in Washington Heights, offering views of the Hudson River.",
+    "history": "Chittenden Road is part of the Fort Washington area, developed in the early 20th century. Its elevated position provides residents with scenic views, making it a unique location in Upper Manhattan.",
+    "slug": "chittenden-road",
+    "lat": 40.8554451,
+    "lng": -73.9390084,
+    "note": "A really amazing view of the Hudson here looking right out off the cliff.",
+    "streetview": {
+      "lat": 40.8555297,
+      "lng": -73.9389318
+    },
+    "borough": "Manhattan",
+    "neighborhood": "Washington Heights (North)",
+    "geo_auto": true
+  },
+  {
+    "name": "Marble Hill",
+    "description": "A neighborhood in the northern part of Manhattan, known for its suburban feel.",
+    "history": "Marble Hill was originally part of Manhattan Island but was separated by the Harlem River Ship Canal in the 19th century. Despite being physically connected to the Bronx, it remains administratively part of Manhattan.",
+    "slug": "marble-hill",
+    "lat": 40.8757049,
+    "lng": -73.9115166,
+    "note": "Manhattan or the bronx? Some nice nonstandard street structure atop marble hill with nice houses.",
+    "streetview": {
+      "lat": 40.8757076,
+      "lng": -73.9114643
+    },
+    "borough": "Bronx",
+    "neighborhood": "Kingsbridge-Marble Hill",
+    "geo_auto": true
+  },
+  {
+    "name": "Freeman Alley",
+    "description": "A small, graffiti-covered alley in the Lower East Side of Manhattan.",
+    "history": "Freeman Alley has become a canvas for street artists and is home to a popular restaurant. Its history is tied to the artistic and cultural evolution of the Lower East Side, reflecting the neighborhood's vibrant street art scene.",
+    "slug": "freeman-alley",
+    "lat": 40.7218056,
+    "lng": -73.9925468,
+    "streetview": {
+      "lat": 40.7216437,
+      "lng": -73.9926162
+    },
+    "borough": "Manhattan",
+    "neighborhood": "Lower East Side",
+    "geo_auto": true
+  },
+  {
+    "name": "Broadway Between 40th and 17th",
+    "description": "A section of Broadway in Manhattan, known for its pedestrian-friendly design and public spaces.",
+    "history": "This stretch of Broadway was reimagined in the early 21st century as part of New York City's efforts to create more pedestrian-friendly urban environments. The project, led by Janette Sadik-Khan, transformed parts of Broadway into public plazas, enhancing the street's role as a cultural and commercial hub.",
+    "slug": "broadway-between-40th-and-17th",
+    "lat": 40.7525651,
+    "lng": -73.987471,
+    "note": "janette sadik-khan's opus",
+    "streetview": {
+      "lat": 40.7402859,
+      "lng": -73.9894689
+    },
+    "borough": "Manhattan",
+    "neighborhood": "Midtown-Times Square",
+    "geo_auto": true
+  },
+  {
+    "name": "Doyer Street",
+    "description": "A historic street in Chinatown, Manhattan, known for its sharp bend and cultural significance.",
+    "history": "Doyer Street, also known as the 'Bloody Angle,' has a storied past tied to the early Chinese immigrant community and gang activity in the late 19th and early 20th centuries. Today, it is a vibrant part of Chinatown, with restaurants and shops that reflect its cultural heritage.",
+    "slug": "doyer-street",
+    "lat": 40.7145149,
+    "lng": -73.9981452,
+    "note": "Very nicely pedestrianized.",
+    "streetview": {
+      "lat": 40.7145149,
+      "lng": -73.9981425
+    },
+    "borough": "Manhattan",
+    "neighborhood": "Chinatown-Two Bridges",
+    "geo_auto": true
+  },
+  {
+    "name": "46A Prospect Park Southwest",
+    "description": "",
+    "history": "",
+    "slug": "46a-prospect-park-southwest",
+    "lat": 40.6593121,
+    "lng": -73.9771148,
+    "note": "Another hidden in the block living situation. Right off the park and super close to green wood, If you like walking in green space this is the coolest house in NYC. No running in the cemetery!",
+    "streetview": {
+      "lat": 40.6593832,
+      "lng": -73.9770382
+    },
+    "borough": "Brooklyn",
+    "neighborhood": "Windsor Terrace-South Slope",
+    "geo_auto": true
+  },
+  {
+    "name": "301 Greene Ave",
+    "description": "",
+    "history": "",
+    "slug": "301-greene-ave",
+    "lat": 40.6878609,
+    "lng": -73.9593718,
+    "note": "Really nice brick two story house in the middle of the block here. It is attached to the 301 Greene Ave townhouse which has funky property lines. Its great they made use of them for this noble purpose.",
+    "streetview": {
+      "lat": 40.6878602,
+      "lng": -73.9595345
+    },
+    "borough": "Brooklyn",
+    "neighborhood": "Bedford-Stuyvesant (West)",
+    "geo_auto": true
+  },
+  {
+    "name": "129 Degraw ABCD",
+    "description": "",
+    "history": "",
+    "slug": "129-degraw-abcd",
+    "lat": 40.685794,
+    "lng": -74.0018464,
+    "note": "A cool group of houses with a shared walkway that away from the street.",
+    "streetview": {
+      "lat": 40.685701,
+      "lng": -74.0017937
+    },
+    "borough": "Brooklyn",
+    "neighborhood": "Carroll Gardens-Cobble Hill-Gowanus-Red Hook",
+    "geo_auto": true
+  },
+  {
+    "name": "117 Underhill Avenue",
+    "description": "",
+    "history": "",
+    "slug": "117-underhill-avenue",
+    "lat": 40.6772844,
+    "lng": -73.9653462,
+    "note": "Really deep in the block! And off one of Janette Sadik-Khan's best creations at that (underhill ave has next generation street design)",
+    "streetview": {
+      "lat": 40.6773476,
+      "lng": -73.9657204
+    },
+    "borough": "Brooklyn",
+    "neighborhood": "Prospect Heights",
+    "geo_auto": true
+  },
+  {
+    "name": "48 Tiffany Place",
+    "description": "",
+    "history": "",
+    "slug": "48-tiffany-place",
+    "lat": 40.6860808,
+    "lng": -74.0015567,
+    "note": "A good example of off street living.",
+    "streetview": {
+      "lat": 40.6860683,
+      "lng": -74.001417
+    },
+    "borough": "Brooklyn",
+    "neighborhood": "Carroll Gardens-Cobble Hill-Gowanus-Red Hook",
+    "geo_auto": true
+  },
+  {
+    "name": "158 Prospect Place",
+    "description": "",
+    "history": "",
+    "slug": "158-prospect-place",
+    "lat": 40.6778346,
+    "lng": -73.9716971,
+    "note": "This is a really amazing home. So conviently located with the park and trains near by, but must feel like the country side in there so far off the street!",
+    "streetview": {
+      "lat": 40.6781235,
+      "lng": -73.9716728
+    },
+    "borough": "Brooklyn",
+    "neighborhood": "Prospect Heights",
+    "geo_auto": true
+  },
+  {
+    "name": "5 Carmine St ABC",
+    "description": "",
+    "history": "",
+    "slug": "5-carmine-st-abc",
+    "lat": 40.7308213,
+    "lng": -74.0021932,
+    "note": "3 amazing little houses hidden in the middle of the block!",
+    "streetview": {
+      "lat": 40.7307263,
+      "lng": -74.0021098
+    },
+    "borough": "Manhattan",
+    "neighborhood": "West Village",
+    "geo_auto": true
+  },
+  {
+    "name": "34 Strong Place",
+    "description": "",
+    "history": "",
+    "slug": "34-strong-place",
+    "lat": 40.6855823,
+    "lng": -73.9981886,
+    "note": "A prime example of a home in the middle of the block. Away from cars, noise, and other sad things.",
+    "streetview": {
+      "lat": 40.6855823,
+      "lng": -73.9981886
+    },
+    "borough": "Brooklyn",
+    "neighborhood": "Carroll Gardens-Cobble Hill-Gowanus-Red Hook",
+    "geo_auto": true
+  },
+  {
+    "name": "46 7th Ave",
+    "description": "",
+    "history": "",
+    "slug": "46-7th-ave",
+    "lat": 40.7313394,
+    "lng": -74.0043972,
+    "note": "The most beautiful carriage house in Manhattan. It has a really nice garden and brick path around it.",
+    "streetview": {
+      "lat": 40.7313394,
+      "lng": -74.0043972
+    },
+    "borough": "Manhattan",
+    "neighborhood": "West Village",
+    "geo_auto": true
+  },
+  {
+    "name": "10 Bedford St",
+    "description": "",
+    "history": "",
+    "slug": "10-bedford-st",
+    "lat": 40.7291162,
+    "lng": -74.0031112,
+    "note": "Sweet carriage house in the back",
+    "streetview": {
+      "lat": 40.7291278,
+      "lng": -74.0031274
+    },
+    "borough": "Manhattan",
+    "neighborhood": "West Village",
+    "geo_auto": true
+  },
+  {
+    "name": "Roof Top Cape Cod",
+    "description": "",
+    "history": "",
+    "slug": "roof-top-cape-cod",
+    "lat": 40.7234933,
+    "lng": -73.9886127,
+    "note": "This house gives new meaning to being off the grid.",
+    "streetview": {
+      "lat": 40.7234933,
+      "lng": -73.9886127
+    },
+    "borough": "Manhattan",
+    "neighborhood": "East Village",
+    "geo_auto": true
+  },
+  {
+    "name": "1288 Prospect Place",
+    "description": "",
+    "history": "",
+    "slug": "1288-prospect-place",
+    "lat": 40.6730685,
+    "lng": -73.9344064,
+    "note": "In the block. I've never seen this one but I found it through my lot shape data scrapping.",
+    "streetview": {
+      "lat": 40.6732306,
+      "lng": -73.9339998
+    },
+    "borough": "Brooklyn",
+    "neighborhood": "Crown Heights (North)",
+    "geo_auto": true
+  },
+  {
+    "name": "Maple Street",
+    "description": "A street in the Prospect Lefferts Gardens neighborhood of Brooklyn, known for its historic homes.",
+    "history": "Maple Street is part of the Prospect Lefferts Gardens Historic District, developed in the early 20th century. The street features a variety of architectural styles, including Colonial Revival and Tudor Revival, reflecting the neighborhood's suburban character within the city.",
+    "slug": "maple-street",
+    "lat": 40.660357,
+    "lng": -73.9587125,
+    "note": "beautiful brick mansions",
+    "streetview": {
+      "lat": 40.6604309,
+      "lng": -73.9574575
+    },
+    "borough": "Brooklyn",
+    "neighborhood": "Prospect Lefferts Gardens-Wingate",
+    "geo_auto": true
+  },
+  {
+    "name": "Ditmas Park",
+    "description": "A neighborhood in Brooklyn known for its large, Victorian-style homes and tree-lined streets.",
+    "history": "Ditmas Park was developed in the early 20th century as a suburban enclave within Brooklyn. The neighborhood's homes, many of which are freestanding with front porches and gardens, were designed to attract middle-class families seeking a respite from urban density.",
+    "slug": "ditmas-park",
+    "lat": 40.6465746,
+    "lng": -73.9667459,
+    "note": "This kind of applied to the whole area south of here! But its absolutely beautiful and this street in particular is amazing because in the summer people have picnics on the green median and children learn to ride bikes in the street. Crazy that you can walk to blocks and be back in \"normal\" NYC low density looking stuff.<br><br>Fun fact if you look at the satellite view of the city you can clearly see the three sections of ditmas park where all of these nice houses and streets are because they are so green in comparison to the rest of the city. This is also true of riverdale in the bronx and forest hills in queens.",
+    "streetview": {
+      "lat": 40.6465746,
+      "lng": -73.9667459
+    },
+    "borough": "Brooklyn",
+    "neighborhood": "Flatbush (West)-Ditmas Park-Parkville",
+    "geo_auto": true
+  },
+  {
+    "name": "Forest Hills",
+    "description": "A neighborhood in Queens, known for its Tudor-style homes and the historic Forest Hills Gardens.",
+    "history": "Forest Hills was developed in the early 20th century by the Russell Sage Foundation as a model community. The neighborhood's design, inspired by the English Garden City movement, features winding streets, parks, and a mix of housing types, making it a unique example of planned suburban development.",
+    "slug": "forest-hills",
+    "lat": 40.7195745,
+    "lng": -73.8449253,
+    "note": "This barely counts as urbanism because its so far away but its an amazing train station, and the greenery is beautiful in the area, would be great to have streets this green in denser areas!",
+    "streetview": {
+      "lat": 40.7193468,
+      "lng": -73.8453115
+    },
+    "borough": "Queens",
+    "neighborhood": "Forest Hills",
+    "geo_auto": true
+  },
+  {
+    "name": "Riverdale",
+    "description": "A residential neighborhood in the Bronx, known for its hilly terrain and upscale homes.",
+    "history": "Riverdale was originally a rural area with large estates and farms. In the late 19th and early 20th centuries, it was developed into a suburban community, attracting wealthy New Yorkers. Today, it is one of the most affluent neighborhoods in the Bronx, with a mix of historic mansions and modern residences.",
+    "slug": "riverdale",
+    "lat": 40.8935758,
+    "lng": -73.9068976,
+    "note": "Riverdale is super fancy but its sad that the trains are far. at this point its just suburbia lowkey, but technically its in the city and like Ditmas park and forest hills the greenery is so nice!",
+    "streetview": {
+      "lat": 40.8941674,
+      "lng": -73.9036014
+    },
+    "borough": "Bronx",
+    "neighborhood": "Riverdale-Spuyten Duyvil",
+    "geo_auto": true
+  },
+  {
+    "name": "Charlotte Gardens",
+    "description": "A housing development in the South Bronx, known for its suburban-style homes.",
+    "history": "Charlotte Gardens was developed in the 1980s as part of efforts to revitalize the South Bronx. The project involved building single-family homes on vacant lots, offering an alternative to the high-rise public housing typical of the area. It is a notable example of urban renewal through suburban-style development.",
+    "slug": "charlotte-gardens",
+    "lat": 40.8342736,
+    "lng": -73.892205,
+    "note": "Zoned differently from the rest of the area for interesting historical reasons",
+    "streetview": {
+      "lat": 40.8348752,
+      "lng": -73.8915811
+    },
+    "borough": "Bronx",
+    "neighborhood": "Crotona Park East",
+    "geo_auto": true
+  },
+  {
+    "name": "30-36 Remsen",
+    "description": "",
+    "history": "",
+    "slug": "30-36-remsen",
+    "lat": 40.6944148,
+    "lng": -73.9974074,
+    "note": "Deep lots in Brooklyn Heights (these people really should get there stuff together to write up an easement and make a dope garden.",
+    "streetview": {
+      "lat": 40.6944148,
+      "lng": -73.9974074
+    },
+    "borough": "Brooklyn",
+    "neighborhood": "Brooklyn Heights",
+    "geo_auto": true
+  },
+  {
+    "name": "46-58 Remsen",
+    "description": "",
+    "history": "",
+    "slug": "46-58-remsen",
+    "lat": 40.6942521,
+    "lng": -73.9967287,
+    "note": "Deep lots in Brooklyn Heights (these people really should get there stuff together to write up an easement and make a dope garden.",
+    "streetview": {
+      "lat": 40.6942521,
+      "lng": -73.9967287
+    },
+    "borough": "Brooklyn",
+    "neighborhood": "Brooklyn Heights",
+    "geo_auto": true
+  },
+  {
+    "name": "245 Washington Ave",
+    "description": "",
+    "history": "",
+    "slug": "245-washington-ave",
+    "lat": 40.6914085,
+    "lng": -73.966115,
+    "note": "One of only three straight through the block 200ft deep single family residential lots. They are all in this neighborhood at least as far as my research has lead me to know. If your townhouse was sufficiently short or has a 1 lane wide hole in its behind you could reasonably fit a Olympic length pool!",
+    "streetview": {
+      "lat": 40.6914085,
+      "lng": -73.966115
+    },
+    "borough": "Brooklyn",
+    "neighborhood": "Clinton Hill",
+    "geo_auto": true
+  },
+  {
+    "name": "246 Washington Ave",
+    "description": "",
+    "history": "",
+    "slug": "246-washington-ave",
+    "lat": 40.6911636,
+    "lng": -73.9668614,
+    "note": "One of only three straight through the block 200ft deep single family residential lots. They are all in this neighborhood at least as far as my research has lead me to know. If your townhouse was sufficiently short or has a 1 lane wide hole in its behind you could reasonably fit a Olympic length pool!",
+    "streetview": {
+      "lat": 40.6911528,
+      "lng": -73.9667149
+    },
+    "borough": "Brooklyn",
+    "neighborhood": "Clinton Hill",
+    "geo_auto": true
+  },
+  {
+    "name": "280 Washington Ave",
+    "description": "",
+    "history": "",
+    "slug": "280-washington-ave",
+    "lat": 40.6903082,
+    "lng": -73.9666332,
+    "note": "One of only three straight through the block 200ft deep single family residential lots. They are all in this neighborhood at least as far as my research has lead me to know. If your townhouse was sufficiently short or has a 1 lane wide hole in its behind you could reasonably fit a Olympic length pool!",
+    "streetview": {
+      "lat": 40.6903347,
+      "lng": -73.966582
+    },
+    "borough": "Brooklyn",
+    "neighborhood": "Clinton Hill",
+    "geo_auto": true
+  },
+  {
+    "name": "193 Prospect Place",
+    "description": "",
+    "history": "",
+    "slug": "193-prospect-place",
+    "lat": 40.6781787,
+    "lng": -73.9700769,
+    "note": "Really long lot in prospect heights",
+    "streetview": {
+      "lat": 40.6781787,
+      "lng": -73.9700769
+    },
+    "borough": "Brooklyn",
+    "neighborhood": "Prospect Heights",
+    "geo_auto": true
+  },
+  {
+    "name": "137 Oak St",
+    "description": "cool house in a cool corner on a cool street in cool greenpoint",
+    "slug": "137-oak-st",
+    "lat": 40.72819,
+    "lng": -73.955272,
+    "streetview": {
+      "lat": 40.72819,
+      "lng": -73.955272
+    },
+    "borough": "Brooklyn",
+    "neighborhood": "Greenpoint",
+    "geo_auto": true
+  },
+  {
+    "name": "Sunny Side Gardens",
+    "description": "Secret paths and secret communal gardens. another historical example of how homes are cheap and very nice neighborhoods are still cheap, but only if you build them when society was an order of magnitude less wealth",
+    "slug": "sunny-side-gardens",
+    "lat": 40.748314,
+    "lng": -73.917689,
+    "streetview": {
+      "lat": 40.748314,
+      "lng": -73.917689
+    },
+    "borough": "Queens",
+    "neighborhood": "Sunnyside",
+    "geo_auto": true
+  },
+  {
+    "name": "Claremont/Vanderbilt New townhouses with communal garden",
+    "description": "One of few modern examples of private shared space. the houses r kinda ugly but ill take what I can get",
+    "slug": "claremontvanderbilt-new-townhouses-with-communal-garden",
+    "lat": 40.697108,
+    "lng": -73.97114,
+    "streetview": {
+      "lat": 40.697108,
+      "lng": -73.97114
+    },
+    "borough": "Brooklyn",
+    "neighborhood": "Fort Greene",
+    "geo_auto": true
+  },
+  {
+    "name": "Jones Wood Garden",
+    "description": "Prime shared townhouse garden!",
+    "slug": "jones-wood-garden",
+    "lat": 40.765827,
+    "lng": -73.964279,
+    "streetview": {
+      "lat": 40.765827,
+      "lng": -73.964279
+    },
+    "borough": "Manhattan",
+    "neighborhood": "Upper East Side-Carnegie Hill",
+    "geo_auto": true
+  }
+]
