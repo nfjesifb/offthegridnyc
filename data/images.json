@@ -1,0 +1,1086 @@
+{
+ "locations/10-bedford-st/images/satellite_10-bedford-st.jpg": {
+  "height": 400,
+  "width": 600
+ },
+ "locations/116-pinehurst/images/photo_1.jpg": {
+  "height": 1593,
+  "width": 1200
+ },
+ "locations/116-pinehurst/images/photo_2.jpg": {
+  "height": 1593,
+  "width": 1200
+ },
+ "locations/116-pinehurst/images/photo_3.jpg": {
+  "height": 1593,
+  "width": 1200
+ },
+ "locations/116-pinehurst/images/photo_4.jpg": {
+  "height": 1593,
+  "width": 1200
+ },
+ "locations/116-pinehurst/images/satellite_116-pinehurst.jpg": {
+  "height": 400,
+  "width": 600
+ },
+ "locations/117-underhill-avenue/images/satellite_117-underhill-avenue.jpg": {
+  "height": 400,
+  "width": 600
+ },
+ "locations/1288-prospect-place/images/satellite_1288-prospect-place.jpg": {
+  "height": 400,
+  "width": 600
+ },
+ "locations/129-degraw-abcd/images/satellite_129-degraw-abcd.jpg": {
+  "height": 400,
+  "width": 600
+ },
+ "locations/158-prospect-place/images/satellite_158-prospect-place.jpg": {
+  "height": 400,
+  "width": 600
+ },
+ "locations/193-prospect-place/images/satellite_193-prospect-place.jpg": {
+  "height": 400,
+  "width": 600
+ },
+ "locations/210-w-90th-astor-court/images/photo_1.jpg": {
+  "height": 900,
+  "width": 1200
+ },
+ "locations/210-w-90th-astor-court/images/photo_2.jpg": {
+  "height": 2570,
+  "width": 1200
+ },
+ "locations/210-w-90th-astor-court/images/photo_3.jpg": {
+  "height": 904,
+  "width": 1200
+ },
+ "locations/210-w-90th-astor-court/images/photo_4.jpg": {
+  "height": 904,
+  "width": 1200
+ },
+ "locations/210-w-90th-astor-court/images/photo_5.jpg": {
+  "height": 1600,
+  "width": 1200
+ },
+ "locations/210-w-90th-astor-court/images/satellite_210-w-90th-astor-court.jpg": {
+  "height": 400,
+  "width": 600
+ },
+ "locations/245-washington-ave/images/satellite_245-washington-ave.jpg": {
+  "height": 400,
+  "width": 600
+ },
+ "locations/246-washington-ave/images/satellite_246-washington-ave.jpg": {
+  "height": 400,
+  "width": 600
+ },
+ "locations/280-washington-ave/images/satellite_280-washington-ave.jpg": {
+  "height": 400,
+  "width": 600
+ },
+ "locations/30-36-remsen/images/satellite_30-36-remsen.jpg": {
+  "height": 400,
+  "width": 600
+ },
+ "locations/301-greene-ave/images/satellite_301-greene-ave.jpg": {
+  "height": 400,
+  "width": 600
+ },
+ "locations/34-strong-place/images/satellite_34-strong-place.jpg": {
+  "height": 400,
+  "width": 600
+ },
+ "locations/46-58-remsen/images/satellite_46-58-remsen.jpg": {
+  "height": 400,
+  "width": 600
+ },
+ "locations/46-7th-ave/images/satellite_46-7th-ave.jpg": {
+  "height": 400,
+  "width": 600
+ },
+ "locations/46a-prospect-park-southwest/images/satellite_46a-prospect-park-southwest.jpg": {
+  "height": 400,
+  "width": 600
+ },
+ "locations/48-tiffany-place/images/satellite_48-tiffany-place.jpg": {
+  "height": 400,
+  "width": 600
+ },
+ "locations/5-carmine-st-abc/images/photo_1.jpg": {
+  "height": 1600,
+  "width": 1200
+ },
+ "locations/5-carmine-st-abc/images/photo_2.jpg": {
+  "height": 1600,
+  "width": 1200
+ },
+ "locations/5-carmine-st-abc/images/photo_3.jpg": {
+  "height": 1600,
+  "width": 1200
+ },
+ "locations/5-carmine-st-abc/images/photo_4.jpg": {
+  "height": 1600,
+  "width": 1200
+ },
+ "locations/5-carmine-st-abc/images/photo_5.jpg": {
+  "height": 2667,
+  "width": 1200
+ },
+ "locations/5-carmine-st-abc/images/satellite_5-carmine-st-abc.jpg": {
+  "height": 400,
+  "width": 600
+ },
+ "locations/ablemarle-terrace/images/satellite_ablemarle-terrace.jpg": {
+  "height": 400,
+  "width": 600
+ },
+ "locations/ansonia-clock-factory/images/satellite_ansonia-clock-factory.jpg": {
+  "height": 400,
+  "width": 600
+ },
+ "locations/barwell-terrace/images/satellite_barwell-terrace.jpg": {
+  "height": 400,
+  "width": 600
+ },
+ "locations/broadway-between-40th-and-17th/images/photo_1.jpg": {
+  "height": 904,
+  "width": 1200
+ },
+ "locations/broadway-between-40th-and-17th/images/photo_2.jpg": {
+  "height": 799,
+  "width": 1200
+ },
+ "locations/broadway-between-40th-and-17th/images/photo_3.jpg": {
+  "height": 615,
+  "width": 1200
+ },
+ "locations/broadway-between-40th-and-17th/images/photo_4.jpg": {
+  "height": 900,
+  "width": 1200
+ },
+ "locations/broadway-between-40th-and-17th/images/photo_5.jpg": {
+  "height": 1593,
+  "width": 1200
+ },
+ "locations/broadway-between-40th-and-17th/images/satellite_broadway-between-40th-and-17th.jpg": {
+  "height": 400,
+  "width": 600
+ },
+ "locations/brooklyn-bridge-parks/images/photo_1.jpg": {
+  "height": 900,
+  "width": 1200
+ },
+ "locations/brooklyn-bridge-parks/images/photo_2.jpg": {
+  "height": 801,
+  "width": 1200
+ },
+ "locations/brooklyn-bridge-parks/images/photo_3.jpg": {
+  "height": 800,
+  "width": 1200
+ },
+ "locations/brooklyn-bridge-parks/images/photo_4.jpg": {
+  "height": 900,
+  "width": 1200
+ },
+ "locations/brooklyn-bridge-parks/images/photo_5.jpg": {
+  "height": 675,
+  "width": 1200
+ },
+ "locations/brooklyn-bridge-parks/images/satellite_brooklyn-bridge-parks.jpg": {
+  "height": 400,
+  "width": 600
+ },
+ "locations/brooklyn-navy-yard/images/photo_1.jpg": {
+  "height": 900,
+  "width": 1200
+ },
+ "locations/brooklyn-navy-yard/images/photo_2.jpg": {
+  "height": 900,
+  "width": 1200
+ },
+ "locations/brooklyn-navy-yard/images/photo_3.jpg": {
+  "height": 1600,
+  "width": 1176
+ },
+ "locations/brooklyn-navy-yard/images/photo_4.jpg": {
+  "height": 890,
+  "width": 1200
+ },
+ "locations/brooklyn-navy-yard/images/photo_5.jpg": {
+  "height": 900,
+  "width": 1200
+ },
+ "locations/brooklyn-navy-yard/images/satellite_brooklyn-navy-yard.jpg": {
+  "height": 400,
+  "width": 600
+ },
+ "locations/charlotte-gardens/images/photo_1.jpg": {
+  "height": 578,
+  "width": 802
+ },
+ "locations/charlotte-gardens/images/satellite_charlotte-gardens.jpg": {
+  "height": 400,
+  "width": 600
+ },
+ "locations/chester-court/images/satellite_chester-court.jpg": {
+  "height": 400,
+  "width": 600
+ },
+ "locations/chittenden-road/images/photo_1.jpg": {
+  "height": 900,
+  "width": 1200
+ },
+ "locations/chittenden-road/images/photo_2.jpg": {
+  "height": 900,
+  "width": 1200
+ },
+ "locations/chittenden-road/images/satellite_chittenden-road.jpg": {
+  "height": 400,
+  "width": 600
+ },
+ "locations/cliff-house-pumpkin-house/images/photo_1.jpg": {
+  "height": 675,
+  "width": 1200
+ },
+ "locations/cliff-house-pumpkin-house/images/photo_2.jpg": {
+  "height": 565,
+  "width": 881
+ },
+ "locations/cliff-house-pumpkin-house/images/photo_3.jpg": {
+  "height": 900,
+  "width": 1200
+ },
+ "locations/cliff-house-pumpkin-house/images/photo_4.jpg": {
+  "height": 1600,
+  "width": 1200
+ },
+ "locations/cliff-house-pumpkin-house/images/photo_5.jpg": {
+  "height": 900,
+  "width": 1200
+ },
+ "locations/cliff-house-pumpkin-house/images/satellite_cliff-house-pumpkin-house.jpg": {
+  "height": 400,
+  "width": 600
+ },
+ "locations/clinton-court/images/photo_1.jpg": {
+  "height": 1593,
+  "width": 1200
+ },
+ "locations/clinton-court/images/photo_2.jpg": {
+  "height": 1595,
+  "width": 1200
+ },
+ "locations/clinton-court/images/photo_3.jpg": {
+  "height": 2606,
+  "width": 1200
+ },
+ "locations/clinton-court/images/photo_4.jpg": {
+  "height": 1600,
+  "width": 1200
+ },
+ "locations/clinton-court/images/photo_5.jpg": {
+  "height": 2667,
+  "width": 1200
+ },
+ "locations/clinton-court/images/satellite_clinton-court.jpg": {
+  "height": 400,
+  "width": 600
+ },
+ "locations/college-place/images/satellite_college-place.jpg": {
+  "height": 400,
+  "width": 600
+ },
+ "locations/colonial-gardens/images/photo_1.jpg": {
+  "height": 900,
+  "width": 1200
+ },
+ "locations/colonial-gardens/images/photo_2.jpg": {
+  "height": 900,
+  "width": 1200
+ },
+ "locations/colonial-gardens/images/satellite_colonial-gardens.jpg": {
+  "height": 400,
+  "width": 600
+ },
+ "locations/commandants-mansion/images/photo_1.jpg": {
+  "height": 899,
+  "width": 1200
+ },
+ "locations/commandants-mansion/images/photo_2.jpg": {
+  "height": 900,
+  "width": 1200
+ },
+ "locations/commandants-mansion/images/photo_3.jpg": {
+  "height": 1600,
+  "width": 1200
+ },
+ "locations/commandants-mansion/images/photo_4.jpg": {
+  "height": 2133,
+  "width": 1200
+ },
+ "locations/commandants-mansion/images/photo_5.jpg": {
+  "height": 1600,
+  "width": 1200
+ },
+ "locations/commandants-mansion/images/satellite_commandants-mansion.jpg": {
+  "height": 400,
+  "width": 600
+ },
+ "locations/dennett-place/images/satellite_dennett-place.jpg": {
+  "height": 400,
+  "width": 600
+ },
+ "locations/ditmas-park/images/photo_1.jpg": {
+  "height": 1600,
+  "width": 1200
+ },
+ "locations/ditmas-park/images/photo_2.jpg": {
+  "height": 1600,
+  "width": 1200
+ },
+ "locations/ditmas-park/images/photo_3.jpg": {
+  "height": 2667,
+  "width": 1200
+ },
+ "locations/ditmas-park/images/photo_4.jpg": {
+  "height": 1600,
+  "width": 1200
+ },
+ "locations/ditmas-park/images/photo_5.jpg": {
+  "height": 900,
+  "width": 1200
+ },
+ "locations/ditmas-park/images/satellite_ditmas-park.jpg": {
+  "height": 400,
+  "width": 600
+ },
+ "locations/doyer-street/images/photo_1.jpg": {
+  "height": 900,
+  "width": 1200
+ },
+ "locations/doyer-street/images/photo_2.jpg": {
+  "height": 1200,
+  "width": 1200
+ },
+ "locations/doyer-street/images/photo_3.jpg": {
+  "height": 650,
+  "width": 1158
+ },
+ "locations/doyer-street/images/photo_4.jpg": {
+  "height": 900,
+  "width": 1200
+ },
+ "locations/doyer-street/images/photo_5.jpg": {
+  "height": 1288,
+  "width": 1200
+ },
+ "locations/doyer-street/images/satellite_doyer-street.jpg": {
+  "height": 400,
+  "width": 600
+ },
+ "locations/elevated-acre/images/photo_1.jpg": {
+  "height": 842,
+  "width": 1200
+ },
+ "locations/elevated-acre/images/photo_2.jpg": {
+  "height": 1600,
+  "width": 1200
+ },
+ "locations/elevated-acre/images/photo_3.jpg": {
+  "height": 675,
+  "width": 1200
+ },
+ "locations/elevated-acre/images/photo_4.jpg": {
+  "height": 900,
+  "width": 1200
+ },
+ "locations/elevated-acre/images/photo_5.jpg": {
+  "height": 900,
+  "width": 1200
+ },
+ "locations/elevated-acre/images/satellite_elevated-acre.jpg": {
+  "height": 400,
+  "width": 600
+ },
+ "locations/forest-hills/images/photo_1.jpg": {
+  "height": 1600,
+  "width": 1200
+ },
+ "locations/forest-hills/images/photo_2.jpg": {
+  "height": 904,
+  "width": 1200
+ },
+ "locations/forest-hills/images/photo_3.jpg": {
+  "height": 768,
+  "width": 1024
+ },
+ "locations/forest-hills/images/photo_4.jpg": {
+  "height": 1600,
+  "width": 1200
+ },
+ "locations/forest-hills/images/photo_5.jpg": {
+  "height": 1600,
+  "width": 1200
+ },
+ "locations/forest-hills/images/satellite_forest-hills.jpg": {
+  "height": 400,
+  "width": 600
+ },
+ "locations/freeman-alley/images/photo_1.jpg": {
+  "height": 900,
+  "width": 1200
+ },
+ "locations/freeman-alley/images/photo_2.jpg": {
+  "height": 1600,
+  "width": 1200
+ },
+ "locations/freeman-alley/images/photo_3.jpg": {
+  "height": 1600,
+  "width": 1200
+ },
+ "locations/freeman-alley/images/photo_4.jpg": {
+  "height": 1600,
+  "width": 1200
+ },
+ "locations/freeman-alley/images/photo_5.jpg": {
+  "height": 900,
+  "width": 1200
+ },
+ "locations/freeman-alley/images/satellite_freeman-alley.jpg": {
+  "height": 400,
+  "width": 600
+ },
+ "locations/govoners-island/images/photo_1.jpg": {
+  "height": 800,
+  "width": 1200
+ },
+ "locations/govoners-island/images/photo_2.jpg": {
+  "height": 800,
+  "width": 1200
+ },
+ "locations/govoners-island/images/photo_3.jpg": {
+  "height": 900,
+  "width": 1200
+ },
+ "locations/govoners-island/images/photo_4.jpg": {
+  "height": 898,
+  "width": 1200
+ },
+ "locations/govoners-island/images/photo_5.jpg": {
+  "height": 761,
+  "width": 1200
+ },
+ "locations/govoners-island/images/satellite_govoners-island.jpg": {
+  "height": 400,
+  "width": 600
+ },
+ "locations/grace-court-alley/images/photo_1.jpg": {
+  "height": 900,
+  "width": 1200
+ },
+ "locations/grace-court-alley/images/photo_2.jpg": {
+  "height": 900,
+  "width": 1200
+ },
+ "locations/grace-court-alley/images/photo_3.jpg": {
+  "height": 900,
+  "width": 1200
+ },
+ "locations/grace-court-alley/images/photo_4.jpg": {
+  "height": 900,
+  "width": 1200
+ },
+ "locations/grace-court-alley/images/photo_5.jpg": {
+  "height": 900,
+  "width": 1200
+ },
+ "locations/grace-court-alley/images/satellite_grace-court-alley.jpg": {
+  "height": 400,
+  "width": 600
+ },
+ "locations/grace-court/images/satellite_grace-court.jpg": {
+  "height": 400,
+  "width": 600
+ },
+ "locations/greenwich-mews/images/photo_1.jpg": {
+  "height": 900,
+  "width": 1200
+ },
+ "locations/greenwich-mews/images/photo_2.jpg": {
+  "height": 675,
+  "width": 1200
+ },
+ "locations/greenwich-mews/images/photo_3.jpg": {
+  "height": 900,
+  "width": 1200
+ },
+ "locations/greenwich-mews/images/photo_4.jpg": {
+  "height": 900,
+  "width": 1200
+ },
+ "locations/greenwich-mews/images/photo_5.jpg": {
+  "height": 900,
+  "width": 1200
+ },
+ "locations/greenwich-mews/images/satellite_greenwich-mews.jpg": {
+  "height": 400,
+  "width": 600
+ },
+ "locations/grove-court/images/photo_1.jpg": {
+  "height": 957,
+  "width": 1200
+ },
+ "locations/grove-court/images/photo_2.jpg": {
+  "height": 1600,
+  "width": 1200
+ },
+ "locations/grove-court/images/photo_3.jpg": {
+  "height": 900,
+  "width": 1200
+ },
+ "locations/grove-court/images/photo_4.jpg": {
+  "height": 1565,
+  "width": 1200
+ },
+ "locations/grove-court/images/photo_5.jpg": {
+  "height": 1600,
+  "width": 1200
+ },
+ "locations/grove-court/images/satellite_grove-court.jpg": {
+  "height": 400,
+  "width": 600
+ },
+ "locations/hamilton-terrace/images/satellite_hamilton-terrace.jpg": {
+  "height": 400,
+  "width": 600
+ },
+ "locations/hamilton-walk/images/satellite_hamilton-walk.jpg": {
+  "height": 400,
+  "width": 600
+ },
+ "locations/henderson-place/images/photo_1.jpg": {
+  "height": 900,
+  "width": 1200
+ },
+ "locations/henderson-place/images/photo_2.jpg": {
+  "height": 1600,
+  "width": 1200
+ },
+ "locations/henderson-place/images/photo_3.jpg": {
+  "height": 900,
+  "width": 1200
+ },
+ "locations/henderson-place/images/satellite_henderson-place.jpg": {
+  "height": 400,
+  "width": 600
+ },
+ "locations/hunts-lane/images/satellite_hunts-lane.jpg": {
+  "height": 400,
+  "width": 600
+ },
+ "locations/indian-road/images/satellite_indian-road.jpg": {
+  "height": 400,
+  "width": 600
+ },
+ "locations/kenmore-terrace/images/satellite_kenmore-terrace.jpg": {
+  "height": 400,
+  "width": 600
+ },
+ "locations/kips-bay-towers/images/photo_1.jpg": {
+  "height": 1600,
+  "width": 1200
+ },
+ "locations/kips-bay-towers/images/photo_2.jpg": {
+  "height": 900,
+  "width": 1200
+ },
+ "locations/kips-bay-towers/images/photo_3.jpg": {
+  "height": 1600,
+  "width": 1200
+ },
+ "locations/kips-bay-towers/images/photo_4.jpg": {
+  "height": 900,
+  "width": 1200
+ },
+ "locations/kips-bay-towers/images/photo_5.jpg": {
+  "height": 900,
+  "width": 1200
+ },
+ "locations/kips-bay-towers/images/satellite_kips-bay-towers.jpg": {
+  "height": 400,
+  "width": 600
+ },
+ "locations/knickerbocker-village/images/photo_1.jpg": {
+  "height": 1600,
+  "width": 1200
+ },
+ "locations/knickerbocker-village/images/photo_2.jpg": {
+  "height": 900,
+  "width": 1200
+ },
+ "locations/knickerbocker-village/images/photo_3.jpg": {
+  "height": 900,
+  "width": 1200
+ },
+ "locations/knickerbocker-village/images/photo_4.jpg": {
+  "height": 937,
+  "width": 1200
+ },
+ "locations/knickerbocker-village/images/satellite_knickerbocker-village.jpg": {
+  "height": 400,
+  "width": 600
+ },
+ "locations/lafayette-walk/images/satellite_lafayette-walk.jpg": {
+  "height": 400,
+  "width": 600
+ },
+ "locations/littleevans-street/images/satellite_littleevans-street.jpg": {
+  "height": 400,
+  "width": 600
+ },
+ "locations/madeline-court/images/satellite_madeline-court.jpg": {
+  "height": 400,
+  "width": 600
+ },
+ "locations/maple-street/images/photo_1.jpg": {
+  "height": 1600,
+  "width": 1200
+ },
+ "locations/maple-street/images/photo_2.jpg": {
+  "height": 1600,
+  "width": 1200
+ },
+ "locations/maple-street/images/photo_3.jpg": {
+  "height": 1600,
+  "width": 1200
+ },
+ "locations/maple-street/images/satellite_maple-street.jpg": {
+  "height": 400,
+  "width": 600
+ },
+ "locations/marble-hill/images/photo_1.jpg": {
+  "height": 900,
+  "width": 1200
+ },
+ "locations/marble-hill/images/photo_2.jpg": {
+  "height": 900,
+  "width": 1200
+ },
+ "locations/marble-hill/images/photo_3.jpg": {
+  "height": 714,
+  "width": 1200
+ },
+ "locations/marble-hill/images/photo_4.jpg": {
+  "height": 854,
+  "width": 1200
+ },
+ "locations/marble-hill/images/photo_5.jpg": {
+  "height": 1920,
+  "width": 1080
+ },
+ "locations/marble-hill/images/satellite_marble-hill.jpg": {
+  "height": 400,
+  "width": 600
+ },
+ "locations/milligan-place/images/satellite_milligan-place.jpg": {
+  "height": 400,
+  "width": 600
+ },
+ "locations/mott-haven-water-front/images/photo_1.jpg": {
+  "height": 1600,
+  "width": 1200
+ },
+ "locations/mott-haven-water-front/images/photo_2.jpg": {
+  "height": 533,
+  "width": 904
+ },
+ "locations/mott-haven-water-front/images/photo_3.jpg": {
+  "height": 1600,
+  "width": 1200
+ },
+ "locations/mott-haven-water-front/images/photo_4.jpg": {
+  "height": 1600,
+  "width": 1200
+ },
+ "locations/mott-haven-water-front/images/satellite_mott-haven-water-front.jpg": {
+  "height": 400,
+  "width": 600
+ },
+ "locations/patchin-place/images/satellite_patchin-place.jpg": {
+  "height": 400,
+  "width": 600
+ },
+ "locations/pomander-walk/images/photo_1.jpg": {
+  "height": 1800,
+  "width": 1200
+ },
+ "locations/pomander-walk/images/photo_2.jpg": {
+  "height": 1328,
+  "width": 747
+ },
+ "locations/pomander-walk/images/photo_3.jpg": {
+  "height": 675,
+  "width": 1200
+ },
+ "locations/pomander-walk/images/photo_4.jpg": {
+  "height": 1328,
+  "width": 747
+ },
+ "locations/pomander-walk/images/photo_5.jpg": {
+  "height": 1328,
+  "width": 747
+ },
+ "locations/pomander-walk/images/satellite_pomander-walk.jpg": {
+  "height": 400,
+  "width": 600
+ },
+ "locations/riverdale/images/photo_1.jpg": {
+  "height": 900,
+  "width": 1200
+ },
+ "locations/riverdale/images/photo_2.jpg": {
+  "height": 824,
+  "width": 1080
+ },
+ "locations/riverdale/images/photo_3.jpg": {
+  "height": 2664,
+  "width": 1200
+ },
+ "locations/riverdale/images/photo_4.jpg": {
+  "height": 1663,
+  "width": 1200
+ },
+ "locations/riverdale/images/photo_5.jpg": {
+  "height": 1600,
+  "width": 1200
+ },
+ "locations/riverdale/images/satellite_riverdale.jpg": {
+  "height": 400,
+  "width": 600
+ },
+ "locations/riverview-terrace/images/satellite_riverview-terrace.jpg": {
+  "height": 400,
+  "width": 600
+ },
+ "locations/roof-top-cape-cod/images/photo_1.jpg": {
+  "height": 675,
+  "width": 1200
+ },
+ "locations/roof-top-cape-cod/images/photo_2.jpg": {
+  "height": 801,
+  "width": 1200
+ },
+ "locations/roof-top-cape-cod/images/photo_3.jpg": {
+  "height": 900,
+  "width": 1200
+ },
+ "locations/roof-top-cape-cod/images/photo_4.jpg": {
+  "height": 367,
+  "width": 550
+ },
+ "locations/roof-top-cape-cod/images/photo_5.jpg": {
+  "height": 1200,
+  "width": 1200
+ },
+ "locations/roof-top-cape-cod/images/satellite_roof-top-cape-cod.jpg": {
+  "height": 400,
+  "width": 600
+ },
+ "locations/sky-port/images/photo_1.jpg": {
+  "height": 900,
+  "width": 1200
+ },
+ "locations/sky-port/images/photo_2.jpg": {
+  "height": 900,
+  "width": 1200
+ },
+ "locations/sky-port/images/photo_3.jpg": {
+  "height": 1200,
+  "width": 1200
+ },
+ "locations/sky-port/images/photo_4.jpg": {
+  "height": 900,
+  "width": 1200
+ },
+ "locations/sky-port/images/photo_5.jpg": {
+  "height": 900,
+  "width": 1200
+ },
+ "locations/sky-port/images/satellite_sky-port.jpg": {
+  "height": 400,
+  "width": 600
+ },
+ "locations/skytrack/images/photo_1.jpg": {
+  "height": 1276,
+  "width": 1176
+ },
+ "locations/skytrack/images/photo_2.jpg": {
+  "height": 900,
+  "width": 1200
+ },
+ "locations/skytrack/images/photo_3.jpg": {
+  "height": 900,
+  "width": 1200
+ },
+ "locations/skytrack/images/photo_4.jpg": {
+  "height": 1098,
+  "width": 1200
+ },
+ "locations/skytrack/images/photo_5.jpg": {
+  "height": 675,
+  "width": 1200
+ },
+ "locations/skytrack/images/satellite_skytrack.jpg": {
+  "height": 400,
+  "width": 600
+ },
+ "locations/sniffen-court/images/photo_1.jpg": {
+  "height": 900,
+  "width": 1200
+ },
+ "locations/sniffen-court/images/photo_2.jpg": {
+  "height": 900,
+  "width": 1200
+ },
+ "locations/sniffen-court/images/satellite_sniffen-court.jpg": {
+  "height": 400,
+  "width": 600
+ },
+ "locations/south-bridge-towers/images/photo_1.jpg": {
+  "height": 556,
+  "width": 1200
+ },
+ "locations/south-bridge-towers/images/photo_2.jpg": {
+  "height": 1200,
+  "width": 1200
+ },
+ "locations/south-bridge-towers/images/photo_3.jpg": {
+  "height": 900,
+  "width": 1200
+ },
+ "locations/south-bridge-towers/images/photo_4.jpg": {
+  "height": 1600,
+  "width": 1200
+ },
+ "locations/south-bridge-towers/images/photo_5.jpg": {
+  "height": 1600,
+  "width": 1200
+ },
+ "locations/south-bridge-towers/images/satellite_south-bridge-towers.jpg": {
+  "height": 400,
+  "width": 600
+ },
+ "locations/strivers-row/images/photo_1.jpg": {
+  "height": 457,
+  "width": 638
+ },
+ "locations/strivers-row/images/satellite_strivers-row.jpg": {
+  "height": 400,
+  "width": 600
+ },
+ "locations/stuy-town/images/photo_1.jpg": {
+  "height": 2133,
+  "width": 1200
+ },
+ "locations/stuy-town/images/photo_2.jpg": {
+  "height": 900,
+  "width": 1200
+ },
+ "locations/stuy-town/images/photo_3.jpg": {
+  "height": 2133,
+  "width": 1200
+ },
+ "locations/stuy-town/images/photo_4.jpg": {
+  "height": 1593,
+  "width": 1200
+ },
+ "locations/stuy-town/images/photo_5.jpg": {
+  "height": 1600,
+  "width": 1200
+ },
+ "locations/stuy-town/images/satellite_stuy-town.jpg": {
+  "height": 400,
+  "width": 600
+ },
+ "locations/sullivan-street/images/photo_1.jpg": {
+  "height": 900,
+  "width": 1200
+ },
+ "locations/sullivan-street/images/photo_2.jpg": {
+  "height": 883,
+  "width": 1200
+ },
+ "locations/sullivan-street/images/photo_3.jpg": {
+  "height": 900,
+  "width": 1200
+ },
+ "locations/sullivan-street/images/photo_4.jpg": {
+  "height": 900,
+  "width": 1200
+ },
+ "locations/sullivan-street/images/photo_5.jpg": {
+  "height": 900,
+  "width": 1200
+ },
+ "locations/sullivan-street/images/satellite_sullivan-street.jpg": {
+  "height": 400,
+  "width": 600
+ },
+ "locations/sutton-square/images/photo_1.jpg": {
+  "height": 800,
+  "width": 1200
+ },
+ "locations/sutton-square/images/satellite_sutton-square.jpg": {
+  "height": 400,
+  "width": 600
+ },
+ "locations/sylvan-court/images/satellite_sylvan-court.jpg": {
+  "height": 400,
+  "width": 600
+ },
+ "locations/sylvan-terrace/images/photo_1.jpg": {
+  "height": 1600,
+  "width": 1200
+ },
+ "locations/sylvan-terrace/images/photo_2.jpg": {
+  "height": 900,
+  "width": 1200
+ },
+ "locations/sylvan-terrace/images/photo_3.jpg": {
+  "height": 1600,
+  "width": 1200
+ },
+ "locations/sylvan-terrace/images/photo_4.jpg": {
+  "height": 1796,
+  "width": 1200
+ },
+ "locations/sylvan-terrace/images/photo_5.jpg": {
+  "height": 802,
+  "width": 1200
+ },
+ "locations/sylvan-terrace/images/satellite_sylvan-terrace.jpg": {
+  "height": 400,
+  "width": 600
+ },
+ "locations/temple-court/images/photo_1.jpg": {
+  "height": 734,
+  "width": 750
+ },
+ "locations/temple-court/images/photo_2.jpg": {
+  "height": 800,
+  "width": 1200
+ },
+ "locations/temple-court/images/photo_3.jpg": {
+  "height": 1600,
+  "width": 1200
+ },
+ "locations/temple-court/images/photo_4.jpg": {
+  "height": 901,
+  "width": 1200
+ },
+ "locations/temple-court/images/photo_5.jpg": {
+  "height": 900,
+  "width": 1200
+ },
+ "locations/temple-court/images/satellite_temple-court.jpg": {
+  "height": 400,
+  "width": 600
+ },
+ "locations/track-on-the-roof/images/photo_1.jpg": {
+  "height": 675,
+  "width": 1200
+ },
+ "locations/track-on-the-roof/images/photo_2.jpg": {
+  "height": 774,
+  "width": 1200
+ },
+ "locations/track-on-the-roof/images/photo_3.jpg": {
+  "height": 584,
+  "width": 1200
+ },
+ "locations/track-on-the-roof/images/photo_4.jpg": {
+  "height": 900,
+  "width": 1200
+ },
+ "locations/track-on-the-roof/images/photo_5.jpg": {
+  "height": 663,
+  "width": 1200
+ },
+ "locations/track-on-the-roof/images/satellite_track-on-the-roof.jpg": {
+  "height": 400,
+  "width": 600
+ },
+ "locations/verandah-place/images/satellite_verandah-place.jpg": {
+  "height": 400,
+  "width": 600
+ },
+ "locations/wallabout-hasidic-compound/images/photo_1.jpg": {
+  "height": 872,
+  "width": 1038
+ },
+ "locations/wallabout-hasidic-compound/images/photo_2.jpg": {
+  "height": 494,
+  "width": 800
+ },
+ "locations/wallabout-hasidic-compound/images/photo_3.jpg": {
+  "height": 675,
+  "width": 1200
+ },
+ "locations/wallabout-hasidic-compound/images/photo_4.jpg": {
+  "height": 1593,
+  "width": 1200
+ },
+ "locations/wallabout-hasidic-compound/images/photo_5.jpg": {
+  "height": 900,
+  "width": 1200
+ },
+ "locations/wallabout-hasidic-compound/images/satellite_wallabout-hasidic-compound.jpg": {
+  "height": 400,
+  "width": 600
+ },
+ "locations/warren-place-mews/images/satellite_warren-place-mews.jpg": {
+  "height": 400,
+  "width": 600
+ },
+ "locations/washington-mews/images/photo_1.jpg": {
+  "height": 900,
+  "width": 1200
+ },
+ "locations/washington-mews/images/photo_2.jpg": {
+  "height": 900,
+  "width": 1200
+ },
+ "locations/washington-mews/images/photo_3.jpg": {
+  "height": 900,
+  "width": 1200
+ },
+ "locations/washington-mews/images/photo_4.jpg": {
+  "height": 900,
+  "width": 1200
+ },
+ "locations/washington-mews/images/photo_5.jpg": {
+  "height": 900,
+  "width": 1200
+ },
+ "locations/washington-mews/images/satellite_washington-mews.jpg": {
+  "height": 400,
+  "width": 600
+ },
+ "locations/waterside/images/photo_1.jpg": {
+  "height": 900,
+  "width": 1200
+ },
+ "locations/waterside/images/photo_2.jpg": {
+  "height": 900,
+  "width": 1200
+ },
+ "locations/waterside/images/photo_3.jpg": {
+  "height": 900,
+  "width": 1200
+ },
+ "locations/waterside/images/satellite_waterside.jpg": {
+  "height": 400,
+  "width": 600
+ }
+}
