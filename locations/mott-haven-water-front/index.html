@@ -63,6 +63,18 @@
       background: #fff;
     }
   </style>
+  <!-- discovery:head -->
+  <meta name="description" content="Public private patnership to fix up some nonexistant waterfront in the Mott Haven neighborhood of the Bronx, featuring parks and recreational spaces.">
+  <link rel="canonical" href="https://offthegridnyc.com/locations/mott-haven-water-front/index.html">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Mott Haven Water Front - Off The Grid NYC">
+  <meta property="og:description" content="Public private patnership to fix up some nonexistant waterfront in the Mott Haven neighborhood of the Bronx, featuring parks and recreational spaces.">
+  <meta property="og:url" content="https://offthegridnyc.com/locations/mott-haven-water-front/index.html">
+  <meta property="og:image" content="https://offthegridnyc.com/assets/images/places/mott-haven-water-front.webp">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="stylesheet" href="../../assets/css/place-tools.css">
+  <script type="module" src="../../src/js/place-tools.js"></script>
+  <!-- /discovery:head -->
 </head>
 
 <body
@@ -79,15 +91,26 @@
         </a>
       </div>
       <div class="text-xs text-gray-500 uppercase tracking-widest">
-        N/A / N/A
+        Off The Grid NYC
       </div>
     </div>
   </header>
 
   <!-- Main Content -->
   <main class="flex-grow container mx-auto px-4 py-8 max-w-[1600px]">
-
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 items-start">
+    <!-- discovery:tools -->
+    <section class="otg-tools" data-slug="mott-haven-water-front" aria-label="Plan your next detour">
+      <button type="button" data-save-place aria-pressed="false">♡ Save this place</button>
+      <button type="button" data-share-place>Share this place ↗</button>
+      <a href="../../?saved=1#explore">View saved places</a>
+      <a href="../../#explore">Explore the field guide ↗</a>
+      <p>Human-curated, with AI-assisted descriptions. Check details and access before visiting. Some places are private; enjoy them from public streets.</p>
+      <p class="otg-status" role="status" aria-live="polite"></p>
+      <input class="otg-share-url" aria-label="Share link" readonly hidden>
+      <div class="otg-related" aria-label="Related places"></div>
+    </section>
+    <!-- /discovery:tools -->
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 items-start">
 
       <!-- Left Column: Visuals -->
       <div class="space-y-6 lg:sticky lg:top-24">
@@ -137,7 +160,7 @@
         <!-- Street View -->
         <section class="card overflow-hidden group">
           <div class="aspect-video w-full relative">
-            <iframe src="https://roadview.planninglabs.nyc/view/-73.930304/40.8068899" class="w-full h-full border-0" allowfullscreen=""
+            <iframe src="https://roadview.planninglabs.nyc/view/-73.930304/40.8068899" title="Street view of this location" class="w-full h-full border-0" allowfullscreen=""
               loading="lazy" referrerpolicy="no-referrer-when-downgrade">
             </iframe>
           </div>
@@ -212,10 +235,6 @@
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
-      },
-      autoplay: {
-        delay: 5000,
-        disableOnInteraction: false,
       },
     });
     

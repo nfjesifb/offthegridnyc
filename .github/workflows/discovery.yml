@@ -1,0 +1,27 @@
+name: Discovery checks
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  catalog-and-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Rebuild discovery data and page enhancements
+        run: |
+          python scripts/build_catalog.py
+          python scripts/enhance_pages.py
+      - name: Check generated files are committed
+        run: git diff --exit-code
+      - name: Validate catalog, state, sharing, and page metadata
+        run: npm test
+      - name: Check repeated page generation
+        run: python -m unittest discover -s tests -p 'test_*.py'

@@ -3,16 +3,19 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "node --test tests/discovery.test.mjs",
     "build:css": "tailwindcss -i ./src/css/styles.css -o ./assets/css/styles.css --minify",
-    "watch:css": "tailwindcss -i ./src/css/styles.css -o ./assets/css/styles.css --watch"
+    "watch:css": "tailwindcss -i ./src/css/styles.css -o ./assets/css/styles.css --watch",
+    "test:browser": "node tests/browser.cjs",
+    "build:catalog": "python scripts/build_catalog.py && python scripts/enhance_pages.py"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
+  "description": "A human-curated field guide to the unexpected city.",
   "devDependencies": {
     "autoprefixer": "^10.4.21",
+    "playwright": "^1.63.0",
     "postcss": "^8.5.3",
     "tailwindcss": "^4.1.4"
   },
