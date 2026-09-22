@@ -18,7 +18,7 @@ const defaults = {
   saved: false,
   collection: null,
   sort: "curated",
-  view: "list",
+  view: "map",
 };
 
 test("catalog has unique slugs, valid coordinates and real page/photo paths", () => {
@@ -141,6 +141,57 @@ test("all detail pages expose canonical metadata and discovery controls", () => 
     );
     assert.ok(content.includes(`data-slug="${place.slug}"`));
     assert.ok(content.includes(`rel="canonical" href="${base}${place.url}"`));
-    assert.equal((content.match(/<!-- discovery:tools -->/g) || []).length, 1);
+    assert.equal((content.match(/id="context-map"/g) || []).length, 1);
+    assert.ok(content.includes('id="save-place"'));
+    assert.ok(content.includes('id="share-place"'));
+    assert.ok(content.includes('class="description"'));
+    assert.ok(place.description.trim().length > 50, place.slug);
+    for (const field of ["description", "context", "curatorNote"]) {
+      assert.ok(
+        !/<[^>]+>/.test(place[field]),
+        `${place.slug}: raw markup in ${field}`,
+      );
+      assert.ok(
+        !place[field].includes("\uFFFD"),
+        `${place.slug}: damaged text in ${field}`,
+      );
+    }
+    for (const photo of place.photos)
+      assert.ok(existsSync(new URL("../" + photo, import.meta.url)), photo);
+    if (!place.photos.length)
+      assert.ok(!content.includes('class="gallery"'), place.slug);
+    if (place.descriptionOrigin === "sourced")
+      assert.ok(place.sources.length > 0, place.slug);
+  }
+});
+
+test("shared viewport round trips and rejects malformed coordinates", () => {
+  const viewport = { lat: 40.74, lng: -73.98, zoom: 13.25 };
+  const url = stateURL(base, { ...defaults, viewport });
+  assert.deepEqual(readState(url, places, themes).viewport, viewport);
+  for (const invalid of [
+    "NaN,0,12",
+    "90,0,12",
+    "40,-200,12",
+    "40,-74,99",
+    "40,-74",
+  ]) {
+    assert.equal(
+      readState(base + "?map=" + invalid, places, themes).viewport,
+      null,
+    );
+  }
+});
+test("known mismatched photos stay out of the catalog", () => {
+  for (const slug of [
+    "temple-court",
+    "colonial-gardens",
+    "greenwich-mews",
+    "skytrack",
+    "sutton-square",
+  ]) {
+    const place = places.find((p) => p.slug === slug);
+    assert.deepEqual(place.photos, []);
+    assert.equal(place.image, null);
   }
 });

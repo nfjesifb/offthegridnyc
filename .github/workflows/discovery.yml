@@ -15,7 +15,9 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Rebuild discovery data and page enhancements
+      - name: Install template renderer
+        run: python -m pip install -r requirements.txt
+      - name: Rebuild catalog and all place pages
         run: |
           python scripts/build_catalog.py
           python scripts/enhance_pages.py

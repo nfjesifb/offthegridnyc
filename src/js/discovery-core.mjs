@@ -37,9 +37,15 @@ export function filterPlaces(places, state, saved = new Set(), origin = null) {
   const words = normalize(state.q).split(/\s+/).filter(Boolean);
   const results = places.filter((place) => {
     const text = normalize(
-      [place.name, place.description, place.history, place.themeLabel].join(
-        " ",
-      ),
+      [
+        place.name,
+        place.originalName,
+        place.description,
+        place.history,
+        place.context,
+        place.curatorNote,
+        place.themeLabel,
+      ].join(" "),
     );
     return (
       (!state.theme || place.theme === state.theme) &&
@@ -57,7 +63,20 @@ export function filterPlaces(places, state, saved = new Set(), origin = null) {
 export function readState(url, places, themes) {
   const params = new URL(url).searchParams;
   const known = new Set(places.map((place) => place.slug));
+  const view = (params.get("map") || "").split(",").map(Number);
+  const viewport =
+    view.length === 3 &&
+    view.every(Number.isFinite) &&
+    view[0] >= -85 &&
+    view[0] <= 85 &&
+    view[1] >= -180 &&
+    view[1] <= 180 &&
+    view[2] >= 1 &&
+    view[2] <= 19
+      ? { lat: view[0], lng: view[1], zoom: view[2] }
+      : null;
   return {
+    viewport,
     q: (params.get("q") || "").slice(0, 200),
     theme: themes.some((theme) => theme.id === params.get("theme"))
       ? params.get("theme")
@@ -73,7 +92,7 @@ export function readState(url, places, themes) {
           ),
         ]
       : null,
-    view: params.get("view") === "map" ? "map" : "list",
+    view: "map",
     sort: params.get("sort") === "az" ? "az" : "curated",
     place: known.has(params.get("place")) ? params.get("place") : null,
   };
@@ -89,7 +108,6 @@ export function stateURL(
   url.hash = "";
   if (state.q) url.searchParams.set("q", state.q);
   if (state.theme) url.searchParams.set("theme", state.theme);
-  if (state.view === "map") url.searchParams.set("view", "map");
   if (state.sort === "az") url.searchParams.set("sort", "az");
   let collection = state.collection;
   if (state.saved && share)
@@ -99,6 +117,10 @@ export function stateURL(
   else if (state.saved) url.searchParams.set("saved", "1");
   if (collection !== null && collection !== undefined)
     url.searchParams.set("collection", collection.join(","));
+  if (state.viewport) {
+    const { lat, lng, zoom } = state.viewport;
+    url.searchParams.set("map", `${lat.toFixed(5)},${lng.toFixed(5)},${zoom}`);
+  }
   if (state.place) url.searchParams.set("place", state.place);
   return url;
 }

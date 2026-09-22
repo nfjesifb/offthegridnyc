@@ -1,65 +1,28 @@
-"""Add metadata and shared discovery actions to existing pages and their template.
-Idempotent; never contacts the photo APIs or rewrites editorial copy.
-"""
-import html
+"""Render every place from one minimal template. No network calls or asset downloads."""
 import json
+from math import asin, cos, radians, sin, sqrt
 from pathlib import Path
-import re
+from jinja2 import Environment, FileSystemLoader, select_autoescape
 
 ROOT = Path(__file__).resolve().parents[1]
-START, END = '<!-- discovery:head -->', '<!-- /discovery:head -->'
-BODY_START, BODY_END = '<!-- discovery:tools -->', '<!-- /discovery:tools -->'
 
-def enhance(path, slug, description, image=None, template=False):
-    text = path.read_text(encoding='utf-8')
-    text = re.sub(r'\s*<!-- discovery:head -->.*?<!-- /discovery:head -->\s*', '', text, flags=re.S)
-    text = re.sub(r'\s*<!-- discovery:tools -->.*?<!-- /discovery:tools -->\s*', '', text, flags=re.S)
-    description = '{{ description|striptags|e }}' if template else html.escape(description, quote=True)
-    url = f'https://offthegridnyc.com/locations/{slug}/index.html'
-    title = '{{ name|e }} · Off The Grid NYC' if template else html.escape(re.search(r'<title>(.*?)</title>', text, re.S).group(1), quote=True)
-    head = f'''\n  {START}
-  <meta name="description" content="{description}">
-  <link rel="canonical" href="{url}">
-  <meta property="og:type" content="article">
-  <meta property="og:title" content="{title}">
-  <meta property="og:description" content="{description}">
-  <meta property="og:url" content="{url}">
-  <meta property="og:image" content="https://offthegridnyc.com/{image or 'assets/images/social-card.png'}">
-  <meta name="twitter:card" content="summary_large_image">
-  <link rel="stylesheet" href="../../assets/css/place-tools.css">
-  <script type="module" src="../../src/js/place-tools.js"></script>
-  {END}\n'''
-    text = text.replace('</head>', head + '</head>')
-    toolbar = f'''\n    {BODY_START}
-    <section class="otg-tools" data-slug="{slug}" aria-label="Plan your next detour">
-      <button type="button" data-save-place aria-pressed="false">♡ Save this place</button>
-      <button type="button" data-share-place>Share this place ↗</button>
-      <a href="../../?saved=1#explore">View saved places</a>
-      <a href="../../#explore">Explore the field guide ↗</a>
-      <p>Human-curated, with AI-assisted descriptions. Check details and access before visiting. Some places are private; enjoy them from public streets.</p>
-      <p class="otg-status" role="status" aria-live="polite"></p>
-      <input class="otg-share-url" aria-label="Share link" readonly hidden>
-      <div class="otg-related" aria-label="Related places"></div>
-    </section>
-    {BODY_END}\n'''
-    text = re.sub(r'(<main\b[^>]*>)', lambda match: match.group(1) + toolbar, text, count=1)
-    # Existing pages have no borough/neighborhood values; avoid exposing placeholders.
-    if template:
-        text = text.replace('{{ borough }} / {{ neighborhood }}', "{% if borough != 'N/A' %}{{ borough }}{% endif %}{% if neighborhood != 'N/A' %} / {{ neighborhood }}{% endif %}")
-    else:
-        text = text.replace('N/A / N/A', 'Off The Grid NYC')
-    text = re.sub(r'(?: title="Street view of this location")+', '', text)
-    text = text.replace('class="w-full h-full border-0" allowfullscreen', 'title="Street view of this location" class="w-full h-full border-0" allowfullscreen')
-    # Carousels remain user-controlled, respecting motion preferences by default.
-    text = re.sub(r'\s*autoplay: \{\s*delay: 5000,\s*disableOnInteraction: false,\s*\},', '', text)
-    path.write_text(text, encoding='utf-8')
+def distance(a, b):
+    value = sin(radians(b['lat']-a['lat'])/2)**2 + cos(radians(a['lat']))*cos(radians(b['lat']))*sin(radians(b['lng']-a['lng'])/2)**2
+    return 3958.8 * 2 * asin(min(1, sqrt(value)))
+
+def render(place, places):
+    environment = Environment(loader=FileSystemLoader(ROOT), autoescape=select_autoescape(['html']), trim_blocks=True, lstrip_blocks=True)
+    nearby = sorted((dict(p, distance=distance(place, p)) for p in places if p['slug'] != place['slug']), key=lambda p: p['distance'])[:4]
+    access_note = 'Check current access before visiting. A place on this map is not necessarily open to the public.'
+    if place['theme'] in ('communities', 'shared', 'houses', 'deep-lots', 'more'):
+        access_note = 'Homes and shared residential spaces may be private. View from public streets unless entry is clearly permitted; map pins are reference points, not confirmed entrances.'
+    return environment.get_template('location-template.html').render(place=place, nearby=nearby, access_note=access_note) + '\n'
 
 def main():
     places = json.loads((ROOT / 'assets/data/places.json').read_text(encoding='utf-8'))['places']
     for place in places:
-        enhance(ROOT / place['url'], place['slug'], place['description'], place['image'])
-    enhance(ROOT / 'location-template.html', '{{ slug }}', '', template=True)
-    print(f'Enhanced {len(places)} pages and the source template.')
+        target = ROOT / place['url']; target.parent.mkdir(parents=True, exist_ok=True)
+        target.write_text(render(place, places), encoding='utf-8')
+    print(f'Rendered {len(places)} complete place pages.')
 
-if __name__ == '__main__':
-    main()
+if __name__ == '__main__': main()

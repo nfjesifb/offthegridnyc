@@ -495,15 +495,8 @@ if __name__ == "__main__":
         # Store both status and slug
         photo_status_map[name] = {'hasPhotos': location_has_photos, 'slug': location_slug}
 
-        # Render the template with the context
-        rendered_html = template.render(context)
-
-        # Write the rendered HTML to the output file
-        output_path = os.path.join(location_output_dir, 'index.html')
-        with open(output_path, 'w', encoding='utf-8') as f:
-            f.write(rendered_html)
-
-        print(f"Generated page for {location['name']} ({output_path})")
+        # Page rendering runs once below, after the catalog and photo cache are saved.
+        # This keeps the offline renderer and the photo-refresh path on one template.
 
     # --- Save Cache ---
     try:
@@ -556,3 +549,7 @@ if __name__ == "__main__":
     # Adjust counts as needed, these might be less relevant now
     # print(f"  Pages generated: {generated_count}")
     # print(f"  Pages skipped (due to errors/missing coords if configured): {skipped_count}")
+    from scripts.build_catalog import build as build_discovery_catalog
+    from scripts.enhance_pages import main as render_place_pages
+    build_discovery_catalog(thumbnails=True)
+    render_place_pages()

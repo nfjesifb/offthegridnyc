@@ -1,60 +1,46 @@
 # Off The Grid NYC
 
-A human-curated field guide to NYC's hidden communities, unusual homes, shared spaces, and streets worth a detour. The editorial lens is how the city's spaces are made, shared, and lived in. Existing descriptions are AI-assisted and should be verified before visiting.
+A map of New York's unusual homes, courts, shared spaces and streets. Places are the primary content: the map fills the workspace, a narrow list follows its visible area, and a selected place opens beside the map.
 
-## Run locally
-
-The production site is static HTML, CSS, and JavaScript on the existing custom domain. No server, account system, or build service is required to use it.
+## Run
 
 ```sh
+python -m pip install -r requirements.txt
 python -m http.server 8765 --bind 127.0.0.1
 ```
 
-Open http://127.0.0.1:8765. JavaScript modules and catalog loading require an HTTP server, rather than opening index.html as a file.
+Open http://127.0.0.1:8765. The site is static and needs no application server or visitor account.
 
-## Discovery experience
+## Content and rebuilding
 
-- Search names, descriptions, histories, and themes. Categories come directly from the curated KML folders.
-- List and map views use the same filtered catalog. The map is loaded on demand, using vendored Leaflet 1.9.4 and attributed OpenStreetMap tiles. List discovery and Google directions continue to work when map tiles fail.
-- Save places in local storage without an account. The site handles blocked or corrupt storage, and synchronizes changes between open tabs.
-- Share searches, themes, individual places, and saved collections. Shared collections encode explicit place slugs, so recipients need no saved browser state.
-- “Surprise me” selects from the current results. “Near me” requests location only after a click, sorts by straight-line distance, and keeps coordinates in memory. Distances are not walking routes or access guarantees.
-- Existing stories have save/share controls, related discoveries, canonical metadata, and social previews. The full directory at `/browse/` works without JavaScript.
-
-## Content maintenance
-
-`locations.json` is the editorial source for names, descriptions, histories and canonical slugs. `offthegridnyc.kml` supplies coordinates and categories. The generated discovery catalog de-duplicates repeated slugs and verifies every page path. The original 86 records currently produce 85 unique places.
-
-After editing source content and generating any new location pages:
+- `locations.json`: original editorial records and canonical slugs.
+- `offthegridnyc.kml`: locations, categories and original curator notes. Readable notes are used when the old JSON description is empty; HTML is converted to text and damaged duplicate paragraphs are omitted.
+- `place-notes.json`: sourced descriptions and context for 23 entries, edited curator observations, corrected display names, and suppression of mismatched cached images. Original source files and photo assets remain intact.
+- `location-template.html`: one Jinja template for all 85 place pages. Rendering is offline, deterministic and HTML-escaped.
+- `photo_cache.json`: existing photographer credit information.
 
 ```sh
-python scripts/build_catalog.py
-python scripts/enhance_pages.py
+npm run build:catalog
 ```
 
-Commit the generated `assets/data/places.json`, `browse/index.html`, `sitemap.xml`, and location-page changes. `enhance_pages.py` is idempotent and updates the page template as well as existing stories, without calling the photo APIs. It preserves photos, attribution, discussion, and original editorial copy.
+Commit the resulting catalog, directory, sitemap and location pages. The build fails if an entry has no description. Pages show descriptions, available background, original map notes, linked sources, coordinates, an interactive context map, directions, Street View links, and four geographically nearby places. Empty galleries and empty history sections are omitted. The original AI-assisted background is identified as unverified. Sourced additions are linked where used; this is not a blanket historical fact check.
 
-For new or changed preview photos, install Pillow and run:
+The legacy `generate_pages.py` remains the external photo-fetching workflow and may call paid APIs. After updating its cache and data it invokes the same renderer. It is unnecessary for normal edits. To regenerate small previews from local photos, install Pillow and run `python scripts/build_catalog.py --thumbnails` before rendering pages. Files with `hasPhotos: false`, or `hidePhotos: true` in the additions, never produce galleries. Unrelated search images found during the visual audit are intentionally withheld.
 
-```sh
-python -m pip install Pillow
-python scripts/build_catalog.py --thumbnails
-python scripts/enhance_pages.py
-```
+## Map behavior
 
-The generator creates small WebP previews from photos already in the repository; originals and their credit information stay on the story pages. Leaflet is vendored under `assets/vendor/leaflet/`, including its license. Tile usage must continue to follow https://operations.osmfoundation.org/policies/tiles/: visible attribution, normal browser caching, and no bulk/offline prefetch. Choose a suitable tile provider if traffic grows beyond the public service's capacity.
+Search and type filters update both map markers and the list. Panning changes the visible list when "In map" is checked. Selecting or saving a place does not refit the whole city. Nearby links move directly to the next place. On small screens the map stays above a resizable details/list panel. Saved collections persist locally, sync between tabs and can be shared without an account. Shared map links retain the current area and zoom. Location permission is requested only on Near me; device coordinates are kept in session memory and are not included in URLs.
 
-The legacy `generate_pages.py` makes external photo requests. It is not needed to rebuild the explorer or run tests. The new homepage stylesheet is independent of the legacy Tailwind build used by story pages.
+Leaflet 1.9.4 is vendored with its license. OpenStreetMap tiles have visible attribution and use normal browser caching; there is no bulk/offline prefetch. Follow https://operations.osmfoundation.org/policies/tiles/ and choose a suitable provider if traffic grows. If maps fail, text, nearby links, directions and the static `/browse/` directory remain available. Story discussions load only when expanded.
 
-## Validation
-
-Node.js 22+ and Python 3 are sufficient for the core tests and catalog build:
+## Tests
 
 ```sh
 npm test
+python -m unittest discover -s tests -p 'test_*.py'
 ```
 
-Browser checks use Playwright (a development dependency). With the local server running:
+For browser tests, install Node development dependencies, install the Playwright browser, and run with the preview server available:
 
 ```sh
 npm ci
@@ -62,17 +48,8 @@ npx playwright install chromium
 npm run test:browser
 ```
 
-Optional environment variables: `TEST_URL` changes the preview address; `BROWSER_CHANNEL=msedge` uses installed Edge; `PLAYWRIGHT_MODULE` points to an existing Playwright package; `SCREENSHOT_DIR` changes the screenshot output folder. Browser tests block production analytics and test desktop/mobile layouts, sharing across browsers, persistence, denial/failure states, and no-JavaScript navigation. Screenshots are ignored by Git.
+`TEST_URL` sets a different server URL; `BROWSER_CHANNEL=msedge` uses installed Edge; `PLAYWRIGHT_MODULE` can point to an existing package; `SCREENSHOT_DIR` changes screenshot output. Tests block production analytics. GitHub Actions checks content, templates and deterministic regeneration.
 
-## Making the guide grow
+## Editorial next steps
 
-Implemented foundations: direct story links and social cards for sharing; shareable collections for planning together; saved places and related stories for return visits; a crawlable directory and sitemap for discovery; and a short contribution path using the existing form.
-
-Next editorial experiments, in priority order:
-
-1. Verify a small set of standout places, access notes and histories with primary sources. Show a genuine last-checked date only when checked. Confidence in the guide matters more than adding many uncertain entries.
-2. Publish a regular “one unexpected block” story, linking to a themed collection. Use the same recurring format in social posts; ask readers to contribute a place or a correction through the form.
-3. Create short, access-checked neighborhood walks with local historians or walking groups. Route planning should distinguish public streets from private entrances.
-4. Measure shared-link visits, engaged sessions and returning visitors in the existing analytics. If readers return, consider an opt-in newsletter with an actual delivery service and a clear publishing cadence.
-
-These are experiments, not guarantees of traffic. The implementation does not invent reviews, popularity counts, opening hours, or public-access claims.
+The useful growth mechanisms are direct place links, shared saved lists, and nearby discoveries. Future work should focus on the places: source-check existing AI-assisted histories, replace withheld images with confirmed photographs, and publish short neighborhood walks with verified access. Avoid popularity counts or access claims without evidence.

@@ -1,83 +1,87 @@
 import { SAVED_KEY, readSaved } from "./discovery-core.mjs";
-const panel = document.querySelector(".otg-tools");
-if (panel) {
-  const slug = panel.dataset.slug;
-  const storage = { getItem: (key) => localStorage.getItem(key) };
-  let saved = readSaved(storage);
-  const save = panel.querySelector("[data-save-place]");
-  const status = panel.querySelector('[role="status"]');
-  const sync = () => {
-    const active = saved.has(slug);
-    save.textContent = active ? "♥ Saved" : "♡ Save this place";
-    save.setAttribute("aria-pressed", String(active));
-  };
-  save.addEventListener("click", () => {
-    if (saved.has(slug)) saved.delete(slug);
-    else saved.add(slug);
-    try {
-      localStorage.setItem(SAVED_KEY, JSON.stringify([...saved]));
-      status.textContent = saved.has(slug)
-        ? "Saved in this browser for your next detour."
-        : "Removed from your saved places.";
-    } catch {
-      status.textContent =
-        "Your selection will last for this visit only. Browser storage is unavailable.";
-    }
-    sync();
-  });
-  panel
-    .querySelector("[data-share-place]")
-    .addEventListener("click", async () => {
-      const url = new URL(location.href);
-      url.search = "";
-      url.hash = "";
-      if (navigator.share) {
-        try {
-          await navigator.share({ title: document.title, url: url.href });
-          return;
-        } catch (error) {
-          if (error.name === "AbortError") return;
-        }
-      }
-      try {
-        await navigator.clipboard.writeText(url.href);
-        status.textContent = "Link copied. Pass along a good find.";
-      } catch {
-        const input = panel.querySelector(".otg-share-url");
-        input.hidden = false;
-        input.value = url.href;
-        input.focus();
-        input.select();
-        status.textContent =
-          "Copy the selected link with your browser or keyboard.";
-      }
-    });
-  window.addEventListener("storage", (event) => {
-    if (event.key === SAVED_KEY || event.key === null) {
-      saved = readSaved(storage);
-      sync();
-    }
-  });
+import { createExplorerMap } from "./explorer-map.mjs";
+import { setupDialogs, setupGallery, toast, share } from "./place-ui.mjs";
+const slug = document.body.dataset.slug;
+const storage = { getItem: (key) => localStorage.getItem(key) };
+let saved = readSaved(storage);
+const save = document.querySelector("#save-place");
+const sync = () => {
+  const active = saved.has(slug);
+  save.textContent = active ? "Saved" : "Save";
+  save.setAttribute("aria-pressed", String(active));
+};
+save.addEventListener("click", () => {
+  if (saved.has(slug)) saved.delete(slug);
+  else saved.add(slug);
+  try {
+    localStorage.setItem(SAVED_KEY, JSON.stringify([...saved]));
+    toast(
+      saved.has(slug) ? "Saved in this browser." : "Removed from saved places.",
+    );
+  } catch {
+    toast("Saved for this visit only. Browser storage is unavailable.");
+  }
   sync();
-  fetch("../../assets/data/places.json")
-    .then((response) => {
-      if (!response.ok) throw new Error("Catalog unavailable");
-      return response.json();
-    })
-    .then(({ places }) => {
-      const place = places.find((place) => place.slug === slug);
-      if (!place) return;
-      const related = panel.querySelector(".otg-related");
-      for (const next of places
-        .filter((next) => next.theme === place.theme && next.slug !== slug)
-        .slice(0, 3)) {
-        const link = document.createElement("a");
-        link.href = "../../" + next.url;
-        link.textContent = `Next detour: ${next.name} ↗`;
-        related.append(link);
-      }
-    })
-    .catch(() => {
-      /* The story and core actions remain usable without related places. */
-    });
+});
+document
+  .querySelector("#share-place")
+  .addEventListener("click", () =>
+    share(new URL(location.pathname, location.origin), document.title),
+  );
+window.addEventListener("storage", (event) => {
+  if (event.key === SAVED_KEY || event.key === null) {
+    saved = readSaved(storage);
+    sync();
+  }
+});
+sync();
+setupDialogs();
+document.querySelectorAll(".gallery").forEach(setupGallery);
+async function loadContext() {
+  const status = document.querySelector("#context-map-status");
+  try {
+    const response = await fetch("../../assets/data/places.json");
+    if (!response.ok) throw new Error("Catalog unavailable");
+    const { places } = await response.json();
+    const place = places.find((p) => p.slug === slug);
+    if (!place) throw new Error("Place unavailable");
+    const controller = await createExplorerMap(
+      document.querySelector("#context-map"),
+      () => {},
+      (text) => {
+        status.textContent = text;
+      },
+    );
+    controller.setPlaces([place], { fit: true });
+    controller.select(slug);
+  } catch {
+    status.textContent =
+      "The map couldn’t load. Directions and Street View links above are still available.";
+  }
 }
+loadContext();
+let commentsLoaded = false;
+document.querySelector("#discussion").addEventListener("toggle", (event) => {
+  if (!event.target.open || commentsLoaded) return;
+  commentsLoaded = true;
+  const script = document.createElement("script");
+  script.src = "https://giscus.app/client.js";
+  script.async = true;
+  script.crossOrigin = "anonymous";
+  const options = {
+    repo: "nfjesifb/offthegridnyc",
+    "repo-id": "R_kgDOOCIF_w",
+    category: "Announcements",
+    "category-id": "DIC_kwDOOCIF_84CpfwD",
+    mapping: "pathname",
+    strict: "0",
+    "reactions-enabled": "1",
+    "emit-metadata": "0",
+    "input-position": "top",
+    theme: "light",
+    lang: "en",
+  };
+  for (const [key, value] of Object.entries(options))
+    script.setAttribute("data-" + key, value);
+  document.querySelector("#comments").append(script);
+});

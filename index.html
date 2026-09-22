@@ -2,31 +2,23 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#f5f2e9" />
-    <title>Off The Grid NYC · A field guide to the unexpected city</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Off The Grid NYC · Places on the map</title>
     <meta
       name="description"
-      content="Discover NYC's hidden courts, unusual homes, shared spaces and streets worth a detour. Explore the map, save your favorite places and share a little of the unexpected city."
+      content="A map of New York's hidden courts, unusual homes, shared spaces and streets. Explore the places and the stories behind them."
     />
     <link rel="canonical" href="https://offthegridnyc.com/" />
-    <meta property="og:type" content="website" />
-    <meta
-      property="og:title"
-      content="Off The Grid NYC · The unexpected city"
-    />
+    <meta property="og:title" content="Off The Grid NYC" />
     <meta
       property="og:description"
-      content="Hidden courts. Unusual homes. Streets worth a detour. Find your next NYC discovery."
+      content="Hidden courts, shared gardens, unusual homes. Explore the places on the map."
     />
+    <meta property="og:type" content="website" />
     <meta property="og:url" content="https://offthegridnyc.com/" />
     <meta
       property="og:image"
       content="https://offthegridnyc.com/assets/images/social-card.png"
-    />
-    <meta
-      property="og:image:alt"
-      content="Off The Grid NYC — A field guide to the unexpected city"
     />
     <meta name="twitter:card" content="summary_large_image" />
     <link rel="icon" href="favicon.ico" />
@@ -45,273 +37,135 @@
       gtag("config", "G-DS1YWJT1KC");
     </script>
   </head>
-  <body>
-    <a class="skip-link" href="#explore">Skip to places</a>
-    <header class="site-header">
-      <div class="shell header-inner">
-        <a class="brand" href="./" aria-label="Off The Grid NYC home"
-          >OFF THE GRID <span>NYC</span></a
-        >
-        <nav aria-label="Main navigation">
-          <a href="#explore">Explore</a><a href="#about">The idea</a
-          ><button
-            id="saved-nav"
-            class="nav-saved"
-            type="button"
-            aria-pressed="false"
-          >
-            Saved <span id="saved-count">0</span></button
-          ><a class="nav-submit" href="#contribute"
-            >Suggest a spot <span aria-hidden="true">↗</span></a
-          >
-        </nav>
-      </div>
+  <body class="map-page">
+    <a class="skip-link" href="#search">Skip to places</a>
+    <header class="app-header">
+      <a class="brand" href="./">Off The Grid <span>NYC</span></a>
+      <nav aria-label="Main navigation">
+        <button id="saved-nav" type="button" aria-pressed="false">
+          Saved <span id="saved-count">0</span></button
+        ><button id="share-results" type="button">Share map</button
+        ><button id="about-open" type="button" aria-label="About this map">
+          About
+        </button>
+      </nav>
     </header>
-    <main>
-      <section class="shell hero" aria-labelledby="hero-title">
-        <div class="hero-copy">
-          <p class="eyebrow">
-            <span class="tiny-star" aria-hidden="true">✳</span> A field guide
-            for the curious
+    <main class="map-workspace" id="workspace">
+      <aside class="sidebar" aria-label="Places">
+        <button
+          id="panel-toggle"
+          class="panel-toggle"
+          type="button"
+          aria-expanded="false"
+        >
+          Expand places <span aria-hidden="true">↑</span>
+        </button>
+        <div id="browse-panel" class="browse-panel">
+          <div class="search-controls">
+            <label class="sr-only" for="search">Search places</label
+            ><input
+              id="search"
+              type="search"
+              autocomplete="off"
+              placeholder="Search places, streets, stories"
+              maxlength="200"
+            /><label class="sr-only" for="theme">Type of place</label
+            ><select id="theme">
+              <option value="">All places</option>
+            </select>
+            <div class="minor-tools">
+              <button id="nearby" type="button">Near me</button
+              ><button id="surprise" type="button">Random place</button
+              ><button id="reset" type="button" hidden>Clear</button>
+            </div>
+          </div>
+          <div class="list-heading">
+            <p id="results-count" role="status">Loading places…</p>
+            <label><input type="checkbox" id="in-view" checked /> In map</label>
+          </div>
+          <div id="collection-note" class="inline-note" hidden>
+            Shared collection
+            <button id="leave-collection" type="button">Show all</button>
+          </div>
+          <p id="saved-note" class="inline-note" hidden>
+            Saved in this browser. Share map to send this collection.
           </p>
-          <h1 id="hero-title">
-            Same city.<br /><em>Different perspective.</em>
-          </h1>
-          <p class="hero-description">
-            A quiet court behind a busy street. A park above the traffic. The
-            places that make New York, New York—and the stories of how they got
-            here.
-          </p>
-          <div class="hero-actions">
-            <a class="button primary" href="#explore"
-              >Find your next detour <span aria-hidden="true">↗</span></a
-            ><button class="button text-button" data-surprise type="button">
-              Surprise me <span aria-hidden="true">⤨</span>
-            </button>
-          </div>
-          <p class="hero-note">
-            <span class="dot" aria-hidden="true"></span> Human-curated. Always a
-            little unexpected.
-          </p>
-        </div>
-        <figure class="hero-feature">
-          <a href="locations/sylvan-terrace/index.html"
-            ><img
-              src="assets/images/places/sylvan-terrace.webp"
-              width="800"
-              height="600"
-              alt="The wooden row houses of Sylvan Terrace"
-              fetchpriority="high" /></a
-          ><span class="field-label"
-            >FROM THE FIELD GUIDE <span aria-hidden="true">↗</span></span
-          >
-          <figcaption>
-            <div>
-              <span class="eyebrow">Hidden courts & communities</span
-              ><a href="locations/sylvan-terrace/index.html"
-                >A different side of Sylvan Terrace
-                <span aria-hidden="true">↗</span></a
-              >
-            </div>
-            <a class="photo-credit" href="locations/sylvan-terrace/index.html"
-              >Photo credits</a
-            >
-          </figcaption>
-        </figure>
-      </section>
-      <section
-        id="explore"
-        class="explore-section"
-        aria-labelledby="explore-title"
-      >
-        <div class="shell">
-          <div class="section-heading">
-            <div>
-              <p class="eyebrow">Take the long way home</p>
-              <h2 id="explore-title">Find your kind of unexpected.</h2>
-            </div>
-            <a class="directory-link" href="browse/"
-              >Browse every place <span aria-hidden="true">↗</span></a
-            >
-          </div>
-          <div class="explore-tools">
-            <div class="search-wrap">
-              <label class="sr-only" for="search"
-                >Search places, stories or themes</label
-              ><span aria-hidden="true">⌕</span
-              ><input
-                id="search"
-                type="search"
-                placeholder="Try “garden”, “rooftop” or “Brooklyn”…"
-                autocomplete="off"
-              />
-            </div>
-            <button id="nearby" class="button secondary" type="button">
-              ◎ Near me
-            </button>
-            <div class="view-switch" role="group" aria-label="Display places">
-              <button type="button" data-view="list" aria-pressed="true">
-                ▦ List</button
-              ><button type="button" data-view="map" aria-pressed="false">
-                ⌖ Map
-              </button>
-            </div>
-          </div>
-          <div
-            id="themes"
-            class="theme-filters"
-            role="group"
-            aria-label="Filter by theme"
-          ></div>
-          <div class="results-toolbar">
-            <p id="results-count" role="status" aria-live="polite">
-              Loading the field guide…
-            </p>
-            <div class="results-actions">
-              <button id="reset" type="button" class="text-button" hidden>
-                Clear filters</button
-              ><button id="share-results" type="button" class="text-button">
-                Share this view ↗</button
-              ><label class="sr-only" for="sort">Sort places</label
-              ><select id="sort">
-                <option value="curated">Curated order</option>
-                <option value="az">Name A–Z</option>
-                <option value="nearby" disabled>Nearest first</option>
-              </select>
-            </div>
-          </div>
-          <div id="collection-note" class="notice" hidden>
-            <span id="collection-text"></span>
-            <button id="leave-collection" class="text-button" type="button">
-              Explore all places
-            </button>
-          </div>
-          <p id="saved-note" class="notice" hidden>
-            Your places are saved in this browser. Share this view to send your
-            collection to a friend.
-          </p>
-          <div id="explorer-layout" class="explorer-layout">
-            <section
-              id="map-panel"
-              class="map-panel"
-              aria-label="Map of matching places"
-              hidden
-            >
-              <div id="map"></div>
-              <p id="map-status" role="status">Loading the map…</p>
-              <a
-                class="map-external"
-                href="https://www.google.com/maps/d/viewer?mid=1gl24kbeTNZ13SmaCbMsam2CYe8Ury7M"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Open the original Google Map ↗</a
-              >
-            </section>
-            <div class="results-column">
-              <div id="place-grid" class="place-grid" aria-busy="true"></div>
-              <div id="empty-state" class="empty-state" hidden>
-                <span aria-hidden="true">↗</span>
-                <h3 id="empty-title">A different detour?</h3>
-                <p id="empty-description"></p>
-                <button id="empty-reset" class="button primary" type="button">
-                  Explore all places
-                </button>
-              </div>
-              <div class="load-more-wrap">
-                <button
-                  id="load-more"
-                  class="button secondary"
-                  type="button"
-                  hidden
-                >
-                  Show more places
-                </button>
-              </div>
-            </div>
+          <ol
+            id="place-list"
+            class="place-list"
+            aria-label="Places on the map"
+            aria-busy="true"
+          ></ol>
+          <div id="empty-state" class="empty-state" hidden>
+            <p id="empty-description"></p>
+            <button id="empty-reset" type="button">Show all places</button>
           </div>
           <noscript
-            ><p class="notice">
-              Explore every spot in the
-              <a href="browse/">complete place directory</a>. Enable JavaScript
-              for search, saved places and the interactive map.
+            ><p class="inline-note">
+              The interactive map needs JavaScript.
+              <a href="browse/">Browse all places</a>.
             </p></noscript
           >
-          <p class="explore-footnote">
-            Curated by humans; descriptions are AI-assisted. Check current
-            access before you go. Some discoveries are private homes or spaces
-            best appreciated from the street.
-          </p>
         </div>
-      </section>
-      <section id="about" class="shell about-section">
-        <p class="eyebrow">Proof NYC has depth of character</p>
-        <div>
-          <h2>There’s more to the city<br />than the grid.</h2>
-          <p>
-            Off The Grid NYC is a collection of places that ask you to look a
-            little closer. Hidden communities, shared gardens, surprising
-            buildings, and small choices that make a big difference to city
-            life.
-          </p>
-          <p>
-            It’s also a question: who gets space, how is it shared, and what
-            makes a place good to live in? Follow a detour and see the
-            historical and modern political economy of niceness in NYC for
-            yourself.
-          </p>
-        </div>
-      </section>
-      <section id="contribute" class="contribute-section">
-        <div class="shell contribute-inner">
-          <div>
-            <p class="eyebrow">The city is a collective discovery</p>
-            <h2>Know a place we’ve missed?</h2>
-            <p>
-              A tucked-away street. An unexpected building. A story worth
-              telling.<br />Help the field guide grow, one good find at a time.
-            </p>
-          </div>
-          <a
-            class="button light"
-            href="https://docs.google.com/forms/d/e/1FAIpQLSf-3Fi0LTuKLsSUQvrr_uVkenJkpHBEO5bDQXM567_NW4U5Ag/viewform"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Suggest a spot <span aria-hidden="true">↗</span></a
-          >
-        </div>
+        <section
+          id="selected-place"
+          class="selected-place"
+          aria-labelledby="place-title"
+          hidden
+        >
+          <button id="back-to-results" class="back-link" type="button">
+            ← Places
+          </button>
+          <div id="place-content"></div>
+        </section>
+      </aside>
+      <section class="map-section" aria-label="Map of New York places">
+        <div
+          id="map"
+          role="region"
+          aria-label="Interactive map; use arrow keys to pan and plus or minus to zoom"
+        ></div>
+        <button id="fit-map" class="map-control" type="button">
+          Show all results
+        </button>
+        <p id="map-status" class="map-status" role="status">Loading map…</p>
       </section>
     </main>
-    <footer class="shell site-footer">
-      <a class="brand" href="./">OFF THE GRID <span>NYC</span></a>
-      <p>Stay curious. Take a detour.</p>
-      <a href="browse/">Browse every place ↗</a>
-    </footer>
-    <dialog id="place-dialog" aria-labelledby="dialog-title">
-      <button
-        class="dialog-close"
-        type="button"
-        aria-label="Close place details"
-      >
+    <dialog id="about-dialog" aria-labelledby="about-title">
+      <button class="dialog-close" aria-label="Close about" type="button">
         ×
       </button>
-      <div id="dialog-content"></div>
+      <h1 id="about-title">Off The Grid NYC</h1>
+      <p>
+        Hidden communities, unusual homes, shared spaces and good streets. A
+        collection about how New York's spaces are made and lived in.
+      </p>
+      <p>
+        Places are curated by people. Some background notes were AI-assisted;
+        sources are linked where available. Check current access before visiting
+        private spaces.
+      </p>
+      <p>
+        <a href="browse/">All places</a> ·
+        <a
+          href="https://docs.google.com/forms/d/e/1FAIpQLSf-3Fi0LTuKLsSUQvrr_uVkenJkpHBEO5bDQXM567_NW4U5Ag/viewform"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Suggest a place or correction ↗</a
+        >
+      </p>
     </dialog>
     <dialog id="share-dialog" aria-labelledby="share-title">
-      <button class="dialog-close" type="button" aria-label="Close sharing">
+      <button class="dialog-close" aria-label="Close sharing" type="button">
         ×
       </button>
-      <h2 id="share-title">Pass along a good find.</h2>
-      <p>Copy this link and send it to someone curious.</p>
-      <label for="share-url">Share link</label
-      ><input id="share-url" readonly /><button
-        id="copy-link"
-        class="button primary"
-        type="button"
-      >
+      <h2 id="share-title">Share this map</h2>
+      <label for="share-url">Copy this link</label
+      ><input id="share-url" readonly /><button id="copy-link" type="button">
         Copy link
       </button>
       <p id="share-status" role="status"></p>
     </dialog>
-    <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+    <p id="toast" class="toast" role="status" hidden></p>
   </body>
 </html>
