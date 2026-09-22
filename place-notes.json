@@ -1,0 +1,330 @@
+{
+  "sylvan-court": {
+    "description": "A small residential court off East 121st Street in East Harlem, with low brick houses facing a shared interior passage. Its arrangement interrupts the surrounding Manhattan street grid.",
+    "context": "The city's East Harlem environmental review describes former carriage houses around a private courtyard. Look at the relationship between the narrow entrance and the houses set inside the block.",
+    "sources": [
+      {
+        "title": "NYC Planning · East Harlem historic resources",
+        "url": "https://www.nyc.gov/assets/planning/download/pdf/applicants/env-review/east-harlem/appendj_feis.pdf"
+      }
+    ]
+  },
+  "riverview-terrace": {
+    "description": "A short private residential lane running north from Sutton Square, beside the East River. Townhouses here share an unusually sheltered setting at the edge of the Midtown street grid.",
+    "context": "The distinction between the public street end and the private homes and garden is part of what makes this corner interesting. Appreciate the arrangement from public space; the residential lane is not a through-route.",
+    "sources": [
+      {
+        "title": "Sutton Place · Riverview Terrace",
+        "url": "https://en.wikipedia.org/wiki/Sutton_Place,_Manhattan"
+      }
+    ]
+  },
+  "greenwich-mews": {
+    "description": "A group of townhouses arranged as a residential mews at 687 Greenwich Street, south of West 10th Street. The inward-facing layout is a comparatively recent addition to the Village's older streets.",
+    "context": "Village Preservation dates the development to 1986 and records that it replaced a garage. This is an example of the courtyard form being reused in modern housing, rather than simply surviving from the carriage-house era.",
+    "hidePhotos": true,
+    "sources": [
+      {
+        "title": "Village Preservation · New buildings in the Greenwich Village Historic District",
+        "url": "https://www.villagepreservation.org/wp-content/uploads/2021/05/New-Buildings-within-the-Greenwich-Village-Historic-District-update-5-21.pdf"
+      }
+    ]
+  },
+  "chester-court": {
+    "description": "A short street off Flatbush Avenue lined by a coordinated group of Tudor Revival row houses. Repeated gables, brickwork and half-timbered upper stories give the court a distinct character.",
+    "context": "The development was planned by Peter J. Collins in 1911–12, drawing on the architecture he had seen in Chester, England. The Landmarks Preservation Commission's designation report explains how this suburban-looking form was fitted into an urban row-house development.",
+    "sources": [
+      {
+        "title": "NYC Landmarks Preservation Commission · Chester Court",
+        "url": "https://s-media.nyc.gov/agencies/lpc/lp/2567.pdf"
+      }
+    ]
+  },
+  "clinton-court": {
+    "description": "A secluded courtyard and former carriage house behind West 46th Street in Hell's Kitchen. The small interior space sits behind the buildings facing the street.",
+    "context": "City Tech's architectural library describes the courtyard as barely visible from the street. The narrow passage and the contrast between the interior court and surrounding buildings are the points to notice; the residential courtyard is not a public attraction.",
+    "sources": [
+      {
+        "title": "CUNY City Tech · The Secret Hideaway at Clinton Court",
+        "url": "https://openlab.citytech.cuny.edu/littlefreearchitecturallibrary/the-secret-hideaway-at-clinton-court/"
+      }
+    ]
+  },
+  "ablemarle-terrace": {
+    "name": "Albemarle Terrace",
+    "description": "A residential court off East 21st Street in Flatbush, lined by a unified group of early twentieth-century row houses. It forms a small historic district together with nearby Kenmore Terrace.",
+    "context": "The houses were designed by Slee & Bryson. The city's designation report describes Albemarle's neo-Federal architecture and the coordinated scale and materials that make the court feel like a distinct piece of the neighborhood.",
+    "sources": [
+      {
+        "title": "NYC Landmarks Preservation Commission · Albemarle–Kenmore Terraces",
+        "url": "https://s-media.nyc.gov/agencies/lpc/lp/0989.pdf"
+      }
+    ]
+  },
+  "barwell-terrace": {
+    "description": "A narrow residential court in Bay Ridge, between Third and Fourth avenues around 97th–98th streets. Houses face an interior pedestrian space rather than a conventional traffic street.",
+    "context": "The city's Chester Court designation report identifies Barwell Terrace alongside Hamilton Walk and Lafayette Walk as examples of houses clustered around narrow courts closed to vehicles. These are lived-in spaces; view from the entrance unless access is clearly permitted.",
+    "sources": [
+      {
+        "title": "NYC Landmarks Preservation Commission · Brooklyn courtyard housing",
+        "url": "https://s-media.nyc.gov/agencies/lpc/lp/2567.pdf"
+      },
+      {
+        "title": "Brooklyn Home Reporter · Bay Ridge private streets",
+        "url": "https://brooklynreporter.com/2017/03/alley-oops-ridgeites-battle-change-garbage-pickup-private-streets/"
+      }
+    ]
+  },
+  "madeline-court": {
+    "description": "A small residential cul-de-sac entered from 68th Street between Ridge Boulevard and Third Avenue in Bay Ridge. Brick entrance piers lead to red-brick houses with half-timbering and slate roofs.",
+    "context": "The Historic Districts Council includes Madeline Court in its Bay Ridge walking guide as an example of the neighborhood's small residential enclaves. Notice how the entrance frames a distinct streetscape within the larger block.",
+    "sources": [
+      {
+        "title": "Historic Districts Council · Madeline Court",
+        "url": "https://6tocelebrate.org/neighborhoods/bay-ridge/"
+      }
+    ]
+  },
+  "hamilton-walk": {
+    "description": "A pedestrian residential lane off 94th Street between Third and Fourth avenues in Bay Ridge. Low brick houses and small gardens face a shared walkway.",
+    "context": "Hamilton Walk runs parallel to nearby Lafayette Walk. The two lanes make a useful comparison: each fits a small residential community into the interior of a large block, using a footpath instead of a traffic street.",
+    "sources": [
+      {
+        "title": "Brooklyn Eagle · Hamilton and Lafayette Walks",
+        "url": "https://brooklyneagle.com/71467/come-see-lafayette-walk-in-bay-ridge-where-brooklyn-dodgers-pitcher-carl-erskine-lived/"
+      }
+    ]
+  },
+  "lafayette-walk": {
+    "description": "A short pedestrian-only residential lane entered from 94th Street in Bay Ridge. Brick row houses and planted front gardens line the route, parallel to Hamilton Walk.",
+    "context": "The walk is less than a block long. Its interest lies in how the houses address a narrow shared space rather than the surrounding avenues. Compare the two neighboring walks from their street entrances and respect residential access.",
+    "sources": [
+      {
+        "title": "Brooklyn Eagle · Lafayette Walk",
+        "url": "https://brooklyneagle.com/71467/come-see-lafayette-walk-in-bay-ridge-where-brooklyn-dodgers-pitcher-carl-erskine-lived/"
+      }
+    ]
+  },
+  "colonial-gardens": {
+    "description": "A small residential enclave near Shore Road and Narrows Avenue in Bay Ridge. Houses are arranged along an interior brick-paved walk, giving the group a different relationship to the street.",
+    "context": "The Historic Districts Council's Bay Ridge survey describes two-story houses here with Tudor, Mediterranean and Colonial Revival influences. The arrangement of the homes around an internal path is as significant as their individual styles.",
+    "hidePhotos": true,
+    "sources": [
+      {
+        "title": "Historic Districts Council · Bay Ridge survey, page 139",
+        "url": "https://hdc.org/wp-content/uploads/2019/10/Bay-Ridge-Report-Final-091014Smaller.pdf"
+      }
+    ]
+  },
+  "kenmore-terrace": {
+    "description": "A small residential court in Flatbush, paired with neighboring Albemarle Terrace in a designated historic district. Its low houses form a coherent enclosure around the street.",
+    "context": "Designed by Slee & Bryson, Kenmore shows the influence of the Garden City movement. The landmark report notes the houses' incorporated garages as a sign of changing domestic life and the growing role of the automobile.",
+    "sources": [
+      {
+        "title": "NYC Landmarks Preservation Commission · Albemarle–Kenmore Terraces",
+        "url": "https://s-media.nyc.gov/agencies/lpc/lp/0989.pdf"
+      }
+    ]
+  },
+  "temple-court": {
+    "description": "A short lane of wood-frame houses in Windsor Terrace, near Prospect Park. It extends between Seeley Street and Terrace Place, with access from the Seeley Street end.",
+    "context": "Historical maps cited by Brownstoner show the lane lined with wooden houses by 1888. The low scale and frame construction distinguish this small street from the surrounding blocks. This is the Brooklyn residential lane, not the Manhattan restaurant of the same name.",
+    "hidePhotos": true,
+    "sources": [
+      {
+        "title": "Brownstoner · The wooden houses of Temple Court",
+        "url": "https://www.brownstoner.com/architecture/brooklyn-architecture-windsor-terrace-temple-court-betty-morissey/"
+      }
+    ]
+  },
+  "track-on-the-roof": {
+    "hidePhotos": true
+  },
+  "skytrack": {
+    "hidePhotos": true
+  },
+  "sky-port": {
+    "hidePhotos": true,
+    "description": "A seaplane terminal at the East River end of East 23rd Street. Aircraft use the water alongside the marina, placing a small aviation facility within Manhattan’s waterfront infrastructure.",
+    "context": "DockNYC identifies the site as Skyport’s seaplane terminal, beside Skyport Marina. The city’s lease history for this waterfront property extends back to 1959 and includes marina and seaplane uses. This is an operating transport facility; check the operator for any travel arrangements.",
+    "sources": [
+      {
+        "title": "DockNYC — Skyport seaplane terminal",
+        "url": "https://www.docknyc.com/skyport"
+      },
+      {
+        "title": "NYC Comptroller — Skyports lease history",
+        "url": "https://comptroller.nyc.gov/reports/audit-report-on-the-compliance-of-new-york-skyports-inc-with-its-lease-agreement/"
+      }
+    ],
+    "name": "Skyport Seaplane Terminal",
+    "hideCuratorNote": true
+  },
+  "commandants-mansion": {
+    "hidePhotos": true,
+    "description": "The former home of the Brooklyn Navy Yard commandant, also called Quarters A. This Federal-style house sits on a rise by Evans Street in Vinegar Hill, apart from the surrounding street grid.",
+    "context": "The Navy dates its completion to 1806, when Jonathan Thorn became the yard’s first commandant. It later became a National Historic Landmark. The house is privately owned; its presence in the neighborhood can be appreciated from public streets.",
+    "sources": [
+      {
+        "title": "Naval History and Heritage Command — New York Navy Yard",
+        "url": "https://www.history.navy.mil/browse-by-topic/organization-and-administration/historic-bases/ny-brooklyn-navy-yard.html"
+      },
+      {
+        "title": "National Park Service — Brooklyn Navy Yard Historic District",
+        "url": "https://npgallery.nps.gov/GetAsset/314d2a7b-7525-4998-8a77-dd3b9dba7073"
+      }
+    ]
+  },
+  "cliff-house-pumpkin-house": {
+    "hidePhotos": true
+  },
+  "sutton-square": {
+    "hidePhotos": true
+  },
+  "5-carmine-st-abc": {
+    "hidePhotos": true,
+    "description": "A cluster of homes within the block behind 5 Carmine Street in Greenwich Village. A brick-walled passage and gated courtyard separate this small residential interior from the busy street frontage.",
+    "context": "The city’s historic-district report describes the passage to the interior houses and traces the street-front complex to buildings constructed around 1829 and 1832. Later alterations joined and changed the frontage. The distinction between the commercial street edge and the homes behind it is what makes this address unusual.",
+    "sources": [
+      {
+        "title": "NYC LPC — Greenwich Village Historic District Extension II, 5 Carmine Street",
+        "url": "https://media.villagepreservation.org/wp-content/uploads/2020/03/15123045/Greenwich-Village-Historic-District-Extension-II-Designation-Report.pdf"
+      }
+    ]
+  },
+  "roof-top-cape-cod": {
+    "hidePhotos": true,
+    "description": "A shingled cottage on top of 72 East 1st Street, at First Avenue. Its pitched roof and terrace place the silhouette of a small coastal house above an East Village building.",
+    "context": "The cottage belongs to a private penthouse and has been described in property records as a separate studio above the main duplex. It is an example of rooftop space taking on the form of a house and yard. There is no public rooftop access.",
+    "sources": [
+      {
+        "title": "Compass — 72 East 1st Street penthouse and cottage",
+        "url": "https://www.compass.com/homedetails/72-E-1st-St-Unit-PH-Manhattan-NY-10003/203K2A_pid/"
+      }
+    ],
+    "name": "Rooftop Cape Cod"
+  },
+  "ditmas-park": {
+    "hidePhotos": true
+  },
+  "riverdale": {
+    "hidePhotos": true
+  },
+  "10-bedford-st": {
+    "description": "A separate backhouse behind the street-facing building at 10 Bedford Street. It is a small example of the second layer of homes concealed inside many Greenwich Village blocks.",
+    "context": "Village Preservation documents how the backhouse was visible from Downing Street while an adjoining lot stood empty. Construction on that lot in 2009 concealed it again. The interesting feature is the relationship between front house, courtyard and rear dwelling, rather than a public entrance from the street.",
+    "sources": [
+      {
+        "title": "Village Preservation — The Backstory on Backhouses",
+        "url": "https://villagepreservation.org/2018/01/01/the-backstory-on-backhouses-2/"
+      }
+    ]
+  },
+  "jones-wood-garden": {
+    "description": "A shared garden inside an Upper East Side block, enclosed by twelve townhouses on East 65th and East 66th Streets. Separate backyards were brought together to create a larger common landscape.",
+    "context": "The Smithsonian’s garden archive traces the scheme to architect Edwin S. Hewitt’s purchase of the twelve brownstones in 1919. He removed dividing fences and walls and introduced paths, planting beds and water features. Covenants protected the shared arrangement. This is a private residents’ garden.",
+    "sources": [
+      {
+        "title": "Smithsonian Gardens — The Jones’ Wood Garden",
+        "url": "https://gardens.si.edu/collections/explore/ead_component/sova-aag-gca-ref26941"
+      }
+    ]
+  },
+  "sunny-side-gardens": {
+    "description": "Low-rise homes arranged around shared interior gardens in Sunnyside, Queens. Paths between the houses connect a network of courts, giving the block interiors a different character from the surrounding streets.",
+    "context": "Built mainly from 1924 to 1928, Sunnyside Gardens was designed by Clarence Stein, Henry Wright, Frederick Ackerman and landscape architect Marjorie Cautley. Its small private yards and larger common gardens made open space part of the housing plan. The neighborhood became a New York City historic district in 2007; the shared gardens remain residential spaces.",
+    "sources": [
+      {
+        "title": "NYC Landmarks Preservation Commission — Sunnyside Gardens history and character",
+        "url": "https://www.nyc.gov/assets/lpc/downloads/pdf/pubs/ssg_manual_september_09.pdf"
+      }
+    ],
+    "name": "Sunnyside Gardens"
+  },
+  "48-tiffany-place": {
+    "description": "A small, detached home on cobblestone Tiffany Place in Brooklyn’s Columbia Street Waterfront District. The property’s compact footprint offers a different pattern of living from a continuous row of street-front houses.",
+    "context": "An archived listing records a 2013 renovation with Massim Studio. The design used double-height space, exposed structural steel and high windows to bring light into the house. It is a private residence, included here for its arrangement and scale.",
+    "sources": [
+      {
+        "title": "Compass — 48 Tiffany Place, archived property description",
+        "url": "https://www.compass.com/homedetails/48-Tiffany-Pl-Brooklyn-NY-11231/20BP05_pid/"
+      }
+    ]
+  },
+  "137-oak-st": {
+    "description": "The former Greenpoint Home for the Aged at Oak and Guernsey Streets. The building occupies the bend in the street, giving it a distinctive setting within Greenpoint’s historic district.",
+    "context": "The Landmarks Preservation Commission identifies it as an 1886–87 design by Theobald Engelhardt, whose work also includes nearby houses and St. John’s Evangelical Lutheran Church. Its institutional history adds context to a building that can otherwise look like an unusually large house. Current interior access is not offered by this guide.",
+    "sources": [
+      {
+        "title": "NYC Landmarks Preservation Commission — Greenpoint Historic District",
+        "url": "https://s-media.nyc.gov/agencies/lpc/lp/1248.pdf"
+      }
+    ]
+  },
+  "193-prospect-place": {
+    "description": "A Prospect Heights townhouse selected for the space behind its street-facing building. The original map focuses on the lot’s depth and the room it leaves for a rear garden.",
+    "context": "Published property reporting gives the lot as approximately 20 by 131 feet. That is useful context for the curator’s interest in deep residential parcels: much of what makes this place distinctive lies behind the facade and cannot be assumed visible or accessible from the sidewalk.",
+    "sources": [
+      {
+        "title": "Traded — 193 Prospect Place property dimensions",
+        "url": "https://traded.co/deals/new-york/multifamily/sale/193-prospect-place"
+      }
+    ]
+  },
+  "46a-prospect-park-southwest": {
+    "description": "A home tucked into the block just off Prospect Park Southwest. The original map highlights the combination of a sheltered residential setting and proximity to Prospect Park and Green-Wood Cemetery. The house itself is private.",
+    "descriptionOrigin": "curator"
+  },
+  "301-greene-ave": {
+    "description": "A two-story brick house within the block, associated with the townhouse at 301 Greene Avenue. The curator highlights an unusual property outline that makes room for a separate-feeling home behind the street frontage.",
+    "descriptionOrigin": "curator"
+  },
+  "129-degraw-abcd": {
+    "description": "A group of homes reached by a shared walkway off Degraw Street. The walkway gives the houses a common approach within the block, separating their entrances from the street. This is a residential arrangement, not a public through-route.",
+    "descriptionOrigin": "curator"
+  },
+  "117-underhill-avenue": {
+    "description": "A residence set well inside its block off Underhill Avenue. The original map singles out the distance between the home and the street: a small example of living within a block rather than directly on its edge.",
+    "descriptionOrigin": "curator"
+  },
+  "158-prospect-place": {
+    "description": "A home set far back within a Prospect Place block. The curator’s interest is the contrast between its sheltered position and the surrounding city: an interior residential space behind the more familiar street-facing houses.",
+    "descriptionOrigin": "curator"
+  },
+  "34-strong-place": {
+    "description": "A home within the block off Strong Place. Its interest lies in the separation from the street and in the extra layer of housing behind the street frontage. The original map records the arrangement, rather than a public place to enter.",
+    "descriptionOrigin": "curator"
+  },
+  "46-7th-ave": {
+    "description": "A carriage house with a garden and a surrounding brick path, recorded in the original map at 46 Seventh Avenue. The garden and separate house form a small residential setting apart from the avenue; access is private.",
+    "descriptionOrigin": "curator"
+  },
+  "1288-prospect-place": {
+    "description": "An interior-block property identified by the curator through an analysis of lot shapes. The original note explicitly says it had not been visited. It is included as a lead about the structure of the block; the building’s arrangement and access still need on-site confirmation.",
+    "descriptionOrigin": "curator"
+  },
+  "30-36-remsen": {
+    "description": "A group of deep residential lots on Remsen Street in Brooklyn Heights. The original map imagines how neighboring rear yards might work as a shared garden. That is a proposal by the curator, not a description of an existing public or communal garden.",
+    "descriptionOrigin": "curator"
+  },
+  "46-58-remsen": {
+    "description": "Deep residential parcels behind the Remsen Street frontage in Brooklyn Heights. The curator highlights the possibility of connecting rear yards into shared open space. The entry describes that potential; it does not establish a shared-access agreement or a garden open to visitors.",
+    "descriptionOrigin": "curator"
+  },
+  "claremontvanderbilt-new-townhouses-with-communal-garden": {
+    "description": "A group of newer townhouses near Claremont and Vanderbilt Avenues, noted by the curator for their communal garden. The shared space behind the homes is the reason for this entry: a contemporary example alongside the map’s older garden communities.",
+    "descriptionOrigin": "curator"
+  },
+  "245-washington-ave": {
+    "description": "The property at 245 Washington Avenue is included for its unusually deep residential parcel. The curator groups it with nearby examples of lots extending through the block. This entry concerns the shape and potential of the land behind the house, not a public route or garden.",
+    "descriptionOrigin": "curator"
+  },
+  "246-washington-ave": {
+    "description": "The property at 246 Washington Avenue is included for its unusually deep residential parcel. The curator groups it with nearby examples of lots extending through the block. This entry concerns the shape and potential of the land behind the house, not a public route or garden.",
+    "descriptionOrigin": "curator"
+  },
+  "280-washington-ave": {
+    "description": "The property at 280 Washington Avenue is included for its unusually deep residential parcel. The curator groups it with nearby examples of lots extending through the block. This entry concerns the shape and potential of the land behind the house, not a public route or garden.",
+    "descriptionOrigin": "curator"
+  }
+}

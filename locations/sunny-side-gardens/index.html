@@ -1,171 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sunny Side Gardens - Off The Grid NYC</title>
-  <link rel="icon" href="../../favicon.ico" type="image/x-icon">
-
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DS1YWJT1KC"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-    gtag('config', 'G-DS1YWJT1KC');
-  </script>
-
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap"
-    rel="stylesheet">
-
-  <!-- Swiper CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
-  <!-- Custom CSS -->
-  <link href="../../assets/css/styles.css" rel="stylesheet">
-
-  <style>
-    /* Swiper Customization */
-    .swiper {
-      width: 100%;
-      height: 400px;
-      /* Adjusted height */
-    }
-
-    .swiper-slide {
-      text-align: center;
-      font-size: 18px;
-      background: #111;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .swiper-slide img {
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-    .swiper-button-next,
-    .swiper-button-prev {
-      color: white;
-      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-    }
-
-    .swiper-pagination-bullet-active {
-      background: #fff;
-    }
-  </style>
-</head>
-
-<body
-  class="bg-gradient-to-br from-gray-100 to-gray-300 min-h-screen text-nyc-gray font-sans antialiased flex flex-col">
-
-  <!-- Header -->
-  <header class="bg-nyc-black text-white py-6 shadow-lg sticky top-0 z-50">
-    <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
-      <div class="text-center md:text-left mb-4 md:mb-0">
-        <h1 class="text-2xl md:text-3xl font-serif font-bold tracking-wide leading-tight break-words">Sunny Side Gardens</h1>
-        <a href="../../index.html"
-          class="text-sm text-gray-400 hover:text-white transition-colors flex items-center gap-1 mt-1">
-          <span>&larr;</span> Back to Main Map
-        </a>
-      </div>
-      <div class="text-xs text-gray-500 uppercase tracking-widest">
-        NYC / 
-      </div>
-    </div>
-  </header>
-
-  <!-- Main Content -->
-  <main class="flex-grow container mx-auto px-4 py-8 max-w-[1600px]">
-
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 items-start">
-
-      <!-- Left Column: Visuals -->
-      <div class="space-y-6 lg:sticky lg:top-24">
-
-        
-
-        <!-- Street View -->
-        <!-- Street View -->
-        <section class="card overflow-hidden group">
-          <div class="aspect-video w-full relative">
-            <iframe src="https://roadview.planninglabs.nyc/view/-73.917689/40.748314" class="w-full h-full border-0" allowfullscreen=""
-              loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-          </div>
-          <div class="bg-gray-50 p-3 border-t border-gray-200 flex justify-end">
-            <a href="https://www.google.com/maps/dir/?api=1&destination=40.748314,-73.917689" target="_blank"
-              rel="noopener noreferrer" class="btn-secondary text-sm py-2 px-4 shadow-sm hover:shadow-md">
-              Get Directions &rarr;
-            </a>
-          </div>
-        </section>
-
-      </div>
-
-      <!-- Right Column: Info -->
-      <div class="space-y-8 lg:py-4">
-
-        <!-- About Section -->
-        <section class="card p-8 lg:p-10">
-          <h2 class="text-3xl font-serif font-bold mb-6 text-nyc-black">About</h2>
-          <div class="prose prose-lg text-gray-600 leading-relaxed max-w-none">
-            <p>Secret paths and secret communal gardens. another historical example of how homes are cheap and very nice neighborhoods are still cheap, but only if you build them when society was an order of magnitude less wealth</p>
-          </div>
-        </section>
-
-        <!-- Contribute Section -->
-        <section class="card p-8 bg-gray-900 text-white text-center">
-          <h3 class="font-serif font-bold mb-3 text-2xl">Contribute</h3>
-          <p class="text-gray-300 mb-6 max-w-md mx-auto">Know more about this spot? Have better photos? Help us document
-            the unseen city.</p>
-          <a href="https://forms.gle/4HR5RrvrfV2Nt2718" target="_blank" rel="noopener noreferrer"
-            class="btn-secondary border-transparent hover:bg-gray-100">
-            Submit Info
-          </a>
-        </section>
-
-        <!-- Comments Section -->
-        <section class="card p-8">
-          <h2 class="text-2xl font-serif font-bold mb-6 text-nyc-black">Discussion</h2>
-          <script src="https://giscus.app/client.js" data-repo="nfjesifb/offthegridnyc" data-repo-id="R_kgDOOCIF_w"
-            data-category="Announcements" data-category-id="DIC_kwDOOCIF_84CpfwD" data-mapping="pathname"
-            data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom"
-            data-theme="light" data-lang="en" crossorigin="anonymous" async>
-            </script>
-        </section>
-
-      </div>
-
-    </div>
-
+<!doctype html>
+<html lang="en"><head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Sunnyside Gardens · Off The Grid NYC</title><meta name="description" content="Low-rise homes arranged around shared interior gardens in Sunnyside, Queens. Paths between the houses connect a network of courts, giving the block interiors a different character from the surrounding streets.">
+  <link rel="canonical" href="https://offthegridnyc.com/locations/sunny-side-gardens/index.html">
+  <meta property="og:type" content="article"><meta property="og:title" content="Sunnyside Gardens"><meta property="og:description" content="Low-rise homes arranged around shared interior gardens in Sunnyside, Queens. Paths between the houses connect a network of courts, giving the block interiors a different character from the surrounding streets."><meta property="og:url" content="https://offthegridnyc.com/locations/sunny-side-gardens/index.html"><meta property="og:image" content="https://offthegridnyc.com/assets/images/social-card.png"><meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="../../favicon.ico"><link rel="stylesheet" href="../../assets/css/explore.css"><script type="module" src="../../src/js/place-tools.js"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DS1YWJT1KC"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-DS1YWJT1KC');</script>
+</head><body class="place-page" data-slug="sunny-side-gardens">
+  <header class="app-header"><a class="brand" href="../../">Off The Grid <span>NYC</span></a><nav aria-label="Navigation"><a href="../../?saved=1">Saved places</a><a href="../../?place=sunny-side-gardens">View on map ↗</a></nav></header>
+  <main class="place-document">
+    <a class="back-link" href="../../?place=sunny-side-gardens">← Back to map</a>
+    <p class="place-category">Other places</p><h1>Sunnyside Gardens</h1>
+    <div class="place-actions"><button id="save-place" type="button" aria-pressed="false">Save</button><button id="share-place" type="button">Share</button><a href="https://www.google.com/maps/dir/?api=1&amp;destination=40.748314,-73.917689" target="_blank" rel="noopener noreferrer">Directions ↗</a><a href="https://www.google.com/maps/@?api=1&amp;map_action=pano&amp;viewpoint=40.748314,-73.917689" target="_blank" rel="noopener noreferrer">Street View ↗</a></div>
+    <div class="place-body"><div>
+      <p class="description">Low-rise homes arranged around shared interior gardens in Sunnyside, Queens. Paths between the houses connect a network of courts, giving the block interiors a different character from the surrounding streets.</p>
+<section class="content-section"><h2>Background</h2><p>Built mainly from 1924 to 1928, Sunnyside Gardens was designed by Clarence Stein, Henry Wright, Frederick Ackerman and landscape architect Marjorie Cautley. Its small private yards and larger common gardens made open space part of the housing plan. The neighborhood became a New York City historic district in 2007; the shared gardens remain residential spaces.</p></section><section class="content-section"><h2>Sources</h2><ul class="source-list"><li><a href="https://www.nyc.gov/assets/lpc/downloads/pdf/pubs/ssg_manual_september_09.pdf" target="_blank" rel="noopener noreferrer">NYC Landmarks Preservation Commission — Sunnyside Gardens history and character ↗</a></li></ul></section>      <p class="access-note">Homes and shared residential spaces may be private. View from public streets unless entry is clearly permitted; map pins are reference points, not confirmed entrances.</p>
+      <section class="content-section"><h2>Nearby places</h2><ul class="nearby-links"><li><a href="../../locations/riverview-terrace/index.html"><span>Riverview Terrace</span><small>2.3 mi ↗</small></a></li><li><a href="../../locations/sutton-square/index.html"><span>Sutton Square</span><small>2.3 mi ↗</small></a></li><li><a href="../../locations/henderson-place/index.html"><span>Henderson Place</span><small>2.4 mi ↗</small></a></li><li><a href="../../locations/137-oak-st/index.html"><span>137 Oak St</span><small>2.4 mi ↗</small></a></li></ul><p class="source-label">Straight-line distances, not walking routes.</p></section>
+      <details class="discussion" id="discussion"><summary>Discussion & corrections</summary><p><a href="https://forms.gle/4HR5RrvrfV2Nt2718" target="_blank" rel="noopener noreferrer">Suggest a correction or add a photo ↗</a></p><div id="comments"></div></details>
+    </div><div>
+      <div id="context-map" class="context-map" role="region" aria-label="Location of Sunnyside Gardens"></div><p id="context-map-status" class="map-caption" role="status"></p><p class="map-caption">40.74831, -73.91769 · <a href="../../?place=sunny-side-gardens">Explore the surrounding area ↗</a></p>
+      <noscript><p class="map-caption"><a href="https://www.google.com/maps/search/?api=1&amp;query=40.748314,-73.917689">Open location on Google Maps ↗</a></p></noscript>
+    </div></div>
+    <footer class="document-footer">Human-curated places. AI-assisted descriptions where noted. <a href="../../browse/">All places</a></footer>
   </main>
-
-  <!-- Footer -->
-  <footer class="bg-nyc-black text-gray-500 text-center py-8 mt-auto border-t border-gray-800">
-    <div class="container mx-auto px-4">
-      <p class="text-xs">&copy; 2025 Off The Grid NYC. <a href="../../index.html" class="hover:text-white">Back to
-          Map</a></p>
-    </div>
-  </footer>
-
-  <!-- Swiper JS -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-  <!-- Initialization Script -->
-  <script>
-    
-  </script>
-
-</body>
-
-</html>
+  <p id="toast" class="toast" role="status" hidden></p>
+  <dialog id="share-dialog" aria-labelledby="share-title"><button class="dialog-close" aria-label="Close sharing" type="button">×</button><h2 id="share-title">Share this place</h2><label for="share-url">Copy this link</label><input id="share-url" readonly><button id="copy-link" type="button">Copy link</button><p id="share-status" role="status"></p></dialog>
+</body></html>

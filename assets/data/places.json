@@ -1,0 +1,2874 @@
+{
+  "themes": [
+    {
+      "id": "communities",
+      "label": "Courts & communities"
+    },
+    {
+      "id": "streets",
+      "label": "Streets"
+    },
+    {
+      "id": "unexpected",
+      "label": "Unexpected places"
+    },
+    {
+      "id": "shared",
+      "label": "Shared spaces"
+    },
+    {
+      "id": "public-private",
+      "label": "Public / private"
+    },
+    {
+      "id": "houses",
+      "label": "Unusual homes"
+    },
+    {
+      "id": "escapes",
+      "label": "A different pace"
+    },
+    {
+      "id": "deep-lots",
+      "label": "Deep lots"
+    },
+    {
+      "id": "more",
+      "label": "Other places"
+    }
+  ],
+  "places": [
+    {
+      "slug": "elevated-acre",
+      "name": "Elevated Acre",
+      "originalName": "Elevated Acre",
+      "description": "The spiritual precurser to the highline. A one-acre elevated public park located in Manhattan's Financial District, offering green space, seating, and views of the East River.",
+      "descriptionOrigin": "catalog",
+      "history": "The Elevated Acre was created in the 1970s as part of the development of 55 Water Street. It was designed to provide public open space in a densely built urban area. The park underwent renovations in the early 2000s, enhancing its landscaping and accessibility. It remains a unique example of urban green space in Lower Manhattan.",
+      "context": "",
+      "curatorNote": "Amazing space. Spiritual precursor to highline.",
+      "sources": [],
+      "theme": "public-private",
+      "themeLabel": "Public / private",
+      "lat": 40.7033047,
+      "lng": -74.0086169,
+      "url": "locations/elevated-acre/index.html",
+      "image": "assets/images/places/elevated-acre.webp",
+      "photos": [
+        "locations/elevated-acre/images/photo_1.jpg",
+        "locations/elevated-acre/images/photo_2.jpg",
+        "locations/elevated-acre/images/photo_3.jpg",
+        "locations/elevated-acre/images/photo_4.jpg",
+        "locations/elevated-acre/images/photo_5.jpg"
+      ],
+      "credits": [
+        {
+          "name": "Nicolas Kitchin",
+          "url": "https://maps.google.com/maps/contrib/101922159435355255773"
+        },
+        {
+          "name": "Branly Garcia",
+          "url": "https://maps.google.com/maps/contrib/111044672284031056578"
+        },
+        {
+          "name": "David Herszenson",
+          "url": "https://maps.google.com/maps/contrib/108585025234485852384"
+        },
+        {
+          "name": "Lic. Horus Ruiseco Jacobo",
+          "url": "https://maps.google.com/maps/contrib/101140409814028774850"
+        },
+        {
+          "name": "Temeika Beasley Spruiells",
+          "url": "https://maps.google.com/maps/contrib/109151843740867381102"
+        },
+        {
+          "name": "Deborah A.",
+          "url": "https://maps.google.com/maps/contrib/106604648545576863083"
+        },
+        {
+          "name": "Charly Supertramp",
+          "url": "https://maps.google.com/maps/contrib/103926759943056208838"
+        },
+        {
+          "name": "Paula Ann Dwyer",
+          "url": "https://maps.google.com/maps/contrib/107475766728436770435"
+        },
+        {
+          "name": "N. M.",
+          "url": "https://maps.google.com/maps/contrib/101848072233299709156"
+        },
+        {
+          "name": "Phenom Hendrix",
+          "url": "https://maps.google.com/maps/contrib/111605501570993837415"
+        }
+      ]
+    },
+    {
+      "slug": "wallabout-hasidic-compound",
+      "name": "Wallabout Hasidic Compound",
+      "originalName": "Wallabout Hasidic Compound",
+      "description": "Political will can build houses all you need is the right god. A large housing development in the Wallabout neighborhood of Brooklyn, primarily serving the Hasidic community.",
+      "descriptionOrigin": "catalog",
+      "history": "Developed by the Rabsky Group, this compound transformed a former industrial site, previously used by Pfizer, into a residential complex with approximately 1,000 housing units. The project faced zoning challenges but was eventually approved, showcasing the influence of organized community efforts in urban development.",
+      "context": "",
+      "curatorNote": "Rabsky Group, and the Hasidic power they yield turned this lot (zoned for industrial previously) which at one point was a factor or warehouse for Pfizer into around 1,000 housing units, with a bunch of retain and even closed pedestrian plaza streets. Its amazing what highly organized political will can do!",
+      "sources": [],
+      "theme": "public-private",
+      "themeLabel": "Public / private",
+      "lat": 40.7012609,
+      "lng": -73.9495343,
+      "url": "locations/wallabout-hasidic-compound/index.html",
+      "image": "assets/images/places/wallabout-hasidic-compound.webp",
+      "photos": [
+        "locations/wallabout-hasidic-compound/images/photo_1.jpg",
+        "locations/wallabout-hasidic-compound/images/photo_2.jpg",
+        "locations/wallabout-hasidic-compound/images/photo_3.jpg",
+        "locations/wallabout-hasidic-compound/images/photo_4.jpg",
+        "locations/wallabout-hasidic-compound/images/photo_5.jpg"
+      ],
+      "credits": [
+        {
+          "name": "Y I",
+          "url": "https://maps.google.com/maps/contrib/114492030454070096141"
+        },
+        {
+          "name": "Mendy",
+          "url": "https://maps.google.com/maps/contrib/114314190341042990897"
+        },
+        {
+          "name": "Y Z",
+          "url": "https://maps.google.com/maps/contrib/109717495883486524714"
+        },
+        {
+          "name": "??",
+          "url": "https://maps.google.com/maps/contrib/111214871169110581561"
+        }
+      ]
+    },
+    {
+      "slug": "mott-haven-water-front",
+      "name": "Mott Haven Water Front",
+      "originalName": "Mott Haven Water Front",
+      "description": "Public private patnership to fix up some nonexistant waterfront in the Mott Haven neighborhood of the Bronx, featuring parks and recreational spaces.",
+      "descriptionOrigin": "catalog",
+      "history": "The Mott Haven waterfront underwent significant redevelopment in the early 21st century, transforming from an industrial zone into a public space with parks, walkways, and access to the Harlem River. This project is part of broader efforts to improve public access to waterfronts across New York City.",
+      "context": "",
+      "curatorNote": "From nothing to pretty nice pretty fast",
+      "sources": [],
+      "theme": "public-private",
+      "themeLabel": "Public / private",
+      "lat": 40.8074399,
+      "lng": -73.9311497,
+      "url": "locations/mott-haven-water-front/index.html",
+      "image": "assets/images/places/mott-haven-water-front.webp",
+      "photos": [
+        "locations/mott-haven-water-front/images/photo_1.jpg",
+        "locations/mott-haven-water-front/images/photo_2.jpg",
+        "locations/mott-haven-water-front/images/photo_3.jpg",
+        "locations/mott-haven-water-front/images/photo_4.jpg"
+      ],
+      "credits": [
+        {
+          "name": "Hannah Voitovich",
+          "url": "https://maps.google.com/maps/contrib/100356111042739870335"
+        },
+        {
+          "name": "Oz TrainMan",
+          "url": "https://maps.google.com/maps/contrib/111528781292198236752"
+        }
+      ]
+    },
+    {
+      "slug": "brooklyn-navy-yard",
+      "name": "Brooklyn Navy Yard",
+      "originalName": "Brooklyn Navy Yard",
+      "description": "A historic shipyard and industrial complex located in Brooklyn, now repurposed as a hub for manufacturing, technology, and creative industries.",
+      "descriptionOrigin": "catalog",
+      "history": "Established in 1801, the Brooklyn Navy Yard was a key naval shipbuilding facility for the U.S. Navy until its closure in 1966. It was later redeveloped into an industrial park, preserving its historic structures while fostering modern industries. Today, it is a model for adaptive reuse and urban regeneration.",
+      "context": "",
+      "curatorNote": "",
+      "sources": [],
+      "theme": "public-private",
+      "themeLabel": "Public / private",
+      "lat": 40.6991147,
+      "lng": -73.9728531,
+      "url": "locations/brooklyn-navy-yard/index.html",
+      "image": "assets/images/places/brooklyn-navy-yard.webp",
+      "photos": [
+        "locations/brooklyn-navy-yard/images/photo_1.jpg",
+        "locations/brooklyn-navy-yard/images/photo_2.jpg",
+        "locations/brooklyn-navy-yard/images/photo_3.jpg",
+        "locations/brooklyn-navy-yard/images/photo_4.jpg",
+        "locations/brooklyn-navy-yard/images/photo_5.jpg"
+      ],
+      "credits": [
+        {
+          "name": "Pekka Auvinen",
+          "url": "https://maps.google.com/maps/contrib/108790581093027456587"
+        },
+        {
+          "name": "Warren",
+          "url": "https://maps.google.com/maps/contrib/107117139503551574382"
+        },
+        {
+          "name": "Arik Karagyozyan",
+          "url": "https://maps.google.com/maps/contrib/107771078372310507318"
+        },
+        {
+          "name": "Eric Knoblauch",
+          "url": "https://maps.google.com/maps/contrib/110385135386761533761"
+        },
+        {
+          "name": "Laetitia Longuefosse",
+          "url": "https://maps.google.com/maps/contrib/100458037605861061007"
+        },
+        {
+          "name": "Jean-Renaud Micolet",
+          "url": "https://maps.google.com/maps/contrib/101758269719867651801"
+        }
+      ]
+    },
+    {
+      "slug": "brooklyn-bridge-parks",
+      "name": "Brooklyn Bridge Parks",
+      "originalName": "Brooklyn Bridge Parks",
+      "description": "Top public private parnership and the only park in nyc you can live in? Thanks bloomberg.",
+      "descriptionOrigin": "catalog",
+      "history": "The development of Brooklyn Bridge Park began in the early 2000s, transforming former industrial piers into a vibrant public space. The park officially opened in 2010 and has since become a popular destination for both locals and tourists, offering green spaces, sports facilities, and cultural events.",
+      "context": "",
+      "curatorNote": "The only park you can live in. More of this please.",
+      "sources": [],
+      "theme": "public-private",
+      "themeLabel": "Public / private",
+      "lat": 40.7018997,
+      "lng": -73.9961015,
+      "url": "locations/brooklyn-bridge-parks/index.html",
+      "image": "assets/images/places/brooklyn-bridge-parks.webp",
+      "photos": [
+        "locations/brooklyn-bridge-parks/images/photo_1.jpg",
+        "locations/brooklyn-bridge-parks/images/photo_2.jpg",
+        "locations/brooklyn-bridge-parks/images/photo_3.jpg",
+        "locations/brooklyn-bridge-parks/images/photo_4.jpg",
+        "locations/brooklyn-bridge-parks/images/photo_5.jpg"
+      ],
+      "credits": [
+        {
+          "name": "Timingeco SI YONG LEE",
+          "url": "https://maps.google.com/maps/contrib/105039415051896489804"
+        },
+        {
+          "name": "Aurelien Nouvellon",
+          "url": "https://maps.google.com/maps/contrib/112878465199829239595"
+        },
+        {
+          "name": "Matt K",
+          "url": "https://maps.google.com/maps/contrib/103208560054772474766"
+        },
+        {
+          "name": "Leslie Peña Luna",
+          "url": "https://maps.google.com/maps/contrib/105413942587549336187"
+        },
+        {
+          "name": "Mario Carvajalino",
+          "url": "https://maps.google.com/maps/contrib/105702391277194621062"
+        },
+        {
+          "name": "Lalai Ai",
+          "url": "https://maps.google.com/maps/contrib/108991916819009207437"
+        },
+        {
+          "name": "Gabriella Vicini",
+          "url": "https://maps.google.com/maps/contrib/111443567919176857291"
+        },
+        {
+          "name": "Alexandre Honório",
+          "url": "https://maps.google.com/maps/contrib/112714016342110091248"
+        },
+        {
+          "name": "krrazie",
+          "url": "https://maps.google.com/maps/contrib/115449923601038629469"
+        },
+        {
+          "name": "Sheila Diello",
+          "url": "https://maps.google.com/maps/contrib/103076463415904267607"
+        }
+      ]
+    },
+    {
+      "slug": "govoners-island",
+      "name": "Govoners Island",
+      "originalName": "Govoners Island",
+      "description": "Why cant I live in one of the 1000 empy army baraks? Extremely disappointing amount of latent potential. A 172-acre island in New York Harbor, formerly a military base and now a public park and cultural venue.",
+      "descriptionOrigin": "catalog",
+      "history": "Governors Island has a rich history dating back to the colonial era. It served as a military outpost for both the British and American forces. In 2003, the island was transferred to the public and has since been developed into a recreational and cultural destination, featuring historic buildings, art installations, and open spaces.",
+      "context": "",
+      "curatorNote": "An amazing place and depressing proof of the cities failure to make housing. there is literally an empty town filled with army barracks on this island. they are unoccupied :(",
+      "sources": [],
+      "theme": "unexpected",
+      "themeLabel": "Unexpected places",
+      "lat": 40.6892172,
+      "lng": -74.0185413,
+      "url": "locations/govoners-island/index.html",
+      "image": "assets/images/places/govoners-island.webp",
+      "photos": [
+        "locations/govoners-island/images/photo_1.jpg",
+        "locations/govoners-island/images/photo_2.jpg",
+        "locations/govoners-island/images/photo_3.jpg",
+        "locations/govoners-island/images/photo_4.jpg",
+        "locations/govoners-island/images/photo_5.jpg"
+      ],
+      "credits": [
+        {
+          "name": "Frank Lugo",
+          "url": "https://maps.google.com/maps/contrib/104677906275445451809"
+        },
+        {
+          "name": "Renato de souza",
+          "url": "https://maps.google.com/maps/contrib/109679999476539520449"
+        },
+        {
+          "name": "william floyd martin",
+          "url": "https://maps.google.com/maps/contrib/118357855381378770759"
+        },
+        {
+          "name": "The Natures View",
+          "url": "https://maps.google.com/maps/contrib/110755463458093874758"
+        },
+        {
+          "name": "Mary Estefani Inoa",
+          "url": "https://maps.google.com/maps/contrib/102451926244975036339"
+        },
+        {
+          "name": "Georges Younes",
+          "url": "https://maps.google.com/maps/contrib/117103478583346256520"
+        },
+        {
+          "name": "Gary Clayton",
+          "url": "https://maps.google.com/maps/contrib/101784388604853200093"
+        },
+        {
+          "name": "Karolína Kilhofová",
+          "url": "https://maps.google.com/maps/contrib/100334797220732938608"
+        },
+        {
+          "name": "Cris",
+          "url": "https://maps.google.com/maps/contrib/109117388116670617965"
+        },
+        {
+          "name": "Shlomo Levi",
+          "url": "https://maps.google.com/maps/contrib/110206723618825960685"
+        }
+      ]
+    },
+    {
+      "slug": "track-on-the-roof",
+      "name": "Track on the roof",
+      "originalName": "Track on the roof",
+      "description": "There is a running track on the roof of this building. more of this please",
+      "descriptionOrigin": "catalog",
+      "history": "",
+      "context": "",
+      "curatorNote": "There is a running track on the roof of this building. Crazy!",
+      "sources": [],
+      "theme": "unexpected",
+      "themeLabel": "Unexpected places",
+      "lat": 40.7748443,
+      "lng": -73.9814742,
+      "url": "locations/track-on-the-roof/index.html",
+      "image": null,
+      "photos": [],
+      "credits": [
+        {
+          "name": "Jehuda Ish-Shalom",
+          "url": "https://maps.google.com/maps/contrib/115562853455970494772"
+        },
+        {
+          "name": "Lisa S",
+          "url": "https://maps.google.com/maps/contrib/108052460215023402857"
+        },
+        {
+          "name": "Ty Lightning McQueen Fanboy Ribs 01",
+          "url": "https://maps.google.com/maps/contrib/113780870832091533373"
+        },
+        {
+          "name": "Brian F",
+          "url": "https://maps.google.com/maps/contrib/109148194431900240972"
+        },
+        {
+          "name": "Joe Hugs",
+          "url": "https://maps.google.com/maps/contrib/108944367272199029859"
+        },
+        {
+          "name": "Pete Basica",
+          "url": "https://maps.google.com/maps/contrib/101449423036498297236"
+        },
+        {
+          "name": "Bryan Bailey (Beetle)",
+          "url": "https://maps.google.com/maps/contrib/104258474019286380818"
+        },
+        {
+          "name": "Jim Naureckas",
+          "url": "https://maps.google.com/maps/contrib/105615962913636796094"
+        }
+      ]
+    },
+    {
+      "slug": "skytrack",
+      "name": "SkyTrack",
+      "originalName": "SkyTrack",
+      "description": "We could have had pedestrianized the sky. At least we are left with this amazing example of what might have been :)",
+      "descriptionOrigin": "catalog",
+      "history": "The SkyTrack was part of an innovative urban design concept in the 1980s, aiming to integrate fitness and recreation into the city's vertical landscape. Although the original vision for a network of rooftop tracks did not fully materialize, the existing track remains a testament to creative urban planning.",
+      "context": "",
+      "curatorNote": "SkyTrack! The revolution in NYC urbanism that never was. Imagine if the SkyTrack network (TM) extended across blocks and brought the 3rd dimension to NYC pedestrians, cyclists, and mine car enthusiasts alike. Hot tube no longer around :( https://www.nytimes.com/1983/07/03/realestate/postings-a-jogging-track-with-hot-tub.html?smid=url-share",
+      "sources": [],
+      "theme": "unexpected",
+      "themeLabel": "Unexpected places",
+      "lat": 40.6879331,
+      "lng": -73.9918461,
+      "url": "locations/skytrack/index.html",
+      "image": null,
+      "photos": [],
+      "credits": [
+        {
+          "name": "SkyTrac Access Group LLC",
+          "url": "https://maps.google.com/maps/contrib/107439319357322342994"
+        }
+      ]
+    },
+    {
+      "slug": "sky-port",
+      "name": "Skyport Seaplane Terminal",
+      "originalName": "Sky Port",
+      "description": "A seaplane terminal at the East River end of East 23rd Street. Aircraft use the water alongside the marina, placing a small aviation facility within Manhattan’s waterfront infrastructure.",
+      "descriptionOrigin": "sourced",
+      "history": "The Sky Port, was established in the 1970s to serve as a transportation hub for helicopter commuters and tourists. It has since become a key facility for aerial tours of New York City and emergency services.",
+      "context": "DockNYC identifies the site as Skyport’s seaplane terminal, beside Skyport Marina. The city’s lease history for this waterfront property extends back to 1959 and includes marina and seaplane uses. This is an operating transport facility; check the operator for any travel arrangements.",
+      "curatorNote": "",
+      "sources": [
+        {
+          "title": "DockNYC — Skyport seaplane terminal",
+          "url": "https://www.docknyc.com/skyport"
+        },
+        {
+          "title": "NYC Comptroller — Skyports lease history",
+          "url": "https://comptroller.nyc.gov/reports/audit-report-on-the-compliance-of-new-york-skyports-inc-with-its-lease-agreement/"
+        }
+      ],
+      "theme": "unexpected",
+      "themeLabel": "Unexpected places",
+      "lat": 40.7355885,
+      "lng": -73.9744233,
+      "url": "locations/sky-port/index.html",
+      "image": null,
+      "photos": [],
+      "credits": [
+        {
+          "name": "Jason Oliva",
+          "url": "https://maps.google.com/maps/contrib/109626121242195414191"
+        },
+        {
+          "name": "Nicole Marie",
+          "url": "https://maps.google.com/maps/contrib/110373383285476169951"
+        },
+        {
+          "name": "Jorge Cespedes",
+          "url": "https://maps.google.com/maps/contrib/103930690963643775467"
+        },
+        {
+          "name": "Jennifer Flores",
+          "url": "https://maps.google.com/maps/contrib/116915432391297114551"
+        },
+        {
+          "name": "Cintia Melo",
+          "url": "https://maps.google.com/maps/contrib/114736369714806917065"
+        },
+        {
+          "name": "SA Ahmed",
+          "url": "https://maps.google.com/maps/contrib/102127021585291162704"
+        },
+        {
+          "name": "Tuan Hoang",
+          "url": "https://maps.google.com/maps/contrib/115954287395901843497"
+        },
+        {
+          "name": "CLARA FAJARDO",
+          "url": "https://maps.google.com/maps/contrib/107523588852475590894"
+        }
+      ]
+    },
+    {
+      "slug": "commandants-mansion",
+      "name": "Commandants Mansion",
+      "originalName": "Commandants Mansion",
+      "description": "The former home of the Brooklyn Navy Yard commandant, also called Quarters A. This Federal-style house sits on a rise by Evans Street in Vinegar Hill, apart from the surrounding street grid.",
+      "descriptionOrigin": "sourced",
+      "history": "The Commandant's Mansion, also known as the Admiral's House, was built in the early 19th century. It served as the residence for the commanding officers of the navy yard. The building is a notable example of Federal-style architecture.",
+      "context": "The Navy dates its completion to 1806, when Jonathan Thorn became the yard’s first commandant. It later became a National Historic Landmark. The house is privately owned; its presence in the neighborhood can be appreciated from public streets.",
+      "curatorNote": "Just the coolest house in NYC by far.",
+      "sources": [
+        {
+          "title": "Naval History and Heritage Command — New York Navy Yard",
+          "url": "https://www.history.navy.mil/browse-by-topic/organization-and-administration/historic-bases/ny-brooklyn-navy-yard.html"
+        },
+        {
+          "title": "National Park Service — Brooklyn Navy Yard Historic District",
+          "url": "https://npgallery.nps.gov/GetAsset/314d2a7b-7525-4998-8a77-dd3b9dba7073"
+        }
+      ],
+      "theme": "unexpected",
+      "themeLabel": "Unexpected places",
+      "lat": 40.7023811,
+      "lng": -73.9803764,
+      "url": "locations/commandants-mansion/index.html",
+      "image": null,
+      "photos": [],
+      "credits": [
+        {
+          "name": "Karel Justo Marquez",
+          "url": "https://maps.google.com/maps/contrib/105185950026030501590"
+        },
+        {
+          "name": "Marco Pietschmann",
+          "url": "https://maps.google.com/maps/contrib/112669376088624300557"
+        },
+        {
+          "name": "Jim Ryan",
+          "url": "https://maps.google.com/maps/contrib/110344283172678365745"
+        },
+        {
+          "name": "Juan C Gonzalez",
+          "url": "https://maps.google.com/maps/contrib/107857189647220693880"
+        },
+        {
+          "name": "ItsJustCole",
+          "url": "https://maps.google.com/maps/contrib/114894604276837830188"
+        },
+        {
+          "name": "Besarion Baramidze",
+          "url": "https://maps.google.com/maps/contrib/103056314363912141971"
+        },
+        {
+          "name": "Andrew Sears",
+          "url": "https://maps.google.com/maps/contrib/118112984683128485424"
+        },
+        {
+          "name": "Jvs Minecraft life",
+          "url": "https://maps.google.com/maps/contrib/107662285818291389893"
+        },
+        {
+          "name": "Jesus Armenta",
+          "url": "https://maps.google.com/maps/contrib/101004255200946652567"
+        }
+      ]
+    },
+    {
+      "slug": "cliff-house-pumpkin-house",
+      "name": "Cliff House (Pumpkin House)",
+      "originalName": "Cliff House (Pumpkin House)",
+      "description": "A unique residential building in Manhattan, known for its distinctive appearance and location on a cliff.",
+      "descriptionOrigin": "catalog",
+      "history": "The Cliff House, often referred to as the Pumpkin House due to its orange color, was built in the early 20th century. Its design takes advantage of the steep terrain, offering residents stunning views of the Hudson River. The building is a notable example of adaptive architecture in urban settings.",
+      "context": "",
+      "curatorNote": "A house suspended in the air litterally hanging off a cliff. Interestingly it looks like there is another slightly larger lot defined next to it zoned for residential! Someone's got to do it but it wont be me I dont have ten year to kill getting approved by the DOB for another cliff house.",
+      "sources": [],
+      "theme": "unexpected",
+      "themeLabel": "Unexpected places",
+      "lat": 40.8549866,
+      "lng": -73.9395154,
+      "url": "locations/cliff-house-pumpkin-house/index.html",
+      "image": null,
+      "photos": [],
+      "credits": [
+        {
+          "name": "Nils Paellmann",
+          "url": "https://maps.google.com/maps/contrib/112715394850780426965"
+        },
+        {
+          "name": "Anthony C",
+          "url": "https://maps.google.com/maps/contrib/109415363621183907891"
+        },
+        {
+          "name": "Lic. Horus Ruiseco Jacobo",
+          "url": "https://maps.google.com/maps/contrib/101140409814028774850"
+        },
+        {
+          "name": "Ritsuko",
+          "url": "https://maps.google.com/maps/contrib/107030086058943665138"
+        },
+        {
+          "name": "Dyckman Farmhouse Museum",
+          "url": "https://maps.google.com/maps/contrib/111369903206627348511"
+        },
+        {
+          "name": "Wade",
+          "url": "https://maps.google.com/maps/contrib/118084873425483273122"
+        },
+        {
+          "name": "Raymond Woods",
+          "url": "https://maps.google.com/maps/contrib/104008712078682209610"
+        }
+      ]
+    },
+    {
+      "slug": "sullivan-street",
+      "name": "Sullivan Street",
+      "originalName": "Sullivan Street",
+      "description": "A street in Manhattan's Greenwich Village, known for its historic buildings and communal garden.",
+      "descriptionOrigin": "catalog",
+      "history": "Sullivan Street has been a part of Greenwich Village since the early 19th century. The communal garden in the middle of the block was established in the 20th century, providing a shared green space for residents. The street is lined with well-preserved townhouses and is a testament to the neighborhood's historic charm.",
+      "context": "",
+      "curatorNote": "In the middle of this block there is a beautiful shared communal garden!",
+      "sources": [],
+      "theme": "shared",
+      "themeLabel": "Shared spaces",
+      "lat": 40.7284723,
+      "lng": -74.0012998,
+      "url": "locations/sullivan-street/index.html",
+      "image": "assets/images/places/sullivan-street.webp",
+      "photos": [
+        "locations/sullivan-street/images/photo_1.jpg",
+        "locations/sullivan-street/images/photo_2.jpg",
+        "locations/sullivan-street/images/photo_3.jpg",
+        "locations/sullivan-street/images/photo_4.jpg",
+        "locations/sullivan-street/images/photo_5.jpg"
+      ],
+      "credits": [
+        {
+          "name": "Pako Valera",
+          "url": "https://maps.google.com/maps/contrib/114118451392288609524"
+        }
+      ]
+    },
+    {
+      "slug": "210-w-90th-astor-court",
+      "name": "210 W 90th (Astor Court)",
+      "originalName": "210 W 90th (Astor Court)",
+      "description": "A residential building on the Upper West Side of Manhattan, featuring a central courtyard.",
+      "descriptionOrigin": "catalog",
+      "history": "Astor Court was built in the early 20th century as part of the Astor family's real estate developments. The building's design includes a large central courtyard, providing residents with a private outdoor space. It is a notable example of early 20th-century apartment architecture in New York City.",
+      "context": "",
+      "curatorNote": "This is what you are supposed to do. Make a park in the middle of the building. Amazing!",
+      "sources": [],
+      "theme": "shared",
+      "themeLabel": "Shared spaces",
+      "lat": 40.7903112,
+      "lng": -73.9742209,
+      "url": "locations/210-w-90th-astor-court/index.html",
+      "image": "assets/images/places/210-w-90th-astor-court.webp",
+      "photos": [
+        "locations/210-w-90th-astor-court/images/photo_1.jpg",
+        "locations/210-w-90th-astor-court/images/photo_2.jpg",
+        "locations/210-w-90th-astor-court/images/photo_3.jpg",
+        "locations/210-w-90th-astor-court/images/photo_4.jpg",
+        "locations/210-w-90th-astor-court/images/photo_5.jpg"
+      ],
+      "credits": [
+        {
+          "name": "Gabriel Rojas",
+          "url": "https://maps.google.com/maps/contrib/108176744307426965585"
+        },
+        {
+          "name": "CESAR DAVID MOSCOSO",
+          "url": "https://maps.google.com/maps/contrib/107432103967512412445"
+        },
+        {
+          "name": "Fred DaVoudi",
+          "url": "https://maps.google.com/maps/contrib/100886487730164013200"
+        }
+      ]
+    },
+    {
+      "slug": "ansonia-clock-factory",
+      "name": "Ansonia Clock Factory",
+      "originalName": "Ansonia Clock Factory",
+      "description": "A historic building in Brooklyn, originally a factory for the Ansonia Clock Company.",
+      "descriptionOrigin": "catalog",
+      "history": "The Ansonia Clock Factory was established in the late 19th century and became known for producing high-quality clocks. The factory building, with its distinctive architecture, has since been repurposed for residential and commercial use, preserving its industrial heritage.",
+      "context": "",
+      "curatorNote": "They put a park in their building. Dope.",
+      "sources": [],
+      "theme": "shared",
+      "themeLabel": "Shared spaces",
+      "lat": 40.6646062,
+      "lng": -73.9829468,
+      "url": "locations/ansonia-clock-factory/index.html",
+      "image": null,
+      "photos": [],
+      "credits": []
+    },
+    {
+      "slug": "stuy-town",
+      "name": "Stuy Town",
+      "originalName": "Stuy Town",
+      "description": "A large residential complex in Manhattan, known for its extensive green spaces and community amenities.",
+      "descriptionOrigin": "catalog",
+      "history": "Stuyvesant Town, commonly known as Stuy Town, was developed in the 1940s as a post-war housing project. It was designed to provide affordable housing for veterans and their families. Over the years, it has evolved into a diverse community with a mix of rent-stabilized and market-rate apartments.",
+      "context": "",
+      "curatorNote": "\"The best idea private equity has ever had\"",
+      "sources": [],
+      "theme": "shared",
+      "themeLabel": "Shared spaces",
+      "lat": 40.7318054,
+      "lng": -73.9778906,
+      "url": "locations/stuy-town/index.html",
+      "image": "assets/images/places/stuy-town.webp",
+      "photos": [
+        "locations/stuy-town/images/photo_1.jpg",
+        "locations/stuy-town/images/photo_2.jpg",
+        "locations/stuy-town/images/photo_3.jpg",
+        "locations/stuy-town/images/photo_4.jpg",
+        "locations/stuy-town/images/photo_5.jpg"
+      ],
+      "credits": [
+        {
+          "name": "Johnathan Door",
+          "url": "https://maps.google.com/maps/contrib/110165795480770226153"
+        },
+        {
+          "name": "Krishna Sudarshan",
+          "url": "https://maps.google.com/maps/contrib/109090419973932543101"
+        },
+        {
+          "name": "Rade Spasovski",
+          "url": "https://maps.google.com/maps/contrib/116522566196014882453"
+        },
+        {
+          "name": "Michael Shaoul",
+          "url": "https://maps.google.com/maps/contrib/107697005281436360813"
+        },
+        {
+          "name": "Mrugank Dake",
+          "url": "https://maps.google.com/maps/contrib/113390760989073823219"
+        }
+      ]
+    },
+    {
+      "slug": "sutton-square",
+      "name": "Sutton Square",
+      "originalName": "Sutton Square",
+      "description": "A private enclave of townhouses located in the Sutton Place neighborhood of Manhattan.",
+      "descriptionOrigin": "catalog",
+      "history": "Sutton Square was developed in the early 20th century as an exclusive residential area. The townhouses, with their elegant facades and private gardens, reflect the architectural style of the period. The square remains one of the most prestigious addresses in New York City.",
+      "context": "",
+      "curatorNote": "",
+      "sources": [],
+      "theme": "shared",
+      "themeLabel": "Shared spaces",
+      "lat": 40.7574713,
+      "lng": -73.9598883,
+      "url": "locations/sutton-square/index.html",
+      "image": null,
+      "photos": [],
+      "credits": [
+        {
+          "name": "J S",
+          "url": "https://maps.google.com/maps/contrib/114620261997351991813"
+        }
+      ]
+    },
+    {
+      "slug": "strivers-row",
+      "name": "Strivers Row",
+      "originalName": "Strivers Row",
+      "description": "A historic district in Harlem, known for its well-preserved row houses and cultural significance.",
+      "descriptionOrigin": "catalog",
+      "history": "Strivers Row, officially known as the St. Nicholas Historic District, was developed in the late 19th century. The row houses were originally built for affluent white residents but later became home to prominent African American professionals, earning the nickname 'Strivers Row.' The district is a symbol of Harlem's rich cultural heritage.",
+      "context": "",
+      "curatorNote": "Dishonorable mention. Sad that the little roads running through the block are for cars instead of being gardens for people like down at sullivan st.",
+      "sources": [],
+      "theme": "shared",
+      "themeLabel": "Shared spaces",
+      "lat": 40.8175433,
+      "lng": -73.9439576,
+      "url": "locations/strivers-row/index.html",
+      "image": "assets/images/places/strivers-row.webp",
+      "photos": [
+        "locations/strivers-row/images/photo_1.jpg"
+      ],
+      "credits": [
+        {
+          "name": "Krista Vista",
+          "url": "https://maps.google.com/maps/contrib/118193862459994986494"
+        }
+      ]
+    },
+    {
+      "slug": "waterside",
+      "name": "Waterside",
+      "originalName": "Waterside",
+      "description": "A residential complex located along the East River in Manhattan, offering waterfront living.",
+      "descriptionOrigin": "catalog",
+      "history": "Waterside Plaza was constructed in the 1970s on a platform over the East River. It was designed to address housing shortages and provide modern amenities. The complex includes residential towers, townhouses, and a plaza, making it a self-contained community.",
+      "context": "",
+      "curatorNote": "The thing your supposed to do when you run out of land! Really human centric once your there but its sad that its next to the FDR. Waterside Plaza, a residential complex in NYC’s Kips Bay along the East River, was envisioned in 1961 by developer Richard Ravitch to address housing shortages for UN staff. Built on a platform over the river—supported by 2,000 steel piles sunk 80 feet into the riverbed—it opened in 1973, with completion in 1974. Designed by Davis, Brody & Associates, it features four brown-brick towers (31 to 37 stories) and duplex townhouses around a two-acre plaza, originally part of the Mitchell-Lama affordable housing program. The site, east of the FDR Drive, used landfill from England and was isolated, accessible only by a pedestrian overpass at 25th Street. It won a Construction Achievement Award in 1974 from the American Society of Civil Engineers. Plans for further waterfront expansion in the 1980s were scrapped, and Stuyvesant Cove Park took its place. Once home to a diverse mix of income groups, it’s now a luxury rental community managed by Brookfield Properties, known for its river views and self-contained feel.",
+      "sources": [],
+      "theme": "shared",
+      "themeLabel": "Shared spaces",
+      "lat": 40.7374817,
+      "lng": -73.9732056,
+      "url": "locations/waterside/index.html",
+      "image": "assets/images/places/waterside.webp",
+      "photos": [
+        "locations/waterside/images/photo_1.jpg",
+        "locations/waterside/images/photo_2.jpg",
+        "locations/waterside/images/photo_3.jpg"
+      ],
+      "credits": [
+        {
+          "name": "Allanah",
+          "url": "https://maps.google.com/maps/contrib/107642924725988449508"
+        }
+      ]
+    },
+    {
+      "slug": "knickerbocker-village",
+      "name": "Knickerbocker Village",
+      "originalName": "Knickerbocker Village",
+      "description": "A historic housing complex in Manhattan's Lower East Side, known for its early adoption of modern housing concepts.",
+      "descriptionOrigin": "catalog",
+      "history": "Knickerbocker Village was built in the 1930s as one of the first federally funded housing projects in the United States. It was designed to provide affordable housing for middle-income families and features a distinctive architectural style with interior courtyards.",
+      "context": "",
+      "curatorNote": "They have a communal garden space in there!",
+      "sources": [],
+      "theme": "shared",
+      "themeLabel": "Shared spaces",
+      "lat": 40.7108205,
+      "lng": -73.9960392,
+      "url": "locations/knickerbocker-village/index.html",
+      "image": "assets/images/places/knickerbocker-village.webp",
+      "photos": [
+        "locations/knickerbocker-village/images/photo_1.jpg",
+        "locations/knickerbocker-village/images/photo_2.jpg",
+        "locations/knickerbocker-village/images/photo_3.jpg",
+        "locations/knickerbocker-village/images/photo_4.jpg"
+      ],
+      "credits": [
+        {
+          "name": "Kevin Wong",
+          "url": "https://maps.google.com/maps/contrib/116962923538112334581"
+        },
+        {
+          "name": "mcLa twofivesix",
+          "url": "https://maps.google.com/maps/contrib/101408599427719381927"
+        },
+        {
+          "name": "Edwin Martinez-Vazquez",
+          "url": "https://maps.google.com/maps/contrib/113021408104394840806"
+        }
+      ]
+    },
+    {
+      "slug": "116-pinehurst",
+      "name": "116 Pinehurst",
+      "originalName": "116 Pinehurst",
+      "description": "A residential building located in the Washington Heights neighborhood of Manhattan.",
+      "descriptionOrigin": "catalog",
+      "history": "116 Pinehurst Avenue is part of the Hudson View Gardens complex, developed in the 1920s. The building is known for its Tudor-style architecture and communal amenities, including gardens and playgrounds. It remains a desirable residence in Upper Manhattan.",
+      "context": "",
+      "curatorNote": "Complex from a fairy tale with communal garden and playground and a fun secret passage",
+      "sources": [],
+      "theme": "shared",
+      "themeLabel": "Shared spaces",
+      "lat": 40.8539663,
+      "lng": -73.9389458,
+      "url": "locations/116-pinehurst/index.html",
+      "image": "assets/images/places/116-pinehurst.webp",
+      "photos": [
+        "locations/116-pinehurst/images/photo_1.jpg",
+        "locations/116-pinehurst/images/photo_2.jpg",
+        "locations/116-pinehurst/images/photo_3.jpg",
+        "locations/116-pinehurst/images/photo_4.jpg"
+      ],
+      "credits": [
+        {
+          "name": "Arno Klein",
+          "url": "https://maps.google.com/maps/contrib/103365869787954635804"
+        }
+      ]
+    },
+    {
+      "slug": "south-bridge-towers",
+      "name": "South Bridge Towers",
+      "originalName": "South Bridge Towers",
+      "description": "A cooperative housing complex located near the South Street Seaport in Manhattan.",
+      "descriptionOrigin": "catalog",
+      "history": "South Bridge Towers was developed in the 1960s as part of urban renewal efforts in Lower Manhattan. The complex includes multiple high-rise buildings and offers residents access to communal facilities and proximity to the waterfront.",
+      "context": "",
+      "curatorNote": "Great elevated playground in this complex",
+      "sources": [],
+      "theme": "shared",
+      "themeLabel": "Shared spaces",
+      "lat": 40.7094761,
+      "lng": -74.0042551,
+      "url": "locations/south-bridge-towers/index.html",
+      "image": "assets/images/places/south-bridge-towers.webp",
+      "photos": [
+        "locations/south-bridge-towers/images/photo_1.jpg",
+        "locations/south-bridge-towers/images/photo_2.jpg",
+        "locations/south-bridge-towers/images/photo_3.jpg",
+        "locations/south-bridge-towers/images/photo_4.jpg",
+        "locations/south-bridge-towers/images/photo_5.jpg"
+      ],
+      "credits": [
+        {
+          "name": "Willi Schulmeyer",
+          "url": "https://maps.google.com/maps/contrib/110566569666306949399"
+        },
+        {
+          "name": "James Gray King",
+          "url": "https://maps.google.com/maps/contrib/117678240290574262172"
+        },
+        {
+          "name": "Leo Rodgers",
+          "url": "https://maps.google.com/maps/contrib/116645479118183932589"
+        },
+        {
+          "name": "Юрий (uzex)",
+          "url": "https://maps.google.com/maps/contrib/112954946124177972336"
+        },
+        {
+          "name": "Aaron Clinton",
+          "url": "https://maps.google.com/maps/contrib/107419741366588599177"
+        },
+        {
+          "name": "林建中",
+          "url": "https://maps.google.com/maps/contrib/102194720219783305024"
+        },
+        {
+          "name": "Дмитрий Салмин",
+          "url": "https://maps.google.com/maps/contrib/108966749475151497321"
+        },
+        {
+          "name": "Sukrut Rao",
+          "url": "https://maps.google.com/maps/contrib/113503667275903475934"
+        },
+        {
+          "name": "George Buachidze",
+          "url": "https://maps.google.com/maps/contrib/116617974962485404647"
+        },
+        {
+          "name": "Adam Sinovsky",
+          "url": "https://maps.google.com/maps/contrib/110130777369868722869"
+        }
+      ]
+    },
+    {
+      "slug": "kips-bay-towers",
+      "name": "Kips Bay Towers",
+      "originalName": "Kips Bay Towers",
+      "description": "A pair of residential towers located in the Kips Bay neighborhood of Manhattan, known for their modernist architecture.",
+      "descriptionOrigin": "catalog",
+      "history": "Designed by architect I.M. Pei, Kips Bay Towers were completed in the 1960s. The buildings are notable for their Brutalist design and the large private courtyard that provides green space for residents. They are a significant example of mid-20th-century urban housing.",
+      "context": "",
+      "curatorNote": "3 acres of green courtyard?!?",
+      "sources": [],
+      "theme": "shared",
+      "themeLabel": "Shared spaces",
+      "lat": 40.7426759,
+      "lng": -73.9758258,
+      "url": "locations/kips-bay-towers/index.html",
+      "image": "assets/images/places/kips-bay-towers.webp",
+      "photos": [
+        "locations/kips-bay-towers/images/photo_1.jpg",
+        "locations/kips-bay-towers/images/photo_2.jpg",
+        "locations/kips-bay-towers/images/photo_3.jpg",
+        "locations/kips-bay-towers/images/photo_4.jpg",
+        "locations/kips-bay-towers/images/photo_5.jpg"
+      ],
+      "credits": [
+        {
+          "name": "Jorge Rosillo",
+          "url": "https://maps.google.com/maps/contrib/118145473488471716560"
+        },
+        {
+          "name": "Siim Riisenberg",
+          "url": "https://maps.google.com/maps/contrib/110383903102427655158"
+        },
+        {
+          "name": "Clifford Toy",
+          "url": "https://maps.google.com/maps/contrib/110428279916440201254"
+        },
+        {
+          "name": "Derris Golding",
+          "url": "https://maps.google.com/maps/contrib/106542305670402360383"
+        },
+        {
+          "name": "Gabe Ilizarov",
+          "url": "https://maps.google.com/maps/contrib/106418610561067746983"
+        },
+        {
+          "name": "G A (TheFamous)",
+          "url": "https://maps.google.com/maps/contrib/105790452300122794195"
+        },
+        {
+          "name": "walaa alharthi",
+          "url": "https://maps.google.com/maps/contrib/108746866116096150412"
+        },
+        {
+          "name": "Jonathan Letzter",
+          "url": "https://maps.google.com/maps/contrib/105787647052433885325"
+        },
+        {
+          "name": "S W",
+          "url": "https://maps.google.com/maps/contrib/101885997495952745300"
+        }
+      ]
+    },
+    {
+      "slug": "grove-court",
+      "name": "Grove Court",
+      "originalName": "Grove Court",
+      "description": "A hidden courtyard of six townhouses located in Greenwich Village, Manhattan.",
+      "descriptionOrigin": "catalog",
+      "history": "Grove Court was developed in the 1850s by Samuel Cocks, a local grocer, to provide housing for working-class families. The courtyard's secluded nature made it a quiet retreat within the bustling city. Over time, it has become a charming and sought-after residential enclave.",
+      "context": "",
+      "curatorNote": "The story of Grove Court begins in the mid-19th century. In 1848, Samuel Cocks, a grocer with a store at the corner of Grove and Bedford Streets, acquired the rear yards of properties along Grove Street from Samuel Stryker, who had been leasing the land from Trinity Church. Cocks saw an opportunity to create housing for working-class families, likely with the practical aim of securing a steady customer base for his grocery business. Construction of the six three-story Federal-style houses began shortly after and was completed in 1854. Initially, these homes were considered a single tax lot, addressed as 10½ Grove Street, and were modest in size—about 990 square feet each—compared to the larger townhouses typical of the era. In its early days, Grove Court was far from the picturesque retreat it is today. Built for laborers and tradesmen, the enclave was a working-class community, and its secluded location behind the main street contributed to its reputation as a less desirable area. Historical accounts suggest it was once a rough spot, even earning the nickname \"Mixed Ale Alley\" due to the drinking habits of its residents. Photographs from the early 20th century, such as those by Jessie Tarbox Beals and Arthur D. Chapman, show laundry hanging in the courtyard, a testament to its utilitarian roots.",
+      "sources": [],
+      "theme": "communities",
+      "themeLabel": "Courts & communities",
+      "lat": 40.7320619,
+      "lng": -74.0058125,
+      "url": "locations/grove-court/index.html",
+      "image": "assets/images/places/grove-court.webp",
+      "photos": [
+        "locations/grove-court/images/photo_1.jpg",
+        "locations/grove-court/images/photo_2.jpg",
+        "locations/grove-court/images/photo_3.jpg",
+        "locations/grove-court/images/photo_4.jpg",
+        "locations/grove-court/images/photo_5.jpg"
+      ],
+      "credits": [
+        {
+          "name": "Jason Braun",
+          "url": "https://maps.google.com/maps/contrib/107244119634886511268"
+        },
+        {
+          "name": "Maria Eugenia",
+          "url": "https://maps.google.com/maps/contrib/109896805750470100724"
+        },
+        {
+          "name": "David Herszenson",
+          "url": "https://maps.google.com/maps/contrib/108585025234485852384"
+        },
+        {
+          "name": "Naďa Černá",
+          "url": "https://maps.google.com/maps/contrib/105430715092960872220"
+        },
+        {
+          "name": "TheMrscarface2009",
+          "url": "https://maps.google.com/maps/contrib/116882937263130282699"
+        },
+        {
+          "name": "Slava Shpigel",
+          "url": "https://maps.google.com/maps/contrib/114746178391836128377"
+        },
+        {
+          "name": "vivi chan",
+          "url": "https://maps.google.com/maps/contrib/110390378869201954710"
+        },
+        {
+          "name": "Carlos Usán",
+          "url": "https://maps.google.com/maps/contrib/106589154225819663493"
+        }
+      ]
+    },
+    {
+      "slug": "patchin-place",
+      "name": "Patchin Place",
+      "originalName": "Patchin Place",
+      "description": "A small, gated alley in Greenwich Village, lined with historic townhouses.",
+      "descriptionOrigin": "catalog",
+      "history": "Patchin Place was developed in the 1840s and has been home to various artists and writers, including E.E. Cummings and Djuna Barnes. The alley's quaint atmosphere and historic architecture make it a unique part of the Village's cultural landscape.",
+      "context": "",
+      "curatorNote": "Patchin Place, a tiny gated cul-de-sac off West 10th Street in Greenwich Village, New York City, was developed in 1848–1849 by Aaron Patchin, a surveyor who built ten three-story brick row houses on land he acquired from his father-in-law, Samuel Milligan. Originally designed as modest housing—possibly for workers at the nearby Brevoort House hotel—the homes featured small dormer windows and shared a courtyard with a gas lamp, still lit today. Early residents were largely working-class, including Basque immigrants who ran boarding houses there in the late 19th century. By the early 20th century, Patchin Place transformed into a bohemian enclave, attracting literary and artistic figures like E.E. Cummings, who lived at No. 4 from 1923 until his death in 1962, and Djuna Barnes, a resident of No. 5 for over 40 years. Theodore Dreiser and John Reed also spent time there, cementing its reputation as a creative haven. Rumors persist that the houses were built with salvaged bricks from the 1832 demolition of Newgate Prison, though this lacks firm evidence. Part of the Greenwich Village Historic District since 1969, Patchin Place remains a quiet, historic retreat, its charm preserved amid the bustling city.",
+      "sources": [],
+      "theme": "communities",
+      "themeLabel": "Courts & communities",
+      "lat": 40.7351334,
+      "lng": -73.9993554,
+      "url": "locations/patchin-place/index.html",
+      "image": null,
+      "photos": [],
+      "credits": []
+    },
+    {
+      "slug": "milligan-place",
+      "name": "Milligan Place",
+      "originalName": "Milligan Place",
+      "description": "A tiny, triangular courtyard in Greenwich Village, featuring four townhouses.",
+      "descriptionOrigin": "catalog",
+      "history": "Milligan Place was created in the 1850s and named after its developer, Samuel Milligan. Like Patchin Place, it has a rich history of housing artists and writers, contributing to the Village's reputation as a bohemian enclave.",
+      "context": "",
+      "curatorNote": "Milligan Place, a secluded triangular courtyard in Greenwich Village, New York City, was constructed in 1852 by Aaron Patchin, who named it after his father-in-law, Daniel Milligan. Originally built as boarding houses for waiters from the nearby Brevoort House hotel, the four three-story brick homes were modest and housed working-class residents. Located off Sixth Avenue between West 10th and 11th Streets, it was once a gritty, overlooked spot, dubbed a \"hole in the wall\" by a 1915 New York Times article. In the early 20th century, it gained cultural significance as home to notable figures like playwright Eugene O’Neill and Provincetown Players founders George Cram Cook and Susan Glaspell. Over time, the courtyard transformed from a rough enclave to a charming, gated retreat, reflecting Greenwich Village’s shift from working-class roots to artistic haven. Designated part of the Greenwich Village Historic District in 1969, Milligan Place now commands high rents and epitomizes the area’s historic allure.",
+      "sources": [],
+      "theme": "communities",
+      "themeLabel": "Courts & communities",
+      "lat": 40.7351299,
+      "lng": -73.9988065,
+      "url": "locations/milligan-place/index.html",
+      "image": null,
+      "photos": [],
+      "credits": []
+    },
+    {
+      "slug": "pomander-walk",
+      "name": "Pomander Walk",
+      "originalName": "Pomander Walk",
+      "description": "A Tudor-style residential complex located on the Upper West Side of Manhattan.",
+      "descriptionOrigin": "catalog",
+      "history": "Pomander Walk was built in the 1920s and designed to resemble a quaint English village. The complex includes 27 buildings with half-timbered facades and is a designated New York City landmark, celebrated for its distinctive architecture.",
+      "context": "",
+      "curatorNote": "Inspired by a 1910 romantic comedy play by Louis N. Parker called Pomander Walk—set in a fictional London lane—Healy intended it as a temporary project to generate income while he raised funds for a grand hotel. Designed by the New York architecture firm King and Campbell, the two- and three-story homes feature stucco, brick, and half-timber facades, evoking an English village. Healy’s death in 1927 halted his hotel plans, leaving Pomander Walk as a permanent fixture. Originally an all-rental complex with about 61 units (each building typically had one apartment per floor), it housed theatrical folks like Rosalind Russell and Humphrey Bogart, drawn to its whimsy. By the 1970s, it had deteriorated and faced demolition, but residents fought back, securing its designation as a New York City Landmark and a spot on the National Register of Historic Places in 1982. A 2009 renovation restored its pastel charm—think green, blue, and red facades with flower boxes—earning it a preservation award.",
+      "sources": [],
+      "theme": "communities",
+      "themeLabel": "Courts & communities",
+      "lat": 40.7939961,
+      "lng": -73.9733071,
+      "url": "locations/pomander-walk/index.html",
+      "image": "assets/images/places/pomander-walk.webp",
+      "photos": [
+        "locations/pomander-walk/images/photo_1.jpg",
+        "locations/pomander-walk/images/photo_2.jpg",
+        "locations/pomander-walk/images/photo_3.jpg",
+        "locations/pomander-walk/images/photo_4.jpg",
+        "locations/pomander-walk/images/photo_5.jpg"
+      ],
+      "credits": [
+        {
+          "name": "Annabella Muller",
+          "url": "https://maps.google.com/maps/contrib/112286665997350582847"
+        },
+        {
+          "name": "Sacha Marsan",
+          "url": "https://maps.google.com/maps/contrib/111527445025855231689"
+        },
+        {
+          "name": "Alan Fintz",
+          "url": "https://maps.google.com/maps/contrib/113306015176015142405"
+        }
+      ]
+    },
+    {
+      "slug": "washington-mews",
+      "name": "Washington Mews",
+      "originalName": "Washington Mews",
+      "description": "A private street in Greenwich Village, originally built as stables for nearby townhouses.",
+      "descriptionOrigin": "catalog",
+      "history": "Washington Mews was constructed in the 19th century and later converted into residences and artists' studios. It is now owned by New York University and serves as faculty housing and academic offices, preserving its historic character.",
+      "context": "",
+      "curatorNote": "NYU Staff Housing",
+      "sources": [],
+      "theme": "communities",
+      "themeLabel": "Courts & communities",
+      "lat": 40.7315753,
+      "lng": -73.9959466,
+      "url": "locations/washington-mews/index.html",
+      "image": "assets/images/places/washington-mews.webp",
+      "photos": [
+        "locations/washington-mews/images/photo_1.jpg",
+        "locations/washington-mews/images/photo_2.jpg",
+        "locations/washington-mews/images/photo_3.jpg",
+        "locations/washington-mews/images/photo_4.jpg",
+        "locations/washington-mews/images/photo_5.jpg"
+      ],
+      "credits": [
+        {
+          "name": "Jim Kelly",
+          "url": "https://maps.google.com/maps/contrib/112051454711651434795"
+        },
+        {
+          "name": "David Herszenson",
+          "url": "https://maps.google.com/maps/contrib/108585025234485852384"
+        },
+        {
+          "name": "TheMrscarface2009",
+          "url": "https://maps.google.com/maps/contrib/116882937263130282699"
+        },
+        {
+          "name": "Tony",
+          "url": "https://maps.google.com/maps/contrib/106416248199999190893"
+        },
+        {
+          "name": "Karina Loja",
+          "url": "https://maps.google.com/maps/contrib/106722990892545352988"
+        },
+        {
+          "name": "Christoph Rippler",
+          "url": "https://maps.google.com/maps/contrib/107430606994890712884"
+        },
+        {
+          "name": "Supakij Khomvilai",
+          "url": "https://maps.google.com/maps/contrib/109043515752937696097"
+        },
+        {
+          "name": "G Aquino",
+          "url": "https://maps.google.com/maps/contrib/113815392849087130851"
+        }
+      ]
+    },
+    {
+      "slug": "sylvan-court",
+      "name": "Sylvan Court",
+      "originalName": "Sylvan Court",
+      "description": "A small residential court off East 121st Street in East Harlem, with low brick houses facing a shared interior passage. Its arrangement interrupts the surrounding Manhattan street grid.",
+      "descriptionOrigin": "sourced",
+      "history": "",
+      "context": "The city's East Harlem environmental review describes former carriage houses around a private courtyard. Look at the relationship between the narrow entrance and the houses set inside the block.",
+      "curatorNote": "",
+      "sources": [
+        {
+          "title": "NYC Planning · East Harlem historic resources",
+          "url": "https://www.nyc.gov/assets/planning/download/pdf/applicants/env-review/east-harlem/appendj_feis.pdf"
+        }
+      ],
+      "theme": "communities",
+      "themeLabel": "Courts & communities",
+      "lat": 40.801804,
+      "lng": -73.9384614,
+      "url": "locations/sylvan-court/index.html",
+      "image": null,
+      "photos": [],
+      "credits": []
+    },
+    {
+      "slug": "warren-place-mews",
+      "name": "Warren Place Mews",
+      "originalName": "Warren Place Mews",
+      "description": "A historic row of cottages in Cobble Hill, Brooklyn, designed for working-class families.",
+      "descriptionOrigin": "catalog",
+      "history": "Warren Place Mews was developed in the 1870s by Alfred Tredway White, a philanthropist who aimed to provide affordable, quality housing. The cottages are a rare example of 19th-century workers' housing and are now highly valued residences.",
+      "context": "",
+      "curatorNote": "Warren Place Mews, a charming block of Gothic-style cottages in Cobble Hill, Brooklyn, was built as working-class housing in the late 1870s by philanthropist Alfred Tredway White.",
+      "sources": [],
+      "theme": "communities",
+      "themeLabel": "Courts & communities",
+      "lat": 40.6879287,
+      "lng": -73.9984916,
+      "url": "locations/warren-place-mews/index.html",
+      "image": null,
+      "photos": [],
+      "credits": []
+    },
+    {
+      "slug": "sylvan-terrace",
+      "name": "Sylvan Terrace",
+      "originalName": "Sylvan Terrace",
+      "description": "A cobblestone street in Washington Heights, lined with wooden row houses.",
+      "descriptionOrigin": "catalog",
+      "history": "Sylvan Terrace was built in the 1880s as part of the Morris-Jumel Mansion estate. The houses were originally intended for working-class families but have since been restored and are now part of a historic district, reflecting the area's 19th-century charm.",
+      "context": "",
+      "curatorNote": "Sylvan Terrace, a charming cobblestone street in Upper Manhattan’s Washington Heights, was developed in 1882 by William Paulding Jr. as part of the Morris-Jumel estate, originally the site of James Jumel’s 1765 mansion. Designed by architect Gilbert Rantus Bishop, this single-block enclave between West 160th and 161st Streets features 20 identical two-story wooden row houses with brick foundations, built in a simplified Queen Anne style. Intended as affordable housing for working-class tenants like maids and coachmen, the homes replaced earlier farm structures after Paulding subdivided the land following Jumel’s death. The name “Sylvan” nods to the wooded, rural feel of the area at the time, though it’s now a rare surviving frame-house street in Manhattan. By the early 20th century, the terrace fell into disrepair, but its proximity to the Morris-Jumel Mansion—George Washington’s 1776 headquarters—helped it gain recognition. Designated a New York City Landmark in 1975 and part of the Jumel Terrace Historic District, it was restored in the late 1970s by the Landmarks Preservation Commission and local owners. Today, these gaslit homes, painted in pastel shades, are prized residential properties, with sales—like No. 14 in 2023 for $1.1 million—reflecting their historic allure and scarcity.",
+      "sources": [],
+      "theme": "communities",
+      "themeLabel": "Courts & communities",
+      "lat": 40.8347234,
+      "lng": -73.9393878,
+      "url": "locations/sylvan-terrace/index.html",
+      "image": "assets/images/places/sylvan-terrace.webp",
+      "photos": [
+        "locations/sylvan-terrace/images/photo_1.jpg",
+        "locations/sylvan-terrace/images/photo_2.jpg",
+        "locations/sylvan-terrace/images/photo_3.jpg",
+        "locations/sylvan-terrace/images/photo_4.jpg",
+        "locations/sylvan-terrace/images/photo_5.jpg"
+      ],
+      "credits": [
+        {
+          "name": "kae sato",
+          "url": "https://maps.google.com/maps/contrib/111806913015421208051"
+        },
+        {
+          "name": "Andrea M.",
+          "url": "https://maps.google.com/maps/contrib/105858027810551378868"
+        },
+        {
+          "name": "Lexi Zotomayor",
+          "url": "https://maps.google.com/maps/contrib/105842103939340703275"
+        },
+        {
+          "name": "Ariano Gomes",
+          "url": "https://maps.google.com/maps/contrib/114152831381566847780"
+        },
+        {
+          "name": "Slava Shpigel",
+          "url": "https://maps.google.com/maps/contrib/114746178391836128377"
+        },
+        {
+          "name": "Ari Miller",
+          "url": "https://maps.google.com/maps/contrib/102498524092436005137"
+        },
+        {
+          "name": "Arpit Vaidya",
+          "url": "https://maps.google.com/maps/contrib/101926933648263743749"
+        }
+      ]
+    },
+    {
+      "slug": "riverview-terrace",
+      "name": "Riverview Terrace",
+      "originalName": "Riverview Terrace",
+      "description": "A short private residential lane running north from Sutton Square, beside the East River. Townhouses here share an unusually sheltered setting at the edge of the Midtown street grid.",
+      "descriptionOrigin": "sourced",
+      "history": "",
+      "context": "The distinction between the public street end and the private homes and garden is part of what makes this corner interesting. Appreciate the arrangement from public space; the residential lane is not a through-route.",
+      "curatorNote": "",
+      "sources": [
+        {
+          "title": "Sutton Place · Riverview Terrace",
+          "url": "https://en.wikipedia.org/wiki/Sutton_Place,_Manhattan"
+        }
+      ],
+      "theme": "communities",
+      "themeLabel": "Courts & communities",
+      "lat": 40.7579249,
+      "lng": -73.9593522,
+      "url": "locations/riverview-terrace/index.html",
+      "image": null,
+      "photos": [],
+      "credits": []
+    },
+    {
+      "slug": "greenwich-mews",
+      "name": "Greenwich Mews",
+      "originalName": "Greenwich Mews",
+      "description": "A group of townhouses arranged as a residential mews at 687 Greenwich Street, south of West 10th Street. The inward-facing layout is a comparatively recent addition to the Village's older streets.",
+      "descriptionOrigin": "sourced",
+      "history": "",
+      "context": "Village Preservation dates the development to 1986 and records that it replaced a garage. This is an example of the courtyard form being reused in modern housing, rather than simply surviving from the carriage-house era.",
+      "curatorNote": "",
+      "sources": [
+        {
+          "title": "Village Preservation · New buildings in the Greenwich Village Historic District",
+          "url": "https://www.villagepreservation.org/wp-content/uploads/2021/05/New-Buildings-within-the-Greenwich-Village-Historic-District-update-5-21.pdf"
+        }
+      ],
+      "theme": "communities",
+      "themeLabel": "Courts & communities",
+      "lat": 40.7333401,
+      "lng": -74.0071101,
+      "url": "locations/greenwich-mews/index.html",
+      "image": null,
+      "photos": [],
+      "credits": [
+        {
+          "name": "Allan Shweky",
+          "url": "https://maps.google.com/maps/contrib/116437435113555841018"
+        },
+        {
+          "name": "TheMrscarface2009",
+          "url": "https://maps.google.com/maps/contrib/116882937263130282699"
+        },
+        {
+          "name": "Marc Moll",
+          "url": "https://maps.google.com/maps/contrib/106408219789503462670"
+        },
+        {
+          "name": "Francis Mulvihill",
+          "url": "https://maps.google.com/maps/contrib/106132716677897286624"
+        }
+      ]
+    },
+    {
+      "slug": "sniffen-court",
+      "name": "Sniffen Court",
+      "originalName": "Sniffen Court",
+      "description": "A small, private alley in Murray Hill, Manhattan, featuring Romanesque Revival-style carriage houses.",
+      "descriptionOrigin": "catalog",
+      "history": "Sniffen Court was built in the 1860s as stables for nearby residences. The carriage houses were later converted into homes and studios, and the court is now a designated historic district, known for its architectural significance.",
+      "context": "",
+      "curatorNote": "",
+      "sources": [],
+      "theme": "communities",
+      "themeLabel": "Courts & communities",
+      "lat": 40.7470204,
+      "lng": -73.9780114,
+      "url": "locations/sniffen-court/index.html",
+      "image": null,
+      "photos": [],
+      "credits": []
+    },
+    {
+      "slug": "chester-court",
+      "name": "Chester Court",
+      "originalName": "Chester Court",
+      "description": "A short street off Flatbush Avenue lined by a coordinated group of Tudor Revival row houses. Repeated gables, brickwork and half-timbered upper stories give the court a distinct character.",
+      "descriptionOrigin": "sourced",
+      "history": "",
+      "context": "The development was planned by Peter J. Collins in 1911–12, drawing on the architecture he had seen in Chester, England. The Landmarks Preservation Commission's designation report explains how this suburban-looking form was fitted into an urban row-house development.",
+      "curatorNote": "",
+      "sources": [
+        {
+          "title": "NYC Landmarks Preservation Commission · Chester Court",
+          "url": "https://s-media.nyc.gov/agencies/lpc/lp/2567.pdf"
+        }
+      ],
+      "theme": "communities",
+      "themeLabel": "Courts & communities",
+      "lat": 40.6583386,
+      "lng": -73.9613947,
+      "url": "locations/chester-court/index.html",
+      "image": null,
+      "photos": [],
+      "credits": []
+    },
+    {
+      "slug": "clinton-court",
+      "name": "Clinton Court",
+      "originalName": "Clinton Court",
+      "description": "A secluded courtyard and former carriage house behind West 46th Street in Hell's Kitchen. The small interior space sits behind the buildings facing the street.",
+      "descriptionOrigin": "sourced",
+      "history": "",
+      "context": "City Tech's architectural library describes the courtyard as barely visible from the street. The narrow passage and the contrast between the interior court and surrounding buildings are the points to notice; the residential courtyard is not a public attraction.",
+      "curatorNote": "",
+      "sources": [
+        {
+          "title": "CUNY City Tech · The Secret Hideaway at Clinton Court",
+          "url": "https://openlab.citytech.cuny.edu/littlefreearchitecturallibrary/the-secret-hideaway-at-clinton-court/"
+        }
+      ],
+      "theme": "communities",
+      "themeLabel": "Courts & communities",
+      "lat": 40.76128,
+      "lng": -73.9921142,
+      "url": "locations/clinton-court/index.html",
+      "image": "assets/images/places/clinton-court.webp",
+      "photos": [
+        "locations/clinton-court/images/photo_1.jpg",
+        "locations/clinton-court/images/photo_2.jpg",
+        "locations/clinton-court/images/photo_3.jpg",
+        "locations/clinton-court/images/photo_4.jpg",
+        "locations/clinton-court/images/photo_5.jpg"
+      ],
+      "credits": [
+        {
+          "name": "Jacque Plk",
+          "url": "https://maps.google.com/maps/contrib/109137105171430753463"
+        },
+        {
+          "name": "Ingrid Pourret",
+          "url": "https://maps.google.com/maps/contrib/100579210044733339314"
+        },
+        {
+          "name": "Olivier Laurianne",
+          "url": "https://maps.google.com/maps/contrib/104132778459323417988"
+        },
+        {
+          "name": "Yannis Menu",
+          "url": "https://maps.google.com/maps/contrib/111516131543314775741"
+        },
+        {
+          "name": "Javier eduardo Urbaneja",
+          "url": "https://maps.google.com/maps/contrib/101243811910336970086"
+        },
+        {
+          "name": "Santiago Rodriguez",
+          "url": "https://maps.google.com/maps/contrib/106714426414902844324"
+        },
+        {
+          "name": "justo miguel hernandez hernandez",
+          "url": "https://maps.google.com/maps/contrib/114297101307914158305"
+        },
+        {
+          "name": "Alain Boutonnet",
+          "url": "https://maps.google.com/maps/contrib/101985037445707473961"
+        },
+        {
+          "name": "Igor Zubizarreta",
+          "url": "https://maps.google.com/maps/contrib/111004323756681015122"
+        },
+        {
+          "name": "Explore with me",
+          "url": "https://maps.google.com/maps/contrib/111753404576288310731"
+        }
+      ]
+    },
+    {
+      "slug": "henderson-place",
+      "name": "Henderson Place",
+      "originalName": "Henderson Place",
+      "description": "A historic district in the Upper East Side of Manhattan, featuring Queen Anne-style row houses.",
+      "descriptionOrigin": "catalog",
+      "history": "Henderson Place was developed in the 1880s by John C. Henderson, a fur importer, as housing for middle-class families. The row houses are known for their distinctive turrets and gables, and the area is a designated historic district.",
+      "context": "",
+      "curatorNote": "",
+      "sources": [],
+      "theme": "communities",
+      "themeLabel": "Courts & communities",
+      "lat": 40.7755536,
+      "lng": -73.9449743,
+      "url": "locations/henderson-place/index.html",
+      "image": "assets/images/places/henderson-place.webp",
+      "photos": [
+        "locations/henderson-place/images/photo_1.jpg",
+        "locations/henderson-place/images/photo_2.jpg",
+        "locations/henderson-place/images/photo_3.jpg"
+      ],
+      "credits": [
+        {
+          "name": "Bobbi Owens",
+          "url": "https://maps.google.com/maps/contrib/115142395166387741903"
+        },
+        {
+          "name": "Ken Chester Jr",
+          "url": "https://maps.google.com/maps/contrib/100261532920038207691"
+        }
+      ]
+    },
+    {
+      "slug": "ablemarle-terrace",
+      "name": "Albemarle Terrace",
+      "originalName": "Ablemarle Terrace",
+      "description": "A residential court off East 21st Street in Flatbush, lined by a unified group of early twentieth-century row houses. It forms a small historic district together with nearby Kenmore Terrace.",
+      "descriptionOrigin": "sourced",
+      "history": "",
+      "context": "The houses were designed by Slee & Bryson. The city's designation report describes Albemarle's neo-Federal architecture and the coordinated scale and materials that make the court feel like a distinct piece of the neighborhood.",
+      "curatorNote": "",
+      "sources": [
+        {
+          "title": "NYC Landmarks Preservation Commission · Albemarle–Kenmore Terraces",
+          "url": "https://s-media.nyc.gov/agencies/lpc/lp/0989.pdf"
+        }
+      ],
+      "theme": "communities",
+      "themeLabel": "Courts & communities",
+      "lat": 40.6486124,
+      "lng": -73.9592343,
+      "url": "locations/ablemarle-terrace/index.html",
+      "image": null,
+      "photos": [],
+      "credits": []
+    },
+    {
+      "slug": "barwell-terrace",
+      "name": "Barwell Terrace",
+      "originalName": "Barwell Terrace",
+      "description": "A narrow residential court in Bay Ridge, between Third and Fourth avenues around 97th–98th streets. Houses face an interior pedestrian space rather than a conventional traffic street.",
+      "descriptionOrigin": "sourced",
+      "history": "",
+      "context": "The city's Chester Court designation report identifies Barwell Terrace alongside Hamilton Walk and Lafayette Walk as examples of houses clustered around narrow courts closed to vehicles. These are lived-in spaces; view from the entrance unless access is clearly permitted.",
+      "curatorNote": "",
+      "sources": [
+        {
+          "title": "NYC Landmarks Preservation Commission · Brooklyn courtyard housing",
+          "url": "https://s-media.nyc.gov/agencies/lpc/lp/2567.pdf"
+        },
+        {
+          "title": "Brooklyn Home Reporter · Bay Ridge private streets",
+          "url": "https://brooklynreporter.com/2017/03/alley-oops-ridgeites-battle-change-garbage-pickup-private-streets/"
+        }
+      ],
+      "theme": "communities",
+      "themeLabel": "Courts & communities",
+      "lat": 40.6150808,
+      "lng": -74.0334827,
+      "url": "locations/barwell-terrace/index.html",
+      "image": null,
+      "photos": [],
+      "credits": []
+    },
+    {
+      "slug": "madeline-court",
+      "name": "Madeline Court",
+      "originalName": "Madeline Court",
+      "description": "A small residential cul-de-sac entered from 68th Street between Ridge Boulevard and Third Avenue in Bay Ridge. Brick entrance piers lead to red-brick houses with half-timbering and slate roofs.",
+      "descriptionOrigin": "sourced",
+      "history": "",
+      "context": "The Historic Districts Council includes Madeline Court in its Bay Ridge walking guide as an example of the neighborhood's small residential enclaves. Notice how the entrance frames a distinct streetscape within the larger block.",
+      "curatorNote": "",
+      "sources": [
+        {
+          "title": "Historic Districts Council · Madeline Court",
+          "url": "https://6tocelebrate.org/neighborhoods/bay-ridge/"
+        }
+      ],
+      "theme": "communities",
+      "themeLabel": "Courts & communities",
+      "lat": 40.6368416,
+      "lng": -74.0275419,
+      "url": "locations/madeline-court/index.html",
+      "image": null,
+      "photos": [],
+      "credits": []
+    },
+    {
+      "slug": "hamilton-walk",
+      "name": "Hamilton Walk",
+      "originalName": "Hamilton Walk",
+      "description": "A pedestrian residential lane off 94th Street between Third and Fourth avenues in Bay Ridge. Low brick houses and small gardens face a shared walkway.",
+      "descriptionOrigin": "sourced",
+      "history": "",
+      "context": "Hamilton Walk runs parallel to nearby Lafayette Walk. The two lanes make a useful comparison: each fits a small residential community into the interior of a large block, using a footpath instead of a traffic street.",
+      "curatorNote": "",
+      "sources": [
+        {
+          "title": "Brooklyn Eagle · Hamilton and Lafayette Walks",
+          "url": "https://brooklyneagle.com/71467/come-see-lafayette-walk-in-bay-ridge-where-brooklyn-dodgers-pitcher-carl-erskine-lived/"
+        }
+      ],
+      "theme": "communities",
+      "themeLabel": "Courts & communities",
+      "lat": 40.617658,
+      "lng": -74.0321126,
+      "url": "locations/hamilton-walk/index.html",
+      "image": null,
+      "photos": [],
+      "credits": []
+    },
+    {
+      "slug": "lafayette-walk",
+      "name": "Lafayette Walk",
+      "originalName": "Lafayette Walk",
+      "description": "A short pedestrian-only residential lane entered from 94th Street in Bay Ridge. Brick row houses and planted front gardens line the route, parallel to Hamilton Walk.",
+      "descriptionOrigin": "sourced",
+      "history": "",
+      "context": "The walk is less than a block long. Its interest lies in how the houses address a narrow shared space rather than the surrounding avenues. Compare the two neighboring walks from their street entrances and respect residential access.",
+      "curatorNote": "",
+      "sources": [
+        {
+          "title": "Brooklyn Eagle · Lafayette Walk",
+          "url": "https://brooklyneagle.com/71467/come-see-lafayette-walk-in-bay-ridge-where-brooklyn-dodgers-pitcher-carl-erskine-lived/"
+        }
+      ],
+      "theme": "communities",
+      "themeLabel": "Courts & communities",
+      "lat": 40.6174686,
+      "lng": -74.0316834,
+      "url": "locations/lafayette-walk/index.html",
+      "image": null,
+      "photos": [],
+      "credits": []
+    },
+    {
+      "slug": "colonial-gardens",
+      "name": "Colonial Gardens",
+      "originalName": "Colonial Gardens",
+      "description": "A small residential enclave near Shore Road and Narrows Avenue in Bay Ridge. Houses are arranged along an interior brick-paved walk, giving the group a different relationship to the street.",
+      "descriptionOrigin": "sourced",
+      "history": "",
+      "context": "The Historic Districts Council's Bay Ridge survey describes two-story houses here with Tudor, Mediterranean and Colonial Revival influences. The arrangement of the homes around an internal path is as significant as their individual styles.",
+      "curatorNote": "",
+      "sources": [
+        {
+          "title": "Historic Districts Council · Bay Ridge survey, page 139",
+          "url": "https://hdc.org/wp-content/uploads/2019/10/Bay-Ridge-Report-Final-091014Smaller.pdf"
+        }
+      ],
+      "theme": "communities",
+      "themeLabel": "Courts & communities",
+      "lat": 40.6225689,
+      "lng": -74.0395689,
+      "url": "locations/colonial-gardens/index.html",
+      "image": null,
+      "photos": [],
+      "credits": []
+    },
+    {
+      "slug": "kenmore-terrace",
+      "name": "Kenmore Terrace",
+      "originalName": "Kenmore Terrace",
+      "description": "A small residential court in Flatbush, paired with neighboring Albemarle Terrace in a designated historic district. Its low houses form a coherent enclosure around the street.",
+      "descriptionOrigin": "sourced",
+      "history": "",
+      "context": "Designed by Slee & Bryson, Kenmore shows the influence of the Garden City movement. The landmark report notes the houses' incorporated garages as a sign of changing domestic life and the growing role of the automobile.",
+      "curatorNote": "",
+      "sources": [
+        {
+          "title": "NYC Landmarks Preservation Commission · Albemarle–Kenmore Terraces",
+          "url": "https://s-media.nyc.gov/agencies/lpc/lp/0989.pdf"
+        }
+      ],
+      "theme": "communities",
+      "themeLabel": "Courts & communities",
+      "lat": 40.6492046,
+      "lng": -73.9593604,
+      "url": "locations/kenmore-terrace/index.html",
+      "image": null,
+      "photos": [],
+      "credits": []
+    },
+    {
+      "slug": "temple-court",
+      "name": "Temple Court",
+      "originalName": "Temple Court",
+      "description": "A short lane of wood-frame houses in Windsor Terrace, near Prospect Park. It extends between Seeley Street and Terrace Place, with access from the Seeley Street end.",
+      "descriptionOrigin": "sourced",
+      "history": "",
+      "context": "Historical maps cited by Brownstoner show the lane lined with wooden houses by 1888. The low scale and frame construction distinguish this small street from the surrounding blocks. This is the Brooklyn residential lane, not the Manhattan restaurant of the same name.",
+      "curatorNote": "",
+      "sources": [
+        {
+          "title": "Brownstoner · The wooden houses of Temple Court",
+          "url": "https://www.brownstoner.com/architecture/brooklyn-architecture-windsor-terrace-temple-court-betty-morissey/"
+        }
+      ],
+      "theme": "communities",
+      "themeLabel": "Courts & communities",
+      "lat": 40.6557988,
+      "lng": -73.9745873,
+      "url": "locations/temple-court/index.html",
+      "image": null,
+      "photos": [],
+      "credits": [
+        {
+          "name": "Ashley Okten",
+          "url": "https://maps.google.com/maps/contrib/107986014912567131048"
+        },
+        {
+          "name": "Joey Gentile",
+          "url": "https://maps.google.com/maps/contrib/106895311246204054324"
+        },
+        {
+          "name": "Ben Chester",
+          "url": "https://maps.google.com/maps/contrib/100093115818946692027"
+        },
+        {
+          "name": "Gabrielle B.",
+          "url": "https://maps.google.com/maps/contrib/116525817588410372455"
+        },
+        {
+          "name": "Michael Wu PhD",
+          "url": "https://maps.google.com/maps/contrib/105061099394492403376"
+        },
+        {
+          "name": "Temple Court",
+          "url": "https://maps.google.com/maps/contrib/105546069314605154791"
+        },
+        {
+          "name": "Ameri Craft",
+          "url": "https://maps.google.com/maps/contrib/116104693450782621463"
+        },
+        {
+          "name": "Rogo Torres",
+          "url": "https://maps.google.com/maps/contrib/114883957320416427108"
+        }
+      ]
+    },
+    {
+      "slug": "dennett-place",
+      "name": "Dennett Place",
+      "originalName": "Dennett Place",
+      "description": "A small, historic street in Carroll Gardens, Brooklyn, known for its charming row houses.",
+      "descriptionOrigin": "catalog",
+      "history": "Dennett Place was developed in the mid-19th century as part of the expansion of Carroll Gardens. The street is notable for its well-preserved Italianate and Greek Revival-style homes, reflecting the neighborhood's architectural heritage.",
+      "context": "",
+      "curatorNote": "Sad its next to the tracks",
+      "sources": [],
+      "theme": "communities",
+      "themeLabel": "Courts & communities",
+      "lat": 40.6765077,
+      "lng": -73.9975594,
+      "url": "locations/dennett-place/index.html",
+      "image": null,
+      "photos": [],
+      "credits": []
+    },
+    {
+      "slug": "grace-court",
+      "name": "Grace Court",
+      "originalName": "Grace Court",
+      "description": "A quiet, dead-end street in Brooklyn Heights, lined with historic townhouses.",
+      "descriptionOrigin": "catalog",
+      "history": "Grace Court is part of the Brooklyn Heights Historic District, developed in the 19th century. The street is named after Grace Church, a nearby landmark, and its homes are prized for their architectural detail and serene setting.",
+      "context": "",
+      "curatorNote": "Another dead end. If all you knew was Brooklyn Heights you might think these are an NYC staple!",
+      "sources": [],
+      "theme": "streets",
+      "themeLabel": "Streets",
+      "lat": 40.6943062,
+      "lng": -73.9976479,
+      "url": "locations/grace-court/index.html",
+      "image": null,
+      "photos": [],
+      "credits": []
+    },
+    {
+      "slug": "indian-road",
+      "name": "Indian Road",
+      "originalName": "Indian Road",
+      "description": "A scenic road located in Inwood, Manhattan, offering views of the Hudson River.",
+      "descriptionOrigin": "catalog",
+      "history": "Indian Road runs along the edge of Inwood Hill Park, an area with a rich history dating back to Native American settlements. The road itself was developed in the early 20th century as part of the park's infrastructure.",
+      "context": "",
+      "curatorNote": "Only road in Manhattan :)",
+      "sources": [],
+      "theme": "streets",
+      "themeLabel": "Streets",
+      "lat": 40.8721217,
+      "lng": -73.9196605,
+      "url": "locations/indian-road/index.html",
+      "image": null,
+      "photos": [],
+      "credits": []
+    },
+    {
+      "slug": "littleevans-street",
+      "name": "Little/Evans Street",
+      "originalName": "Little/Evans Street",
+      "description": "A pair of narrow, historic streets in the Vinegar Hill neighborhood of Brooklyn.",
+      "descriptionOrigin": "catalog",
+      "history": "Little Street and Evans Street are remnants of the 19th-century development of Vinegar Hill, originally an industrial area. The streets are known for their cobblestone surfaces and preserved row houses, offering a glimpse into Brooklyn's past.",
+      "context": "",
+      "curatorNote": "Cute small narrow out of the way street on Vinegar Hill",
+      "sources": [],
+      "theme": "streets",
+      "themeLabel": "Streets",
+      "lat": 40.7030725,
+      "lng": -73.9803093,
+      "url": "locations/littleevans-street/index.html",
+      "image": null,
+      "photos": [],
+      "credits": []
+    },
+    {
+      "slug": "grace-court-alley",
+      "name": "Grace Court Alley",
+      "originalName": "Grace Court Alley",
+      "description": "A hidden alley in Brooklyn Heights, featuring converted carriage houses.",
+      "descriptionOrigin": "catalog",
+      "history": "Grace Court Alley was originally used for stables and carriage houses serving the grand homes of Brooklyn Heights. In the 20th century, these structures were converted into residences, creating a unique and secluded living environment.",
+      "context": "",
+      "curatorNote": "Brooklyn Heights carriage house dead end street.",
+      "sources": [],
+      "theme": "streets",
+      "themeLabel": "Streets",
+      "lat": 40.6938832,
+      "lng": -73.9957757,
+      "url": "locations/grace-court-alley/index.html",
+      "image": "assets/images/places/grace-court-alley.webp",
+      "photos": [
+        "locations/grace-court-alley/images/photo_1.jpg",
+        "locations/grace-court-alley/images/photo_2.jpg",
+        "locations/grace-court-alley/images/photo_3.jpg",
+        "locations/grace-court-alley/images/photo_4.jpg",
+        "locations/grace-court-alley/images/photo_5.jpg"
+      ],
+      "credits": [
+        {
+          "name": "Oguz Yucel",
+          "url": "https://maps.google.com/maps/contrib/106384674004290807486"
+        }
+      ]
+    },
+    {
+      "slug": "hunts-lane",
+      "name": "Hunts Lane",
+      "originalName": "Hunts Lane",
+      "description": "A small, historic lane in Brooklyn Heights, known for its charming residences.",
+      "descriptionOrigin": "catalog",
+      "history": "Hunts Lane dates back to the 19th century and was originally a service alley for nearby townhouses. It has since been transformed into a residential street, with homes that reflect the neighborhood's historic character.",
+      "context": "",
+      "curatorNote": "Brooklyn Heights carriage house dead end street.",
+      "sources": [],
+      "theme": "streets",
+      "themeLabel": "Streets",
+      "lat": 40.6934724,
+      "lng": -73.9941074,
+      "url": "locations/hunts-lane/index.html",
+      "image": null,
+      "photos": [],
+      "credits": []
+    },
+    {
+      "slug": "college-place",
+      "name": "College Place",
+      "originalName": "College Place",
+      "description": "A short, dead-end street in Brooklyn Heights, offering a peaceful retreat.",
+      "descriptionOrigin": "catalog",
+      "history": "College Place is part of the Brooklyn Heights Historic District and features homes from the 19th century. Its secluded nature and historic architecture make it a desirable location within the neighborhood.",
+      "context": "",
+      "curatorNote": "Dead end off a side street in what is already one of the quietest neighborhoods, a really unique street structure.",
+      "sources": [],
+      "theme": "streets",
+      "themeLabel": "Streets",
+      "lat": 40.6965814,
+      "lng": -73.9943281,
+      "url": "locations/college-place/index.html",
+      "image": null,
+      "photos": [],
+      "credits": []
+    },
+    {
+      "slug": "hamilton-terrace",
+      "name": "Hamilton Terrace",
+      "originalName": "Hamilton Terrace",
+      "description": "A residential street in Hamilton Heights, Manhattan, known for its elegant townhouses.",
+      "descriptionOrigin": "catalog",
+      "history": "Hamilton Terrace was developed in the late 19th century as part of the expansion of Hamilton Heights. The street is lined with well-preserved row houses, reflecting the architectural styles of the period.",
+      "context": "",
+      "curatorNote": "Nice little non standard structure here",
+      "sources": [],
+      "theme": "streets",
+      "themeLabel": "Streets",
+      "lat": 40.8228782,
+      "lng": -73.9464374,
+      "url": "locations/hamilton-terrace/index.html",
+      "image": null,
+      "photos": [],
+      "credits": []
+    },
+    {
+      "slug": "verandah-place",
+      "name": "Verandah Place",
+      "originalName": "Verandah Place",
+      "description": "A narrow, historic street in Cobble Hill, Brooklyn, featuring small row houses.",
+      "descriptionOrigin": "catalog",
+      "history": "Verandah Place was developed in the mid-19th century and is known for its quaint, cottage-like homes. The street's name likely refers to the verandas or porches that were once common on its houses.",
+      "context": "",
+      "curatorNote": "One of the narrowest streets I know of. And right next to a part too!",
+      "sources": [],
+      "theme": "streets",
+      "themeLabel": "Streets",
+      "lat": 40.6881867,
+      "lng": -73.9964295,
+      "url": "locations/verandah-place/index.html",
+      "image": null,
+      "photos": [],
+      "credits": []
+    },
+    {
+      "slug": "chittenden-road",
+      "name": "Chittenden Road",
+      "originalName": "Chittenden Road",
+      "description": "A street in Washington Heights, offering views of the Hudson River.",
+      "descriptionOrigin": "catalog",
+      "history": "Chittenden Road is part of the Fort Washington area, developed in the early 20th century. Its elevated position provides residents with scenic views, making it a unique location in Upper Manhattan.",
+      "context": "",
+      "curatorNote": "A really amazing view of the Hudson here looking right out off the cliff.",
+      "sources": [],
+      "theme": "streets",
+      "themeLabel": "Streets",
+      "lat": 40.8554451,
+      "lng": -73.9390084,
+      "url": "locations/chittenden-road/index.html",
+      "image": "assets/images/places/chittenden-road.webp",
+      "photos": [
+        "locations/chittenden-road/images/photo_1.jpg",
+        "locations/chittenden-road/images/photo_2.jpg"
+      ],
+      "credits": [
+        {
+          "name": "Hector Alfredo",
+          "url": "https://maps.google.com/maps/contrib/106782988578496838872"
+        }
+      ]
+    },
+    {
+      "slug": "marble-hill",
+      "name": "Marble Hill",
+      "originalName": "Marble Hill",
+      "description": "A neighborhood in the northern part of Manhattan, known for its suburban feel.",
+      "descriptionOrigin": "catalog",
+      "history": "Marble Hill was originally part of Manhattan Island but was separated by the Harlem River Ship Canal in the 19th century. Despite being physically connected to the Bronx, it remains administratively part of Manhattan.",
+      "context": "",
+      "curatorNote": "Manhattan or the bronx? Some nice nonstandard street structure atop marble hill with nice houses.",
+      "sources": [],
+      "theme": "streets",
+      "themeLabel": "Streets",
+      "lat": 40.8757049,
+      "lng": -73.9115166,
+      "url": "locations/marble-hill/index.html",
+      "image": "assets/images/places/marble-hill.webp",
+      "photos": [
+        "locations/marble-hill/images/photo_1.jpg",
+        "locations/marble-hill/images/photo_2.jpg",
+        "locations/marble-hill/images/photo_3.jpg",
+        "locations/marble-hill/images/photo_4.jpg",
+        "locations/marble-hill/images/photo_5.jpg"
+      ],
+      "credits": [
+        {
+          "name": "JX S",
+          "url": "https://maps.google.com/maps/contrib/101280779998277992084"
+        },
+        {
+          "name": "V Nesterov",
+          "url": "https://maps.google.com/maps/contrib/107264016269108825686"
+        },
+        {
+          "name": "David Herszenson",
+          "url": "https://maps.google.com/maps/contrib/108585025234485852384"
+        },
+        {
+          "name": "ANDRE SILVA",
+          "url": "https://maps.google.com/maps/contrib/105081643123958570334"
+        },
+        {
+          "name": "Jeremy Naraine",
+          "url": "https://maps.google.com/maps/contrib/112857690301681644277"
+        }
+      ]
+    },
+    {
+      "slug": "freeman-alley",
+      "name": "Freeman Alley",
+      "originalName": "Freeman Alley",
+      "description": "A small, graffiti-covered alley in the Lower East Side of Manhattan.",
+      "descriptionOrigin": "catalog",
+      "history": "Freeman Alley has become a canvas for street artists and is home to a popular restaurant. Its history is tied to the artistic and cultural evolution of the Lower East Side, reflecting the neighborhood's vibrant street art scene.",
+      "context": "",
+      "curatorNote": "",
+      "sources": [],
+      "theme": "streets",
+      "themeLabel": "Streets",
+      "lat": 40.7218056,
+      "lng": -73.9925468,
+      "url": "locations/freeman-alley/index.html",
+      "image": "assets/images/places/freeman-alley.webp",
+      "photos": [
+        "locations/freeman-alley/images/photo_1.jpg",
+        "locations/freeman-alley/images/photo_2.jpg",
+        "locations/freeman-alley/images/photo_3.jpg",
+        "locations/freeman-alley/images/photo_4.jpg",
+        "locations/freeman-alley/images/photo_5.jpg"
+      ],
+      "credits": [
+        {
+          "name": "Oguz Yucel",
+          "url": "https://maps.google.com/maps/contrib/106384674004290807486"
+        },
+        {
+          "name": "Slava Shpigel",
+          "url": "https://maps.google.com/maps/contrib/114746178391836128377"
+        },
+        {
+          "name": "Joseph Mayer",
+          "url": "https://maps.google.com/maps/contrib/100238104410579364312"
+        }
+      ]
+    },
+    {
+      "slug": "broadway-between-40th-and-17th",
+      "name": "Broadway Between 40th and 17th",
+      "originalName": "Broadway Between 40th and 17th",
+      "description": "A section of Broadway in Manhattan, known for its pedestrian-friendly design and public spaces.",
+      "descriptionOrigin": "catalog",
+      "history": "This stretch of Broadway was reimagined in the early 21st century as part of New York City's efforts to create more pedestrian-friendly urban environments. The project, led by Janette Sadik-Khan, transformed parts of Broadway into public plazas, enhancing the street's role as a cultural and commercial hub.",
+      "context": "",
+      "curatorNote": "janette sadik-khan's opus",
+      "sources": [],
+      "theme": "streets",
+      "themeLabel": "Streets",
+      "lat": 40.7525651,
+      "lng": -73.987471,
+      "url": "locations/broadway-between-40th-and-17th/index.html",
+      "image": "assets/images/places/broadway-between-40th-and-17th.webp",
+      "photos": [
+        "locations/broadway-between-40th-and-17th/images/photo_1.jpg",
+        "locations/broadway-between-40th-and-17th/images/photo_2.jpg",
+        "locations/broadway-between-40th-and-17th/images/photo_3.jpg",
+        "locations/broadway-between-40th-and-17th/images/photo_4.jpg",
+        "locations/broadway-between-40th-and-17th/images/photo_5.jpg"
+      ],
+      "credits": [
+        {
+          "name": "Martin Beitia",
+          "url": "https://maps.google.com/maps/contrib/102813747488910331228"
+        },
+        {
+          "name": "Andrea Legenyova",
+          "url": "https://maps.google.com/maps/contrib/115553462584417935978"
+        },
+        {
+          "name": "Kanchan P. Adhikari",
+          "url": "https://maps.google.com/maps/contrib/117920223197907404752"
+        },
+        {
+          "name": "Jawad UAE Adventures",
+          "url": "https://maps.google.com/maps/contrib/117950136689538226451"
+        },
+        {
+          "name": "Rhys Davies",
+          "url": "https://maps.google.com/maps/contrib/106520527139121724363"
+        },
+        {
+          "name": "Ali Lari",
+          "url": "https://maps.google.com/maps/contrib/106062881374195641140"
+        },
+        {
+          "name": "Fabian Riestra",
+          "url": "https://maps.google.com/maps/contrib/117905901710820227361"
+        },
+        {
+          "name": "Joe S",
+          "url": "https://maps.google.com/maps/contrib/107094372471371075307"
+        },
+        {
+          "name": "YennaPPa (Luscious.K)",
+          "url": "https://maps.google.com/maps/contrib/114935484506616628154"
+        },
+        {
+          "name": "Gianfranco W36 Belloli",
+          "url": "https://maps.google.com/maps/contrib/110315633631961958840"
+        }
+      ]
+    },
+    {
+      "slug": "doyer-street",
+      "name": "Doyer Street",
+      "originalName": "Doyer Street",
+      "description": "A historic street in Chinatown, Manhattan, known for its sharp bend and cultural significance.",
+      "descriptionOrigin": "catalog",
+      "history": "Doyer Street, also known as the 'Bloody Angle,' has a storied past tied to the early Chinese immigrant community and gang activity in the late 19th and early 20th centuries. Today, it is a vibrant part of Chinatown, with restaurants and shops that reflect its cultural heritage.",
+      "context": "",
+      "curatorNote": "Very nicely pedestrianized.",
+      "sources": [],
+      "theme": "streets",
+      "themeLabel": "Streets",
+      "lat": 40.7145149,
+      "lng": -73.9981452,
+      "url": "locations/doyer-street/index.html",
+      "image": "assets/images/places/doyer-street.webp",
+      "photos": [
+        "locations/doyer-street/images/photo_1.jpg",
+        "locations/doyer-street/images/photo_2.jpg",
+        "locations/doyer-street/images/photo_3.jpg",
+        "locations/doyer-street/images/photo_4.jpg",
+        "locations/doyer-street/images/photo_5.jpg"
+      ],
+      "credits": [
+        {
+          "name": "Alaleh - FoodyTO",
+          "url": "https://maps.google.com/maps/contrib/103869732971444044816"
+        },
+        {
+          "name": "Roland Seidl",
+          "url": "https://maps.google.com/maps/contrib/113083044675128435427"
+        },
+        {
+          "name": "Lic. Horus Ruiseco Jacobo",
+          "url": "https://maps.google.com/maps/contrib/101140409814028774850"
+        },
+        {
+          "name": "TheMrscarface2009",
+          "url": "https://maps.google.com/maps/contrib/116882937263130282699"
+        },
+        {
+          "name": "DK WORKS",
+          "url": "https://maps.google.com/maps/contrib/105212317302820247065"
+        },
+        {
+          "name": "Vanessa S.",
+          "url": "https://maps.google.com/maps/contrib/111040630210582040106"
+        },
+        {
+          "name": "Schorsch Klunni",
+          "url": "https://maps.google.com/maps/contrib/112174587161651737356"
+        },
+        {
+          "name": "Urek Mazino",
+          "url": "https://maps.google.com/maps/contrib/100904773611626387641"
+        },
+        {
+          "name": "spoorthi Shres",
+          "url": "https://maps.google.com/maps/contrib/112693353017475869362"
+        },
+        {
+          "name": "Joshua Man",
+          "url": "https://maps.google.com/maps/contrib/105218701753973162069"
+        }
+      ]
+    },
+    {
+      "slug": "46a-prospect-park-southwest",
+      "name": "46A Prospect Park Southwest",
+      "originalName": "46A Prospect Park Southwest",
+      "description": "A home tucked into the block just off Prospect Park Southwest. The original map highlights the combination of a sheltered residential setting and proximity to Prospect Park and Green-Wood Cemetery. The house itself is private.",
+      "descriptionOrigin": "curator",
+      "history": "",
+      "context": "",
+      "curatorNote": "Another hidden in the block living situation. Right off the park and super close to green wood, If you like walking in green space this is the coolest house in NYC. No running in the cemetery!",
+      "sources": [],
+      "theme": "houses",
+      "themeLabel": "Unusual homes",
+      "lat": 40.6593121,
+      "lng": -73.9771148,
+      "url": "locations/46a-prospect-park-southwest/index.html",
+      "image": null,
+      "photos": [],
+      "credits": []
+    },
+    {
+      "slug": "301-greene-ave",
+      "name": "301 Greene Ave",
+      "originalName": "301 Greene Ave",
+      "description": "A two-story brick house within the block, associated with the townhouse at 301 Greene Avenue. The curator highlights an unusual property outline that makes room for a separate-feeling home behind the street frontage.",
+      "descriptionOrigin": "curator",
+      "history": "",
+      "context": "",
+      "curatorNote": "Really nice brick two story house in the middle of the block here. It is attached to the 301 Greene Ave townhouse which has funky property lines. Its great they made use of them for this noble purpose.",
+      "sources": [],
+      "theme": "houses",
+      "themeLabel": "Unusual homes",
+      "lat": 40.6878609,
+      "lng": -73.9593718,
+      "url": "locations/301-greene-ave/index.html",
+      "image": null,
+      "photos": [],
+      "credits": []
+    },
+    {
+      "slug": "129-degraw-abcd",
+      "name": "129 Degraw ABCD",
+      "originalName": "129 Degraw ABCD",
+      "description": "A group of homes reached by a shared walkway off Degraw Street. The walkway gives the houses a common approach within the block, separating their entrances from the street. This is a residential arrangement, not a public through-route.",
+      "descriptionOrigin": "curator",
+      "history": "",
+      "context": "",
+      "curatorNote": "A cool group of houses with a shared walkway that away from the street.",
+      "sources": [],
+      "theme": "houses",
+      "themeLabel": "Unusual homes",
+      "lat": 40.685794,
+      "lng": -74.0018464,
+      "url": "locations/129-degraw-abcd/index.html",
+      "image": null,
+      "photos": [],
+      "credits": []
+    },
+    {
+      "slug": "117-underhill-avenue",
+      "name": "117 Underhill Avenue",
+      "originalName": "117 Underhill Avenue",
+      "description": "A residence set well inside its block off Underhill Avenue. The original map singles out the distance between the home and the street: a small example of living within a block rather than directly on its edge.",
+      "descriptionOrigin": "curator",
+      "history": "",
+      "context": "",
+      "curatorNote": "Really deep in the block! And off one of Janette Sadik-Khan's best creations at that (underhill ave has next generation street design)",
+      "sources": [],
+      "theme": "houses",
+      "themeLabel": "Unusual homes",
+      "lat": 40.6772844,
+      "lng": -73.9653462,
+      "url": "locations/117-underhill-avenue/index.html",
+      "image": null,
+      "photos": [],
+      "credits": []
+    },
+    {
+      "slug": "48-tiffany-place",
+      "name": "48 Tiffany Place",
+      "originalName": "48 Tiffany Place",
+      "description": "A small, detached home on cobblestone Tiffany Place in Brooklyn’s Columbia Street Waterfront District. The property’s compact footprint offers a different pattern of living from a continuous row of street-front houses.",
+      "descriptionOrigin": "sourced",
+      "history": "",
+      "context": "An archived listing records a 2013 renovation with Massim Studio. The design used double-height space, exposed structural steel and high windows to bring light into the house. It is a private residence, included here for its arrangement and scale.",
+      "curatorNote": "A good example of off street living.",
+      "sources": [
+        {
+          "title": "Compass — 48 Tiffany Place, archived property description",
+          "url": "https://www.compass.com/homedetails/48-Tiffany-Pl-Brooklyn-NY-11231/20BP05_pid/"
+        }
+      ],
+      "theme": "houses",
+      "themeLabel": "Unusual homes",
+      "lat": 40.6860808,
+      "lng": -74.0015567,
+      "url": "locations/48-tiffany-place/index.html",
+      "image": null,
+      "photos": [],
+      "credits": []
+    },
+    {
+      "slug": "158-prospect-place",
+      "name": "158 Prospect Place",
+      "originalName": "158 Prospect Place",
+      "description": "A home set far back within a Prospect Place block. The curator’s interest is the contrast between its sheltered position and the surrounding city: an interior residential space behind the more familiar street-facing houses.",
+      "descriptionOrigin": "curator",
+      "history": "",
+      "context": "",
+      "curatorNote": "This is a really amazing home. So conviently located with the park and trains near by, but must feel like the country side in there so far off the street!",
+      "sources": [],
+      "theme": "houses",
+      "themeLabel": "Unusual homes",
+      "lat": 40.6778346,
+      "lng": -73.9716971,
+      "url": "locations/158-prospect-place/index.html",
+      "image": null,
+      "photos": [],
+      "credits": []
+    },
+    {
+      "slug": "5-carmine-st-abc",
+      "name": "5 Carmine St ABC",
+      "originalName": "5 Carmine St ABC",
+      "description": "A cluster of homes within the block behind 5 Carmine Street in Greenwich Village. A brick-walled passage and gated courtyard separate this small residential interior from the busy street frontage.",
+      "descriptionOrigin": "sourced",
+      "history": "",
+      "context": "The city’s historic-district report describes the passage to the interior houses and traces the street-front complex to buildings constructed around 1829 and 1832. Later alterations joined and changed the frontage. The distinction between the commercial street edge and the homes behind it is what makes this address unusual.",
+      "curatorNote": "3 amazing little houses hidden in the middle of the block!",
+      "sources": [
+        {
+          "title": "NYC LPC — Greenwich Village Historic District Extension II, 5 Carmine Street",
+          "url": "https://media.villagepreservation.org/wp-content/uploads/2020/03/15123045/Greenwich-Village-Historic-District-Extension-II-Designation-Report.pdf"
+        }
+      ],
+      "theme": "houses",
+      "themeLabel": "Unusual homes",
+      "lat": 40.7308213,
+      "lng": -74.0021932,
+      "url": "locations/5-carmine-st-abc/index.html",
+      "image": null,
+      "photos": [],
+      "credits": [
+        {
+          "name": "Adam Hill",
+          "url": "https://maps.google.com/maps/contrib/114695018017119798348"
+        },
+        {
+          "name": "FREDERIC DUVERGER",
+          "url": "https://maps.google.com/maps/contrib/102720786030945224077"
+        },
+        {
+          "name": "Jacqueline Cheng",
+          "url": "https://maps.google.com/maps/contrib/103458936827182559981"
+        },
+        {
+          "name": "Kristian Singh-Nergård",
+          "url": "https://maps.google.com/maps/contrib/110122248756413594433"
+        },
+        {
+          "name": "Carmine Street Beers",
+          "url": "https://maps.google.com/maps/contrib/108729576579380373102"
+        },
+        {
+          "name": "ME leafpeeper",
+          "url": "https://maps.google.com/maps/contrib/103653976524765969686"
+        },
+        {
+          "name": "Alex Aboud",
+          "url": "https://maps.google.com/maps/contrib/112781463507799567540"
+        },
+        {
+          "name": "Nils Hünerfürst",
+          "url": "https://maps.google.com/maps/contrib/108980284740580063383"
+        }
+      ]
+    },
+    {
+      "slug": "34-strong-place",
+      "name": "34 Strong Place",
+      "originalName": "34 Strong Place",
+      "description": "A home within the block off Strong Place. Its interest lies in the separation from the street and in the extra layer of housing behind the street frontage. The original map records the arrangement, rather than a public place to enter.",
+      "descriptionOrigin": "curator",
+      "history": "",
+      "context": "",
+      "curatorNote": "A prime example of a home in the middle of the block. Away from cars, noise, and other sad things.",
+      "sources": [],
+      "theme": "houses",
+      "themeLabel": "Unusual homes",
+      "lat": 40.6855823,
+      "lng": -73.9981886,
+      "url": "locations/34-strong-place/index.html",
+      "image": null,
+      "photos": [],
+      "credits": []
+    },
+    {
+      "slug": "46-7th-ave",
+      "name": "46 7th Ave",
+      "originalName": "46 7th Ave",
+      "description": "A carriage house with a garden and a surrounding brick path, recorded in the original map at 46 Seventh Avenue. The garden and separate house form a small residential setting apart from the avenue; access is private.",
+      "descriptionOrigin": "curator",
+      "history": "",
+      "context": "",
+      "curatorNote": "The most beautiful carriage house in Manhattan. It has a really nice garden and brick path around it.",
+      "sources": [],
+      "theme": "houses",
+      "themeLabel": "Unusual homes",
+      "lat": 40.7313394,
+      "lng": -74.0043972,
+      "url": "locations/46-7th-ave/index.html",
+      "image": null,
+      "photos": [],
+      "credits": []
+    },
+    {
+      "slug": "10-bedford-st",
+      "name": "10 Bedford St",
+      "originalName": "10 Bedford St",
+      "description": "A separate backhouse behind the street-facing building at 10 Bedford Street. It is a small example of the second layer of homes concealed inside many Greenwich Village blocks.",
+      "descriptionOrigin": "sourced",
+      "history": "",
+      "context": "Village Preservation documents how the backhouse was visible from Downing Street while an adjoining lot stood empty. Construction on that lot in 2009 concealed it again. The interesting feature is the relationship between front house, courtyard and rear dwelling, rather than a public entrance from the street.",
+      "curatorNote": "Sweet carriage house in the back",
+      "sources": [
+        {
+          "title": "Village Preservation — The Backstory on Backhouses",
+          "url": "https://villagepreservation.org/2018/01/01/the-backstory-on-backhouses-2/"
+        }
+      ],
+      "theme": "houses",
+      "themeLabel": "Unusual homes",
+      "lat": 40.7291162,
+      "lng": -74.0031112,
+      "url": "locations/10-bedford-st/index.html",
+      "image": null,
+      "photos": [],
+      "credits": []
+    },
+    {
+      "slug": "roof-top-cape-cod",
+      "name": "Rooftop Cape Cod",
+      "originalName": "Roof Top Cape Cod",
+      "description": "A shingled cottage on top of 72 East 1st Street, at First Avenue. Its pitched roof and terrace place the silhouette of a small coastal house above an East Village building.",
+      "descriptionOrigin": "sourced",
+      "history": "",
+      "context": "The cottage belongs to a private penthouse and has been described in property records as a separate studio above the main duplex. It is an example of rooftop space taking on the form of a house and yard. There is no public rooftop access.",
+      "curatorNote": "This house gives new meaning to being off the grid.",
+      "sources": [
+        {
+          "title": "Compass — 72 East 1st Street penthouse and cottage",
+          "url": "https://www.compass.com/homedetails/72-E-1st-St-Unit-PH-Manhattan-NY-10003/203K2A_pid/"
+        }
+      ],
+      "theme": "houses",
+      "themeLabel": "Unusual homes",
+      "lat": 40.7234933,
+      "lng": -73.9886127,
+      "url": "locations/roof-top-cape-cod/index.html",
+      "image": null,
+      "photos": [],
+      "credits": [
+        {
+          "name": "The Bowery Rooftop",
+          "url": "https://maps.google.com/maps/contrib/113324793955486340802"
+        },
+        {
+          "name": "IDO_NYC",
+          "url": "https://maps.google.com/maps/contrib/100700390433393674077"
+        },
+        {
+          "name": "Jules Chester",
+          "url": "https://maps.google.com/maps/contrib/112981648420069439778"
+        }
+      ]
+    },
+    {
+      "slug": "1288-prospect-place",
+      "name": "1288 Prospect Place",
+      "originalName": "1288 Prospect Place",
+      "description": "An interior-block property identified by the curator through an analysis of lot shapes. The original note explicitly says it had not been visited. It is included as a lead about the structure of the block; the building’s arrangement and access still need on-site confirmation.",
+      "descriptionOrigin": "curator",
+      "history": "",
+      "context": "",
+      "curatorNote": "In the block. I've never seen this one but I found it through my lot shape data scrapping.",
+      "sources": [],
+      "theme": "houses",
+      "themeLabel": "Unusual homes",
+      "lat": 40.6730685,
+      "lng": -73.9344064,
+      "url": "locations/1288-prospect-place/index.html",
+      "image": null,
+      "photos": [],
+      "credits": []
+    },
+    {
+      "slug": "maple-street",
+      "name": "Maple Street",
+      "originalName": "Maple Street",
+      "description": "A street in the Prospect Lefferts Gardens neighborhood of Brooklyn, known for its historic homes.",
+      "descriptionOrigin": "catalog",
+      "history": "Maple Street is part of the Prospect Lefferts Gardens Historic District, developed in the early 20th century. The street features a variety of architectural styles, including Colonial Revival and Tudor Revival, reflecting the neighborhood's suburban character within the city.",
+      "context": "",
+      "curatorNote": "beautiful brick mansions",
+      "sources": [],
+      "theme": "escapes",
+      "themeLabel": "A different pace",
+      "lat": 40.660357,
+      "lng": -73.9587125,
+      "url": "locations/maple-street/index.html",
+      "image": "assets/images/places/maple-street.webp",
+      "photos": [
+        "locations/maple-street/images/photo_1.jpg",
+        "locations/maple-street/images/photo_2.jpg",
+        "locations/maple-street/images/photo_3.jpg"
+      ],
+      "credits": [
+        {
+          "name": "Rilda Reinosa",
+          "url": "https://maps.google.com/maps/contrib/116120347498405799652"
+        }
+      ]
+    },
+    {
+      "slug": "ditmas-park",
+      "name": "Ditmas Park",
+      "originalName": "Ditmas Park",
+      "description": "A neighborhood in Brooklyn known for its large, Victorian-style homes and tree-lined streets.",
+      "descriptionOrigin": "catalog",
+      "history": "Ditmas Park was developed in the early 20th century as a suburban enclave within Brooklyn. The neighborhood's homes, many of which are freestanding with front porches and gardens, were designed to attract middle-class families seeking a respite from urban density.",
+      "context": "",
+      "curatorNote": "This kind of applied to the whole area south of here! But its absolutely beautiful and this street in particular is amazing because in the summer people have picnics on the green median and children learn to ride bikes in the street. Crazy that you can walk to blocks and be back in \"normal\" NYC low density looking stuff. Fun fact if you look at the satellite view of the city you can clearly see the three sections of ditmas park where all of these nice houses and streets are because they are so green in comparison to the rest of the city. This is also true of riverdale in the bronx and forest hills in queens.",
+      "sources": [],
+      "theme": "escapes",
+      "themeLabel": "A different pace",
+      "lat": 40.6465746,
+      "lng": -73.9667459,
+      "url": "locations/ditmas-park/index.html",
+      "image": null,
+      "photos": [],
+      "credits": [
+        {
+          "name": "Kyle Christopher",
+          "url": "https://maps.google.com/maps/contrib/100360817564339241747"
+        },
+        {
+          "name": "Matthias Hartung",
+          "url": "https://maps.google.com/maps/contrib/110406471030013372809"
+        },
+        {
+          "name": "Alyssa",
+          "url": "https://maps.google.com/maps/contrib/101676361811251272845"
+        },
+        {
+          "name": "Earl Terrill",
+          "url": "https://maps.google.com/maps/contrib/106888857413272019096"
+        },
+        {
+          "name": "Ivelisses Collado",
+          "url": "https://maps.google.com/maps/contrib/118364961180612811524"
+        },
+        {
+          "name": "Delfina Meza",
+          "url": "https://maps.google.com/maps/contrib/110300382769880521979"
+        },
+        {
+          "name": "CHILOVE TOUSSAINT",
+          "url": "https://maps.google.com/maps/contrib/115648429015935960015"
+        }
+      ]
+    },
+    {
+      "slug": "forest-hills",
+      "name": "Forest Hills",
+      "originalName": "Forest Hills",
+      "description": "A neighborhood in Queens, known for its Tudor-style homes and the historic Forest Hills Gardens.",
+      "descriptionOrigin": "catalog",
+      "history": "Forest Hills was developed in the early 20th century by the Russell Sage Foundation as a model community. The neighborhood's design, inspired by the English Garden City movement, features winding streets, parks, and a mix of housing types, making it a unique example of planned suburban development.",
+      "context": "",
+      "curatorNote": "This barely counts as urbanism because its so far away but its an amazing train station, and the greenery is beautiful in the area, would be great to have streets this green in denser areas!",
+      "sources": [],
+      "theme": "escapes",
+      "themeLabel": "A different pace",
+      "lat": 40.7195745,
+      "lng": -73.8449253,
+      "url": "locations/forest-hills/index.html",
+      "image": "assets/images/places/forest-hills.webp",
+      "photos": [
+        "locations/forest-hills/images/photo_1.jpg",
+        "locations/forest-hills/images/photo_2.jpg",
+        "locations/forest-hills/images/photo_3.jpg",
+        "locations/forest-hills/images/photo_4.jpg",
+        "locations/forest-hills/images/photo_5.jpg"
+      ],
+      "credits": [
+        {
+          "name": "Jesus Palalia",
+          "url": "https://maps.google.com/maps/contrib/100857778970154176075"
+        },
+        {
+          "name": "Syed Zia Ullah",
+          "url": "https://maps.google.com/maps/contrib/106044576334178205919"
+        },
+        {
+          "name": "Ratnadwip Ghosh",
+          "url": "https://maps.google.com/maps/contrib/105673052508053812802"
+        },
+        {
+          "name": "Susmith Sarma",
+          "url": "https://maps.google.com/maps/contrib/101217005580106231295"
+        },
+        {
+          "name": "Mauricio Fierro Rubilar",
+          "url": "https://maps.google.com/maps/contrib/105202338825178260747"
+        }
+      ]
+    },
+    {
+      "slug": "riverdale",
+      "name": "Riverdale",
+      "originalName": "Riverdale",
+      "description": "A residential neighborhood in the Bronx, known for its hilly terrain and upscale homes.",
+      "descriptionOrigin": "catalog",
+      "history": "Riverdale was originally a rural area with large estates and farms. In the late 19th and early 20th centuries, it was developed into a suburban community, attracting wealthy New Yorkers. Today, it is one of the most affluent neighborhoods in the Bronx, with a mix of historic mansions and modern residences.",
+      "context": "",
+      "curatorNote": "Riverdale is super fancy but its sad that the trains are far. at this point its just suburbia lowkey, but technically its in the city and like Ditmas park and forest hills the greenery is so nice!",
+      "sources": [],
+      "theme": "escapes",
+      "themeLabel": "A different pace",
+      "lat": 40.8935758,
+      "lng": -73.9068976,
+      "url": "locations/riverdale/index.html",
+      "image": null,
+      "photos": [],
+      "credits": [
+        {
+          "name": "David Herszenson",
+          "url": "https://maps.google.com/maps/contrib/108585025234485852384"
+        },
+        {
+          "name": "marc carchipulla",
+          "url": "https://maps.google.com/maps/contrib/112811715626655745719"
+        },
+        {
+          "name": "David B",
+          "url": "https://maps.google.com/maps/contrib/115275896668336162213"
+        },
+        {
+          "name": "alla bevzenko",
+          "url": "https://maps.google.com/maps/contrib/102169021195287746448"
+        },
+        {
+          "name": "Keyra Fernandez",
+          "url": "https://maps.google.com/maps/contrib/111649775342102021103"
+        },
+        {
+          "name": "Dorothy Oshin",
+          "url": "https://maps.google.com/maps/contrib/107927022956823006827"
+        },
+        {
+          "name": "Daniel Catano",
+          "url": "https://maps.google.com/maps/contrib/112385749461986717978"
+        }
+      ]
+    },
+    {
+      "slug": "charlotte-gardens",
+      "name": "Charlotte Gardens",
+      "originalName": "Charlotte Gardens",
+      "description": "A housing development in the South Bronx, known for its suburban-style homes.",
+      "descriptionOrigin": "catalog",
+      "history": "Charlotte Gardens was developed in the 1980s as part of efforts to revitalize the South Bronx. The project involved building single-family homes on vacant lots, offering an alternative to the high-rise public housing typical of the area. It is a notable example of urban renewal through suburban-style development.",
+      "context": "",
+      "curatorNote": "Zoned differently from the rest of the area for interesting historical reasons",
+      "sources": [],
+      "theme": "escapes",
+      "themeLabel": "A different pace",
+      "lat": 40.8342736,
+      "lng": -73.892205,
+      "url": "locations/charlotte-gardens/index.html",
+      "image": "assets/images/places/charlotte-gardens.webp",
+      "photos": [
+        "locations/charlotte-gardens/images/photo_1.jpg"
+      ],
+      "credits": [
+        {
+          "name": "David Herszenson",
+          "url": "https://maps.google.com/maps/contrib/108585025234485852384"
+        }
+      ]
+    },
+    {
+      "slug": "30-36-remsen",
+      "name": "30-36 Remsen",
+      "originalName": "30-36 Remsen",
+      "description": "A group of deep residential lots on Remsen Street in Brooklyn Heights. The original map imagines how neighboring rear yards might work as a shared garden. That is a proposal by the curator, not a description of an existing public or communal garden.",
+      "descriptionOrigin": "curator",
+      "history": "",
+      "context": "",
+      "curatorNote": "Deep lots in Brooklyn Heights (these people really should get there stuff together to write up an easement and make a dope garden.",
+      "sources": [],
+      "theme": "deep-lots",
+      "themeLabel": "Deep lots",
+      "lat": 40.6944148,
+      "lng": -73.9974074,
+      "url": "locations/30-36-remsen/index.html",
+      "image": null,
+      "photos": [],
+      "credits": []
+    },
+    {
+      "slug": "46-58-remsen",
+      "name": "46-58 Remsen",
+      "originalName": "46-58 Remsen",
+      "description": "Deep residential parcels behind the Remsen Street frontage in Brooklyn Heights. The curator highlights the possibility of connecting rear yards into shared open space. The entry describes that potential; it does not establish a shared-access agreement or a garden open to visitors.",
+      "descriptionOrigin": "curator",
+      "history": "",
+      "context": "",
+      "curatorNote": "Deep lots in Brooklyn Heights (these people really should get there stuff together to write up an easement and make a dope garden.",
+      "sources": [],
+      "theme": "deep-lots",
+      "themeLabel": "Deep lots",
+      "lat": 40.6942521,
+      "lng": -73.9967287,
+      "url": "locations/46-58-remsen/index.html",
+      "image": null,
+      "photos": [],
+      "credits": []
+    },
+    {
+      "slug": "245-washington-ave",
+      "name": "245 Washington Ave",
+      "originalName": "245 Washington Ave",
+      "description": "The property at 245 Washington Avenue is included for its unusually deep residential parcel. The curator groups it with nearby examples of lots extending through the block. This entry concerns the shape and potential of the land behind the house, not a public route or garden.",
+      "descriptionOrigin": "curator",
+      "history": "",
+      "context": "",
+      "curatorNote": "One of only three straight through the block 200ft deep single family residential lots. They are all in this neighborhood at least as far as my research has lead me to know. If your townhouse was sufficiently short or has a 1 lane wide hole in its behind you could reasonably fit a Olympic length pool!",
+      "sources": [],
+      "theme": "deep-lots",
+      "themeLabel": "Deep lots",
+      "lat": 40.6914085,
+      "lng": -73.966115,
+      "url": "locations/245-washington-ave/index.html",
+      "image": null,
+      "photos": [],
+      "credits": []
+    },
+    {
+      "slug": "246-washington-ave",
+      "name": "246 Washington Ave",
+      "originalName": "246 Washington Ave",
+      "description": "The property at 246 Washington Avenue is included for its unusually deep residential parcel. The curator groups it with nearby examples of lots extending through the block. This entry concerns the shape and potential of the land behind the house, not a public route or garden.",
+      "descriptionOrigin": "curator",
+      "history": "",
+      "context": "",
+      "curatorNote": "One of only three straight through the block 200ft deep single family residential lots. They are all in this neighborhood at least as far as my research has lead me to know. If your townhouse was sufficiently short or has a 1 lane wide hole in its behind you could reasonably fit a Olympic length pool!",
+      "sources": [],
+      "theme": "deep-lots",
+      "themeLabel": "Deep lots",
+      "lat": 40.6911636,
+      "lng": -73.9668614,
+      "url": "locations/246-washington-ave/index.html",
+      "image": null,
+      "photos": [],
+      "credits": []
+    },
+    {
+      "slug": "280-washington-ave",
+      "name": "280 Washington Ave",
+      "originalName": "280 Washington Ave",
+      "description": "The property at 280 Washington Avenue is included for its unusually deep residential parcel. The curator groups it with nearby examples of lots extending through the block. This entry concerns the shape and potential of the land behind the house, not a public route or garden.",
+      "descriptionOrigin": "curator",
+      "history": "",
+      "context": "",
+      "curatorNote": "One of only three straight through the block 200ft deep single family residential lots. They are all in this neighborhood at least as far as my research has lead me to know. If your townhouse was sufficiently short or has a 1 lane wide hole in its behind you could reasonably fit a Olympic length pool!",
+      "sources": [],
+      "theme": "deep-lots",
+      "themeLabel": "Deep lots",
+      "lat": 40.6903082,
+      "lng": -73.9666332,
+      "url": "locations/280-washington-ave/index.html",
+      "image": null,
+      "photos": [],
+      "credits": []
+    },
+    {
+      "slug": "193-prospect-place",
+      "name": "193 Prospect Place",
+      "originalName": "193 Prospect Place",
+      "description": "A Prospect Heights townhouse selected for the space behind its street-facing building. The original map focuses on the lot’s depth and the room it leaves for a rear garden.",
+      "descriptionOrigin": "sourced",
+      "history": "",
+      "context": "Published property reporting gives the lot as approximately 20 by 131 feet. That is useful context for the curator’s interest in deep residential parcels: much of what makes this place distinctive lies behind the facade and cannot be assumed visible or accessible from the sidewalk.",
+      "curatorNote": "Really long lot in prospect heights",
+      "sources": [
+        {
+          "title": "Traded — 193 Prospect Place property dimensions",
+          "url": "https://traded.co/deals/new-york/multifamily/sale/193-prospect-place"
+        }
+      ],
+      "theme": "deep-lots",
+      "themeLabel": "Deep lots",
+      "lat": 40.6781787,
+      "lng": -73.9700769,
+      "url": "locations/193-prospect-place/index.html",
+      "image": null,
+      "photos": [],
+      "credits": []
+    },
+    {
+      "slug": "137-oak-st",
+      "name": "137 Oak St",
+      "originalName": "137 Oak St",
+      "description": "The former Greenpoint Home for the Aged at Oak and Guernsey Streets. The building occupies the bend in the street, giving it a distinctive setting within Greenpoint’s historic district.",
+      "descriptionOrigin": "sourced",
+      "history": "",
+      "context": "The Landmarks Preservation Commission identifies it as an 1886–87 design by Theobald Engelhardt, whose work also includes nearby houses and St. John’s Evangelical Lutheran Church. Its institutional history adds context to a building that can otherwise look like an unusually large house. Current interior access is not offered by this guide.",
+      "curatorNote": "",
+      "sources": [
+        {
+          "title": "NYC Landmarks Preservation Commission — Greenpoint Historic District",
+          "url": "https://s-media.nyc.gov/agencies/lpc/lp/1248.pdf"
+        }
+      ],
+      "theme": "more",
+      "themeLabel": "Other places",
+      "lat": 40.72819,
+      "lng": -73.955272,
+      "url": "locations/137-oak-st/index.html",
+      "image": null,
+      "photos": [],
+      "credits": []
+    },
+    {
+      "slug": "sunny-side-gardens",
+      "name": "Sunnyside Gardens",
+      "originalName": "Sunny Side Gardens",
+      "description": "Low-rise homes arranged around shared interior gardens in Sunnyside, Queens. Paths between the houses connect a network of courts, giving the block interiors a different character from the surrounding streets.",
+      "descriptionOrigin": "sourced",
+      "history": "",
+      "context": "Built mainly from 1924 to 1928, Sunnyside Gardens was designed by Clarence Stein, Henry Wright, Frederick Ackerman and landscape architect Marjorie Cautley. Its small private yards and larger common gardens made open space part of the housing plan. The neighborhood became a New York City historic district in 2007; the shared gardens remain residential spaces.",
+      "curatorNote": "",
+      "sources": [
+        {
+          "title": "NYC Landmarks Preservation Commission — Sunnyside Gardens history and character",
+          "url": "https://www.nyc.gov/assets/lpc/downloads/pdf/pubs/ssg_manual_september_09.pdf"
+        }
+      ],
+      "theme": "more",
+      "themeLabel": "Other places",
+      "lat": 40.748314,
+      "lng": -73.917689,
+      "url": "locations/sunny-side-gardens/index.html",
+      "image": null,
+      "photos": [],
+      "credits": []
+    },
+    {
+      "slug": "claremontvanderbilt-new-townhouses-with-communal-garden",
+      "name": "Claremont/Vanderbilt New townhouses with communal garden",
+      "originalName": "Claremont/Vanderbilt New townhouses with communal garden",
+      "description": "A group of newer townhouses near Claremont and Vanderbilt Avenues, noted by the curator for their communal garden. The shared space behind the homes is the reason for this entry: a contemporary example alongside the map’s older garden communities.",
+      "descriptionOrigin": "curator",
+      "history": "",
+      "context": "",
+      "curatorNote": "",
+      "sources": [],
+      "theme": "more",
+      "themeLabel": "Other places",
+      "lat": 40.697108,
+      "lng": -73.97114,
+      "url": "locations/claremontvanderbilt-new-townhouses-with-communal-garden/index.html",
+      "image": null,
+      "photos": [],
+      "credits": []
+    },
+    {
+      "slug": "jones-wood-garden",
+      "name": "Jones Wood Garden",
+      "originalName": "Jones Wood Garden",
+      "description": "A shared garden inside an Upper East Side block, enclosed by twelve townhouses on East 65th and East 66th Streets. Separate backyards were brought together to create a larger common landscape.",
+      "descriptionOrigin": "sourced",
+      "history": "",
+      "context": "The Smithsonian’s garden archive traces the scheme to architect Edwin S. Hewitt’s purchase of the twelve brownstones in 1919. He removed dividing fences and walls and introduced paths, planting beds and water features. Covenants protected the shared arrangement. This is a private residents’ garden.",
+      "curatorNote": "",
+      "sources": [
+        {
+          "title": "Smithsonian Gardens — The Jones’ Wood Garden",
+          "url": "https://gardens.si.edu/collections/explore/ead_component/sova-aag-gca-ref26941"
+        }
+      ],
+      "theme": "more",
+      "themeLabel": "Other places",
+      "lat": 40.765827,
+      "lng": -73.964279,
+      "url": "locations/jones-wood-garden/index.html",
+      "image": null,
+      "photos": [],
+      "credits": []
+    }
+  ]
+}
